@@ -14,3 +14,8 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 08 | The Realistic Manifesto | 1920 | Naum Gabo and Antoine Pevsner | Gustav Klutsis | [tools/08-kinetic.html](tools/08-kinetic.html) |
 | 09 | From Cubism and Futurism to Suprematism: The New Painterly Realism | 1915 | Kazimir Malevich | El Lissitzky | [tools/09-zero-of-form.html](tools/09-zero-of-form.html) |
 | 10 | A Slap in the Face of Public Taste | 1912 | David Burliuk, Aleksei Kruchenykh, Vladimir Mayakovsky and Velimir Khlebnikov | Alexander Rodchenko | [tools/10-zaum.html](tools/10-zaum.html) |
+| 11 | WE: Variant of a Manifesto | 1922 | Dziga Vertov (the Kinoks group) | Vladimir and Georgii Stenberg | [tools/11-kino-intervals.html](tools/11-kino-intervals.html) |
+| 12 | BLAST, Manifesto of the Vorticists | 1914 | Wyndham Lewis, with Ezra Pound, Gaudier-Brzeska and others | Paula Scher | [tools/12-blast.html](tools/12-blast.html) |
+| 13 | Fluxus Manifesto | 1963 | George Maciunas | Experimental Jetset | [tools/13-event-scores.html](tools/13-event-scores.html) |
+| 14 | Report on the Construction of Situations | 1957 | Guy Debord | Jamie Reid | [tools/14-derive.html](tools/14-derive.html) |
+| 15 | The Stuckists manifesto | 1999 | Billy Childish and Charles Thomson | Corita Kent | [tools/15-painted-lines.html](tools/15-painted-lines.html) |

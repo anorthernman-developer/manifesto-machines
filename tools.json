@@ -417,5 +417,215 @@
   "no": "10",
   "slug": "zaum",
   "file": "tools/10-zaum.html"
+ },
+ {
+  "title": "Theory of Intervals",
+  "idea": "A film strip of sample 'shots', where the loudest music happens in the cuts between them.",
+  "how": "Press PLAY. Each frame on the strip is a shot: a piece of your sample with its own speed and length. Between shots is an interval, and it sounds as a sweep from one shot to the next, bigger when the shots are more different. Drag a frame up or down to change its speed, click a gap to change its kind of cut, and press MONTAGE to re-edit the order. EYE spins the poster spiral faster.",
+  "fonts": "family=Big+Shoulders+Display:wght@400;900",
+  "bpm": 112,
+  "manifesto": {
+   "name": "WE: Variant of a Manifesto",
+   "short": "Kino-Eye",
+   "author": "Dziga Vertov (the Kinoks group)",
+   "year": "1922",
+   "where": "Kino-Fot magazine, Moscow, 1922",
+   "ideas": [
+    "Cinema should give up borrowed drama and literature and record life as it is, through the machine eye.",
+    "Montage is the organisation of the visible world, and movement is its material.",
+    "The intervals, the passages from one movement to the next, are what make up the art (paraphrasing Vertov)."
+   ],
+   "quotes": [
+    "Intervals (the transitions from one movement to another) are the material, the elements of the art of movement."
+   ],
+   "system": "Shots are just short pieces of the sample. The machine puts its weight on the intervals: every cut generates its own sound from the difference between the shot before and the shot after, so editing the order changes the music."
+  },
+  "design": {
+   "name": "Vladimir and Georgii Stenberg",
+   "short": "Stenberg brothers",
+   "who": "Vladimir and Georgii Stenberg, Soviet film poster designers",
+   "era": "Moscow, 1923 to 1933",
+   "hallmarks": [
+    "Dizzying perspective, spirals and figures falling through space",
+    "Projected and enlarged film stills drawn by hand with a projection device",
+    "Saturated magenta, orange and black, with tall condensed letters"
+   ],
+   "works": [
+    "Man with a Movie Camera (1929 poster for Vertov's film)",
+    "Battleship Potemkin (1929 poster)",
+    "The General (1929 poster for Buster Keaton's film)"
+   ]
+  },
+  "no": "11",
+  "slug": "kino-intervals",
+  "file": "tools/11-kino-intervals.html"
+ },
+ {
+  "title": "BLAST / BLESS",
+  "idea": "Every instrument is a word on the wall: BLAST it and it hits hard and dirty, BLESS it and it turns soft and holy.",
+  "how": "Press PLAY. Click a word to cycle it: off, then BLAST (loud, distorted, short), then BLESS (gentle, sustained, reverberant). Your sample is the word SAMPLE. Drag the vortex in the corner: round and round raises the energy, and the centre of the vortex is stillness, where everything drops to half time.",
+  "fonts": "family=Anton&family=Archivo:wght@400;900",
+  "bpm": 124,
+  "manifesto": {
+   "name": "BLAST, Manifesto of the Vorticists",
+   "short": "Vorticism",
+   "author": "Wyndham Lewis, with Ezra Pound, Gaudier-Brzeska and others",
+   "year": "1914",
+   "where": "BLAST No. 1, London, published June/July 1914 in a puce-pink cover",
+   "ideas": [
+    "Lists of things to BLAST and things to BLESS, set in huge black type.",
+    "The Vortex: a point of maximum energy, and at its centre a point of stillness.",
+    "Against both sentimental Victorian England and Italian Futurism, while sharing its love of the machine."
+   ],
+   "quotes": [
+    "BLAST HUMOUR",
+    "BLESS the HAIRDRESSER"
+   ],
+   "system": "The only controls are BLAST and BLESS. Every sound has a blasted and a blessed version, and the vortex sets the energy, with stillness at its centre."
+  },
+  "design": {
+   "name": "Paula Scher",
+   "short": "Paula Scher",
+   "who": "Paula Scher, Pentagram partner",
+   "era": "New York, 1990s to now",
+   "hallmarks": [
+    "Type as image: huge mixed wood-type letters fill the whole surface",
+    "Words stacked, tilted and cut off at the edges, like a loud street wall",
+    "Few colours, maximum volume"
+   ],
+   "works": [
+    "Bring in 'da Noise, Bring in 'da Funk posters for The Public Theater (1995)",
+    "The Public Theater identity (1994)",
+    "Painted maps series (from the 1990s)"
+   ]
+  },
+  "no": "12",
+  "slug": "blast",
+  "file": "tools/12-blast.html"
+ },
+ {
+  "title": "Event Scores",
+  "idea": "A deck of Fluxus-style instruction cards; the machine performs whichever card is on top, then flips the next.",
+  "how": "Press PLAY. The top card is performed for about eight seconds, then the next card is drawn. Each card is a tiny instruction (drip, repeat, count, stretch, swarm, hold, reverse, silence) carried out on your sample. Click a card in the deck to perform it now, press SHUFFLE to reorder, or ask Gemini (with a key) to write new cards. The cards here are written in the spirit of Fluxus event scores; they are not historical scores.",
+  "fonts": "family=Inter:wght@400;900",
+  "bpm": 90,
+  "manifesto": {
+   "name": "Fluxus Manifesto",
+   "short": "Fluxus",
+   "author": "George Maciunas",
+   "year": "1963",
+   "where": "a collaged leaflet handed out at the Festum Fluxorum Fluxus, Düsseldorf, February 1963",
+   "ideas": [
+    "Purge the world of 'Europanism', dead art and professional, commercial culture.",
+    "Art should be living, playful and understandable by everyone, a flood of non-art reality.",
+    "Fluxus artists (George Brecht, Yoko Ono, Alison Knowles, La Monte Young) wrote short event scores: a few words to be performed by anyone."
+   ],
+   "quotes": [
+    "Purge the world of bourgeois sickness",
+    "PROMOTE A REVOLUTIONARY FLOOD AND TIDE IN ART"
+   ],
+   "system": "The music is not composed: it is a deck of plain instructions that anyone, including the machine, can perform. Each card is a small event, and the order is left to chance."
+  },
+  "design": {
+   "name": "Experimental Jetset",
+   "short": "Experimental Jetset",
+   "who": "Experimental Jetset (Marieke Stolk, Danny van den Dungen, Erwin Brinkers)",
+   "era": "Amsterdam, 1997 to now",
+   "hallmarks": [
+    "Helvetica-style grotesque, set big and simple, often lowercase",
+    "Flat primary-colour blocks and stripes, a language taken from modernism and punk",
+    "Systems over images: identities built from a few rules"
+   ],
+   "works": [
+    "Stedelijk Museum Amsterdam identity (2004)",
+    "Whitney Museum 'responsive W' identity (2013)",
+    "John & Paul & Ringo & George T-shirt (2001)"
+   ]
+  },
+  "no": "13",
+  "slug": "event-scores",
+  "file": "tools/13-event-scores.html"
+ },
+ {
+  "title": "Dérive",
+  "idea": "A walker drifts through a psychogeographic city; each district has its own sound, and the city's pull decides the route.",
+  "how": "Press PLAY. The walker drifts through the city map, pulled by the districts and by chance. Your footsteps are tiny grains of your sample. Each district is a different treatment of your sample (market, river, station, arcade, wasteland, bridge), and you hear it more strongly the closer the walker gets. Drag the walker to take it somewhere, or drop arrows (click the map) to change the currents. DÉTOURNEMENT hijacks the current district: reversed, re-pitched and cut up.",
+  "fonts": "family=Anton&family=Courier+Prime:wght@400;700&family=Bowlby+One&family=Rubik+Mono+One",
+  "bpm": 96,
+  "manifesto": {
+   "name": "Report on the Construction of Situations",
+   "short": "Situationism",
+   "author": "Guy Debord",
+   "year": "1957",
+   "where": "written for the founding of the Situationist International at Cosio di Arroscia, Italy, July 1957",
+   "ideas": [
+    "Constructed situations: moments of life deliberately built from a unity of setting and events.",
+    "Psychogeography: the study of how city spaces act on feelings and behaviour, with the dérive (drift) as its method.",
+    "Détournement: hijacking existing images and words and turning them against their first meaning."
+   ],
+   "quotes": [],
+   "system": "The tool does not loop through a song. It sets up a city of sound districts and a walker who drifts through them. The music is the record of that drift, so the city's contours build the situation, and détournement lets you hijack whatever district you are in."
+  },
+  "design": {
+   "name": "Jamie Reid",
+   "short": "Jamie Reid",
+   "who": "Jamie Reid, artist and designer for the Sex Pistols, influenced by the Situationists",
+   "era": "London, 1970s",
+   "hallmarks": [
+    "Ransom-note lettering cut from newspapers",
+    "Fluorescent pink, yellow and green with black halftone",
+    "Détourned images, such as the Queen with a safety pin"
+   ],
+   "works": [
+    "God Save the Queen sleeve (1977)",
+    "Never Mind the Bollocks sleeve (1977)",
+    "Suburban Press (1970 to 1975)"
+   ]
+  },
+  "no": "14",
+  "slug": "derive",
+  "file": "tools/14-derive.html"
+ },
+ {
+  "title": "Painted Lines",
+  "idea": "Paint melodies by hand in screen-print layers; the loop prints one colour at a time, then all of them together.",
+  "how": "Press PLAY. Pick an ink, then paint on the sheet: left to right is time and height is pitch. Each ink is a voice and plays a continuous gliding line wherever you painted: pink is your sample, sung; yellow is a pure lead; blue is the bass; green is a brushed noise. The sheet prints layer by layer, one ink per pass, and then all inks together. WASH SCREEN clears the current ink.",
+  "fonts": "family=Caveat+Brush&family=Archivo+Black",
+  "bpm": 96,
+  "manifesto": {
+   "name": "The Stuckists manifesto",
+   "short": "Stuckism",
+   "author": "Billy Childish and Charles Thomson",
+   "year": "1999",
+   "where": "London, August 1999",
+   "ideas": [
+    "A call for painting as the central art, made by hand, against conceptual art and ironic gesture.",
+    "The artist should be emotionally involved and willing to be seen to fail, not hide behind cleverness.",
+    "They called themselves Stuckists after Tracey Emin told Childish his art was 'stuck'."
+   ],
+   "quotes": [
+    "Artists who don't paint aren't artists."
+   ],
+   "system": "There are no presets, patterns or randomness: the only way to make sound is to paint it with your hand. The wobble of your stroke is the wobble of the melody, and nothing gets quantised."
+  },
+  "design": {
+   "name": "Corita Kent",
+   "short": "Corita Kent",
+   "who": "Sister Corita Kent, artist, teacher and screen-printer at Immaculate Heart College",
+   "era": "Los Angeles, 1960s",
+   "hallmarks": [
+    "Overprinted translucent screen-print inks, bright and joyful",
+    "Hand-written texts and lyrics cut into and over advertising type",
+    "Big words, torn shapes and the energy of protest and pop"
+   ],
+   "works": [
+    "tomato (1964 serigraph)",
+    "power up (1965)",
+    "Rainbow Swash, Boston gas tank (1971)"
+   ]
+  },
+  "no": "15",
+  "slug": "painted-lines",
+  "file": "tools/15-painted-lines.html"
  }
 ]

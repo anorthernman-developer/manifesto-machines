@@ -33,6 +33,11 @@ The idea is to learn about art, manifestos and graphic design while making music
 | 08 | [Kinetic Rhythms](tools/08-kinetic.html) | The Realistic Manifesto (Naum Gabo and Antoine Pevsner, 1920) | Gustav Klutsis | Three rotating rods sweep through points in space; every crossing is a note, so rhythm comes from motion, not mass. |
 | 09 | [Zero of Form](tools/09-zero-of-form.html) | From Cubism and Futurism to Suprematism: The New Painterly Realism (Kazimir Malevich, 1915) | El Lissitzky | Pure shapes float on white; each one is a held tone, and where they overlap your sample sparkles. |
 | 10 | [Zaum](tools/10-zaum.html) | A Slap in the Face of Public Taste (David Burliuk, Aleksei Kruchenykh, Vladimir Mayakovsky and Velimir Khlebnikov, 1912) | Alexander Rodchenko | Type words that mean nothing in any language and a throat made of your sample sings them. |
+| 11 | [Theory of Intervals](tools/11-kino-intervals.html) | WE: Variant of a Manifesto (Dziga Vertov (the Kinoks group), 1922) | Vladimir and Georgii Stenberg | A film strip of sample 'shots', where the loudest music happens in the cuts between them. |
+| 12 | [BLAST / BLESS](tools/12-blast.html) | BLAST, Manifesto of the Vorticists (Wyndham Lewis, with Ezra Pound, Gaudier-Brzeska and others, 1914) | Paula Scher | Every instrument is a word on the wall: BLAST it and it hits hard and dirty, BLESS it and it turns soft and holy. |
+| 13 | [Event Scores](tools/13-event-scores.html) | Fluxus Manifesto (George Maciunas, 1963) | Experimental Jetset | A deck of Fluxus-style instruction cards; the machine performs whichever card is on top, then flips the next. |
+| 14 | [Dérive](tools/14-derive.html) | Report on the Construction of Situations (Guy Debord, 1957) | Jamie Reid | A walker drifts through a psychogeographic city; each district has its own sound, and the city's pull decides the route. |
+| 15 | [Painted Lines](tools/15-painted-lines.html) | The Stuckists manifesto (Billy Childish and Charles Thomson, 1999) | Corita Kent | Paint melodies by hand in screen-print layers; the loop prints one colour at a time, then all of them together. |
 <!--/LIST-->
 
 ## Craig's feedback
