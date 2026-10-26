@@ -53,6 +53,11 @@ The idea is to learn about art, manifestos and graphic design while making music
 | 28 | [Anthropophagy](tools/28-anthropophagy.html) | Manifesto Antropófago (Cannibal Manifesto) (Oswald de Andrade, 1928) | Rogério Duarte | Feed the mouth sounds from anywhere; it chews them into pieces and digests them into a new Brazilian rhythm. |
 | 29 | [Ultra Metaphor](tools/29-ultra-metaphor.html) | Ultraísmo (Jorge Luis Borges, 1921) | Jan Tschichold | Fuse two sound images into one metaphor: the rhythm of one drives the body of the other, with every ornament stripped away. |
 | 30 | [Strident Radio](tools/30-estridentista-radio.html) | Actual No. 1 (Comprimido estridentista) (Manuel Maples Arce, 1921) | Lance Wyman | Tune a wireless dial across a 1920s city: every station is a different broadcast of your sample, with static and howl in between. |
+| 31 | [Zenith](tools/31-zenith.html) | Manifesto of Zenitism (Ljubomir Micić, 1921) | Karel Teige | An endless climb to the zenith: Shepard tones and a sample that rises forever but never arrives. |
+| 32 | [Make It Bloom](tools/32-creationism.html) | Non serviam and Creacionismo (Vicente Huidobro, 1914 to 1916) | Alvin Lustig | Don't sing the rose, make it bloom: build a new sound from nothing, partial by partial, then let it flower through your sample. |
+| 33 | [Slow Cooker](tools/33-slow-food.html) | Slow Food Manifesto (Folco Portinari, for the movement founded by Carlo Petrini, 1989) | Kenya Hara | Time-stretch your sample until it slows to near stillness, simmering it in grains that you season and leave to ripen. |
+| 34 | [Repurpose Platform](tools/34-accelerate.html) | #Accelerate: Manifesto for an Accelerationist Politics (Alex Williams and Nick Srnicek, 2013) | The Designers Republic | Steer a vector between four futures and repurpose the machine itself: every corner is a whole groove, and you can always expand the map. |
+| 35 | [Airport Loops](tools/35-ambient-loops.html) | Ambient Music (liner notes to Ambient 1: Music for Airports) (Brian Eno, 1978) | Peter Saville | Seven loops of different, unrelated lengths drift in and out of phase, so the music never repeats in the same way. |
 <!--/LIST-->
 
 ## Craig's feedback

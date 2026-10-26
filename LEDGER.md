@@ -34,3 +34,8 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 28 | Manifesto Antropófago (Cannibal Manifesto) | 1928 | Oswald de Andrade | Rogério Duarte | [tools/28-anthropophagy.html](tools/28-anthropophagy.html) |
 | 29 | Ultraísmo | 1921 | Jorge Luis Borges | Jan Tschichold | [tools/29-ultra-metaphor.html](tools/29-ultra-metaphor.html) |
 | 30 | Actual No. 1 (Comprimido estridentista) | 1921 | Manuel Maples Arce | Lance Wyman | [tools/30-estridentista-radio.html](tools/30-estridentista-radio.html) |
+| 31 | Manifesto of Zenitism | 1921 | Ljubomir Micić | Karel Teige | [tools/31-zenith.html](tools/31-zenith.html) |
+| 32 | Non serviam and Creacionismo | 1914 to 1916 | Vicente Huidobro | Alvin Lustig | [tools/32-creationism.html](tools/32-creationism.html) |
+| 33 | Slow Food Manifesto | 1989 | Folco Portinari, for the movement founded by Carlo Petrini | Kenya Hara | [tools/33-slow-food.html](tools/33-slow-food.html) |
+| 34 | #Accelerate: Manifesto for an Accelerationist Politics | 2013 | Alex Williams and Nick Srnicek | The Designers Republic | [tools/34-accelerate.html](tools/34-accelerate.html) |
+| 35 | Ambient Music (liner notes to Ambient 1: Music for Airports) | 1978 | Brian Eno | Peter Saville | [tools/35-ambient-loops.html](tools/35-ambient-loops.html) |

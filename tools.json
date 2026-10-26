@@ -1243,5 +1243,211 @@
   "no": "30",
   "slug": "estridentista-radio",
   "file": "tools/30-estridentista-radio.html"
+ },
+ {
+  "title": "Zenith",
+  "idea": "An endless climb to the zenith: Shepard tones and a sample that rises forever but never arrives.",
+  "how": "Press PLAY. Every voice climbs, and as each one gets too high it fades out while a new one fades in at the bottom, so the climb never ends (a Shepard–Risset glissando). Your sample rises with the tones, re-pitched in ever-higher layers. SPEED sets how fast you climb; BARBARIAN adds the drum of the barbarogenius, a heavy pounding Balkan rhythm in 7/8. Click the stage to fire a rocket of sample fragments towards the zenith.",
+  "fonts": "family=Big+Shoulders+Display:wght@400;900&family=IBM+Plex+Mono",
+  "bpm": 132,
+  "manifesto": {
+   "name": "Manifesto of Zenitism",
+   "short": "Zenitism",
+   "author": "Ljubomir Micić",
+   "year": "1921",
+   "where": "Zenit magazine, Zagreb, 1921 (later Belgrade), with Ivan Goll and Boško Tokin",
+   "ideas": [
+    "The Barbarogenius: a 'barbarian' genius from the Balkans who will bring new life to a tired Western Europe.",
+    "Art aimed at the zenith, the highest point, as a cosmic and spiritual ascent.",
+    "An international avant-garde that links Expressionism, Futurism, Dada and Constructivism, from the edge of Europe."
+   ],
+   "quotes": [],
+   "system": "The music always climbs towards the zenith and never lands. The barbarian drum below, in an uneven Balkan metre, is the energy that drives the ascent."
+  },
+  "design": {
+   "name": "Karel Teige",
+   "short": "Karel Teige",
+   "who": "Karel Teige, Czech artist, typographer and theorist of the Devětsil group",
+   "era": "Prague, 1920s to 1930s",
+   "hallmarks": [
+    "Typographic picture-poems built from sans letters, photos, rules and diagonals",
+    "Poetism: modern life as play, with ports, aeroplanes, radio and the circus",
+    "Bold red-and-black Constructivist book covers"
+   ],
+   "works": [
+    "Abeceda (Alphabet), with Vítězslav Nezval and the dancer Milča Mayerová (1926)",
+    "Covers for the magazine ReD (1927 to 1931)",
+    "Cover for Jaroslav Seifert's Na vlnách TSF (1925)"
+   ]
+  },
+  "no": "31",
+  "slug": "zenith",
+  "file": "tools/31-zenith.html"
+ },
+ {
+  "title": "Make It Bloom",
+  "idea": "Don't sing the rose, make it bloom: build a new sound from nothing, partial by partial, then let it flower through your sample.",
+  "how": "Press PLAY. Draw on the sixteen bars to build a new sound from its harmonics (partials). Each column is one partial, from the fundamental on the left upward. The created sound plays as a slowly changing chord. Your sample is not copied either: it is made to bloom through a bank of resonators tuned to your partials, so it takes on the colour of your creation. NON SERVIAM randomises everything you have made. FLOWER makes the partials open and close like petals.",
+  "fonts": "family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Josefin+Sans:wght@300;600",
+  "bpm": 70,
+  "manifesto": {
+   "name": "Non serviam and Creacionismo",
+   "short": "Creacionismo",
+   "author": "Vicente Huidobro",
+   "year": "1914 to 1916",
+   "where": "Non serviam, a lecture in Santiago de Chile (1914); the poem Arte poética in El espejo de agua (Buenos Aires, 1916)",
+   "ideas": [
+    "The poet should not imitate nature but create new things, just as nature creates trees.",
+    "Non serviam: the artist refuses to be nature's servant.",
+    "The poet as 'a little god'."
+   ],
+   "quotes": [
+    "Por qué cantáis la rosa, ¡oh Poetas! / Hacedla florecer en el poema (Why do you sing the rose, oh Poets? Make it bloom in the poem)"
+   ],
+   "system": "You do not record or imitate a sound: you build one from pure harmonics, and even your sample is only allowed to sound through the new thing you have made."
+  },
+  "design": {
+   "name": "Alvin Lustig",
+   "short": "Alvin Lustig",
+   "who": "Alvin Lustig, American graphic designer, typographer and teacher",
+   "era": "Los Angeles and New York, 1940s to 1955",
+   "hallmarks": [
+    "Abstract, symbolic book covers that capture a book's spirit rather than illustrate it",
+    "Modernist forms drawn from Klee, Miró and Constructivism",
+    "Hand-drawn marks combined with sans type and flat, earthy colour"
+   ],
+   "works": [
+    "New Directions book covers, including the New Classics series (from the 1940s)",
+    "The Ghost in the Underblows, Ward Ritchie Press (1940)",
+    "Covers for Noonday Press and Meridian Books (1950s)"
+   ]
+  },
+  "no": "32",
+  "slug": "creationism",
+  "file": "tools/32-creationism.html"
+ },
+ {
+  "title": "Slow Cooker",
+  "idea": "Time-stretch your sample until it slows to near stillness, simmering it in grains that you season and leave to ripen.",
+  "how": "Press PLAY. Your sample is put in the pot and played back extremely slowly as a cloud of grains (up to 200 times slower) without changing its pitch. SLOWNESS sets how slowly the cooking head moves through the sound. SEASON adds tiny accents of salt (high grains) and herbs (lower octaves). Leave it alone: the longer it plays, the more the flavours ripen (the cloud gets denser and warmer). Clicking the bowl adds a single bell and nothing else.",
+  "fonts": "family=Shippori+Mincho:wght@400;700&family=Inter:wght@300",
+  "bpm": 40,
+  "manifesto": {
+   "name": "Slow Food Manifesto",
+   "short": "Slow Food",
+   "author": "Folco Portinari, for the movement founded by Carlo Petrini",
+   "year": "1989",
+   "where": "signed in Paris in December 1989 at the founding of the international Slow Food movement",
+   "ideas": [
+    "A defence against 'Fast Life', which disrupts our habits and our homes.",
+    "Material pleasure and slow, long-lasting enjoyment as the remedy.",
+    "Rediscover the flavours of local cooking and take time for them."
+   ],
+   "quotes": [
+    "We are enslaved by speed."
+   ],
+   "system": "Nothing is hurried here. The sample, the 'ingredient', is cooked at extreme slowness, and the result improves the longer you leave it, with careful seasoning instead of more ingredients."
+  },
+  "design": {
+   "name": "Kenya Hara",
+   "short": "Kenya Hara",
+   "who": "Kenya Hara, Japanese designer and art director of MUJI",
+   "era": "Tokyo, 1990s to today",
+   "hallmarks": [
+    "Emptiness (utsuwa, the vessel) and the colour white as a space for meaning",
+    "Very quiet type and lots of space, with natural materials",
+    "Design as sensation, touch and 'haptic' experience"
+   ],
+   "works": [
+    "Art direction for MUJI (from 2002)",
+    "The book White (2008)",
+    "Opening and closing ceremony programmes for the Nagano Winter Olympics (1998)"
+   ]
+  },
+  "no": "33",
+  "slug": "slow-food",
+  "file": "tools/33-slow-food.html"
+ },
+ {
+  "title": "Repurpose Platform",
+  "idea": "Steer a vector between four futures and repurpose the machine itself: every corner is a whole groove, and you can always expand the map.",
+  "how": "Press PLAY. Drag the cursor around the square. Each corner is a complete groove (FOLK LOOP, FACTORY, NETWORK and POST-WORK) and the music is a weighted blend of all four, recalculated every step. The arrow shows your vector. EXPAND throws all four corners into new, more extreme futures. Your sample is the raw material of every groove, cut up differently in each.",
+  "fonts": "family=Orbitron:wght@500;900&family=Chakra+Petch:wght@400;700",
+  "bpm": 128,
+  "manifesto": {
+   "name": "#Accelerate: Manifesto for an Accelerationist Politics",
+   "short": "#Accelerate",
+   "author": "Alex Williams and Nick Srnicek",
+   "year": "2013",
+   "where": "published online in May 2013, later in the anthology #Accelerate (2014)",
+   "ideas": [
+    "Rather than reject technology and go back to small local 'folk politics', repurpose existing technical platforms for collective ends.",
+    "Distinguishes mere speed from acceleration as navigation: experimenting and steering rather than just going faster.",
+    "Recover the ambition to build futures, rather than defend the present."
+   ],
+   "quotes": [],
+   "system": "There is no 'faster' button. You navigate: the music is a vector you steer between possible futures, and EXPAND keeps widening the space of options rather than returning to the old loop."
+  },
+  "design": {
+   "name": "The Designers Republic",
+   "short": "The Designers Republic",
+   "who": "The Designers Republic, design studio founded by Ian Anderson in Sheffield, 1986",
+   "era": "Sheffield, late 1980s to 2000s",
+   "hallmarks": [
+    "Corporate and consumer signs repurposed as satire, with fake logos and slogans",
+    "Dense, hyper-modern layouts in Japanese-inspired fluorescent colours",
+    "Electronic music sleeves and video game interfaces"
+   ],
+   "works": [
+    "Graphics for the video game Wipeout (1995)",
+    "Sleeves for Pop Will Eat Itself (late 1980s)",
+    "Sleeves for Warp Records artists (1990s)"
+   ]
+  },
+  "no": "34",
+  "slug": "accelerate",
+  "file": "tools/34-accelerate.html"
+ },
+ {
+  "title": "Airport Loops",
+  "idea": "Seven loops of different, unrelated lengths drift in and out of phase, so the music never repeats in the same way.",
+  "how": "Press PLAY. Each ring is a tape loop with its own length in seconds (for example 17.8, 20.1, 31.8). Each loop carries a single note or your sample (loaded sounds enter on their loops straight away), and because the lengths share no common measure, the combinations never repeat exactly. Click a ring to mute or unmute it. DRIFT nudges all the lengths to new values. The music is designed to be ignored as much as listened to: leave it on in the background.",
+  "fonts": "family=Inter:wght@300;600",
+  "bpm": 60,
+  "manifesto": {
+   "name": "Ambient Music (liner notes to Ambient 1: Music for Airports)",
+   "short": "Ambient",
+   "author": "Brian Eno",
+   "year": "1978",
+   "where": "sleeve notes for Ambient 1: Music for Airports, released on Polydor in 1978",
+   "ideas": [
+    "Music as a tint or atmosphere for a place, in contrast to canned background music.",
+    "It should reward attention but never demand it.",
+    "Eno built parts of the album from tape loops of different lengths that drift out of sync."
+   ],
+   "quotes": [
+    "Ambient Music must be able to accommodate many levels of listening attention without enforcing one in particular; it must be as ignorable as it is interesting."
+   ],
+   "system": "No sequencer, no bar line. Loops of unrelated lengths overlap, and the combinations never repeat in exactly the same way. Nothing ever demands your attention."
+  },
+  "design": {
+   "name": "Peter Saville",
+   "short": "Peter Saville",
+   "who": "Peter Saville, English graphic designer and co-founder of Factory Records",
+   "era": "Manchester and London, 1978 onwards",
+   "hallmarks": [
+    "Minimal sleeves that often leave off the band name and title",
+    "Borrowed images from science, art history and industry, coded colour",
+    "Refined classical and modern type, used with restraint"
+   ],
+   "works": [
+    "Joy Division, Unknown Pleasures (1979), using a pulsar data plot",
+    "New Order, Power, Corruption & Lies (1983), with Fantin-Latour's roses and a colour-code alphabet",
+    "New Order, Blue Monday sleeve, shaped like a floppy disk (1983)"
+   ]
+  },
+  "no": "35",
+  "slug": "ambient-loops",
+  "file": "tools/35-ambient-loops.html"
  }
 ]
