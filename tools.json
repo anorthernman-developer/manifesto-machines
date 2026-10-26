@@ -1037,5 +1037,211 @@
   "no": "25",
   "slug": "spatial-cuts",
   "file": "tools/25-spatial-cuts.html"
+ },
+ {
+  "title": "Matter Alive",
+  "idea": "Your sample is the ground: throw balls of mud, paint and paper onto its waveform, and every impact plays the sound at that spot.",
+  "how": "Press PLAY. The landscape is the waveform of your sample. Click or drag anywhere to throw material onto it (choose MUD, PAINT or PAPER). Each ball falls, bounces on the waveform and plays the sample at the place where it lands, louder for harder hits. Mud is heavy and low and sticks quickly, paint splashes, and paper is light, high and bounces for a long time. Balls leave marks on the ground. SHAKE throws everything back into the air. When everything has settled, the machine throws a little more by itself.",
+  "fonts": "family=Bebas+Neue&family=Noto+Sans+JP:wght@400;900",
+  "bpm": 90,
+  "manifesto": {
+   "name": "Gutai Art Manifesto",
+   "short": "Gutai",
+   "author": "Jirō Yoshihara",
+   "year": "1956",
+   "where": "Geijutsu Shinchō magazine, Tokyo, December 1956, for the Gutai Art Association (founded in Ashiya, 1954)",
+   "ideas": [
+    "Do not distort materials into illusions: let the material speak and meet the human spirit directly.",
+    "Action, body and chance in direct contact with matter, as in Kazuo Shiraga's Challenging Mud (1955) and Saburō Murakami's paper-breaking pieces (1955 to 1956).",
+    "Do what has never been done before."
+   ],
+   "quotes": [
+    "Gutai art does not alter the material. Gutai art imparts life to the material."
+   ],
+   "system": "The sample is not edited, filtered or sequenced. It stays as it is, as raw matter, and you bring it to life by throwing other matter at it. Every sound comes from a physical impact."
+  },
+  "design": {
+   "name": "Yusaku Kamekura",
+   "short": "Yusaku Kamekura",
+   "who": "Yusaku Kamekura, Japanese graphic designer, nicknamed 'the Boss'",
+   "era": "Tokyo, 1950s to 1990s",
+   "hallmarks": [
+    "A single bold red circle (the sun) above gold rings",
+    "Photographs of bodies in motion against black",
+    "Big sans type and strong, simple symbols"
+   ],
+   "works": [
+    "Tokyo 1964 Olympic posters, including the sprinters' start (1962)",
+    "Nikon posters (1950s)",
+    "Hiroshima Appeals poster (1983)"
+   ]
+  },
+  "no": "26",
+  "slug": "matter-alive",
+  "file": "tools/26-matter-alive.html"
+ },
+ {
+  "title": "Bicho",
+  "idea": "A hinged metal creature: bend its plates and the angles between them become the intervals of its chord.",
+  "how": "Press PLAY. The creature is five plates joined by hinges. Drag any plate to fold it around its hinge. Each hinge angle sets an interval, so the shape of the creature is its chord, which is played as a slow arpeggio with your sample as the voice. Left alone, the creature moves very slowly by itself. Press a preset shape to snap into a new pose. As Lygia Clark said, the bicho has no back or front and answers your touch.",
+  "fonts": "family=Work+Sans:wght@300;700",
+  "bpm": 84,
+  "manifesto": {
+   "name": "Neo-Concrete Manifesto",
+   "short": "Neo-Concretism",
+   "author": "Ferreira Gullar, with Amilcar de Castro, Lygia Clark, Lygia Pape, Franz Weissmann, Reynaldo Jardim and Theon Spanúdis",
+   "year": "1959",
+   "where": "Jornal do Brasil, Rio de Janeiro, March 1959",
+   "ideas": [
+    "A break with the rationalism and mechanism of São Paulo concrete art.",
+    "The work of art is not a machine but a quasi-corpus, closer to a living organism than an object.",
+    "Expression, sensation and the participation of the viewer, as in Lygia Clark's hinged metal Bichos (from 1960)."
+   ],
+   "quotes": [],
+   "system": "The chord is not chosen from a list. It comes from the physical pose of a hinged creature that you handle, so harmony becomes something you touch and fold, and the creature answers by moving."
+  },
+  "design": {
+   "name": "Alexandre Wollner",
+   "short": "Alexandre Wollner",
+   "who": "Alexandre Wollner, Brazilian designer who trained at the Ulm School of Design (HfG Ulm)",
+   "era": "São Paulo and Rio de Janeiro, 1950s to 1970s",
+   "hallmarks": [
+    "Concrete-art rigour applied to corporate identity",
+    "Geometric marks built on a grid, with flat colour and simple sans type",
+    "Brazil's first design office, Forminform (1958), and co-founder of the ESDI school in Rio (1963)"
+   ],
+   "works": [
+    "Poster for the 1st International Film Festival of Brazil, with Geraldo de Barros (1954)",
+    "Sardinhas Coqueiro logo and packaging (1958)",
+    "Banco Itaú visual identity (1970)"
+   ]
+  },
+  "no": "27",
+  "slug": "bicho",
+  "file": "tools/27-bicho.html"
+ },
+ {
+  "title": "Anthropophagy",
+  "idea": "Feed the mouth sounds from anywhere; it chews them into pieces and digests them into a new Brazilian rhythm.",
+  "how": "Press PLAY. The mouth eats sounds: every sample you load is eaten, and so are the built-in sounds (click FEED to give it another). It chews each sound into pieces that go into the stomach. The rhythm (a baião, with zabumba, triangle and agogô parts) is played only with the digested pieces, and DIGEST rearranges which piece goes where, mixing everything it has eaten. Change the rhythm with the buttons. Nothing is played raw: everything foreign is devoured and made new.",
+  "fonts": "family=Bungee+Shade&family=Bungee&family=Space+Mono",
+  "bpm": 104,
+  "manifesto": {
+   "name": "Manifesto Antropófago (Cannibal Manifesto)",
+   "short": "Antropofagia",
+   "author": "Oswald de Andrade",
+   "year": "1928",
+   "where": "the first issue of Revista de Antropofagia, São Paulo, May 1928, illustrated with Tarsila do Amaral's painting Abaporu",
+   "ideas": [
+    "Brazilian culture should 'devour' European and other foreign culture, digest it and make something of its own.",
+    "A pun on Hamlet that sets Brazil's Indigenous Tupi in place of 'to be'.",
+    "Cannibalism as a cultural strategy, revived by Tropicália in the 1960s."
+   ],
+   "quotes": [
+    "Tupi or not tupi, that is the question."
+   ],
+   "system": "No sound is ever played as it arrived. Everything you feed in is chewed into pieces and digested, and only those pieces make the rhythm. Foreign material becomes local music by being eaten."
+  },
+  "design": {
+   "name": "Rogério Duarte",
+   "short": "Rogério Duarte",
+   "who": "Rogério Duarte, Brazilian designer, poet and musician, a key graphic voice of Tropicália",
+   "era": "Rio de Janeiro and Bahia, 1960s to 1970s",
+   "hallmarks": [
+    "Psychedelic, Op-Art bands of colour radiating like a sun",
+    "Modernist clarity mixed with tropical exuberance and popular street lettering",
+    "Green, yellow and red, sometimes 'stained' as a political sign"
+   ],
+   "works": [
+    "Poster for Glauber Rocha's Deus e o Diabo na Terra do Sol (1964)",
+    "Cover for Gilberto Gil's 1968 album (with photographer David Drew Zingg)",
+    "Cover for Caetano Veloso's 1968 album"
+   ]
+  },
+  "no": "28",
+  "slug": "anthropophagy",
+  "file": "tools/28-anthropophagy.html"
+ },
+ {
+  "title": "Ultra Metaphor",
+  "idea": "Fuse two sound images into one metaphor: the rhythm of one drives the body of the other, with every ornament stripped away.",
+  "how": "Press PLAY. Pick a first image (its rhythm and gesture) and a second image (its body and colour). The machine fuses them into one metaphor, so 'the train is a bird' plays bird chirps in the rhythm of a train. Your sample is the image called VOICE. STRIP removes ornament: turn it up to delete passing notes and decoration until only the essential element is left. SWAP turns the metaphor around.",
+  "fonts": "family=Archivo:wght@400;800&family=Archivo+Narrow:wght@400",
+  "bpm": 100,
+  "manifesto": {
+   "name": "Ultraísmo",
+   "short": "Ultraism",
+   "author": "Jorge Luis Borges",
+   "year": "1921",
+   "where": "Nosotros magazine, Buenos Aires, December 1921; Ultraism began in Spain in 1918 and Borges brought it to Argentina",
+   "ideas": [
+    "Reduce lyric poetry to its primordial element: the metaphor.",
+    "Cut out connecting phrases and useless adjectives, and abolish ornament, confessional tone and obscurity.",
+    "Fuse two or more images into one, to widen its power of suggestion."
+   ],
+   "quotes": [],
+   "system": "Each sound is an image. The machine never layers sounds side by side: it fuses two into one metaphor, rhythm from the first and body from the second. The STRIP control is the second rule, cutting everything that is only ornament."
+  },
+  "design": {
+   "name": "Jan Tschichold",
+   "short": "Jan Tschichold",
+   "who": "Jan Tschichold, German typographer (later in Switzerland and Britain)",
+   "era": "Leipzig, Munich and Basel, 1925 to 1950s",
+   "hallmarks": [
+    "The New Typography: asymmetric layouts, sans-serif type and no ornament",
+    "Bars, rules and white space doing the structural work",
+    "Red and black only; later a return to classical book design at Penguin"
+   ],
+   "works": [
+    "Die neue Typographie (1928)",
+    "Phoebus-Palast cinema posters, Munich (1926 to 1927)",
+    "Penguin Composition Rules (1947)"
+   ]
+  },
+  "no": "29",
+  "slug": "ultra-metaphor",
+  "file": "tools/29-ultra-metaphor.html"
+ },
+ {
+  "title": "Strident Radio",
+  "idea": "Tune a wireless dial across a 1920s city: every station is a different broadcast of your sample, with static and howl in between.",
+  "how": "Press PLAY. Drag the dial, or use the arrow keys, to tune between seven stations. Each station broadcasts your sample in a different way (a jazz band, a factory, the news in Morse, a tango orchestra, a choir and a strident siren). Between stations there is static and heterodyne whistle, so tuning itself is part of the music. AUTO lets the dial wander by itself. The closer you are to a station, the clearer it gets.",
+  "fonts": "family=Monoton&family=Barlow+Condensed:wght@400;800",
+  "bpm": 112,
+  "manifesto": {
+   "name": "Actual No. 1 (Comprimido estridentista)",
+   "short": "Estridentismo",
+   "author": "Manuel Maples Arce",
+   "year": "1921",
+   "where": "printed as a poster and pasted on walls in Mexico City, December 1921",
+   "ideas": [
+    "Art should celebrate the modern city, machines, electricity, cars and radio.",
+    "Rejection of the academy and of nostalgic and religious art.",
+    "The Estridentistas loved the radio; Kyn Taniya (Luis Quintanilla) wrote 'Radio: poema inalámbrico en trece mensajes' (1924)."
+   ],
+   "quotes": [
+    "¡Chopin a la silla eléctrica!"
+   ],
+   "system": "The instrument is a radio. All the music is in the airwaves, and you tune through the noisy city to find it. The static and squeal between stations are as much a part of the piece as the stations."
+  },
+  "design": {
+   "name": "Lance Wyman",
+   "short": "Lance Wyman",
+   "who": "Lance Wyman, American designer of wayfinding and identity systems",
+   "era": "Mexico City, 1966 to 1970, then New York",
+   "hallmarks": [
+    "Mexico 68 lettering: thick letters echoed by concentric parallel lines, influenced by Op Art and Huichol art",
+    "Bright, hot colours: magenta, orange, turquoise and green",
+    "Pictograms for metro stations and events, readable without words"
+   ],
+   "works": [
+    "Mexico 68 Olympics identity (1966 to 1968)",
+    "Mexico City Metro station pictograms (1969)",
+    "Minnesota Zoo identity (1980s)"
+   ]
+  },
+  "no": "30",
+  "slug": "estridentista-radio",
+  "file": "tools/30-estridentista-radio.html"
  }
 ]

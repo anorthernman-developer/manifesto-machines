@@ -29,3 +29,8 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 23 | Auto-Destructive Art (manifestos 1 to 3) | 1959 to 1961 | Gustav Metzger | Stefan Sagmeister | [tools/23-auto-destructive.html](tools/23-auto-destructive.html) |
 | 24 | The Basis of Concrete Painting (Art Concret) | 1930 | Theo van Doesburg, Otto G. Carlsund, Jean Hélion, Léon Tutundjian and Marcel Wantz | Josef Müller-Brockmann | [tools/24-art-concret.html](tools/24-art-concret.html) |
 | 25 | Manifiesto Blanco (White Manifesto) | 1946 | Lucio Fontana, with students at the Academia Altamira | Giovanni Pintori for Olivetti | [tools/25-spatial-cuts.html](tools/25-spatial-cuts.html) |
+| 26 | Gutai Art Manifesto | 1956 | Jirō Yoshihara | Yusaku Kamekura | [tools/26-matter-alive.html](tools/26-matter-alive.html) |
+| 27 | Neo-Concrete Manifesto | 1959 | Ferreira Gullar, with Amilcar de Castro, Lygia Clark, Lygia Pape, Franz Weissmann, Reynaldo Jardim and Theon Spanúdis | Alexandre Wollner | [tools/27-bicho.html](tools/27-bicho.html) |
+| 28 | Manifesto Antropófago (Cannibal Manifesto) | 1928 | Oswald de Andrade | Rogério Duarte | [tools/28-anthropophagy.html](tools/28-anthropophagy.html) |
+| 29 | Ultraísmo | 1921 | Jorge Luis Borges | Jan Tschichold | [tools/29-ultra-metaphor.html](tools/29-ultra-metaphor.html) |
+| 30 | Actual No. 1 (Comprimido estridentista) | 1921 | Manuel Maples Arce | Lance Wyman | [tools/30-estridentista-radio.html](tools/30-estridentista-radio.html) |
