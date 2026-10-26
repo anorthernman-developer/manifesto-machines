@@ -24,3 +24,8 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 18 | Sonic Meditations | 1971 | Pauline Oliveros | Josef Albers | [tools/18-breath-squares.html](tools/18-breath-squares.html) |
 | 19 | Riot Grrrl Manifesto | 1991 | Kathleen Hanna (with Bikini Kill) | Barbara Kruger | [tools/19-because.html](tools/19-because.html) |
 | 20 | A Cyborg Manifesto | 1985 | Donna Haraway | April Greiman | [tools/20-cyborg.html](tools/20-cyborg.html) |
+| 21 | A Cyberfeminist Manifesto for the 21st Century | 1991 | VNS Matrix (Josephine Starrs, Julianne Pierce, Francesca da Rimini, Virginia Barratt) | Y2K web aesthetic | [tools/21-virus-matrix.html](tools/21-virus-matrix.html) |
+| 22 | Xenofeminism: A Politics for Alienation | 2015 | Laboria Cuboniks (Helen Hester, Diann Bauer, Amy Ireland, Katrin Kolo, Lucca Fraser, Patricia Reed) | M/M (Paris) | [tools/22-change-nature.html](tools/22-change-nature.html) |
+| 23 | Auto-Destructive Art (manifestos 1 to 3) | 1959 to 1961 | Gustav Metzger | Stefan Sagmeister | [tools/23-auto-destructive.html](tools/23-auto-destructive.html) |
+| 24 | The Basis of Concrete Painting (Art Concret) | 1930 | Theo van Doesburg, Otto G. Carlsund, Jean Hélion, Léon Tutundjian and Marcel Wantz | Josef Müller-Brockmann | [tools/24-art-concret.html](tools/24-art-concret.html) |
+| 25 | Manifiesto Blanco (White Manifesto) | 1946 | Lucio Fontana, with students at the Academia Altamira | Giovanni Pintori for Olivetti | [tools/25-spatial-cuts.html](tools/25-spatial-cuts.html) |

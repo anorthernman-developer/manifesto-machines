@@ -831,5 +831,211 @@
   "no": "20",
   "slug": "cyborg",
   "file": "tools/20-cyborg.html"
+ },
+ {
+  "title": "Virus Matrix",
+  "idea": "A step grid that is also a living culture: a virus spreads through the pattern each cycle, corrupting the notes it touches.",
+  "how": "Press PLAY. Each column is a step and each row is a slice of your sample. Pink cells are healthy notes; green cells are the virus, which plays a mutated, crushed and reversed version of the sound. After every cycle the culture grows: the virus spreads to neighbouring notes and dies after three cycles, and new notes grow back in the gaps. Click to plant notes (click again for the virus, again to clear). INFECT seeds the virus; PATCH heals everything.",
+  "fonts": "family=Audiowide&family=Nunito:wght@400;800",
+  "bpm": 120,
+  "manifesto": {
+   "name": "A Cyberfeminist Manifesto for the 21st Century",
+   "short": "Cyberfeminism",
+   "author": "VNS Matrix (Josephine Starrs, Julianne Pierce, Francesca da Rimini, Virginia Barratt)",
+   "year": "1991",
+   "where": "Adelaide, first shown as a billboard and later in the game-art piece All New Gen (1993)",
+   "ideas": [
+    "Women hijacking technology from inside, written as a gleeful, bodily, rude text.",
+    "The virus as a figure: something inside the system that rewrites it.",
+    "Against 'big daddy mainframe': play, saboteurs and slime instead of control."
+   ],
+   "quotes": [
+    "we are the virus of the new world disorder"
+   ],
+   "system": "The pattern is not fixed. A virus lives in it and rewrites it from within, cycle after cycle, so the groove corrupts itself and grows back. You can plant and patch, but you can't stop the culture."
+  },
+  "design": {
+   "name": "Y2K web aesthetic",
+   "short": "Y2K web",
+   "who": "The late-1990s and early-2000s look of the web, music videos and electronics",
+   "era": "around 1997 to 2004",
+   "hallmarks": [
+    "Chrome, liquid metal and glossy jelly buttons",
+    "Iridescent gradients, lens flares and pixel stars",
+    "Wide techno fonts and translucent plastics like the iMac G3"
+   ],
+   "works": [
+    "Apple iMac G3 in Bondi Blue (1998)",
+    "The Designers Republic and Wipeout game graphics (1995 to 1999)",
+    "Hype Williams music videos, such as Missy Elliott's The Rain (1997)"
+   ]
+  },
+  "no": "21",
+  "slug": "virus-matrix",
+  "file": "tools/21-virus-matrix.html"
+ },
+ {
+  "title": "Change Nature",
+  "idea": "The harmonic 'laws' of music are editable: choose the octave, the number of notes in it and how the overtones stretch.",
+  "how": "Press PLAY. A chord machine plays a progression. Nothing about the tuning is fixed: EDO sets how many equal steps divide the octave (12 is normal; try 5, 7, 19, 22 or 31). OCTAVE stretches the octave itself away from 2:1. OVERTONES stretches the harmonics of every tone so that the timbre matches the new tuning. Your sample is tuned into the same system. NATURALISE resets to 12, 2:1 and harmonic; ALIENATE picks a strange world.",
+  "fonts": "family=Gloock&family=Caveat:wght@600&family=DM+Mono",
+  "bpm": 92,
+  "manifesto": {
+   "name": "Xenofeminism: A Politics for Alienation",
+   "short": "Xenofeminism",
+   "author": "Laboria Cuboniks (Helen Hester, Diann Bauer, Amy Ireland, Katrin Kolo, Lucca Fraser, Patricia Reed)",
+   "year": "2015",
+   "where": "published online, 2015; later in Helen Hester's book Xenofeminism (2018)",
+   "ideas": [
+    "Nothing should be accepted as fixed or given just because it is called natural.",
+    "Alienation is a starting point for freedom: technology can be repurposed for emancipation.",
+    "An anti-naturalist, gender-abolitionist and rationalist feminism."
+   ],
+   "quotes": [
+    "If nature is unjust, change nature!"
+   ],
+   "system": "In most music tools, the octave, twelve notes and the harmonic series are treated as nature. Here they are controls. You change the 'natural' laws of tuning and timbre, and the machine rebuilds its harmony in the world you have made."
+  },
+  "design": {
+   "name": "M/M (Paris)",
+   "short": "M/M (Paris)",
+   "who": "M/M (Paris): Michaël Amzalag and Mathias Augustyniak",
+   "era": "Paris, 1992 to now",
+   "hallmarks": [
+    "Hand-drawn alphabets laid over photographs",
+    "Fashion, music and art mixed in one playful, layered language",
+    "Bright pastel collage, with letters drawn as if by a child or a scientist"
+   ],
+   "works": [
+    "Björk, Vespertine and Medúlla artwork (2001, 2004)",
+    "Yohji Yamamoto catalogues with Inez & Vinoodh (1990s)",
+    "The Alphabet, with Inez & Vinoodh (2001)"
+   ]
+  },
+  "no": "22",
+  "slug": "change-nature",
+  "file": "tools/22-change-nature.html"
+ },
+ {
+  "title": "Auto-Destructive Loop",
+  "idea": "A loop that destroys itself as it plays; its slow death is the piece, shown as a wall of bananas turning from green to brown.",
+  "how": "Press PLAY. Your sample loops in 48 pieces, one banana per piece. Every pass, acid eats into the loop: pieces fade, crackle, drop out and at last fall silent, and their bananas ripen and rot. LIFETIME sets how many passes the work survives (from a few moments to many minutes). When it has all gone, the work is finished; press REBUILD to make a new one. Click a banana to rot that piece straight away.",
+  "fonts": "family=Homemade+Apple&family=Libre+Franklin:wght@400;800",
+  "bpm": 100,
+  "manifesto": {
+   "name": "Auto-Destructive Art (manifestos 1 to 3)",
+   "short": "Auto-Destructive Art",
+   "author": "Gustav Metzger",
+   "year": "1959 to 1961",
+   "where": "London: the first manifesto is dated 4 November 1959; Metzger gave a public demonstration on the South Bank in 1961, painting acid onto nylon",
+   "ideas": [
+    "Art whose own process of disintegration is the work.",
+    "A public art for industrial societies, a response to the bomb and mass destruction.",
+    "Each work has a lifetime, and when the disintegration is complete the work is over."
+   ],
+   "quotes": [
+    "Auto-destructive art is primarily a form of public art for industrial societies."
+   ],
+   "system": "The loop is built to decay: each pass damages it further, permanently, until it falls silent. You choose its lifetime, but you cannot save it. The destruction is the music."
+  },
+  "design": {
+   "name": "Stefan Sagmeister",
+   "short": "Sagmeister",
+   "who": "Stefan Sagmeister, Austrian designer in New York (Sagmeister & Walsh)",
+   "era": "New York, 1990s to now",
+   "hallmarks": [
+    "Type made from real, often perishable things: bananas, the body, coins, food",
+    "Handwriting and craft rather than slick finish",
+    "Personal maxims from his list 'Things I have learned in my life so far'"
+   ],
+   "works": [
+    "Banana wall, 'Self-confidence produces fine results', Deitch Projects (2008): 10,000 bananas that changed colour as they ripened",
+    "AIGA Detroit poster with type cut into his own skin (1999)",
+    "Lou Reed, Set the Twilight Reeling sleeve (1996)"
+   ]
+  },
+  "no": "23",
+  "slug": "auto-destructive",
+  "file": "tools/23-auto-destructive.html"
+ },
+ {
+  "title": "Art Concret",
+  "idea": "Every voice is a written formula, step × a + b mod n, so the whole piece is constructed in the mind before a sound is made.",
+  "how": "Press PLAY. Each of the six rows is a voice defined by four whole numbers. A step sounds when (step × a + b) mod n is less than k. The arcs show each voice as a Müller-Brockmann concert circle. Change the numbers with the arrows or by scrolling over them. There is no randomness at all: the same numbers always make the same music. Row 3 plays your sample at the position the formula points to.",
+  "fonts": "family=Inter+Tight:wght@400;600;800",
+  "bpm": 116,
+  "manifesto": {
+   "name": "The Basis of Concrete Painting (Art Concret)",
+   "short": "Art Concret",
+   "author": "Theo van Doesburg, Otto G. Carlsund, Jean Hélion, Léon Tutundjian and Marcel Wantz",
+   "year": "1930",
+   "where": "the single issue of the magazine Art Concret, Paris, April 1930",
+   "ideas": [
+    "A painting should be built entirely from purely plastic elements, planes and colours, which mean nothing but themselves.",
+    "The work should be fully constructed in the mind before it is made.",
+    "The technique should be mechanical, exact and impersonal, not lyrical or by hand."
+   ],
+   "quotes": [],
+   "system": "Each sound is a concrete fact made from integers, with no expression, randomness or reference. You construct the piece as arithmetic, and it plays back exactly the same every time."
+  },
+  "design": {
+   "name": "Josef Müller-Brockmann",
+   "short": "Müller-Brockmann",
+   "who": "Josef Müller-Brockmann, Swiss designer and author of Grid Systems in Graphic Design (1981)",
+   "era": "Zurich, 1950s to 1970s (International Typographic Style)",
+   "hallmarks": [
+    "Strict mathematical grids, with sans-serif type flush left and ragged right",
+    "Abstract geometry (circles, arcs, bands) as visual music",
+    "Objective, unsentimental communication"
+   ],
+   "works": [
+    "Tonhalle-Gesellschaft Zürich 'musica viva' concert posters (1950s to 1970s)",
+    "Der Film poster (1960)",
+    "Weniger Lärm (Less Noise) poster (1960)"
+   ]
+  },
+  "no": "24",
+  "slug": "art-concret",
+  "file": "tools/24-art-concret.html"
+ },
+ {
+  "title": "Spatial Cuts",
+  "idea": "A painted drone is the canvas; slash it, and each cut opens a window through which your sample comes from the space behind.",
+  "how": "Press PLAY to hear the canvas, a flat coloured drone. Drag across the canvas to slash it. Each cut opens a window into space: its length sets how long the loop through it is, its angle sets the pitch, and its height sets where in your sample it looks. The more cuts, the more space and echo come through the surface. Click a cut to close it, and change the canvas colour with the swatches (each colour is a different drone).",
+  "fonts": "family=Manrope:wght@300;800&family=Playfair+Display:ital@1",
+  "bpm": 72,
+  "manifesto": {
+   "name": "Manifiesto Blanco (White Manifesto)",
+   "short": "Manifiesto Blanco",
+   "author": "Lucio Fontana, with students at the Academia Altamira",
+   "year": "1946",
+   "where": "Buenos Aires, 1946; signed by students including Bernardo Arias and Horacio Cazeneuve",
+   "ideas": [
+    "Art needs a new synthesis of colour, sound, movement, time and space, in step with science.",
+    "Leave the canvas and the static image behind for matter in motion.",
+    "This led to Spatialism (from 1947) and Fontana's cuts in the canvas (Concetto spaziale, Attese, from 1958)."
+   ],
+   "quotes": [],
+   "system": "The surface (the drone) is not the work. The work is what you let through it. Each cut makes sound, space and time come from beyond the surface, so matter, colour and sound move together, as the manifesto asked."
+  },
+  "design": {
+   "name": "Giovanni Pintori for Olivetti",
+   "short": "Pintori / Olivetti",
+   "who": "Giovanni Pintori, art director of Olivetti's advertising office",
+   "era": "Ivrea and Milan, 1950 to 1967",
+   "hallmarks": [
+    "Playful abstract shapes, numbers and dots standing for machines and calculation",
+    "Flat, bright colours on white or black, with lots of air",
+    "Small, elegant type set beside a big image"
+   ],
+   "works": [
+    "Olivetti Lettera 22 poster (1953)",
+    "Olivetti Elettrosumma 22 poster, the cascade of numbers (1956)",
+    "Olivetti logotype (1947)"
+   ]
+  },
+  "no": "25",
+  "slug": "spatial-cuts",
+  "file": "tools/25-spatial-cuts.html"
  }
 ]
