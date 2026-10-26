@@ -627,5 +627,209 @@
   "no": "15",
   "slug": "painted-lines",
   "file": "tools/15-painted-lines.html"
+ },
+ {
+  "title": "Vow of Chastity",
+  "idea": "One sample, no effects, no grid: you play it live by hand, and every rule you break goes in a public confession.",
+  "how": "Press PLAY. A take loops for four bars. Press the keys A S D F G H J K (or click the pads) to play your sample from eight cue points, live, with handheld timing wobble. What you play is recorded into the take. The rules are switched on. Untick a rule to break it (for example to allow reverb or quantising), and the break is written into the confession. CLEAR TAKE starts again.",
+  "fonts": "",
+  "bpm": 100,
+  "manifesto": {
+   "name": "Dogme 95 Manifesto and Vow of Chastity",
+   "short": "Dogme 95",
+   "author": "Lars von Trier and Thomas Vinterberg",
+   "year": "1995",
+   "where": "Copenhagen, read out in Paris in March 1995",
+   "ideas": [
+    "Ten rules for film-making: shoot on location; sound must never be produced apart from the images; the camera must be handheld; no optical work or filters; no superficial action; no genre films; the director must not be credited.",
+    "A 'rescue action' against the cosmetics of technology and cinema as illusion.",
+    "Directors who broke a rule wrote confessions."
+   ],
+   "quotes": [],
+   "system": "The vow is the instrument. There is one location (your sample), no added sound and no effects; timing is handheld, so nothing is quantised, and nothing is a genre preset. Breaking a rule is allowed, but it is confessed in writing."
+  },
+  "design": {
+   "name": "Brutalist web design",
+   "short": "Brutalist web",
+   "who": "Brutalist websites, a movement named and catalogued by Pascal Deville (brutalistwebsites.com, 2014)",
+   "era": "the web, 1990s plain HTML, revived 2014 onwards",
+   "hallmarks": [
+    "Default browser styles: Times, blue underlined links, grey buttons",
+    "Raw structure on show, with no decoration and no polish",
+    "Honest, hard-edged, sometimes deliberately ugly"
+   ],
+   "works": [
+    "brutalistwebsites.com (Pascal Deville, 2014)",
+    "Drudge Report (plain HTML since the 1990s)",
+    "Craigslist (craigslist.org, 1995 to now)"
+   ]
+  },
+  "no": "16",
+  "slug": "vow-of-chastity",
+  "file": "tools/16-vow-of-chastity.html"
+ },
+ {
+  "title": "Credo",
+  "idea": "Three coins tossed six times build an I Ching hexagram, and the hexagram picks the sound, its length and its loudness from a chart.",
+  "how": "Press PLAY. For each event the machine tosses three coins six times to build a hexagram (1 to 64), which picks one of 64 sounds from the chart (slices of your sample, tones, noises and silences). Two more hexagrams pick its duration and its dynamics. Changing lines (old yin or old yang) turn the sound into a second sound part way through. You can lock a row of the chart to exclude it, or press LISTEN to let the noise of the room in.",
+  "fonts": "family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;700",
+  "bpm": 60,
+  "manifesto": {
+   "name": "The Future of Music: Credo",
+   "short": "Cage's Credo",
+   "author": "John Cage",
+   "year": "1937 (a talk in Seattle; published 1958)",
+   "where": "given as a talk to the Seattle Arts Society, 1937; printed in Silence (1961)",
+   "ideas": [
+    "Noise is music: composers should use the whole field of sound, including the sounds of electrical instruments.",
+    "Rhythmic structure should replace harmony as the basis of composition.",
+    "Later (Music of Changes, 1951) Cage used I Ching coin tosses and charts so that his likes and dislikes did not decide the music."
+   ],
+   "quotes": [
+    "Wherever we are, what we hear is mostly noise. When we ignore it, it disturbs us. When we listen to it, we find it fascinating."
+   ],
+   "system": "Every decision is made by chance: coin tosses build hexagrams, and the hexagrams read a chart of 64 sounds, 64 durations and 64 dynamics. Your only jobs are to set up the chart (your sample) and to listen."
+  },
+  "design": {
+   "name": "Ikko Tanaka",
+   "short": "Ikko Tanaka",
+   "who": "Ikko Tanaka, Japanese graphic designer",
+   "era": "Tokyo, 1950s to 1990s",
+   "hallmarks": [
+    "Flat planes of pure colour forming simple geometric figures",
+    "Japanese tradition (Noh, Rimpa, kabuki) reduced to modernist geometry",
+    "Large space, a grid and calm, confident shapes"
+   ],
+   "works": [
+    "Nihon Buyo poster (1981), the geometric geisha face",
+    "Muji art direction, co-founder (from 1980)",
+    "Sharaku poster series (1990s)"
+   ]
+  },
+  "no": "17",
+  "slug": "credo",
+  "file": "tools/17-credo.html"
+ },
+ {
+  "title": "Breath Squares",
+  "idea": "Four nested squares are four drones that breathe; colours that sit close together make their tones beat against each other.",
+  "how": "Press PLAY and listen. The squares breathe on their own, slowly. Hold the mouse button (or touch) anywhere to breathe in and let go to breathe out; the drones follow your breath, each a little later than the one inside it. Click a square to change its colour. Each colour has its own pitch, and two neighbouring colours that are close in hue make slow beats, so you can hear the interaction of colour. The outer square is your sample, stretched into air.",
+  "fonts": "family=Karla:wght@300;700",
+  "bpm": 60,
+  "manifesto": {
+   "name": "Sonic Meditations",
+   "short": "Sonic Meditations",
+   "author": "Pauline Oliveros",
+   "year": "1971",
+   "where": "written with the ♀ Ensemble at the University of California, San Diego, 1971; Oliveros later named the wider practice Deep Listening (1989)",
+   "ideas": [
+    "Short text pieces for anyone, often with no musical training, built from breathing, listening and making long tones.",
+    "Oliveros distinguished focused attention from global, open awareness, and asked listeners to move between the two.",
+    "Listening is the music: the aim is healing and noticing, not performance."
+   ],
+   "quotes": [],
+   "system": "There is no rhythm or melody to compose. The tool slows sound down to breath. The four drones follow your breathing in and out, and your job is to listen to how they change, especially the slow beating where two tones meet."
+  },
+  "design": {
+   "name": "Josef Albers",
+   "short": "Josef Albers",
+   "who": "Josef Albers, Bauhaus teacher, then at Black Mountain College and Yale",
+   "era": "1950 to 1976 (Homage to the Square series)",
+   "hallmarks": [
+    "Three or four squares nested, set low on the canvas",
+    "Flat colour relationships: the same colour looks different next to different neighbours",
+    "Plain, calm type, with colour doing all the work"
+   ],
+   "works": [
+    "Homage to the Square series (1950 to 1976, over 1,000 works)",
+    "Interaction of Color (1963 book)",
+    "Two Structural Constellations, Corning Glass Building, New York (1959)"
+   ]
+  },
+  "no": "18",
+  "slug": "breath-squares",
+  "file": "tools/18-breath-squares.html"
+ },
+ {
+  "title": "BECAUSE",
+  "idea": "A three-chord punk machine where your BECAUSE lines become the riffs and the shouted rhythm.",
+  "how": "Press PLAY. Write your own BECAUSE lines. Each line is one section of the song: the number of letters in each word picks the chord (only three chords, I, IV and V, are allowed), and the syllables are shouted in rhythm using your sample as the voice. Press SCREAM for a chorus. Press + LINE to add a section. DIY: the more lines you add, the longer the song.",
+  "fonts": "family=Jost:ital,wght@1,800&family=Special+Elite",
+  "bpm": 168,
+  "manifesto": {
+   "name": "Riot Grrrl Manifesto",
+   "short": "Riot Grrrl",
+   "author": "Kathleen Hanna (with Bikini Kill)",
+   "year": "1991",
+   "where": "Bikini Kill zine no. 2, Olympia, Washington, 1991",
+   "ideas": [
+    "A list of lines that each start with BECAUSE, giving the reasons girls need to make their own culture.",
+    "Do it yourself: make your own records, zines and shows rather than waiting for the industry.",
+    "Support and encourage each other instead of competing, and refuse the idea that girls cannot play."
+   ],
+   "quotes": [],
+   "system": "The song is written entirely in BECAUSE lines that you write yourself. The machine turns every word into a chord from a three-chord DIY set and every syllable into a shout. No skill is needed: if you can write a line, you can make a song."
+  },
+  "design": {
+   "name": "Barbara Kruger",
+   "short": "Barbara Kruger",
+   "who": "Barbara Kruger, American conceptual artist and former magazine designer",
+   "era": "New York, 1980s to now",
+   "hallmarks": [
+    "Black-and-white found photographs",
+    "Futura Bold Oblique, white on red bars",
+    "Direct address with words like I, you, we and your"
+   ],
+   "works": [
+    "Untitled (Your body is a battleground), 1989",
+    "Untitled (I shop therefore I am), 1987",
+    "Untitled (Your gaze hits the side of my face), 1981"
+   ]
+  },
+  "no": "19",
+  "slug": "because",
+  "file": "tools/19-because.html"
+ },
+ {
+  "title": "Cyborg",
+  "idea": "Three boundary sliders (human/animal, organism/machine, physical/non-physical) blur one groove between flesh and code.",
+  "how": "Press PLAY. A groove plays, built from your sample. Drag the three sliders to break three boundaries. HUMAN to ANIMAL turns the voice into calls and chirps. ORGANISM to MACHINE moves from loose, breathy timing to locked, square, bit-crushed code. PHYSICAL to NON-PHYSICAL dissolves the sound into grains and space. Click the pixel face to scramble its genes, which re-rolls the pattern.",
+  "fonts": "family=VT323&family=Syne:wght@500;800",
+  "bpm": 104,
+  "manifesto": {
+   "name": "A Cyborg Manifesto",
+   "short": "Cyborg Manifesto",
+   "author": "Donna Haraway",
+   "year": "1985",
+   "where": "Socialist Review, 1985, as 'A Manifesto for Cyborgs'; revised in Simians, Cyborgs, and Women (1991)",
+   "ideas": [
+    "The cyborg, a hybrid of machine and organism, is a figure for refusing fixed identities and dualisms.",
+    "Haraway names three boundary breakdowns: human and animal, organism and machine, physical and non-physical.",
+    "Pleasure in the confusion of boundaries, and responsibility in building them."
+   ],
+   "quotes": [
+    "I would rather be a cyborg than a goddess."
+   ],
+   "system": "The three boundaries Haraway lists become the three controls. Nothing is purely human or purely machine: every sound sits at a point between them, and you move it by blurring the borders."
+  },
+  "design": {
+   "name": "April Greiman",
+   "short": "April Greiman",
+   "who": "April Greiman, Los Angeles designer, an early adopter of the Apple Macintosh",
+   "era": "Los Angeles, 1980s",
+   "hallmarks": [
+    "Bitmap pixels, low-resolution video stills and digital artefacts",
+    "Layered space, gradients and floating planes",
+    "New Wave typography mixing technology and the body"
+   ],
+   "works": [
+    "Does It Make Sense? (Design Quarterly 133, 1986), a life-size digital self-portrait poster",
+    "Pacific Wave exhibition poster (1987)",
+    "Identity for China Club, Los Angeles (1980)"
+   ]
+  },
+  "no": "20",
+  "slug": "cyborg",
+  "file": "tools/20-cyborg.html"
  }
 ]

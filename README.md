@@ -38,6 +38,11 @@ The idea is to learn about art, manifestos and graphic design while making music
 | 13 | [Event Scores](tools/13-event-scores.html) | Fluxus Manifesto (George Maciunas, 1963) | Experimental Jetset | A deck of Fluxus-style instruction cards; the machine performs whichever card is on top, then flips the next. |
 | 14 | [Dérive](tools/14-derive.html) | Report on the Construction of Situations (Guy Debord, 1957) | Jamie Reid | A walker drifts through a psychogeographic city; each district has its own sound, and the city's pull decides the route. |
 | 15 | [Painted Lines](tools/15-painted-lines.html) | The Stuckists manifesto (Billy Childish and Charles Thomson, 1999) | Corita Kent | Paint melodies by hand in screen-print layers; the loop prints one colour at a time, then all of them together. |
+| 16 | [Vow of Chastity](tools/16-vow-of-chastity.html) | Dogme 95 Manifesto and Vow of Chastity (Lars von Trier and Thomas Vinterberg, 1995) | Brutalist web design | One sample, no effects, no grid: you play it live by hand, and every rule you break goes in a public confession. |
+| 17 | [Credo](tools/17-credo.html) | The Future of Music: Credo (John Cage, 1937 (a talk in Seattle; published 1958)) | Ikko Tanaka | Three coins tossed six times build an I Ching hexagram, and the hexagram picks the sound, its length and its loudness from a chart. |
+| 18 | [Breath Squares](tools/18-breath-squares.html) | Sonic Meditations (Pauline Oliveros, 1971) | Josef Albers | Four nested squares are four drones that breathe; colours that sit close together make their tones beat against each other. |
+| 19 | [BECAUSE](tools/19-because.html) | Riot Grrrl Manifesto (Kathleen Hanna (with Bikini Kill), 1991) | Barbara Kruger | A three-chord punk machine where your BECAUSE lines become the riffs and the shouted rhythm. |
+| 20 | [Cyborg](tools/20-cyborg.html) | A Cyborg Manifesto (Donna Haraway, 1985) | April Greiman | Three boundary sliders (human/animal, organism/machine, physical/non-physical) blur one groove between flesh and code. |
 <!--/LIST-->
 
 ## Craig's feedback

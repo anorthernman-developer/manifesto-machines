@@ -19,3 +19,8 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 13 | Fluxus Manifesto | 1963 | George Maciunas | Experimental Jetset | [tools/13-event-scores.html](tools/13-event-scores.html) |
 | 14 | Report on the Construction of Situations | 1957 | Guy Debord | Jamie Reid | [tools/14-derive.html](tools/14-derive.html) |
 | 15 | The Stuckists manifesto | 1999 | Billy Childish and Charles Thomson | Corita Kent | [tools/15-painted-lines.html](tools/15-painted-lines.html) |
+| 16 | Dogme 95 Manifesto and Vow of Chastity | 1995 | Lars von Trier and Thomas Vinterberg | Brutalist web design | [tools/16-vow-of-chastity.html](tools/16-vow-of-chastity.html) |
+| 17 | The Future of Music: Credo | 1937 (a talk in Seattle; published 1958) | John Cage | Ikko Tanaka | [tools/17-credo.html](tools/17-credo.html) |
+| 18 | Sonic Meditations | 1971 | Pauline Oliveros | Josef Albers | [tools/18-breath-squares.html](tools/18-breath-squares.html) |
+| 19 | Riot Grrrl Manifesto | 1991 | Kathleen Hanna (with Bikini Kill) | Barbara Kruger | [tools/19-because.html](tools/19-because.html) |
+| 20 | A Cyborg Manifesto | 1985 | Donna Haraway | April Greiman | [tools/20-cyborg.html](tools/20-cyborg.html) |
