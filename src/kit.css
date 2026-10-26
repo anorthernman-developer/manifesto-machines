@@ -1,0 +1,20 @@
+/* MM kit chrome: tools restyle these with CSS variables --bg --fg --acc --bar-font, or override the selectors */
+:root{--bg:#fff;--fg:#111;--acc:#e00;--bar-bg:var(--fg);--bar-fg:var(--bg);--bar-font:system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html,body{margin:0;height:100%}body{background:var(--bg);color:var(--fg);overflow:hidden}
+#mm-stage{position:fixed;inset:0 0 40px 0;overflow:hidden}
+#mm-bar{position:fixed;left:0;right:0;bottom:0;height:40px;display:flex;align-items:center;gap:6px;padding:0 10px;background:var(--bar-bg);color:var(--bar-fg);font:600 12px/1 var(--bar-font);letter-spacing:.04em;z-index:50;white-space:nowrap;overflow:hidden}
+#mm-bar button,#mm-bar .mm-btn{font:inherit;color:inherit;background:transparent;border:1.5px solid currentColor;padding:6px 9px;cursor:pointer;border-radius:0}
+#mm-bar button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+#mm-bar a{color:inherit;text-decoration:none;opacity:.8}#mm-bar .mm-no{opacity:.6}#mm-bar .mm-name{margin-right:8px}
+#mm-bar .mm-vol{display:flex;gap:6px;align-items:center}#mm-bar input[type=range]{width:80px;accent-color:var(--acc)}
+#mm-smp{opacity:.6;font-weight:400;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+#mm-learn-dlg{position:fixed;inset:24px 24px 64px;z-index:60;background:var(--learn-bg,var(--bg));color:var(--learn-fg,var(--fg));border:3px solid var(--learn-fg,var(--fg));padding:28px 32px;overflow:auto;display:grid;grid-template-columns:1fr 1fr;gap:36px;font:15px/1.5 var(--learn-font,Georgia,serif);box-shadow:12px 12px 0 var(--acc)}
+#mm-learn-dlg.mm-hide{display:none}#mm-learn-dlg h2{font:700 28px/1.05 var(--head-font,var(--bar-font));margin:6px 0 4px}
+#mm-learn-dlg .mm-l-k{font:700 11px/1 var(--bar-font);letter-spacing:.16em;color:var(--acc);margin:18px 0 6px}#mm-learn-dlg .mm-l-by{opacity:.75;font-style:italic}
+#mm-learn-dlg ul{padding-left:18px;margin:6px 0}#mm-learn-dlg blockquote{margin:12px 0;padding-left:12px;border-left:4px solid var(--acc);font-size:17px}
+#mm-learn-dlg .mm-x{position:absolute;right:12px;top:8px;font:28px/1 var(--bar-font);background:none;border:0;color:inherit;cursor:pointer}.mm-l-note{font-size:12px;opacity:.6}
+@media (max-width:800px){#mm-learn-dlg{grid-template-columns:1fr}}
+#mm-toast{position:fixed;left:50%;bottom:56px;transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:8px 14px;font:600 13px var(--bar-font);z-index:70;opacity:0;transition:opacity .2s;pointer-events:none}#mm-toast.on{opacity:1}
+#mm-dropzone{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;font:800 64px var(--bar-font);background:color-mix(in srgb,var(--acc) 75%,transparent);color:#fff;pointer-events:none}#mm-dropzone.on{display:flex}
+.mm-ai{font:13px/1.4 var(--bar-font)}.mm-ai-t{font-weight:800;letter-spacing:.1em;margin-bottom:4px}.mm-ai textarea,.mm-ai input,.mm-ai select{width:100%;font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor;padding:4px;margin:3px 0}.mm-ai textarea{height:46px;resize:vertical}
+.mm-ai-row{display:flex;gap:6px;align-items:center}.mm-ai-row select{flex:1}.mm-ai button{font:inherit;font-weight:700;background:var(--acc);color:#fff;border:0;padding:5px 9px;cursor:pointer}.mm-ai-st,.mm-ai-help{font-size:11px;opacity:.75}.mm-ai-out{white-space:pre-wrap;font-size:12px;margin-top:4px}.mm-ai summary{cursor:pointer;font-size:11px;opacity:.7}
