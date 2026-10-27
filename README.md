@@ -63,6 +63,11 @@ The idea is to learn about art, manifestos and graphic design while making music
 | 38 | [Maintenance](tools/38-maintenance.html) | Manifesto for Maintenance Art 1969! Proposal for an exhibition 'CARE' (Mierle Laderman Ukeles, 1969) | Jock Kinneir and Margaret Calvert | The music gets dirty and falls apart on its own; your job is to look after it, and the care itself becomes the rhythm. |
 | 39 | [Mould](tools/39-mould.html) | Mould Manifesto against Rationalism in Architecture (Verschimmelungsmanifest) (Friedensreich Hundertwasser, 1958) | Alphonse Mucha | A rigid, straight step grid is slowly overgrown by mould, and wherever the mould spreads, the notes bend, drift and grow organic. |
 | 40 | [Ornament & Crime](tools/40-ornament-crime.html) | Ornament and Crime (Ornament und Verbrechen) (Adolf Loos, 1910 (lecture), published 1913) | Koloman Moser | Decorate a plain melody with trills, turns and grace notes, but every ornament costs labour, and the bill and the fashion clock are always running. |
+| 41 | [The Store](tools/41-the-store.html) | I am for an art... (Claes Oldenburg, 1961) | Memphis Group | A corner shop of found sounds: every product on the shelves is a sound object, and whatever you put in your basket becomes the song. |
+| 42 | [Scratch Orchestra](tools/42-scratch-orchestra.html) | A Scratch Orchestra: draft constitution (Cornelius Cardew, 1969) | Ken Garland | A crowd of amateur players, each with their own scratch music, performing a sequence of rites chosen from the orchestra's constitution. |
+| 43 | [Für Statik](tools/43-meta-mechanics.html) | Für Statik (For Statics) (Jean Tinguely, 1959) | Armin Hofmann | A rickety machine of meshing gears: each gear's teeth strike notes, so the gear ratios become polyrhythms, and the machine wobbles because nothing stays still. |
+| 44 | [Décollage](tools/44-decollage.html) | Nouveau Réalisme manifestos (Pierre Restany, 1960) | Polish School of Posters | Three posters pasted on top of each other, each one a different groove; tear strips away to reveal the layers underneath. |
+| 45 | [Poor Means](tools/45-poor-means.html) | Arte Povera: Notes for a Guerrilla War (Germano Celant, 1967) | Bruno Munari | Four poor materials (wire, stone, water and rag) and only the energy of your hands: pluck, strike, drip and rub. |
 <!--/LIST-->
 
 ## Craig's feedback

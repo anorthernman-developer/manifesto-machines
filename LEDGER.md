@@ -44,3 +44,8 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 38 | Manifesto for Maintenance Art 1969! Proposal for an exhibition 'CARE' | 1969 | Mierle Laderman Ukeles | Jock Kinneir and Margaret Calvert | [tools/38-maintenance.html](tools/38-maintenance.html) |
 | 39 | Mould Manifesto against Rationalism in Architecture (Verschimmelungsmanifest) | 1958 | Friedensreich Hundertwasser | Alphonse Mucha | [tools/39-mould.html](tools/39-mould.html) |
 | 40 | Ornament and Crime (Ornament und Verbrechen) | 1910 (lecture), published 1913 | Adolf Loos | Koloman Moser | [tools/40-ornament-crime.html](tools/40-ornament-crime.html) |
+| 41 | I am for an art... | 1961 | Claes Oldenburg | Memphis Group | [tools/41-the-store.html](tools/41-the-store.html) |
+| 42 | A Scratch Orchestra: draft constitution | 1969 | Cornelius Cardew | Ken Garland | [tools/42-scratch-orchestra.html](tools/42-scratch-orchestra.html) |
+| 43 | Für Statik (For Statics) | 1959 | Jean Tinguely | Armin Hofmann | [tools/43-meta-mechanics.html](tools/43-meta-mechanics.html) |
+| 44 | Nouveau Réalisme manifestos | 1960 | Pierre Restany | Polish School of Posters | [tools/44-decollage.html](tools/44-decollage.html) |
+| 45 | Arte Povera: Notes for a Guerrilla War | 1967 | Germano Celant | Bruno Munari | [tools/45-poor-means.html](tools/45-poor-means.html) |

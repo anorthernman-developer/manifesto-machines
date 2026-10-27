@@ -5,4 +5,5 @@ module.exports = {
   '23': { shotWait: 9000 },
   '15': { sampleWait: 4000 },
   '36': { ai: true, mock: { rules: [{ n: 3, kind: 'arcs', from: 'top', to: 'bottom', col: 'violet' }] } },
+  '41': { ai: true, mock: { products: [{ name: 'Bus ticket', kind: 'CLICK', price: 2 }, { name: 'Chip fork', kind: 'JINGLE', price: 1 }] } },
 };

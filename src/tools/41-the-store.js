@@ -1,0 +1,44 @@
+/*META
+{"title":"The Store","idea":"A corner shop of found sounds: every product on the shelves is a sound object, and whatever you put in your basket becomes the song.","how":"Press PLAY. The shelves are stocked with sound products (cut from your sample and from built-in sounds), each with a price tag and a kind (THUMP, CLICK, HUM, VOICE, FIZZ or JINGLE). Click a product to add it to your basket. The basket is a loop: everything in it plays in the order you bought it. Click an item in the basket to return it. RESTOCK fills the shelves with new products. With a Gemini key, write 'I am for an art...' and Gemini stocks the shop with products that suit your line.","fonts":"family=Rubik:wght@400;800;900&family=Rubik+Mono+One","bpm":108,
+"manifesto":{"name":"I am for an art...","short":"I am for an art","author":"Claes Oldenburg","year":"1961","where":"written for the catalogue of the show Environments, Situations, Spaces, Martha Jackson Gallery, New York (1961); the same year he opened The Store on East 2nd Street","ideas":["A long list of 'I am for an art...' lines that celebrate everyday, commercial and street life.","Art made from cheap, found and popular things, like the painted plaster food and objects he sold in The Store (1961).","Against art that is precious and shut away."],"quotes":["I am for an art that is political-erotical-mystical, that does something other than sit on its ass in a museum."],"system":"Sound comes from ordinary goods on a shelf. You compose by shopping: the basket is the sequence, and your line of 'I am for an art...' can restock the store."},
+"design":{"name":"Memphis Group","short":"Memphis","who":"The Memphis Group, Milan collective founded by Ettore Sottsass in 1980 to 1981, with Michele De Lucchi, Nathalie Du Pasquier, George Sowden, Peter Shire and others","era":"Milan, 1981 to 1987","hallmarks":["Clashing pastels and primaries, black-and-white squiggles and terrazzo-like patterns","Plastic laminate, bold geometric forms and deliberately 'bad taste'","Furniture and objects as playful, pop totems"],"works":["Carlton room divider by Ettore Sottsass (1981)","Nathalie Du Pasquier's laminate and textile patterns (1981 onwards)","Peter Shire's Bel Air armchair (1982)"]}}
+*/
+/*CSS
+:root{--bg:#fff7e8;--fg:#111;--acc:#ff3e8a;--bar-font:'Rubik',sans-serif;--head-font:'Rubik Mono One',sans-serif}
+#mm-stage{background:#fff7e8 repeating-linear-gradient(45deg,transparent 0 22px,#0000000d 22px 24px);display:grid;grid-template-columns:1fr 320px;overflow:hidden}
+.shop{padding:16px 20px;overflow:auto}.shop h1{margin:0 0 6px;font:400 34px 'Rubik Mono One';color:#111}.shop h1 span{background:#ffde00;padding:0 6px}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px;padding:12px 0;border-bottom:12px solid #111}
+.item{position:relative;height:96px;border:3px solid #111;cursor:pointer;display:flex;align-items:flex-end;padding:6px;font:800 12px 'Rubik';box-shadow:5px 5px 0 #111;transition:transform .1s}
+.item:hover{transform:translate(-2px,-2px)}.item .p{position:absolute;top:-10px;right:-10px;background:#ff3e8a;color:#fff;border:2px solid #111;border-radius:50%;width:38px;height:38px;font:900 12px/36px 'Rubik';text-align:center}
+.side{background:#111;color:#fff7e8;padding:16px;display:flex;flex-direction:column;gap:8px;overflow:auto;font:400 13px 'Rubik'}
+.side h2{margin:0;font:400 18px 'Rubik Mono One';color:#ffde00}#bask{display:flex;flex-wrap:wrap;gap:4px}#bask div{padding:4px 7px;font:800 11px 'Rubik';cursor:pointer;border:2px solid #fff7e8;color:#111}#bask div.now{outline:3px solid #ff3e8a}
+.side button{font:900 14px 'Rubik';background:#3fc1ff;border:0;padding:8px;cursor:pointer}
+*/
+/*HTML
+<div class="shop"><h1>THE <span>STORE</span> 1961</h1><div id="shelves"></div></div>
+<div class="side"><h2>BASKET</h2><div id="bask"></div><div id="tot"></div><button id="re">RESTOCK</button><div id="ai"></div></div>
+*/
+const KINDS = ['THUMP', 'CLICK', 'HUM', 'VOICE', 'FIZZ', 'JINGLE'], PAL = ['#ff3e8a', '#ffde00', '#3fc1ff', '#00c389', '#ff7a00', '#b18cff', '#fff'];
+const NAMES = ['Plaster pie', 'Shirt', 'Cash register', 'Sardine tin', 'Lipstick', 'Typewriter', 'Hamburger', 'Soda', 'Light switch', 'Pinball', 'Shoelace', 'Radio', 'Ice bag', 'Clothes peg', 'Toaster', 'Bathtub'];
+let stock = [], basket = [], cur = -1;
+function product(name, kind, price) { const r = Math.random(); return { name, kind, price: price ?? 1 + Math.floor(r * 49), col: MM.pick(PAL), off: Math.random(), rate: [0.5, 2, 0.25, 1, 3, 1.5][KINDS.indexOf(kind)] * (0.8 + Math.random() * 0.4), pat: Math.floor(Math.random() * 99) }; }
+function restock(list) { stock = list || NAMES.slice().sort(() => Math.random() - 0.5).slice(0, 12).map((n) => product(n, MM.pick(KINDS))); shelves(); }
+function shelves() { const S = MM.$('#shelves'); S.innerHTML = ''; for (let r = 0; r < stock.length; r += 6) { const sh = MM.h('div', { class: 'shelf' }); stock.slice(r, r + 6).forEach((p) => { const pat = p.pat % 3 ? `radial-gradient(#111 2px,transparent 2.5px) 0 0/12px 12px,${p.col}` : `repeating-linear-gradient(-45deg,#111 0 3px,${p.col} 3px 12px)`; const it = MM.h('div', { class: 'item', style: `background:${pat}`, html: `<span style="background:#fff7e8;padding:1px 4px">${p.name} · ${p.kind}</span><span class="p">$${p.price}</span>` }); it.onclick = () => { MM.ensure(); basket.push(p); if (basket.length > 16) basket.shift(); bask(); play(p, MM.now + 0.01, 0.2); if (!MM.playing) MM.toggle(true); }; sh.append(it); }); S.append(sh); } }
+function bask() { const B = MM.$('#bask'); B.innerHTML = ''; basket.forEach((p, k) => { const d = MM.h('div', { style: 'background:' + p.col }, p.name); if (k === cur) d.className = 'now'; d.onclick = () => { basket.splice(k, 1); bask(); }; B.append(d); }); MM.$('#tot').textContent = `${basket.length} items · total $${basket.reduce((a, p) => a + p.price, 0)}`; }
+function play(p, t, sd) { const B = MM.smp(p.pat % 3, 'loop');
+  switch (p.kind) { case 'THUMP': MM.play(MM.fb.kick, t, { gain: 0.8, rate: p.rate * 1.5 }); MM.play(B, t, { offset: p.off * B.duration * 0.9, dur: 0.12, rate: p.rate, gain: 0.5, filter: { type: 'lowpass', freq: 600 } }); break;
+    case 'CLICK': MM.play(B, t, { offset: p.off * B.duration * 0.9, dur: 0.03, rate: p.rate, gain: 0.6 }); MM.noise(t, 0.015, { freq: 4000, q: 4, gain: 0.3 }); break;
+    case 'HUM': MM.play(B, t, { offset: p.off * B.duration * 0.5, dur: sd * 1.8, rate: p.rate, gain: 0.5, loop: true, fadeIn: 0.02, fadeOut: 0.1 }); MM.tone(60 * p.rate * 4, t, sd * 1.5, { type: 'sawtooth', gain: 0.05, cutoff: 500 }); break;
+    case 'VOICE': { const V = MM.smp(0, 'voice'); MM.play(V, t, { offset: p.off * V.duration * 0.6, dur: sd * 1.5, rate: p.rate, gain: 0.6, fadeOut: 0.05 }); break; }
+    case 'FIZZ': MM.noise(t, sd * 1.2, { freq: 6000, sweep: 9000, q: 1, gain: 0.15 }); MM.play(B, t, { offset: p.off * B.duration * 0.9, dur: 0.08, rate: p.rate, gain: 0.3 }); break;
+    case 'JINGLE': [0, 4, 7].forEach((iv, q) => MM.tone(MM.mtof(72 + iv + (p.price % 5)), t + q * 0.05, 0.4, { partials: [[1, 1], [2.9, 0.3]], gain: 0.06 })); break; } }
+restock();
+MM.init({ bpm: 108, div: 4,
+  setup() { basket = stock.slice(0, 5); bask(); MM.aiBox(MM.$('#ai'), { title: 'restock the store', help: "Write a line in the form 'I am for an art...' and Gemini stocks the shelves with everyday sound products.", placeholder: 'I am for an art of bus stations and chip shops',
+      system: "You stock Claes Oldenburg-style 'The Store' with ordinary everyday products (do not quote Oldenburg). Each product needs a short name (max 3 words), a kind (one of " + KINDS.join(', ') + ') matching how it would sound, and a price from 1 to 99. Return JSON {"products":[{"name":"...","kind":"...","price":12}]} with 12 products suiting the prompt.',
+      schema: { type: 'object', properties: { products: { type: 'array', items: { type: 'object', properties: { name: { type: 'string' }, kind: { type: 'string' }, price: { type: 'number' } }, required: ['name', 'kind'] } } }, required: ['products'] },
+      apply(j) { const ps = (j.products || []).filter((p) => KINDS.includes(p.kind)).map((p) => product(String(p.name).slice(0, 24), p.kind, MM.clamp(Math.round(p.price) || 5, 1, 99))); if (!ps.length) throw new Error('no usable products'); restock(ps.concat(stock).slice(0, 12)); return ps.length + ' products on the shelves.'; },
+      fallback() { restock(); } }); },
+  step(i, t, sd) { if (i % 16 === 0) MM.play(MM.fb.kick, t, { gain: 0.35 }); if (!basket.length) return; if (i % 2) { if (i % 4 === 3) MM.play(MM.fb.hat, t, { gain: 0.15 }); return; } const k = (i / 2) % basket.length; cur = k; play(basket[k], t, sd * 2); if (MM.$('#bask').children[k]) [...MM.$('#bask').children].forEach((c, q) => c.classList.toggle('now', q === k)); }
+});
+MM.$('#re').onclick = () => restock();

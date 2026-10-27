@@ -1657,5 +1657,211 @@
   "no": "40",
   "slug": "ornament-crime",
   "file": "tools/40-ornament-crime.html"
+ },
+ {
+  "title": "The Store",
+  "idea": "A corner shop of found sounds: every product on the shelves is a sound object, and whatever you put in your basket becomes the song.",
+  "how": "Press PLAY. The shelves are stocked with sound products (cut from your sample and from built-in sounds), each with a price tag and a kind (THUMP, CLICK, HUM, VOICE, FIZZ or JINGLE). Click a product to add it to your basket. The basket is a loop: everything in it plays in the order you bought it. Click an item in the basket to return it. RESTOCK fills the shelves with new products. With a Gemini key, write 'I am for an art...' and Gemini stocks the shop with products that suit your line.",
+  "fonts": "family=Rubik:wght@400;800;900&family=Rubik+Mono+One",
+  "bpm": 108,
+  "manifesto": {
+   "name": "I am for an art...",
+   "short": "I am for an art",
+   "author": "Claes Oldenburg",
+   "year": "1961",
+   "where": "written for the catalogue of the show Environments, Situations, Spaces, Martha Jackson Gallery, New York (1961); the same year he opened The Store on East 2nd Street",
+   "ideas": [
+    "A long list of 'I am for an art...' lines that celebrate everyday, commercial and street life.",
+    "Art made from cheap, found and popular things, like the painted plaster food and objects he sold in The Store (1961).",
+    "Against art that is precious and shut away."
+   ],
+   "quotes": [
+    "I am for an art that is political-erotical-mystical, that does something other than sit on its ass in a museum."
+   ],
+   "system": "Sound comes from ordinary goods on a shelf. You compose by shopping: the basket is the sequence, and your line of 'I am for an art...' can restock the store."
+  },
+  "design": {
+   "name": "Memphis Group",
+   "short": "Memphis",
+   "who": "The Memphis Group, Milan collective founded by Ettore Sottsass in 1980 to 1981, with Michele De Lucchi, Nathalie Du Pasquier, George Sowden, Peter Shire and others",
+   "era": "Milan, 1981 to 1987",
+   "hallmarks": [
+    "Clashing pastels and primaries, black-and-white squiggles and terrazzo-like patterns",
+    "Plastic laminate, bold geometric forms and deliberately 'bad taste'",
+    "Furniture and objects as playful, pop totems"
+   ],
+   "works": [
+    "Carlton room divider by Ettore Sottsass (1981)",
+    "Nathalie Du Pasquier's laminate and textile patterns (1981 onwards)",
+    "Peter Shire's Bel Air armchair (1982)"
+   ]
+  },
+  "no": "41",
+  "slug": "the-store",
+  "file": "tools/41-the-store.html"
+ },
+ {
+  "title": "Scratch Orchestra",
+  "idea": "A crowd of amateur players, each with their own scratch music, performing a sequence of rites chosen from the orchestra's constitution.",
+  "how": "Press PLAY. Each circle is a player with their own little ostinato (their 'scratch music'), instrument and favourite note. Players come and go: ADD PLAYER recruits one more, click a player to send them home. Every eight bars the orchestra switches to a new RITE: TUTTI (everybody plays their scratch music), SOLO (one player only, the others accompany very softly), FOLLOW (everyone copies the leader, one by one), POPULAR CLASSIC (a familiar melody heard in fragments through your sample) or SILENCE AND BREATH. Choose the next rite yourself with the buttons.",
+  "fonts": "family=Space+Grotesk:wght@400;700",
+  "bpm": 96,
+  "manifesto": {
+   "name": "A Scratch Orchestra: draft constitution",
+   "short": "Scratch Orchestra",
+   "author": "Cornelius Cardew",
+   "year": "1969",
+   "where": "The Musical Times, June 1969, London (founded with Michael Parsons and Howard Skempton)",
+   "ideas": [
+    "An open orchestra of enthusiasts, trained or untrained, who pool their resources.",
+    "Each member keeps a notebook of 'scratch music', short accompaniments that can be played indefinitely.",
+    "Repertoire categories include Scratch Music, Popular Classics, Improvisation Rites, Compositions and a Research Project."
+   ],
+   "quotes": [
+    "A Scratch Orchestra is a large number of enthusiasts pooling their resources (not primarily material resources) and assembling for action (music-making, performance, edification)."
+   ],
+   "system": "The piece is a crowd, not a score. Each simulated player has their own scratch music, and the orchestra moves through the constitution's categories as rites, so the same players make very different music."
+  },
+  "design": {
+   "name": "Ken Garland",
+   "short": "Ken Garland",
+   "who": "Ken Garland, British graphic designer, writer and author of the First Things First manifesto (1964)",
+   "era": "London, 1960s to 2000s",
+   "hallmarks": [
+    "Bright, friendly primary colours and playful geometry",
+    "Clear, informative design for good causes and for play",
+    "Bold, simple sans-serif type"
+   ],
+   "works": [
+    "The First Things First manifesto (1964)",
+    "Catalogues, logo and toys for Galt Toys (1960s)",
+    "CND poster for the Aldermaston march, Easter 1962"
+   ]
+  },
+  "no": "42",
+  "slug": "scratch-orchestra",
+  "file": "tools/42-scratch-orchestra.html"
+ },
+ {
+  "title": "Für Statik",
+  "idea": "A rickety machine of meshing gears: each gear's teeth strike notes, so the gear ratios become polyrhythms, and the machine wobbles because nothing stays still.",
+  "how": "Press PLAY. The motor (red) drives a chain of meshing gears. A gear with more teeth turns more slowly, so the ratios between gears create polyrhythms. Every tooth that passes the striker at the top of a gear plays that gear's sound (the big gears play your sample). Click a gear to change its number of teeth. ADD GEAR attaches another to the chain and CRANK sets the motor speed. WOBBLE makes the machine rickety, with loose teeth and slipping timing, because, as Tinguely said, nothing stays still.",
+  "fonts": "family=Archivo+Black&family=Archivo:wght@400",
+  "bpm": 100,
+  "manifesto": {
+   "name": "Für Statik (For Statics)",
+   "short": "Für Statik",
+   "author": "Jean Tinguely",
+   "year": "1959",
+   "where": "leaflets thrown from an aeroplane over Düsseldorf in March 1959",
+   "ideas": [
+    "Everything moves; stillness does not exist. Stop resisting change and be in time with the moment.",
+    "Art as moving, noisy machines (méta-mécaniques), often made of scrap.",
+    "Machines that break and even destroy themselves, as in Homage to New York at MoMA (1960)."
+   ],
+   "quotes": [
+    "Everything moves continuously. Immobility does not exist."
+   ],
+   "system": "There is no grid and no pattern, only rotating gears whose ratios produce rhythm. With WOBBLE on, the machine slips and rattles like one of Tinguely's scrap machines."
+  },
+  "design": {
+   "name": "Armin Hofmann",
+   "short": "Armin Hofmann",
+   "who": "Armin Hofmann, Swiss designer and teacher at the Basel School of Design",
+   "era": "Basel, 1950s to 1980s",
+   "hallmarks": [
+    "Black and white contrast with very few elements",
+    "Dot, line and form studies, with dynamic tension between shapes",
+    "Sans type (often Akzidenz or Univers) and a clear hierarchy"
+   ],
+   "works": [
+    "Graphic Design Manual: Principles and Practice (1965)",
+    "Giselle poster for the Basel Freilichtspiele (1959)",
+    "Posters for the Basel Stadttheater (1960s)"
+   ]
+  },
+  "no": "43",
+  "slug": "meta-mechanics",
+  "file": "tools/43-meta-mechanics.html"
+ },
+ {
+  "title": "Décollage",
+  "idea": "Three posters pasted on top of each other, each one a different groove; tear strips away to reveal the layers underneath.",
+  "how": "Press PLAY. The wall has three posters pasted on top of each other. Each poster is a complete loop, from the top layer (a brass-band march) down to a jazz layer and finally your sample, pasted first on the bare wall. Only the parts you can see are heard: the horizontal axis is time in the loop and the vertical axis is the pitch range. Drag across the wall to tear the paper away and reveal what is underneath. PASTE glues a fresh top poster over everything. The torn shapes are the composition.",
+  "fonts": "family=Anton&family=Oswald:wght@300;600",
+  "bpm": 110,
+  "manifesto": {
+   "name": "Nouveau Réalisme manifestos",
+   "short": "Nouveau Réalisme",
+   "author": "Pierre Restany",
+   "year": "1960",
+   "where": "first manifesto published in Milan in April 1960; the group's declaration was signed at Yves Klein's flat in Paris on 27 October 1960",
+   "ideas": [
+    "A 'new perceptual approach to the real': appropriating the real world of the city instead of painting it.",
+    "The sociological reality of the street: posters, scrap, packaging and consumer objects.",
+    "Raymond Hains and Jacques Villeglé's décollages: they presented posters torn off the walls of Paris as art."
+   ],
+   "quotes": [],
+   "system": "You do not write anything. The layers are found, readymade music, and you compose only by tearing, so what you hear is whatever the torn shape reveals."
+  },
+  "design": {
+   "name": "Polish School of Posters",
+   "short": "Polish Poster School",
+   "who": "The Polish School of Posters: Henryk Tomaszewski, Jan Lenica, Roman Cieślewicz, Franciszek Starowieyski and others",
+   "era": "Warsaw, 1950s to 1970s",
+   "hallmarks": [
+    "Painterly, hand-drawn letters and shapes rather than photography",
+    "Surreal, witty metaphors and collage",
+    "Bold flat colour on rough paper, with torn edges"
+   ],
+   "works": [
+    "Henryk Tomaszewski's Henry Moore exhibition poster (1959)",
+    "Jan Lenica's Wozzeck poster for the Warsaw opera (1964)",
+    "Roman Cieślewicz's poster for Hitchcock's Vertigo (1963)"
+   ]
+  },
+  "no": "44",
+  "slug": "decollage",
+  "file": "tools/44-decollage.html"
+ },
+ {
+  "title": "Poor Means",
+  "idea": "Four poor materials (wire, stone, water and rag) and only the energy of your hands: pluck, strike, drip and rub.",
+  "how": "Press PLAY. The table has four poor materials. WIRE: drag across the wires to pluck them (a physically modelled string, tuned by its length). STONE: click the stones to strike them. WATER: hold the mouse down on the bowl to let it drip. RAG: rub back and forth on the rag, and your sample is played at the speed and direction of your hand, like scratching. In the background, a slow ENERGY pulse runs through everything, like Giovanni Anselmo's twisted or tensioned works: the harder you play, the more energy builds up and the more the pulse rises.",
+  "fonts": "family=Courier+Prime:wght@400;700&family=Libre+Franklin:wght@300;800",
+  "bpm": 72,
+  "manifesto": {
+   "name": "Arte Povera: Notes for a Guerrilla War",
+   "short": "Arte Povera",
+   "author": "Germano Celant",
+   "year": "1967",
+   "where": "Flash Art, Milan, November–December 1967; the same year as Celant's Arte Povera exhibition in Genoa",
+   "ideas": [
+    "A 'poor' art against the art system and the consumer object, made with elementary materials such as earth, wood, rags, stones and water.",
+    "The artist as a free guerrilla who chooses where to fight and what to use.",
+    "Energy, process and the presence of the body, as in works by Kounellis, Merz, Anselmo and Pistoletto."
+   ],
+   "quotes": [],
+   "system": "No sequencer and no synthesiser presets: only four poor materials and the energy of your body. Every sound comes from simple physical models of a wire, a stone, a drop or a rubbed rag."
+  },
+  "design": {
+   "name": "Bruno Munari",
+   "short": "Bruno Munari",
+   "who": "Bruno Munari, Italian artist, designer and educator",
+   "era": "Milan, 1930s to 1990s",
+   "hallmarks": [
+    "Playful experiments with very simple means: paper, holes, folds and light",
+    "Clear geometric shapes in primary colours, with lots of white",
+    "Design for children, games and learning by doing"
+   ],
+   "works": [
+    "Useless Machines (from the 1930s)",
+    "Illegible Books (from 1949)",
+    "Campari poster, Declinazione grafica del nome Campari (1964)"
+   ]
+  },
+  "no": "45",
+  "slug": "poor-means",
+  "file": "tools/45-poor-means.html"
  }
 ]
