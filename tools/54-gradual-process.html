@@ -52,7 +52,7 @@
 #side{grid-row:1/3;grid-column:2;overflow:auto;padding:12px 16px;border-left:6px solid #111;display:flex;flex-direction:column;gap:6px}
 #side h3{font:900 14px 'Hanken Grotesk';letter-spacing:.1em;margin:10px 0 2px;padding:3px 8px;background:var(--yel);transform:skewX(-12deg);width:max-content}
 #side .mmx-ctl{grid-template-columns:104px 1fr 44px;font:600 12px 'Hanken Grotesk'}#side .mmx-ctl select{grid-column:2/4}
-.vrow{display:grid;grid-template-columns:26px 1fr 1fr 1fr;gap:4px;align-items:center;font:700 11px 'Hanken Grotesk'}.vrow b{background:#111;color:#fff;text-align:center;padding:2px 0}.vrow select,.vrow input{width:100%;font:inherit}
+.vrow{display:grid;grid-template-columns:22px 1.3fr 1fr 1fr;gap:6px;align-items:center;font:700 11px 'Hanken Grotesk';margin:2px 0}#side .vrow .mmx-ctl{grid-template-columns:auto 1fr;gap:3px;font:700 10px 'Hanken Grotesk'}#side .vrow .mmx-ctl select{grid-column:auto;min-width:0}.vrow .mmx-cv{display:none}.vrow b{background:#111;color:#fff;text-align:center;padding:2px 0}.vrow select,.vrow input{width:100%;font:inherit}
 #pat{grid-column:1;border-top:6px solid #111;display:grid;grid-template-columns:110px 1fr;background:#fff}
 #pat .lab{padding:10px;font:900 13px 'Hanken Grotesk';letter-spacing:.08em;text-transform:uppercase;border-right:3px solid #111;display:flex;flex-direction:column;gap:6px}#pat .lab button{font:800 11px 'Hanken Grotesk';border:2px solid #111;background:#fff;cursor:pointer;padding:3px}
 #cells{display:grid;gap:2px;padding:6px 10px}.c{border:0;background:#f0f0f0;cursor:pointer;padding:0;font:700 9px 'Hanken Grotesk';color:#999}.c.on{background:var(--blue);color:#fff}.c.now{outline:2px solid var(--acc)}.c.root{background:#e6e6e6}.c.root.on{background:var(--blue)}
@@ -572,7 +572,7 @@ cfg = { bpm: 144, tick, draw, start: () => { lastTape = 0; reset(); }, stop: () 
     MMX.ctl(A, 'bpm', { label: 'Tempo', min: 60, max: 240, step: 1, on: (v) => (MM.bpm = v) });
     MMX.ctl(B, 'voices', { label: 'Voices', min: 2, max: 4, step: 1 });
     const so = [[0, 'Keys A'], [1, 'Keys B'], [2, 'Tape loop'], [3, 'Pulse']];
-    for (let k = 1; k <= 4; k++) { const row = MM.h('div', { class: 'vrow' }, MM.h('b', {}, String(k))); B.append(row); MMX.ctl(row, 'v' + k, { type: 'select', label: '', options: so }); MMX.ctl(row, 'o' + k, { label: 'oct', min: -2, max: 2, step: 1 }); MMX.ctl(row, 'p' + k, { label: 'pan', min: -1, max: 1 }); }
+    for (let k = 1; k <= 4; k++) { const row = MM.h('div', { class: 'vrow' }, MM.h('b', {}, String(k))); B.append(row); MMX.ctl(row, 'v' + k, { type: 'select', label: 'slot', options: so }); MMX.ctl(row, 'o' + k, { label: 'oct', min: -2, max: 2, step: 1 }); MMX.ctl(row, 'p' + k, { label: 'pan', min: -1, max: 1 }); }
     MMX.ctl(C, 'len', { label: 'Steps', min: 4, max: 16, step: 1, on: () => MM.$('#cells') && grid() }); MMX.ctl(C, 'root', { type: 'select', label: 'Key', options: NOTES.map((x, k) => [k, x]), on: () => MM.$('#cells') && grid() });
     MMX.ctl(C, 'scale', { type: 'select', label: 'Scale', options: Object.keys(MM.SCALES).map((k) => [k, k]), on: () => MM.$('#cells') && grid() });
     MM.$$('#procs button').forEach((b) => (b.onclick = () => { MM.ensure(); if (!MM.playing) MM.toggle(true); setProc(b.dataset.p); }));
