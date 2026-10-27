@@ -1,0 +1,15 @@
+/* MMX deck drawer: inherits each tool's --bg --fg --acc --bar-font, tools can restyle #mmx-deck */
+#mmx-deck{position:fixed;top:0;right:0;bottom:40px;width:min(440px,100vw);z-index:55;background:var(--deck-bg,var(--bg));color:var(--deck-fg,var(--fg));border-left:3px solid var(--deck-fg,var(--fg));font:12px/1.35 var(--bar-font);display:flex;flex-direction:column;box-shadow:-10px 0 0 color-mix(in srgb,var(--acc) 35%,transparent)}
+#mmx-deck.mmx-hide{display:none}
+.mmx-tabs{display:flex;border-bottom:2px solid currentColor}.mmx-tab,.mmx-close{font:700 12px var(--bar-font);letter-spacing:.08em;background:none;color:inherit;border:0;border-right:1px solid currentColor;padding:10px 12px;cursor:pointer}.mmx-tab.on{background:var(--acc);color:#fff}.mmx-close{margin-left:auto;border:0;font-size:20px;padding:4px 12px}
+.mmx-body{overflow:auto;padding:10px 12px;flex:1}.mmx-help{opacity:.75;margin:4px 0 10px}
+.mmx-slot{border:1.5px solid currentColor;padding:6px 8px;margin:0 0 8px}.mmx-sh{display:flex;gap:6px;align-items:center}.mmx-sh b{background:var(--fg);color:var(--bg);padding:1px 6px;font-weight:800}
+.mmx-deck .mmx-lab,.mmx-lab{font-weight:800;text-transform:uppercase;letter-spacing:.05em}.mmx-nm{flex:1;opacity:.65;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.mmx-b{font:700 11px var(--bar-font);background:none;color:inherit;border:1.5px solid currentColor;padding:3px 6px;cursor:pointer;white-space:nowrap}.mmx-b:hover{background:var(--acc);color:#fff;border-color:var(--acc)}.mmx-next{display:none}
+.mmx-wave{width:100%;height:34px;display:block;margin:5px 0}
+.mmx-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px}.mmx-p{display:grid;grid-template-columns:52px 1fr 40px;align-items:center;gap:4px;font-size:10px;font-weight:700;letter-spacing:.05em}.mmx-p input[type=range]{width:100%;accent-color:var(--acc)}.mmx-v{text-align:right;opacity:.75;font-weight:400}
+.mmx-chk{grid-template-columns:18px 1fr}.mmx-row{display:flex;gap:6px;margin:6px 0}.mmx-row input,.mmx-row select,#mmx-mlearn{flex:1;font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor;padding:4px}#mmx-mlearn{width:100%;margin-top:8px}
+.mmx-row select option,#mmx-mlearn option{color:#111;background:#fff}
+.mmx-keys{border-collapse:collapse;width:100%}.mmx-keys td{padding:4px 6px;border-bottom:1px solid color-mix(in srgb,currentColor 25%,transparent)}kbd{font:700 11px ui-monospace,monospace;border:1.5px solid currentColor;padding:1px 5px}
+.mmx-ctl{display:grid;grid-template-columns:auto 1fr auto;gap:6px;align-items:center}.mmx-ctl input[type=range]{width:100%;accent-color:var(--acc)}.mmx-ctl select{font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor}.mmx-ctl select option{color:#111;background:#fff}.mmx-cv{min-width:34px;text-align:right;opacity:.8;font-variant-numeric:tabular-nums}
+#mm-bar #mmx-deck-btn.on{background:var(--acc);border-color:var(--acc);color:#fff}
