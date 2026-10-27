@@ -1449,5 +1449,213 @@
   "no": "35",
   "slug": "ambient-loops",
   "file": "tools/35-ambient-loops.html"
+ },
+ {
+  "title": "Idea Machine",
+  "idea": "Write wall-drawing instructions and the machine executes them blindly: each line drawn across the grid becomes a melody.",
+  "how": "Press PLAY. The list on the right is a set of instructions in the style of a wall drawing ('5 straight lines from the left edge to the right edge, in blue'). The machine carries them out on a 16 × 12 grid. Time runs from left to right and pitch from bottom to top, and every grid cell that a line passes through plays a note in that line's colour (one colour, one instrument). Change any field of an instruction, add (+) or delete (×) instructions, or press NEW for a random one. With a Gemini key, describe a feeling and Gemini writes instructions. The execution is the same every time: once the idea is fixed, the machine makes the art.",
+  "fonts": "family=Barlow:wght@300;600;800",
+  "bpm": 96,
+  "manifesto": {
+   "name": "Paragraphs on Conceptual Art",
+   "short": "Conceptual Art",
+   "author": "Sol LeWitt",
+   "year": "1967",
+   "where": "Artforum, June 1967 (followed by Sentences on Conceptual Art, 1969)",
+   "ideas": [
+    "The idea or concept is the most important part of the work; planning and decisions are made in advance.",
+    "Execution is a perfunctory affair, often done by others following written instructions, as in LeWitt's wall drawings (from 1968).",
+    "The aim is not to be emotional or clever but to make the work mentally interesting."
+   ],
+   "quotes": [
+    "The idea becomes a machine that makes the art."
+   ],
+   "system": "You only write instructions. The machine executes them, without judgement, on a grid, and every line becomes notes. The same idea always gives the same music, while different machines (or different samples) give different 'executions'."
+  },
+  "design": {
+   "name": "Otl Aicher",
+   "short": "Otl Aicher",
+   "who": "Otl Aicher, German designer and co-founder of the Ulm School of Design (HfG Ulm)",
+   "era": "Ulm and Munich, 1950s to 1980s",
+   "hallmarks": [
+    "Strict grids and systems, with pictograms built from 45° and 90° angles",
+    "A non-political rainbow palette (light blue, green, orange and silver, with no red or black) for Munich 1972",
+    "Univers type, white space and modular identity rules"
+   ],
+   "works": [
+    "Munich 1972 Olympic identity and pictograms",
+    "Lufthansa corporate identity (from 1962)",
+    "The Rotis typeface family (1988)"
+   ]
+  },
+  "no": "36",
+  "slug": "idea-machine",
+  "file": "tools/36-idea-machine.html"
+ },
+ {
+  "title": "No",
+  "idea": "A full, flashy groove that you take apart with thirteen NOs, until only an ordinary walking pulse is left.",
+  "how": "Press PLAY. The groove starts with everything: echo and reverb, fast fills, filter sweeps, a star lead, heroic chords, swing and moving pans. Each line on the right is one NO from the manifesto. Click it to say NO, and the matching element is removed from the music. Click again to take it back. Say NO to everything and you are left with a plain pulse built from your sample, like an ordinary task. NO TO INVOLVEMENT also locks your other controls.",
+  "fonts": "family=Inter+Tight:wght@400;800",
+  "bpm": 112,
+  "manifesto": {
+   "name": "No Manifesto",
+   "short": "No Manifesto",
+   "author": "Yvonne Rainer",
+   "year": "1965",
+   "where": "published in the Tulane Drama Review (1965), after her dance Parts of Some Sextets; Rainer was a founder of Judson Dance Theater",
+   "ideas": [
+    "A list of refusals: no to spectacle, virtuosity, magic, glamour, heroism and seduction.",
+    "Dance made from ordinary 'task-like' movement rather than display, as in Trio A (1966).",
+    "No to involvement of performer or spectator, and no to moving or being moved."
+   ],
+   "quotes": [
+    "No to spectacle. No to virtuosity."
+   ],
+   "system": "Composition by subtraction. Each NO removes one kind of display from the music. The final state, with every NO on, is a plain pulse built from your sample: music as an ordinary task."
+  },
+  "design": {
+   "name": "Massimo Vignelli",
+   "short": "Massimo Vignelli",
+   "who": "Massimo Vignelli, Italian designer who worked in New York with Lella Vignelli",
+   "era": "Milan and New York, 1960s to 2000s",
+   "hallmarks": [
+    "A strict grid with very few typefaces, chiefly Helvetica",
+    "Coloured circles and bars on black or white, with a diagrammatic clarity",
+    "Ruthless reduction and consistency ('if you can design one thing, you can design everything')"
+   ],
+   "works": [
+    "New York City Subway map (1972)",
+    "American Airlines logo (1967)",
+    "The Vignelli Canon (2010)"
+   ]
+  },
+  "no": "37",
+  "slug": "no-manifesto",
+  "file": "tools/37-no-manifesto.html"
+ },
+ {
+  "title": "Maintenance",
+  "idea": "The music gets dirty and falls apart on its own; your job is to look after it, and the care itself becomes the rhythm.",
+  "how": "Press PLAY. Four tracks play (DRUMS, BASS, CHORDS and your SAMPLE). Left alone they gather dust: notes drop out, the pitch sags, hiss builds up and the timing wanders. Use the four maintenance tasks on each track: SWEEP (removes dust and plays a brush rhythm), WASH (clears hiss with a rinse), TUNE (brings the pitch back with a tuning-fork tone) and OIL (puts the timing back with a squeak). Each task is a sound in its own right. The log counts your maintenance hours. Nothing is ever finished: maintenance never ends.",
+  "fonts": "family=Overpass:wght@400;800",
+  "bpm": 100,
+  "manifesto": {
+   "name": "Manifesto for Maintenance Art 1969! Proposal for an exhibition 'CARE'",
+   "short": "Maintenance Art",
+   "author": "Mierle Laderman Ukeles",
+   "year": "1969",
+   "where": "typed proposal, New York, 1969; later she became unsalaried artist-in-residence at the New York City Department of Sanitation (from 1977)",
+   "ideas": [
+    "Two systems: Development (the new, the avant-garde) and Maintenance (keeping it going, the daily work, mostly by women and workers).",
+    "Maintenance is a drag, takes all the time, and it is art too.",
+    "She proposed living in the gallery and doing her maintenance work as the exhibition."
+   ],
+   "quotes": [
+    "after the revolution, who's going to pick up the garbage on Monday morning?"
+   ],
+   "system": "There is no 'compose' mode here. The music decays by itself, and the only thing you can do is care for it. The care routines are the instruments, and your maintenance time is logged as the work."
+  },
+  "design": {
+   "name": "Jock Kinneir and Margaret Calvert",
+   "short": "Kinneir & Calvert",
+   "who": "Jock Kinneir and Margaret Calvert, British designers of public information",
+   "era": "London, 1957 to 1970s",
+   "hallmarks": [
+    "The UK road-sign system: white or yellow mixed-case type on blue, green or white panels with rounded corners",
+    "The Transport and Motorway typefaces",
+    "Simple pictograms (such as the 'men at work' and school children signs)"
+   ],
+   "works": [
+    "UK motorway and all-purpose road signs (from 1958, adopted through the Worboys Committee, 1963 to 1965)",
+    "The Transport typeface",
+    "Rail Alphabet for British Rail (1965)"
+   ]
+  },
+  "no": "38",
+  "slug": "maintenance",
+  "file": "tools/38-maintenance.html"
+ },
+ {
+  "title": "Mould",
+  "idea": "A rigid, straight step grid is slowly overgrown by mould, and wherever the mould spreads, the notes bend, drift and grow organic.",
+  "how": "Press PLAY. The sequencer starts as a strict rectilinear grid of notes, perfectly straight and in time. Mould grows over it by itself, cell by cell. A mouldy note slides in pitch, drifts in time, swells and sprouts tiny spores (grains of your sample). Click to plant mould spores yourself, or press INVITE MOULD. RULER is the rationalist's tool: it scrapes everything clean and straight again, which the manifesto would not approve of. Turn the cells on and off by clicking with the right button (or Shift-click).",
+  "fonts": "family=Cormorant+Garamond:ital,wght@0,500;1,600&family=Cinzel+Decorative:wght@700",
+  "bpm": 84,
+  "manifesto": {
+   "name": "Mould Manifesto against Rationalism in Architecture (Verschimmelungsmanifest)",
+   "short": "Mould Manifesto",
+   "author": "Friedensreich Hundertwasser",
+   "year": "1958",
+   "where": "read at Seckau Abbey, Austria, in July 1958",
+   "ideas": [
+    "The straight line and rationalist, functional architecture are inhuman; he called the straight line godless.",
+    "Mould and decay are welcome: let moss and mould grow on the rigid surfaces of buildings, to bring them back to life.",
+    "People should be free to change their own walls and windows ('the right to the window')."
+   ],
+   "quotes": [],
+   "system": "The grid is rationalism. The mould is life: it grows on its own, bending straight, quantised notes into glides, drifts and swells, while the RULER button shows how dull the clean version is."
+  },
+  "design": {
+   "name": "Alphonse Mucha",
+   "short": "Alphonse Mucha",
+   "who": "Alphonse Mucha, Czech artist of Art Nouveau",
+   "era": "Paris and Prague, 1890s to 1910s",
+   "hallmarks": [
+    "Flowing, organic 'whiplash' lines, hair and vines",
+    "Women framed by circular halos and decorative mosaic panels",
+    "Soft pastel and gold palettes, with ornamental lettering"
+   ],
+   "works": [
+    "Gismonda poster for Sarah Bernhardt (1894 to 1895)",
+    "Job cigarette papers poster (1896)",
+    "The Seasons decorative panels (1896)"
+   ]
+  },
+  "no": "39",
+  "slug": "mould",
+  "file": "tools/39-mould.html"
+ },
+ {
+  "title": "Ornament & Crime",
+  "idea": "Decorate a plain melody with trills, turns and grace notes, but every ornament costs labour, and the bill and the fashion clock are always running.",
+  "how": "Press PLAY. A plain melody (your sample sings the main notes) loops over eight steps. Click a note to cycle its ornament: none, grace note, mordent, turn and trill. The ORNAMENT slider adds ornaments everywhere at once. Each ornament adds to the LABOUR bill (Loos argued that ornament is wasted work, time and material), and ornamented notes go out of fashion: the more decorated a note is and the longer it plays, the more its sound fades and dulls. STRIP removes all ornament and resets the fashion clock.",
+  "fonts": "family=Poiret+One&family=Josefin+Sans:wght@300;700",
+  "bpm": 76,
+  "manifesto": {
+   "name": "Ornament and Crime (Ornament und Verbrechen)",
+   "short": "Ornament and Crime",
+   "author": "Adolf Loos",
+   "year": "1910 (lecture), published 1913",
+   "where": "a lecture first given in Vienna (1910); printed in French in Les Cahiers d'aujourd'hui (1913)",
+   "ideas": [
+    "Modern people should no longer need ornament; decorating everyday objects is a sign of the past.",
+    "Ornament wastes labour, money and material, and makes objects go out of style quickly.",
+    "Plain, well-made objects last, while ornamented ones become unfashionable."
+   ],
+   "quotes": [
+    "The evolution of culture is synonymous with the removal of ornament from objects of everyday use."
+   ],
+   "system": "Ornament is allowed, but it is charged: every decoration costs labour on the bill and goes out of fashion over time, so its sound dulls, while plain notes stay fresh."
+  },
+  "design": {
+   "name": "Koloman Moser",
+   "short": "Koloman Moser",
+   "who": "Koloman Moser, Austrian designer, painter and co-founder of the Wiener Werkstätte",
+   "era": "Vienna, 1897 to 1918",
+   "hallmarks": [
+    "Vienna Secession geometry: chequerboards, squares and repeating modules",
+    "Black and white contrasted with gold and a single accent colour",
+    "Stylised figures and lettering for posters, books and objects"
+   ],
+   "works": [
+    "Designs for the magazine Ver Sacrum (from 1898)",
+    "Stained-glass windows for the Kirche am Steinhof, Vienna (1904)",
+    "Austrian postage stamps for the 1908 Jubilee"
+   ]
+  },
+  "no": "40",
+  "slug": "ornament-crime",
+  "file": "tools/40-ornament-crime.html"
  }
 ]

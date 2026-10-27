@@ -58,6 +58,11 @@ The idea is to learn about art, manifestos and graphic design while making music
 | 33 | [Slow Cooker](tools/33-slow-food.html) | Slow Food Manifesto (Folco Portinari, for the movement founded by Carlo Petrini, 1989) | Kenya Hara | Time-stretch your sample until it slows to near stillness, simmering it in grains that you season and leave to ripen. |
 | 34 | [Repurpose Platform](tools/34-accelerate.html) | #Accelerate: Manifesto for an Accelerationist Politics (Alex Williams and Nick Srnicek, 2013) | The Designers Republic | Steer a vector between four futures and repurpose the machine itself: every corner is a whole groove, and you can always expand the map. |
 | 35 | [Airport Loops](tools/35-ambient-loops.html) | Ambient Music (liner notes to Ambient 1: Music for Airports) (Brian Eno, 1978) | Peter Saville | Seven loops of different, unrelated lengths drift in and out of phase, so the music never repeats in the same way. |
+| 36 | [Idea Machine](tools/36-idea-machine.html) | Paragraphs on Conceptual Art (Sol LeWitt, 1967) | Otl Aicher | Write wall-drawing instructions and the machine executes them blindly: each line drawn across the grid becomes a melody. |
+| 37 | [No](tools/37-no-manifesto.html) | No Manifesto (Yvonne Rainer, 1965) | Massimo Vignelli | A full, flashy groove that you take apart with thirteen NOs, until only an ordinary walking pulse is left. |
+| 38 | [Maintenance](tools/38-maintenance.html) | Manifesto for Maintenance Art 1969! Proposal for an exhibition 'CARE' (Mierle Laderman Ukeles, 1969) | Jock Kinneir and Margaret Calvert | The music gets dirty and falls apart on its own; your job is to look after it, and the care itself becomes the rhythm. |
+| 39 | [Mould](tools/39-mould.html) | Mould Manifesto against Rationalism in Architecture (Verschimmelungsmanifest) (Friedensreich Hundertwasser, 1958) | Alphonse Mucha | A rigid, straight step grid is slowly overgrown by mould, and wherever the mould spreads, the notes bend, drift and grow organic. |
+| 40 | [Ornament & Crime](tools/40-ornament-crime.html) | Ornament and Crime (Ornament und Verbrechen) (Adolf Loos, 1910 (lecture), published 1913) | Koloman Moser | Decorate a plain melody with trills, turns and grace notes, but every ornament costs labour, and the bill and the fashion clock are always running. |
 <!--/LIST-->
 
 ## Craig's feedback

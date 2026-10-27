@@ -4,4 +4,5 @@ module.exports = {
   '13': { ai: true, mock: { cards: [{ text: 'drip slowly', type: 'drip', a: 0.4 }, { text: 'swarm', type: 'swarm', a: 0.9 }] } },
   '23': { shotWait: 9000 },
   '15': { sampleWait: 4000 },
+  '36': { ai: true, mock: { rules: [{ n: 3, kind: 'arcs', from: 'top', to: 'bottom', col: 'violet' }] } },
 };

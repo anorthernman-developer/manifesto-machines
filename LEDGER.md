@@ -39,3 +39,8 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 33 | Slow Food Manifesto | 1989 | Folco Portinari, for the movement founded by Carlo Petrini | Kenya Hara | [tools/33-slow-food.html](tools/33-slow-food.html) |
 | 34 | #Accelerate: Manifesto for an Accelerationist Politics | 2013 | Alex Williams and Nick Srnicek | The Designers Republic | [tools/34-accelerate.html](tools/34-accelerate.html) |
 | 35 | Ambient Music (liner notes to Ambient 1: Music for Airports) | 1978 | Brian Eno | Peter Saville | [tools/35-ambient-loops.html](tools/35-ambient-loops.html) |
+| 36 | Paragraphs on Conceptual Art | 1967 | Sol LeWitt | Otl Aicher | [tools/36-idea-machine.html](tools/36-idea-machine.html) |
+| 37 | No Manifesto | 1965 | Yvonne Rainer | Massimo Vignelli | [tools/37-no-manifesto.html](tools/37-no-manifesto.html) |
+| 38 | Manifesto for Maintenance Art 1969! Proposal for an exhibition 'CARE' | 1969 | Mierle Laderman Ukeles | Jock Kinneir and Margaret Calvert | [tools/38-maintenance.html](tools/38-maintenance.html) |
+| 39 | Mould Manifesto against Rationalism in Architecture (Verschimmelungsmanifest) | 1958 | Friedensreich Hundertwasser | Alphonse Mucha | [tools/39-mould.html](tools/39-mould.html) |
+| 40 | Ornament and Crime (Ornament und Verbrechen) | 1910 (lecture), published 1913 | Adolf Loos | Koloman Moser | [tools/40-ornament-crime.html](tools/40-ornament-crime.html) |
