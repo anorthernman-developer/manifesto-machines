@@ -54,3 +54,4 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 48 | From Line to Constellation (vom vers zur konstellation) | 1954 | Eugen Gomringer | Bradbury Thompson | [tools/48-constellation.html](tools/48-constellation.html) |
 | 49 | Lettrism: Manifesto of Lettrist Poetry | 1942 (written), 1947 (published) | Isidore Isou | Emigre | [tools/49-lettrist-drum.html](tools/49-lettrist-drum.html) |
 | 50 | Minnesota Declaration: Truth and Fact in Documentary Cinema | 1999 | Werner Herzog | Saul Bass | [tools/50-ecstatic-truth.html](tools/50-ecstatic-truth.html) |
+| 51 | Complexity and Contradiction in Architecture (Nonstraightforward Architecture: A Gentle Manifesto) | 1966 | Robert Venturi | Supergraphics (Barbara Stauffacher Solomon) | [tools/51-both-and.html](tools/51-both-and.html) |

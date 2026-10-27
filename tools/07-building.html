@@ -248,7 +248,7 @@ ${(M.quotes || []).map((q) => `<blockquote>“${esc(q)}”</blockquote>`).join('
   function init(c) {
     cfg = c; meta = window.MM_META || {}; S.bpm = c.bpm || meta.bpm || 100; S.div = c.div || 4;
     const bar = h('div', { id: 'mm-bar' },
-      h('a', { class: 'mm-back', href: '../index.html', title: 'All 50 machines' }, '◂ ALL'),
+      h('a', { class: 'mm-back', href: '../index.html', title: 'All machines' }, '◂ ALL'),
       h('span', { class: 'mm-no' }, meta.no), h('span', { class: 'mm-name' }, meta.title),
       h('button', { id: 'mm-play', title: 'Space' }, '▶ PLAY'),
       h('label', { class: 'mm-btn', title: 'Pick WAV, AIFF, MP3 files' }, 'SAMPLES', h('input', { id: 'mm-files', type: 'file', accept: 'audio/*,.wav,.aif,.aiff,.aifc,.mp3,.flac,.ogg', multiple: '', hidden: '' })),

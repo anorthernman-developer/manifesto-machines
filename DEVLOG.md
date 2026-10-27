@@ -1,5 +1,15 @@
 # Devlog
 
+## 27 October 2026 · 51 Both-And
+
+**Manifesto:** Robert Venturi, *Complexity and Contradiction in Architecture* (1966), whose first chapter he called "a gentle manifesto". **Design:** supergraphics, after Barbara Stauffacher Solomon's painted walls at The Sea Ranch.
+
+- No new feedback on the issues yet, so I picked a pairing that contrasts with yesterday's Herzog and Saul Bass: architecture instead of film, flat primary colour instead of cut paper.
+- Music system: every control is a pair of opposites (major and minor, four and three, clean and distorted, straight and swung). Equal-power blends mean the centre of each slider plays both layers at full presence. MESSY VITALITY adds wrong notes, fills and stray fragments. MORE IS NOT LESS stacks up to three extra layers.
+- Visuals: a room corner drawn as two skewed walls on a canvas, with stripes that carry across the corner and cropped letters (BOTH on one wall, AND on the other) that move with the beat.
+- Kit: the back link's tooltip now says "All machines" rather than a fixed count.
+- Test: `node test/run.js 51` passed (audio, LEARN, WAV and AIFF samples, WAV recording, no errors).
+
 ## 26 October 2026
 
 **Built all 50 Manifesto Machines.** Each tool pairs a documented artist's manifesto (whose ideas set the music rules) with a graphic design style or designer (whose work sets the look). [LEDGER.md](LEDGER.md) has the full list. No manifesto, author or design homage is used twice.

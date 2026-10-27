@@ -18,7 +18,7 @@ The idea is to learn about art, manifestos and graphic design while making music
 - A limiter on the master output keeps everything at a safe level.
 - Five tools (10, 13, 36, 41, 48) can optionally ask Google Gemini for new material. Paste a Google AI Studio key into the box; it is stored only in your browser's `localStorage` (shared with SR-12 and the other tools as `sr12.geminiKey`) and sent only to Google. **No key is ever stored in this repo.** Without a key they use their built-in version.
 
-## The 50
+## The machines
 
 <!--LIST-->
 | # | Tool | Manifesto | Design homage | Idea |
@@ -73,6 +73,7 @@ The idea is to learn about art, manifestos and graphic design while making music
 | 48 | [Constellation](tools/48-constellation.html) | From Line to Constellation (vom vers zur konstellation) (Eugen Gomringer, 1954) | Bradbury Thompson | Place a few words on the page like stars: their positions make the rhythm and space, and their letters make the melody. |
 | 49 | [Letter Drum](tools/49-lettrist-drum.html) | Lettrism: Manifesto of Lettrist Poetry (Isidore Isou, 1942 (written), 1947 (published)) | Emigre | A drum machine made of letters: type a line and every character is a percussive phoneme, including Isou's new letters for breaths, clicks, whistles and kisses. |
 | 50 | [Ecstatic Truth](tools/50-ecstatic-truth.html) | Minnesota Declaration: Truth and Fact in Documentary Cinema (Werner Herzog, 1999) | Saul Bass | One slider from the accountant's truth to ecstatic truth: the same recording, played plainly as fact or stylised, slowed and staged into something deeper. |
+| 51 | [Both-And](tools/51-both-and.html) | Complexity and Contradiction in Architecture (Nonstraightforward Architecture: A Gentle Manifesto) (Robert Venturi, 1966) | Supergraphics (Barbara Stauffacher Solomon) | A machine that refuses to choose: every musical decision is a pair of opposites, and in the middle you get both at once. Major and minor, four and three, clean and dirty, straight and swung. |
 <!--/LIST-->
 
 ## Craig's feedback

@@ -2068,5 +2068,49 @@
   "no": "50",
   "slug": "ecstatic-truth",
   "file": "tools/50-ecstatic-truth.html"
+ },
+ {
+  "title": "Both-And",
+  "idea": "A machine that refuses to choose: every musical decision is a pair of opposites, and in the middle you get both at once. Major and minor, four and three, clean and dirty, straight and swung.",
+  "how": "Press PLAY. Each of the four big striped sliders is a contradiction. Push it left for one side, right for the other, or leave it in the middle to hear BOTH, which is where Venturi says the life is. HARMONY clashes a major and a minor chord on the same root. METRE runs a four-beat and a three-beat pattern against each other. SURFACE plays your sample clean and distorted. TIME plays straight and swung hats together. MESSY VITALITY adds stray fragments, fills and wrong notes. MORE IS NOT LESS adds another layer each press (a tune, a voice, a texture); a fourth press clears them, because less is a bore. Drop in your own samples: the first is chopped, the second becomes the three-beat hits.",
+  "fonts": "family=Archivo:wght@500;800;900",
+  "bpm": 104,
+  "manifesto": {
+   "name": "Complexity and Contradiction in Architecture (Nonstraightforward Architecture: A Gentle Manifesto)",
+   "short": "A Gentle Manifesto",
+   "author": "Robert Venturi",
+   "year": "1966",
+   "where": "opening chapter of the book, published by the Museum of Modern Art, New York",
+   "ideas": [
+    "Against the 'puritanically moral' purity of orthodox Modern architecture.",
+    "Prefer the hybrid, ambiguous and inconsistent: 'both-and' rather than 'either-or'.",
+    "A building's richness comes from holding contradictions together, not resolving them away."
+   ],
+   "quotes": [
+    "I am for messy vitality over obvious unity.",
+    "More is not less.",
+    "Blatant simplification means bland architecture. Less is a bore."
+   ],
+   "system": "Every control is a contradiction, and none of them make you choose. Each slider blends two opposing layers, and the middle position plays both together, so the music lives in the clash. MESSY VITALITY lets in stray, inconsistent events, and MORE IS NOT LESS keeps piling on layers."
+  },
+  "design": {
+   "name": "Supergraphics (Barbara Stauffacher Solomon)",
+   "short": "Supergraphics",
+   "who": "Barbara Stauffacher Solomon, American designer and landscape architect trained in Basel in Swiss modernism",
+   "era": "San Francisco and The Sea Ranch, California, mid 1960s onwards",
+   "hallmarks": [
+    "Room-sized stripes, circles, arrows and cropped Helvetica letters painted straight onto walls",
+    "Flat primary red, blue and yellow with black on white",
+    "Graphics that wrap round corners and across ceilings, so the paint changes how the space feels"
+   ],
+   "works": [
+    "Supergraphics for the Moonraker Athletic Center at The Sea Ranch, California (1966 to 1967)",
+    "The Sea Ranch ram's-horn logo",
+    "Green Architecture and the Agrarian Garden (book, 1988)"
+   ]
+  },
+  "no": "51",
+  "slug": "both-and",
+  "file": "tools/51-both-and.html"
  }
 ]
