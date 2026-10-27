@@ -970,5 +970,41 @@
   "date": "2026-10-27",
   "file": "tools/54-gradual-process.html",
   "thumb": "screenshots/thumbs/54-gradual-process.png"
+ },
+ {
+  "number": "55",
+  "title": "Murmuration",
+  "category": "nature/philosophy",
+  "source": "Emergence: the murmuration",
+  "source_short": "Emergence (murmuration)",
+  "author": "Craig Reynolds (1987); Ballerini, Cabibbo, Parisi and colleagues, STARFLAG (2008)",
+  "year": "1987 / 2008",
+  "design_homage": "Muriel Cooper",
+  "design_short": "Muriel Cooper",
+  "idea": "No bird leads a murmuration. Each one follows three local rules and watches about seven neighbours, and the shape of the whole flock comes out of that. Here each bird is also a sound: its height sets the pitch, its heading picks the point in your sample, and its speed sets the level.",
+  "controls": "4 species slots (chatter, wings, wind and call) with a mix for each; flock size; Reynolds's separation, alignment and cohesion; topological (k nearest) or metric neighbours; speed, wander and wind; a predator under the mouse with strength; grain rate, length, scale, key and range; wing-wash level; MIDI notes release a flock in that key.",
+  "deep": true,
+  "gemini": false,
+  "date": "2026-10-27",
+  "file": "tools/55-murmuration.html",
+  "thumb": "screenshots/thumbs/55-murmuration.png"
+ },
+ {
+  "number": "56",
+  "title": "The Colour Keyboard",
+  "category": "art manifesto",
+  "source": "Concerning the Spiritual in Art",
+  "source_short": "Kandinsky: Spiritual in Art",
+  "author": "Wassily Kandinsky (1866 to 1944)",
+  "year": "1911",
+  "design_homage": "Paul Rand",
+  "design_short": "Paul Rand",
+  "idea": "Kandinsky said colour is a keyboard and the soul is the piano. Paint a composition from points, lines, triangles, squares and circles, and a playhead plays it: the colour picks the instrument (yellow is a trumpet, blue a cello), the shape sets how each note is played, and white and black are two kinds of silence.",
+  "controls": "6 colour slots (yellow, red, blue, green, orange, violet) for your own sounds; 5 shapes (point, line glissando, triangle, square, circle); size, height and rotation; white (a pause) and black (cuts everything); loop length, tempo, scale, key and range; snap to grid; scan or radial reading; undo and clear; a COMPOSE generator; Gemini paints a composition from a mood; MIDI plays the colours live.",
+  "deep": true,
+  "gemini": true,
+  "date": "2026-10-27",
+  "file": "tools/56-colour-keyboard.html",
+  "thumb": "screenshots/thumbs/56-colour-keyboard.png"
  }
 ]

@@ -1,13 +1,13 @@
 # Manifesto Machines
 
-Fifty music-making tools, each built from two things:
+Fifty-six music-making tools (and counting), each built from two things:
 
-1. **A real artist's manifesto**, whose ideas become the rules of the music system. Futurism only accelerates, Dada cuts your loop up in a hat, Dogme 95 forbids effects, Auto-Destructive Art destroys the sample as it plays.
+1. **A real source idea**: an artist's manifesto, a theory of composition, Fred again..'s or Brian Eno's working methods, or an idea from nature or philosophy, whose ideas become the rules of the music system. Futurism only accelerates, Dada cuts your loop up in a hat, Dogme 95 forbids effects, Auto-Destructive Art destroys the sample as it plays.
 2. **A graphic design style or designer**, whose work drives the whole look: type, grid, colour and layout. Plakatstil, Neville Brody, Wim Crouwel, Saul Bass, Barbara Kruger, Memphis, brutalist web and more.
 
 The idea is to learn about art, manifestos and graphic design while making music. Every tool has a **LEARN** panel covering the manifesto (author, year, key ideas, short accurate quotes, and how the machine reads it) and the design homage (who, when, hallmarks, and works to look up).
 
-**Play them:** https://anorthernman-developer.github.io/manifesto-machines/
+**Play them:** https://anorthernman-developer.github.io/manifesto-machines/ (a searchable catalogue: filter by category, source, design homage, deep instruments or Gemini; press `/` to search)
 
 ## Using them
 
@@ -16,7 +16,19 @@ The idea is to learn about art, manifestos and graphic design while making music
 - Drop your own samples anywhere on the page, or use **SAMPLES** / **FOLDER** (for example `F:\01 Splice Sounds`; a random dozen is used from a folder). WAV, AIFF/AIFC (uncompressed), MP3, OGG and FLAC all work. AIFF is read by a small built-in decoder when the browser can't.
 - **● REC** records the output to a WAV file. **LEARN** (or L) opens the notes.
 - A limiter on the master output keeps everything at a safe level.
-- Five tools (10, 13, 36, 41, 48) can optionally ask Google Gemini for new material. Paste a Google AI Studio key into the box; it is stored only in your browser's `localStorage` (shared with SR-12 and the other tools as `sr12.geminiKey`) and sent only to Google. **No key is ever stored in this repo.** Without a key they use their built-in version.
+- Seven tools (10, 13, 36, 41, 48, 52, 56) can optionally ask Google Gemini for new material. Paste a Google AI Studio key into the box; it is stored only in your browser's `localStorage` (shared with SR-12 and the other tools as `sr12.geminiKey`) and sent only to Google. **No key is ever stored in this repo.** Without a key they use their built-in version.
+
+### The deep instruments (52 onwards)
+
+From 27 October there are five new tools a day: one Fred again.., one Brian Eno, one theory of composition, one from nature or philosophy, and one art manifesto. They are built on a second engine, the **deck** (`src/deck.js`), so they can be customised for your own sounds:
+
+- **SOUNDS** (D opens the deck): 4 to 6 named sample slots. Each slot loads a WAV, AIFF, MP3 or a whole folder (with "next file" to step through it) and has pitch, gain, start, end, reverse, filter, pan, and reverb and delay sends. A waveform shows the region.
+- **PRESETS**: save your settings and your sounds' slot settings to the browser (localStorage), or export and import them as JSON. Each tool has a few factory presets.
+- **MIDI**: Web MIDI input. Notes do something musical in each tool, and MIDI learn maps any knob or fader to any slider.
+- **KEYS** (or `?`): the keyboard shortcuts sheet.
+- LEARN has a "Try this" list of three ideas for using your own sounds.
+
+They still play within a few seconds of pressing PLAY.
 
 ## The machines
 
@@ -77,16 +89,20 @@ The idea is to learn about art, manifestos and graphic design while making music
 | 52 | [Actual Life Journal](tools/52-actual-life-journal.html) | Fred | What would Fred again.. do? The Actual Life method (Fred again.. (Fred Gibson, b. 1993, London), 2021 to 2022) | Tibor Kalman and M&Co | A diary you can dance to: a voice memo is chopped into emotional vocal hooks, laid over a field recording and house or two-step garage drums, and taken through intro, build, drop and break. |
 | 53 | [Seed Garden](tools/53-seed-garden.html) | Eno | What would Brian Eno do? Generative music, tape loops and gardening (Brian Eno (b. 1948), with Peter Schmidt for Oblique Strategies, 1975 to 2011) | Karl Gerstner, Designing Programmes | Plant sounds as tape loops of different lengths and let them drift in and out of phase, so the music is never the same twice. Garden it with seeds, pruning, weather, a deck of Oblique Strategies and a tape machine that prints the garden back into itself. |
 | 54 | [Gradual Process](tools/54-gradual-process.html) | music theory | Music as a Gradual Process (Steve Reich (b. 1936), 1968) | Anton Stankowski | Set a process going and listen to it run: copies of one pattern drift out of phase (Piano Phase, It's Gonna Rain), fill in note by note (Drumming) or stretch out (Four Organs), and new patterns appear from the gaps. |
+| 55 | [Murmuration](tools/55-murmuration.html) | nature/philosophy | Emergence: the murmuration (Craig Reynolds (1987); Ballerini, Cabibbo, Parisi and colleagues, STARFLAG (2008), 1987 / 2008) | Muriel Cooper | No bird leads a murmuration. Each one follows three local rules and watches about seven neighbours, and the shape of the whole flock comes out of that. Here each bird is also a sound: its height sets the pitch, its heading picks the point in your sample, and its speed sets the level. |
+| 56 | [The Colour Keyboard](tools/56-colour-keyboard.html) | art manifesto | Concerning the Spiritual in Art (Wassily Kandinsky (1866 to 1944), 1911) | Paul Rand | Kandinsky said colour is a keyboard and the soul is the piano. Paint a composition from points, lines, triangles, squares and circles, and a playhead plays it: the colour picks the instrument (yellow is a trumpet, blue a cello), the shape sets how each note is played, and white and black are two kinds of silence. |
 <!--/LIST-->
 
 ## Craig's feedback
 
-_Nothing yet. Add notes here or open an issue with the `feedback` label._
+- **27 October 2026:** "Loving these things you have created. It is bringing joy and getting me back into music." Wants them **more complex and more customisable for my own sounds**, and five a day: Fred again.., Brian Eno, a theory of composition, nature or philosophy, and an art manifesto, each with a design homage not used before. → From #52 every tool is a deep instrument with sample slots, presets, MIDI and a "Try this" list (see above), and the catalogue is now searchable.
+
+Add notes here or open an issue with the `feedback` label.
 
 ## How it's built
 
 `src/kit.js` and `src/kit.css` are a small shared engine (audio graph and limiter, fallback sounds, sample loading with the AIFF reader, WAV recorder, LEARN panel, optional Gemini box). `src/tools/NN-slug.js` holds each tool's metadata, CSS, HTML and music system. `python3 build.py` inlines everything into one self-contained file per tool and regenerates `index.html`, `tools.json`, `LEDGER.md` and the list above. `test/run.js` is a headless Chrome test (see `DEVLOG.md`).
 
-New tools are added one a day from #51. [LEDGER.md](LEDGER.md) lists every manifesto and design homage already used, so none repeat.
+`src/deck.js` and `src/deck.css` are the deck for the deep instruments (#52 on). `test/deep.js` tests the deck: slots, AIFF and WAV, reverse, presets, JSON export and import, MIDI, and a 10-second soak. New tools are added five a day from #52 (one a day for #51). [LEDGER.md](LEDGER.md) lists every manifesto and design homage already used, so none repeat.
 
 MIT licence.

@@ -1,5 +1,34 @@
 # Devlog
 
+## 27 October 2026 · 52 to 56, the first five-a-day
+
+**Feedback:** Craig said these tools are bringing him joy and getting him back into music. He wants them more complex and more customisable for his own sounds, five a day across Fred again.., Brian Eno, a theory of composition, nature or philosophy, and an art manifesto.
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 52 | Actual Life Journal | Fred again.. | Fred's diary-sampling method (Actual Life, 2021 to 2022) | Tibor Kalman / M&Co |
+| 53 | Seed Garden | Eno | Generative music: tape loops of unequal length, Oblique Strategies, the studio as a tool, gardening | Karl Gerstner, *Designing Programmes* |
+| 54 | Gradual Process | music theory | Steve Reich, "Music as a Gradual Process" (1968) | Anton Stankowski |
+| 55 | Murmuration | nature/philosophy | Emergence: Reynolds's boids (1987) and the STARFLAG starling study (Ballerini et al., PNAS 2008) | Muriel Cooper |
+| 56 | The Colour Keyboard | art manifesto | Kandinsky, *Concerning the Spiritual in Art* (1911) | Paul Rand |
+
+**Changes**
+
+- **Deck engine** (`src/deck.js` and `src/deck.css`, inlined only when META has `"deep": true`, so 01 to 51 rebuild unchanged):
+  - named sample slots, each with pitch, gain, start, end, reverse, filter, pan and reverb and delay sends, plus a waveform;
+  - folders, with "next file";
+  - bound parameters;
+  - presets in localStorage (`mm.presets.<no>`), with JSON export and import, and factory presets;
+  - Web MIDI, with MIDI learn on any slider;
+  - a keys sheet (`?`);
+  - an output tap, so tools can resample what they play (53 "prints to tape");
+  - a LEARN panel with a "Try this" list.
+- **Catalogue:** `catalogue.json` has number, title, category, source, year, design, idea, controls and date for every tool. 01 to 51 were backfilled: music theory for 03, 17, 18, 42 and 47; Eno for 35; nature/philosophy for 20, 22 and 33; everything else is art manifesto. `index.html` is now a searchable, filterable catalogue with category chips, source and design selects, sort, "deep" and "Gemini" toggles, and state kept in the URL hash.
+- **Tests:** `test/deep.js` covers the deck: slots, AIFF into one slot and WAV into another, reverse, preset save, change and load, JSON export and import, the keys sheet, simulated MIDI, and a 10-second soak checking level and errors. `test/procs.js` is a quick evaluator used to check each tool's modes (for example all four of 54's processes, and placing shapes and radial reading in 56).
+- **Fixes on the way:**
+  - 53 started too quietly, and its hiss handle had no `stop()`. Now the first loops sound in under a second, and a sample you load is planted as a new loop straight away.
+  - 55 used a scale name the kit doesn't have.
+
 ## 27 October 2026 · 51 Both-And
 
 **Manifesto:** Robert Venturi, *Complexity and Contradiction in Architecture* (1966), whose first chapter he called "a gentle manifesto". **Design:** supergraphics, after Barbara Stauffacher Solomon's painted walls at The Sea Ranch.

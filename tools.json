@@ -2308,5 +2308,140 @@
   "no": "54",
   "slug": "gradual-process",
   "file": "tools/54-gradual-process.html"
+ },
+ {
+  "title": "Murmuration",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-10-27",
+  "kicker": "EMERGENCE, NATURE AND PHILOSOPHY",
+  "idea": "No bird leads a murmuration. Each one follows three local rules and watches about seven neighbours, and the shape of the whole flock comes out of that. Here each bird is also a sound: its height sets the pitch, its heading picks the point in your sample, and its speed sets the level.",
+  "controls": "4 species slots (chatter, wings, wind and call) with a mix for each; flock size; Reynolds's separation, alignment and cohesion; topological (k nearest) or metric neighbours; speed, wander and wind; a predator under the mouse with strength; grain rate, length, scale, key and range; wing-wash level; MIDI notes release a flock in that key.",
+  "how": "Press PLAY. Up to 400 starlings fly by Craig Reynolds's three rules, and each one can trigger a short grain of sound. Move the mouse into the flock: it's a peregrine, and the birds swerve away as a wave (hold the mouse button to dive). Raise ALIGNMENT and the flock moves as one, so the sound becomes a stream. Raise SEPARATION and it scatters into a crackle. Switch NEIGHBOURS between 'k nearest' (what Ballerini and colleagues measured in real starlings) and 'radius' and listen to the flock hold together or break apart. Load your own sounds into the four species slots and set how many birds each one has.",
+  "fonts": "family=Schibsted+Grotesk:wght@400;600;800",
+  "bpm": 100,
+  "try": [
+   "Load a long field recording, a minute of rain or a crowd, into CHATTER. Each bird's heading reads from a different point in the file, so the flock scrubs through it as it turns.",
+   "Put a single sung note from your Splice folder into CALL, set SCALE to penta (pentatonic) and RANGE to 2 octaves, then sweep ALIGNMENT from 0 to 1. Disorder gives chords, and order makes the flock sing in unison.",
+   "Turn the PREDATOR up and hold the mouse down in the middle of the flock. The escape wave runs through the birds like a wave in water, and through your sample."
+  ],
+  "manifesto": {
+   "name": "Emergence: the murmuration",
+   "short": "Emergence (murmuration)",
+   "author": "Craig Reynolds (1987); Ballerini, Cabibbo, Parisi and colleagues, STARFLAG (2008)",
+   "year": "1987 / 2008",
+   "where": "Reynolds, 'Flocks, Herds, and Schools: A Distributed Behavioral Model', SIGGRAPH 1987; Ballerini et al., 'Interaction ruling animal collective behavior depends on topological rather than metric distance', PNAS 105(4), 2008",
+   "ideas": [
+    "Emergence: complex group behaviour can come from simple local rules, with no leader and no plan.",
+    "Reynolds's three rules, in order of priority: Collision Avoidance (don't crash), Velocity Matching (fly like your neighbours) and Flock Centering (stay close to them).",
+    "Starlings in Rome were filmed in 3D by the STARFLAG team. Each bird follows a fixed number of neighbours, not every bird within a fixed distance, so the flock stays together when it thins out.",
+    "A murmuration has no centre, yet it reacts as a whole. A turn spreads through the flock faster than any single bird could signal it.",
+    "A musical question: what if each player only listened to the players nearest them?"
+   ],
+   "quotes": [
+    [
+     "the birds choose their own course",
+     "Craig Reynolds, 'Flocks, Herds, and Schools: A Distributed Behavioral Model', 1987"
+    ],
+    [
+     "The aggregate motion of the simulated flock is the result of the dense interaction of the relatively simple behaviors of the individual simulated birds.",
+     "Craig Reynolds, 1987 (abstract)"
+    ],
+    [
+     "each bird interacts on average with a fixed number of neighbors (six–seven), rather than with all neighbors within a fixed metric distance",
+     "Ballerini et al., PNAS, 2008 (abstract)"
+    ]
+   ],
+   "system": "Each bird looks at its k nearest neighbours (or every bird within a radius). It steers away from any that are too close, turns towards their average heading, and moves towards their centre, with wander, a wind and the predator added. Sound is a grain cloud: every grain is one bird. Its species picks the slot, its height picks a scale degree, its heading picks the point in the sample, its x position sets the pan, its speed sets the level and its depth sets the reverb. Wing-wash is a looped bed whose level follows how fast and how ordered the flock is."
+  },
+  "design": {
+   "name": "Muriel Cooper",
+   "short": "Muriel Cooper",
+   "who": "Muriel Cooper (1925 to 1994), first design director of the MIT Press, co-founder of the Visible Language Workshop and founding faculty member of the MIT Media Lab",
+   "era": "MIT, 1950s to 1994",
+   "hallmarks": [
+    "Information Landscapes: translucent, layered type floating in a deep, zoomable 3D space",
+    "Seven vertical bars, the MIT Press colophon, abstract book spines spelling 'mitp'",
+    "Overlapping translucent colour and the computer used as a design medium, not just a production tool"
+   ],
+   "works": [
+    "The MIT Press colophon (1964, in use from 1965), now in MoMA's collection",
+    "Bauhaus by Hans M. Wingler (MIT Press, 1969)",
+    "Information Landscapes, with David Small and others at the Visible Language Workshop, presented at TED5 (1994)"
+   ]
+  },
+  "no": "55",
+  "slug": "murmuration",
+  "file": "tools/55-murmuration.html"
+ },
+ {
+  "title": "The Colour Keyboard",
+  "deep": true,
+  "gemini": true,
+  "category": "art manifesto",
+  "date": "2026-10-27",
+  "kicker": "AN ART MANIFESTO",
+  "idea": "Kandinsky said colour is a keyboard and the soul is the piano. Paint a composition from points, lines, triangles, squares and circles, and a playhead plays it: the colour picks the instrument (yellow is a trumpet, blue a cello), the shape sets how each note is played, and white and black are two kinds of silence.",
+  "controls": "6 colour slots (yellow, red, blue, green, orange, violet) for your own sounds; 5 shapes (point, line glissando, triangle, square, circle); size, height and rotation; white (a pause) and black (cuts everything); loop length, tempo, scale, key and range; snap to grid; scan or radial reading; undo and clear; a COMPOSE generator; Gemini paints a composition from a mood; MIDI plays the colours live.",
+  "how": "Press PLAY. A black bar reads the canvas from left to right. Every shape it crosses sounds: the colour sets the instrument, the height sets the pitch, the size sets how loud and how long, and the shape sets the articulation. A triangle is sharp, high and short, a square is steady and held, a circle swells in slowly and low, a point is a single pluck, and a line slides from one pitch to another. Pick a colour (1 to 8) and a shape (Q point, W line, E triangle, T square, Y circle), then click and drag on the canvas to place it. Shift-click removes a shape. WHITE pauses everything for a moment. BLACK cuts every sound. Press C to COMPOSE a new picture, or describe a mood to Gemini.",
+  "fonts": "family=Jost:wght@400;600;800&family=Caveat:wght@600",
+  "bpm": 104,
+  "try": [
+   "Load a muted trumpet or brass stab from your Splice folder into YELLOW and a felt-piano note into BLUE. Paint yellow triangles along the top and big blue circles along the bottom, and you have Kandinsky's 'shrill trumpet-note' over his 'darker blue a cello'.",
+   "Load your own drum loop into RED, then draw one long red square across the whole loop. Squares hold and loop the sound, so it becomes a bed you can chop with black points.",
+   "Ask Gemini for 'Composition VIII, but at 3am in the rain', then shift-click away half of what it paints and see what's left."
+  ],
+  "manifesto": {
+   "name": "Concerning the Spiritual in Art",
+   "short": "Kandinsky: Spiritual in Art",
+   "author": "Wassily Kandinsky (1866 to 1944)",
+   "year": "1911",
+   "where": "Über das Geistige in der Kunst, Munich, December 1911 (dated 1912). English translation by Michael T. H. Sadler (Sadleir), 1914. Followed by Point and Line to Plane (Bauhaus book, 1926).",
+   "ideas": [
+    "Art should express 'inner necessity', the inner sound of forms and colours, not copy the look of things.",
+    "Colours have sounds. Yellow is a shrill trumpet. Light blue is a flute, darker blue a cello, darker still a double bass, and the darkest blue an organ. Green is the placid middle notes of a violin. Orange is the Angelus bell or an old violin. Violet is a cor anglais or a bassoon.",
+    "Forms have sounds too. Acute shapes such as the triangle go with sharp colours such as yellow, and deep round shapes such as the circle go with blue. In his Bauhaus questionnaire of 1923 he asked students to pair the yellow triangle, the red square and the blue circle.",
+    "White is a silence full of possibility, like a pause in music. Black is the silence of death.",
+    "Point and Line to Plane (1926): the point is the smallest element and the line is a point set in motion. Here, points pluck and lines glide."
+   ],
+   "quotes": [
+    [
+     "Colour is the keyboard, the eyes are the hammers, the soul is the piano with many strings. The artist is the hand which plays, touching one key or another, to cause vibrations in the soul.",
+     "Wassily Kandinsky, Concerning the Spiritual in Art, 1911 (trans. Sadler)"
+    ],
+    [
+     "Keen lemon-yellow hurts the eye in time as a prolonged and shrill trumpet-note the ear",
+     "Kandinsky, 1911"
+    ],
+    [
+     "White, therefore, has this harmony of silence, which works upon us negatively, like many pauses in music that break temporarily the melody.",
+     "Kandinsky, 1911"
+    ],
+    [
+     "The silence of black is the silence of death.",
+     "Kandinsky, 1911"
+    ]
+   ],
+   "system": "The canvas is a score. Each shape has a colour, a shape, x (when), y (pitch), size (level and length) and rotation (stereo). Colour picks the slot, Kandinsky's instrument. Shape picks the articulation: a point plucks, a line glides from its start pitch to its end pitch, a triangle is sharp and an octave up, a square holds and loops the sound, and a circle swells in an octave down with more reverb. White ducks the whole mix for a pause, and black stops every sound that is playing. In RADIAL mode the bar sweeps like a clock hand from the centre."
+  },
+  "design": {
+   "name": "Paul Rand",
+   "short": "Paul Rand",
+   "who": "Paul Rand (1914 to 1996), American graphic designer, author of Thoughts on Design (1947), designer of the IBM, Westinghouse, ABC and UPS identities, and teacher at Yale",
+   "era": "New York and Connecticut, 1930s to 1996",
+   "hallmarks": [
+    "Playful, simple geometry: cut-paper shapes with a hand-made edge, a little crooked, never mechanical",
+    "Flat primary colours and lots of white space, often with handwriting next to clean type",
+    "Wit and visual puns, like the rebus in the Eye-Bee-M poster (1981)"
+   ],
+   "works": [
+    "IBM striped logo (1972)",
+    "Westinghouse (1960) and ABC (1962) logos",
+    "Sparkle and Spin, a children's book with Ann Rand (1957)"
+   ]
+  },
+  "no": "56",
+  "slug": "colour-keyboard",
+  "file": "tools/56-colour-keyboard.html"
  }
 ]
