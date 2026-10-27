@@ -1863,5 +1863,210 @@
   "no": "45",
   "slug": "poor-means",
   "file": "tools/45-poor-means.html"
+ },
+ {
+  "title": "Databend",
+  "idea": "Bend the raw data of your sample: shift its bytes, flip its bits, swap and repeat its blocks, and listen to the medium break open.",
+  "how": "Press PLAY. Your sample is turned into raw data (bytes) and played back as a loop. Each operation edits that data directly, as if you had opened the file in a text editor: SHIFT (moves the byte alignment, so the samples are read wrongly), FLIP (inverts random bits), SWAP (exchanges two blocks), STUTTER (repeats a block), 8-BIT (reads it as cheap 8-bit audio) and ZERO (wipes a block). Each operation stacks on the last. The display shows the data as coloured pixels. Repeating the same operation over and over turns the glitch into a style, and the machine warns you. UNDO steps back and CLEAN restores the original.",
+  "fonts": "family=VT323&family=Roboto+Condensed:wght@300;700",
+  "bpm": 120,
+  "manifesto": {
+   "name": "Glitch Studies Manifesto",
+   "short": "Glitch Studies",
+   "author": "Rosa Menkman",
+   "year": "2010",
+   "where": "published in Amsterdam and Cologne in 2010; later expanded in her book The Glitch Moment(um) (2011)",
+   "ideas": [
+    "The glitch is a break that reveals the medium itself: its materials, protocols and hidden assumptions.",
+    "Resist the myth of the perfect, noiseless channel and the idea that progress means ever more transparent technology.",
+    "Once a glitch is repeated and designed, it can harden into a style or commodity, and stop being a glitch."
+   ],
+   "quotes": [],
+   "system": "You don't process sound with effects. You break the data that carries it, and the warning when you repeat yourself is the manifesto's point that a glitch turned into a preset is no longer a glitch."
+  },
+  "design": {
+   "name": "Wolfgang Weingart",
+   "short": "Wolfgang Weingart",
+   "who": "Wolfgang Weingart, German typographer and teacher at the Basel School of Design",
+   "era": "Basel, late 1960s to 1990s",
+   "hallmarks": [
+    "Swiss typography broken open: layered film, screens, stepped and spaced type",
+    "Raster dots, halftone textures and photomechanical collage",
+    "Experimental, process-led work that influenced 'New Wave' typography"
+   ],
+   "works": [
+    "Posters for the Kunstgewerbemuseum Zürich (late 1970s to 1980s)",
+    "Covers for Typografische Monatsblätter (1970s)",
+    "The book Typography: My Way to Typography (2000)"
+   ]
+  },
+  "no": "46",
+  "slug": "databend",
+  "file": "tools/46-databend.html"
+ },
+ {
+  "title": "Sound Masses",
+  "idea": "Three sirens and colliding sound masses: drag the sirens' pitch planes through space, and where they meet, the masses penetrate or repel.",
+  "how": "Press PLAY. Each coloured plane is a sound mass driven by a siren (a continuously gliding tone) with a beating cluster around it. Drag the planes up and down (pitch) and left and right (space: pan). When two masses collide, they either penetrate each other (passing through with a burst of your sample, like a percussion crash) or repel (bouncing apart with a thud), depending on REPEL. AUTO keeps them moving. The percussion layer is in the spirit of Ionisation, Varèse's 1931 piece for percussion ensemble with two sirens.",
+  "fonts": "family=Saira+Condensed:wght@300;800",
+  "bpm": 90,
+  "manifesto": {
+   "name": "The Liberation of Sound",
+   "short": "Liberation of Sound",
+   "author": "Edgard Varèse",
+   "year": "1936 to 1962 (lectures), published 1966",
+   "where": "lectures compiled by Chou Wen-chung and published in Perspectives of New Music (1966)",
+   "ideas": [
+    "Music as 'organised sound', freed from the limits of traditional instruments and the tempered scale.",
+    "Sound masses and planes moving in space, colliding, penetrating or repelling each other.",
+    "Sirens, percussion and, later, electronics, as in Ionisation (1931) and Poème électronique (1958)."
+   ],
+   "quotes": [
+    "organized sound"
+   ],
+   "system": "No notes or scale: continuous sirens and masses that you move through space, and the events come from their collisions, as Varèse described sound masses that penetrate or repel."
+  },
+  "design": {
+   "name": "Erik Nitsche",
+   "short": "Erik Nitsche",
+   "who": "Erik Nitsche, Swiss-born designer who worked in the United States",
+   "era": "New York, 1940s to 1960s",
+   "hallmarks": [
+    "Scientific, atomic-age imagery with orbits, diagrams and abstract forms",
+    "Bold flat colour planes on dark backgrounds",
+    "Modernist sans type with technical precision"
+   ],
+   "works": [
+    "Atoms for Peace posters for General Dynamics (1955)",
+    "General Dynamics corporate design programme (1955 to 1960)",
+    "Record covers for Decca (1950s)"
+   ]
+  },
+  "no": "47",
+  "slug": "liberation-of-sound",
+  "file": "tools/47-liberation-of-sound.html"
+ },
+ {
+  "title": "Constellation",
+  "idea": "Place a few words on the page like stars: their positions make the rhythm and space, and their letters make the melody.",
+  "how": "Press PLAY. Each word is a star in a constellation. A slow sweep moves from left to right, and when it reaches a word, the word is sung: each letter is a note (vowels are long and consonants are short, struck with your sample), its height is the pitch register and its size is the loudness. Drag words to move them, double-click the page to add a word (you will be asked for it) and double-click a word to remove it. LAYOUT offers a few starting constellations, including one built on a single word repeated around an empty centre. With a Gemini key, give a theme and Gemini places a new constellation of words.",
+  "fonts": "family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;600",
+  "bpm": 80,
+  "manifesto": {
+   "name": "From Line to Constellation (vom vers zur konstellation)",
+   "short": "Concrete Poetry",
+   "author": "Eugen Gomringer",
+   "year": "1954",
+   "where": "published in Switzerland in 1954; Gomringer was then secretary to Max Bill at the Ulm School of Design",
+   "ideas": [
+    "Replace the line of verse with the constellation: a few words grouped on the page, read in any direction.",
+    "The poem becomes an object for seeing and using, closer to a sign, a logo or a playful thought game.",
+    "Reduction: very few words, with space as active material, as in his poems avenidas (1951) and silencio (1953 to 1954)."
+   ],
+   "quotes": [],
+   "system": "There are no bars or lines. The sweep reads words wherever you place them, so space, size and position on the page are the score, and the letters themselves are the melody."
+  },
+  "design": {
+   "name": "Bradbury Thompson",
+   "short": "Bradbury Thompson",
+   "who": "Bradbury Thompson, American graphic designer and art director",
+   "era": "New York, 1930s to 1980s",
+   "hallmarks": [
+    "Playful use of letters as images, printed in overlapping process colours (cyan, magenta and yellow)",
+    "Bold experiments with type and halftone in printers' magazines",
+    "A rational lower-case-only alphabet idea, Alphabet 26"
+   ],
+   "works": [
+    "Westvaco Inspirations for Printers (1939 to 1962)",
+    "Alphabet 26 (1950)",
+    "Design for Mademoiselle magazine (1945 to 1959)"
+   ]
+  },
+  "no": "48",
+  "slug": "constellation",
+  "file": "tools/48-constellation.html"
+ },
+ {
+  "title": "Letter Drum",
+  "idea": "A drum machine made of letters: type a line and every character is a percussive phoneme, including Isou's new letters for breaths, clicks, whistles and kisses.",
+  "how": "Press PLAY. Type into the line (up to 32 characters); each character is one step. Vowels are sung vowel sounds, consonants are percussive (K, T, P and similar are hard hits; S, F, SH and similar are noise; M, N and L are hums), and your sample speaks the capital letters. The extra Lettrist letters in the palette are new sounds: breathing in (↑), breathing out (↓), a click (ʘ), a whistle (~), a kiss (♥), a cough (※) and silence (·). Click them to add them. SCRAMBLE reorders the letters and TEMPO sets the speed.",
+  "fonts": "family=Syne+Mono&family=Syne:wght@400;800",
+  "bpm": 120,
+  "manifesto": {
+   "name": "Lettrism: Manifesto of Lettrist Poetry",
+   "short": "Lettrism",
+   "author": "Isidore Isou",
+   "year": "1942 (written), 1947 (published)",
+   "where": "in Isou's book Introduction à une nouvelle poésie et à une nouvelle musique (Paris, 1947); the Lettrist movement began in Paris in 1945 to 1946",
+   "ideas": [
+    "Poetry reduced beyond words, to letters and their sounds.",
+    "An enlarged alphabet of new 'letters' for sounds such as breathing, clicks, whistles and coughs.",
+    "A new poetry that merges with music, performed out loud."
+   ],
+   "quotes": [],
+   "system": "The score is a line of characters. Words are not sung; every letter is a sound in its own right, and Isou's extra sound-letters are part of the alphabet."
+  },
+  "design": {
+   "name": "Emigre",
+   "short": "Emigre",
+   "who": "Emigre: Rudy VanderLans and Zuzana Licko, with designers such as Barry Deck",
+   "era": "Berkeley and Sacramento, California, 1984 to 2005",
+   "hallmarks": [
+    "Bitmap and digital typefaces designed for the early Macintosh",
+    "Experimental, layered layouts that broke Swiss-style rules",
+    "Type designed and published by its users"
+   ],
+   "works": [
+    "Emigre magazine (1984 to 2005)",
+    "Zuzana Licko's bitmap fonts (such as Oakland and Matrix) and Mrs Eaves (1996)",
+    "Barry Deck's Template Gothic (1990)"
+   ]
+  },
+  "no": "49",
+  "slug": "lettrist-drum",
+  "file": "tools/49-lettrist-drum.html"
+ },
+ {
+  "title": "Ecstatic Truth",
+  "idea": "One slider from the accountant's truth to ecstatic truth: the same recording, played plainly as fact or stylised, slowed and staged into something deeper.",
+  "how": "Press PLAY. Your sample is the 'footage'. With the slider at FACT, it plays exactly as recorded, cut on a strict grid, with a dry log of the facts (times, levels). As you move towards ECSTASY, the machine starts to invent: it slows and stretches the sound, adds a choir drone built from it, reverb, and staged scenes (footsteps in snow, a ship's horn, a far-off bell) that were never in the recording. STAGE A SCENE invents one now. The log changes from facts to stranger, invented captions.",
+  "fonts": "family=Oswald:wght@300;700&family=Crimson+Pro:ital@0;1",
+  "bpm": 76,
+  "manifesto": {
+   "name": "Minnesota Declaration: Truth and Fact in Documentary Cinema",
+   "short": "Minnesota Declaration",
+   "author": "Werner Herzog",
+   "year": "1999",
+   "where": "read at the Walker Art Center, Minneapolis, on 30 April 1999",
+   "ideas": [
+    "Cinéma vérité gives only a superficial 'accountant's truth' of facts.",
+    "Deeper truth can be reached only through fabrication, imagination and stylisation.",
+    "Ecstatic truth is mysterious and elusive, reached through poetry and invention."
+   ],
+   "quotes": [
+    "Fact creates norms, and truth illumination.",
+    "There are deeper strata of truth in cinema, and there is such a thing as poetic, ecstatic truth."
+   ],
+   "system": "One slider moves between fact and fabrication. At FACT the sample is only documented, but towards ECSTASY the machine stylises and stages it, inventing sounds that were never recorded to reach something truer."
+  },
+  "design": {
+   "name": "Saul Bass",
+   "short": "Saul Bass",
+   "who": "Saul Bass, American graphic designer and film-title designer",
+   "era": "Los Angeles, 1950s to 1990s",
+   "hallmarks": [
+    "Jagged paper cut-out shapes and a single symbolic image",
+    "Bold flat colour (often red, black and orange) with hand-cut type",
+    "Spirals, fragmented bodies and kinetic title sequences"
+   ],
+   "works": [
+    "The Man with the Golden Arm titles and poster (1955)",
+    "Vertigo titles and poster (1958)",
+    "Anatomy of a Murder poster (1959)"
+   ]
+  },
+  "no": "50",
+  "slug": "ecstatic-truth",
+  "file": "tools/50-ecstatic-truth.html"
  }
 ]

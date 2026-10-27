@@ -49,3 +49,8 @@ Every manifesto and design homage used so far. The daily routine adds one new to
 | 43 | Für Statik (For Statics) | 1959 | Jean Tinguely | Armin Hofmann | [tools/43-meta-mechanics.html](tools/43-meta-mechanics.html) |
 | 44 | Nouveau Réalisme manifestos | 1960 | Pierre Restany | Polish School of Posters | [tools/44-decollage.html](tools/44-decollage.html) |
 | 45 | Arte Povera: Notes for a Guerrilla War | 1967 | Germano Celant | Bruno Munari | [tools/45-poor-means.html](tools/45-poor-means.html) |
+| 46 | Glitch Studies Manifesto | 2010 | Rosa Menkman | Wolfgang Weingart | [tools/46-databend.html](tools/46-databend.html) |
+| 47 | The Liberation of Sound | 1936 to 1962 (lectures), published 1966 | Edgard Varèse | Erik Nitsche | [tools/47-liberation-of-sound.html](tools/47-liberation-of-sound.html) |
+| 48 | From Line to Constellation (vom vers zur konstellation) | 1954 | Eugen Gomringer | Bradbury Thompson | [tools/48-constellation.html](tools/48-constellation.html) |
+| 49 | Lettrism: Manifesto of Lettrist Poetry | 1942 (written), 1947 (published) | Isidore Isou | Emigre | [tools/49-lettrist-drum.html](tools/49-lettrist-drum.html) |
+| 50 | Minnesota Declaration: Truth and Fact in Documentary Cinema | 1999 | Werner Herzog | Saul Bass | [tools/50-ecstatic-truth.html](tools/50-ecstatic-truth.html) |

@@ -68,6 +68,11 @@ The idea is to learn about art, manifestos and graphic design while making music
 | 43 | [Für Statik](tools/43-meta-mechanics.html) | Für Statik (For Statics) (Jean Tinguely, 1959) | Armin Hofmann | A rickety machine of meshing gears: each gear's teeth strike notes, so the gear ratios become polyrhythms, and the machine wobbles because nothing stays still. |
 | 44 | [Décollage](tools/44-decollage.html) | Nouveau Réalisme manifestos (Pierre Restany, 1960) | Polish School of Posters | Three posters pasted on top of each other, each one a different groove; tear strips away to reveal the layers underneath. |
 | 45 | [Poor Means](tools/45-poor-means.html) | Arte Povera: Notes for a Guerrilla War (Germano Celant, 1967) | Bruno Munari | Four poor materials (wire, stone, water and rag) and only the energy of your hands: pluck, strike, drip and rub. |
+| 46 | [Databend](tools/46-databend.html) | Glitch Studies Manifesto (Rosa Menkman, 2010) | Wolfgang Weingart | Bend the raw data of your sample: shift its bytes, flip its bits, swap and repeat its blocks, and listen to the medium break open. |
+| 47 | [Sound Masses](tools/47-liberation-of-sound.html) | The Liberation of Sound (Edgard Varèse, 1936 to 1962 (lectures), published 1966) | Erik Nitsche | Three sirens and colliding sound masses: drag the sirens' pitch planes through space, and where they meet, the masses penetrate or repel. |
+| 48 | [Constellation](tools/48-constellation.html) | From Line to Constellation (vom vers zur konstellation) (Eugen Gomringer, 1954) | Bradbury Thompson | Place a few words on the page like stars: their positions make the rhythm and space, and their letters make the melody. |
+| 49 | [Letter Drum](tools/49-lettrist-drum.html) | Lettrism: Manifesto of Lettrist Poetry (Isidore Isou, 1942 (written), 1947 (published)) | Emigre | A drum machine made of letters: type a line and every character is a percussive phoneme, including Isou's new letters for breaths, clicks, whistles and kisses. |
+| 50 | [Ecstatic Truth](tools/50-ecstatic-truth.html) | Minnesota Declaration: Truth and Fact in Documentary Cinema (Werner Herzog, 1999) | Saul Bass | One slider from the accountant's truth to ecstatic truth: the same recording, played plainly as fact or stylised, slowed and staged into something deeper. |
 <!--/LIST-->
 
 ## Craig's feedback
