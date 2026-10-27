@@ -13,3 +13,4 @@
 .mmx-keys{border-collapse:collapse;width:100%}.mmx-keys td{padding:4px 6px;border-bottom:1px solid color-mix(in srgb,currentColor 25%,transparent)}kbd{font:700 11px ui-monospace,monospace;border:1.5px solid currentColor;padding:1px 5px}
 .mmx-ctl{display:grid;grid-template-columns:auto 1fr auto;gap:6px;align-items:center}.mmx-ctl input[type=range]{width:100%;accent-color:var(--acc)}.mmx-ctl select{font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor}.mmx-ctl select option{color:#111;background:#fff}.mmx-cv{min-width:34px;text-align:right;opacity:.8;font-variant-numeric:tabular-nums}
 #mm-bar #mmx-deck-btn.on{background:var(--acc);border-color:var(--acc);color:#fff}
+#mm-learn-dlg blockquote cite{display:block;font:italic 12px var(--bar-font);opacity:.7;margin-top:3px}#mm-learn-dlg ol{padding-left:20px}#mm-learn-dlg ol li{margin:4px 0}

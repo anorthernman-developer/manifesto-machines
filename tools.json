@@ -2112,5 +2112,201 @@
   "no": "51",
   "slug": "both-and",
   "file": "tools/51-both-and.html"
+ },
+ {
+  "title": "Actual Life Journal",
+  "deep": true,
+  "gemini": true,
+  "category": "Fred",
+  "date": "2026-10-27",
+  "kicker": "WHAT WOULD FRED AGAIN.. DO?",
+  "idea": "A diary you can dance to: a voice memo is chopped into emotional vocal hooks, laid over a field recording and house or two-step garage drums, and taken through intro, build, drop and break.",
+  "controls": "6 slots (voice memo, field recording, keys, kick, clap, hats); chop grid with per-step pitch; 3 drum styles with swing; 6 chord progressions in any key; field-bed level and sidechain pump; auto-arranged or hand-played INTRO/BUILD/DROP/BREAK with hold-to-build; Gemini turns a description of your day into an arrangement.",
+  "how": "Press PLAY: the built-in memo is already chopped and the song starts in its INTRO. Type who said it and the line they said (that becomes the title, like 'Carlos (gotta move on)') and the words flash up as each chop plays. Click the chop grid to choose which piece of the memo plays on each step; the row underneath sets each step's pitch (click up, shift-click down). Hold B (or the BUILD button) for a riser and let go to DROP. Pick HOUSE, 2-STEP or HALF-TIME drums, a chord progression and key. Open the DECK (D) to load your own voice memo, field recording, keys and drums into the slots.",
+  "fonts": "family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Archivo+Narrow:wght@500;700",
+  "bpm": 132,
+  "try": [
+   "Record a 20 second voice memo of a friend telling you about their week. Load it into slot 1, set CHOPS to ONSETS so every word becomes a chop, and build a hook from the three words you like best.",
+   "Put a field recording from your street, a pub or a train into slot 2 and push FIELD up during the BREAK. Then pull the slot's FILTER down so it sounds like the room next door to the club.",
+   "Load a single held piano or pad note from your Splice folder into slot 3. Set its PITCH so it matches the key, choose vi-IV-I-V and STABS, and play the memo chromatically from a MIDI keyboard over it."
+  ],
+  "manifesto": {
+   "name": "What would Fred again.. do? The Actual Life method",
+   "short": "Fred again..",
+   "author": "Fred again.. (Fred Gibson, b. 1993, London)",
+   "year": "2021 to 2022",
+   "where": "the Actual Life trilogy: Actual Life (April 14 - December 17 2020), Actual Life 2 (February 2 - October 15 2021) and Actual Life 3 (January 1 - September 9 2022)",
+   "ideas": [
+    "Each album is a dated diary. The titles are date ranges, and the songs are built from what was recorded during them.",
+    "The samples are real life: voice notes from friends, videos he filmed on nights out, and clips from Instagram and elsewhere, used with permission.",
+    "The first person he sampled was Carlos, a construction worker he met in Atlanta. Hungover the next morning, he played piano on his laptop keyboard over what Carlos had said.",
+    "Songs are named after the person and their line, like 'Marea (we've lost dancing)', built from a monologue by the DJ The Blessed Madonna.",
+    "When a sample can't say exactly what he feels, he writes lyrics and sings on top. The emotion sits over house, garage and breakbeat drums, and builds to euphoric drops."
+   ],
+   "quotes": [
+    [
+     "I want the music to feel like a collaborative diary",
+     "Fred again.., Rolling Stone UK"
+    ],
+    [
+     "I want to carry on sampling the world.",
+     "Fred again.., NME, 2021"
+    ],
+    [
+     "taking these seemingly quite mundane life moments and shining a light on all the beauty that is in those moments",
+     "Fred again.., NPR, November 2022"
+    ]
+   ],
+   "system": "Slot 1 is the voice memo. It's cut into chops, at its natural word onsets or equally, and a step grid turns them into a hook, with each step pitched inside the key so speech starts to sing. The name and the line give the song its title, and the words flash up with each chop. Under the voice sit a field recording (slot 2), emotional chord progressions played on any sample (slot 3) and a choice of four-to-the-floor house, two-step garage or half-time drums. The arranger moves the song through INTRO (muffled, as if heard from the next room), BUILD (rising filter, snare roll and faster chops), a silent beat before the DROP, and a BREAK. You can let it run or perform it by hand."
+  },
+  "design": {
+   "name": "Tibor Kalman and M&Co",
+   "short": "Tibor Kalman / M&Co",
+   "who": "Tibor Kalman (1949 to 1999), Hungarian-born American designer, founder of M&Co in New York and editor of Benetton's Colors magazine",
+   "era": "New York, 1979 to the late 1990s",
+   "hallmarks": [
+    "Vernacular type: the lettering of shop signs, menus and typewriters, used on purpose instead of 'good taste'. Here it's the Courier journal.",
+    "Huge words that fill the frame one at a time, as in the lyric video M&Co made for Talking Heads' '(Nothing But) Flowers'. Here each chop's word fills the screen.",
+    "Colors magazine's direct, image-first layouts with blunt captions, bold red and black, and serious ideas presented with wit."
+   ],
+   "works": [
+    "Talking Heads, '(Nothing But) Flowers' lyric video (1988)",
+    "Colors magazine, Benetton (Kalman was editor-in-chief, 1990 to 1995)",
+    "Tibor Kalman: Perverse Optimist (book, 1998)"
+   ]
+  },
+  "no": "52",
+  "slug": "actual-life-journal",
+  "file": "tools/52-actual-life-journal.html"
+ },
+ {
+  "title": "Seed Garden",
+  "deep": true,
+  "category": "Eno",
+  "date": "2026-10-27",
+  "kicker": "WHAT WOULD BRIAN ENO DO?",
+  "idea": "Plant sounds as tape loops of different lengths and let them drift in and out of phase, so the music is never the same twice. Garden it with seeds, pruning, weather, a deck of Oblique Strategies and a tape machine that prints the garden back into itself.",
+  "controls": "6 slots (piano, voice, texture, bell, found sound, TAPE); up to 12 loop beds, each with its own length, note, sound, swell and pan; scale, key, octave and loop-length programme; attention slider (ignorable to interesting); growth and weather; Discreet-style tape echo with wow and hiss; Oblique Strategies cards that really change the system; PRINT TO TAPE resampling; a Gerstner morphological box that writes a whole programme.",
+  "how": "Press PLAY. Each ring is a tape loop: the dot goes round once per loop and plays its note when it passes the top. Because no two loops are the same length, they line up differently every time. SEED plants a new loop (S), PRUNE removes one (P) and clicking a ring removes that loop. Turn GROWTH up and the garden seeds and prunes itself, while WEATHER slowly bends the lengths and notes. DRAW A CARD (O) turns over an Oblique Strategy and does what it says to the music. PRINT TO TAPE (T) records the last bars into the TAPE slot and plants it back at half speed. In the PROGRAMME box, click one cell per row or press RANDOM PROGRAMME, then PLANT PROGRAMME to start a new garden from it.",
+  "fonts": "family=Inter+Tight:wght@400;600;800",
+  "bpm": 60,
+  "try": [
+   "Load three single notes from your Splice folder (a piano, a voice 'ooh' and a pad) into slots 1 to 3, set each slot's PITCH so it reads as C, then plant a programme in a pentatonic scale. Every loop will sit in key.",
+   "Put a long field recording or a crackly vinyl loop into FOUND SOUND, set its slot START and END to a short, quiet section, and seed it a few times. ATTENTION near 'ignorable' turns it into background weather.",
+   "Play for two minutes, PRINT TO TAPE, then PRUNE everything except the tape loop. Seed again around it. Eno's studio idea is that the recording becomes the next instrument."
+  ],
+  "manifesto": {
+   "name": "What would Brian Eno do? Generative music, tape loops and gardening",
+   "short": "Brian Eno",
+   "author": "Brian Eno (b. 1948), with Peter Schmidt for Oblique Strategies",
+   "year": "1975 to 2011",
+   "where": "Discreet Music (1975), Oblique Strategies (1975), Music for Airports (1978), 'The Studio as Compositional Tool' (lecture, 1979), Generative Music 1 (1996), 'Composers as Gardeners' (Edge, 2011)",
+   "ideas": [
+    "Set up a system and let it make the music. On Music for Airports, loops of different lengths drift in and out of phase, so the same few notes keep making new combinations.",
+    "Discreet Music came from a simple tape-echo system: two tape recorders let a short phrase repeat and decay while he barely touched it.",
+    "Oblique Strategies, a deck of cards made with the painter Peter Schmidt, offers one instruction to break a creative deadlock.",
+    "The studio is an instrument. A recording can be treated, slowed, layered and fed back in, rather than just capturing a performance.",
+    "The composer as gardener: plant seeds and wait to see what comes up, instead of drawing the whole building in advance like an architect."
+   ],
+   "quotes": [
+    [
+     "as ignorable as it is interesting",
+     "Brian Eno, liner notes to Ambient 1: Music for Airports, 1978"
+    ],
+    [
+     "someone who plants seeds and waits to see exactly what will come up",
+     "Brian Eno on the gardener, 'Composers as Gardeners', Edge, 2011"
+    ],
+    [
+     "Honor thy error as a hidden intention",
+     "Oblique Strategies, Brian Eno and Peter Schmidt, 1975"
+    ]
+   ],
+   "system": "Every planted sound is a loop with its own length, and lengths are chosen to avoid simple ratios, so the pattern doesn't repeat. You don't write a melody; you choose a scale, a few sounds and a range of lengths, then garden. Growth seeds and prunes on its own, and weather bends lengths and notes very slowly. The attention slider moves between music you can ignore (sparse, dark, long swells) and music that rewards listening (brighter, denser, more detail). Each Oblique Strategies card is wired to a real change, and PRINT TO TAPE feeds the garden's own output back in as a new, slower loop."
+  },
+  "design": {
+   "name": "Karl Gerstner, Designing Programmes",
+   "short": "Karl Gerstner",
+   "who": "Karl Gerstner (1930 to 2017), Swiss designer, painter and co-founder of the agency GGK in Basel",
+   "era": "Basel, late 1950s to 1980s",
+   "hallmarks": [
+    "Design as a programme, not a single solution: a set of rules that produces many results. His line 'Instead of solutions for problems, programmes for solutions' fits Eno's systems closely.",
+    "The morphological box: a grid of parameters and options, where one path through it gives one design. The PROGRAMME box here works the same way.",
+    "Strict sans-serif typography on a flexible grid, and systematic colour arranged in circles and rings, as in his colour paintings."
+   ],
+   "works": [
+    "Designing Programmes (book, 1964)",
+    "The mobile grid for Capital magazine (1962)",
+    "The Forms of Color (book, 1986)"
+   ]
+  },
+  "no": "53",
+  "slug": "seed-garden",
+  "file": "tools/53-seed-garden.html"
+ },
+ {
+  "title": "Gradual Process",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-10-27",
+  "kicker": "A THEORY OF COMPOSITION",
+  "idea": "Set a process going and listen to it run: copies of one pattern drift out of phase (Piano Phase, It's Gonna Rain), fill in note by note (Drumming) or stretch out (Four Organs), and new patterns appear from the gaps.",
+  "controls": "4 slots (two keyboard voices, a tape loop and a pulse); 4 processes (phase, tape phase, additive build, augmentation); 2 to 4 voices with their own slot, octave and pan; editable 4 to 16 step pattern on a scale grid in any key; continuous or step-wise phasing with drift and hold; build and augmentation rates; chain processes; MIDI transposes.",
+  "how": "Press PLAY. Two copies of the pattern from Reich's Piano Phase start in unison, and the second one creeps ahead until it has moved a full step, then another, until it comes back to unison. The stripes show how far each voice has moved. Choose a PROCESS: PHASE (notes), TAPE PHASE (two copies of a sample loop at nearly the same speed, like It's Gonna Rain), ADDITIVE (notes appear one at a time in place of rests, like Drumming) or AUGMENTATION (a chord whose notes get longer and longer, like Four Organs). Edit the pattern on the grid (click a cell to set that step's note, click again for a rest). HOLD (H) freezes the drift; ← and → nudge voice 2 by a step; U returns everything to unison.",
+  "fonts": "family=Hanken+Grotesk:wght@400;600;800;900",
+  "bpm": 144,
+  "try": [
+   "Load one spoken phrase, three or four seconds long, into the TAPE LOOP slot, trim START and END to a single phrase, pick TAPE PHASE and set DRIFT very low. Reich's It's Gonna Rain began with a preacher recorded in Union Square in 1964.",
+   "Put a short marimba, kalimba or pluck one-shot from your Splice folder into KEYS A and KEYS B, set both slots' PITCH so the note reads as E, and run PHASE with three voices panned left, centre and right.",
+   "Load a clap or shaker into PULSE and choose ADDITIVE with CHAIN on. The pattern builds itself one beat at a time, then the second voice starts to phase, as in Drumming."
+  ],
+  "manifesto": {
+   "name": "Music as a Gradual Process",
+   "short": "Reich: Gradual Process",
+   "author": "Steve Reich (b. 1936)",
+   "year": "1968",
+   "where": "essay first published in the catalogue 'Anti-Illusion: Procedures/Materials', Whitney Museum, New York, 1969, and collected in Reich's Writings on Music",
+   "ideas": [
+    "Music can be a process you can hear happening, not a hidden compositional system.",
+    "Once the process is set up, it runs on its own. The composer chooses it, and then the music happens.",
+    "The process should be slow and gradual enough that you can follow every detail of it changing.",
+    "Phasing: two identical patterns, one a little faster, drift apart and back together. Reich found it by accident with two tape loops of the same phrase (It's Gonna Rain, 1965) and then played it on pianos (Piano Phase, 1967).",
+    "Resulting patterns: as the copies overlap, the ear hears new melodies that nobody plays. Drumming (1970 to 1971) also builds patterns by substituting beats for rests, and Four Organs (1970) lengthens the notes of one chord."
+   ],
+   "quotes": [
+    [
+     "I am interested in perceptible processes.",
+     "Steve Reich, 'Music as a Gradual Process', 1968"
+    ],
+    [
+     "Once the process is set up and loaded it runs by itself.",
+     "Steve Reich, 'Music as a Gradual Process', 1968"
+    ],
+    [
+     "turning over an hour glass and watching the sand slowly run through to the bottom",
+     "Steve Reich, 'Music as a Gradual Process', 1968"
+    ]
+   ],
+   "system": "Voice 1 holds still. In PHASE, each other voice runs a fraction faster, either all the time or in short moves between held positions, until it's one step ahead, and the stripes show the offset. When a voice has moved round a whole pattern, the process is complete and starts again, or moves on to the next process if CHAIN is on. TAPE PHASE does the same with continuous sample loops. ADDITIVE starts each voice with one note and adds one more every few bars. AUGMENTATION stretches each note of a chord a little more every bar. You set the process and its rate, and then listen to it run."
+  },
+  "design": {
+   "name": "Anton Stankowski",
+   "short": "Anton Stankowski",
+   "who": "Anton Stankowski (1906 to 1998), German graphic designer, photographer and painter, trained in the Folkwang school in Essen and worked in Zurich and Stuttgart",
+   "era": "Zurich and Stuttgart, 1929 to the 1990s",
+   "hallmarks": [
+    "Making invisible processes visible: diagrams that turn forces, flows and systems into lines and fields. Here the phase offset is drawn as stripes.",
+    "Rhythmic diagonals and stepped bands of flat colour (blue, red, yellow, black) on white",
+    "Constructive, grid-based layouts with plain sans-serif type and no decoration"
+   ],
+   "works": [
+    "The Deutsche Bank logo, the 'slash in a square' (1974)",
+    "The Berlin city corporate design and signage (from 1968)",
+    "Look up the Stankowski Stiftung, Stuttgart, for his diagrams and paintings"
+   ]
+  },
+  "no": "54",
+  "slug": "gradual-process",
+  "file": "tools/54-gradual-process.html"
  }
 ]
