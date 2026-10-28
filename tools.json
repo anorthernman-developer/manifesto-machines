@@ -377,6 +377,7 @@
   "file": "tools/09-zero-of-form.html"
  },
  {
+  "gemini": true,
   "title": "Zaum",
   "idea": "Type words that mean nothing in any language and a throat made of your sample sings them.",
   "how": "Press PLAY. The words in the megaphone are sung syllable by syllable: vowels are sung through vocal formant filters, and consonants become hisses, clicks, trills and hums. Type your own transrational words, or press INVENT for new ones (or ask Gemini, if you have a key). Your sample becomes the singer's throat. Pitch follows the letters.",
@@ -504,6 +505,7 @@
   "file": "tools/12-blast.html"
  },
  {
+  "gemini": true,
   "title": "Event Scores",
   "idea": "A deck of Fluxus-style instruction cards; the machine performs whichever card is on top, then flips the next.",
   "how": "Press PLAY. The top card is performed for about eight seconds, then the next card is drawn. Each card is a tiny instruction (drip, repeat, count, stretch, swarm, hold, reverse, silence) carried out on your sample. Click a card in the deck to perform it now, press SHUFFLE to reorder, or ask Gemini (with a key) to write new cards. The cards here are written in the spirit of Fluxus event scores; they are not historical scores.",
@@ -1451,6 +1453,7 @@
   "file": "tools/35-ambient-loops.html"
  },
  {
+  "gemini": true,
   "title": "Idea Machine",
   "idea": "Write wall-drawing instructions and the machine executes them blindly: each line drawn across the grid becomes a melody.",
   "how": "Press PLAY. The list on the right is a set of instructions in the style of a wall drawing ('5 straight lines from the left edge to the right edge, in blue'). The machine carries them out on a 16 × 12 grid. Time runs from left to right and pitch from bottom to top, and every grid cell that a line passes through plays a note in that line's colour (one colour, one instrument). Change any field of an instruction, add (+) or delete (×) instructions, or press NEW for a random one. With a Gemini key, describe a feeling and Gemini writes instructions. The execution is the same every time: once the idea is fixed, the machine makes the art.",
@@ -1659,6 +1662,7 @@
   "file": "tools/40-ornament-crime.html"
  },
  {
+  "gemini": true,
   "title": "The Store",
   "idea": "A corner shop of found sounds: every product on the shelves is a sound object, and whatever you put in your basket becomes the song.",
   "how": "Press PLAY. The shelves are stocked with sound products (cut from your sample and from built-in sounds), each with a price tag and a kind (THUMP, CLICK, HUM, VOICE, FIZZ or JINGLE). Click a product to add it to your basket. The basket is a loop: everything in it plays in the order you bought it. Click an item in the basket to return it. RESTOCK fills the shelves with new products. With a Gemini key, write 'I am for an art...' and Gemini stocks the shop with products that suit your line.",
@@ -1947,6 +1951,7 @@
   "file": "tools/47-liberation-of-sound.html"
  },
  {
+  "gemini": true,
   "title": "Constellation",
   "idea": "Place a few words on the page like stars: their positions make the rhythm and space, and their letters make the melody.",
   "how": "Press PLAY. Each word is a star in a constellation. A slow sweep moves from left to right, and when it reaches a word, the word is sung: each letter is a note (vowels are long and consonants are short, struck with your sample), its height is the pitch register and its size is the loudness. Drag words to move them, double-click the page to add a word (you will be asked for it) and double-click a word to remove it. LAYOUT offers a few starting constellations, including one built on a single word repeated around an empty centre. With a Gemini key, give a theme and Gemini places a new constellation of words.",
@@ -2443,5 +2448,332 @@
   "no": "56",
   "slug": "colour-keyboard",
   "file": "tools/56-colour-keyboard.html"
+ },
+ {
+  "title": "Live Live",
+  "deep": true,
+  "category": "Fred",
+  "date": "2026-10-28",
+  "kicker": "WHAT WOULD FRED AGAIN.. DO?",
+  "idea": "Play a whole set from one pad sampler, the way Fred again.. did at Boiler Room London in 2022: sixteen pads in four banks (one phrase chopped or re-pitched into a melody, drums, chords, effects), a pattern recorder to build the track live from scratch, a CDJ deck underneath, and a held build that drops after a beat of silence.",
+  "controls": "7 slots (phrase, keys, kick, clap, hats, CDJ track, field); 4 banks of 16 pads with per-pad pitch, gain, length and pan; phrase chopped at word onsets or equally, or one chop re-pitched across the pads in any key and scale; choke; note repeat (1/8, 1/16, 1/32); quantised overdub pattern recorder (1, 2 or 4 bars) with an editable roll; 4 grooves (house, UK garage 2-step, breakbeat, half-time) with swing and sidechain pump; CDJ deck that locks a loop to tempo, with stop and tape stop; hold-to-build with snare roll, riser and high-pass, gap and drop; FROM SCRATCH autopilot that adds layers in order; MIDI pads on notes 36 to 51.",
+  "how": "Press PLAY: a groove is already recorded, so you hear chops, chords and drums straight away. Hit the pads with the mouse or the keys 1 2 3 4 / Q W E T / A S F G / Z X C V. [ and ] (or the tabs) switch bank: A VOX CHOPS, B DRUMS, C CHORDS, D FX + PERFORM. Press K to arm the pattern recorder: whatever you play is quantised into the loop, and you can click the roll underneath to add or remove hits. Hold N while holding a pad for note repeat. Hold B (or the BUILD button) for a build, and let go: one beat of silence, then the drop. J starts and stops the CDJ deck. Turn on FROM SCRATCH and the set builds itself up layer by layer, drone first. Open the DECK (D) for your own phrase, drums, keys, a track for the CDJ and a field recording.",
+  "fonts": "family=Big+Shoulders+Display:wght@700;900&family=Space+Mono:wght@400;700",
+  "bpm": 128,
+  "try": [
+   "Record yourself (or a friend, with permission) saying one sentence on your phone, load it into PHRASE, set PADS to ONE CHOP, RE-PITCHED and choose the chop with the best vowel. Now the sixteen pads play that one sound as a melody in key, which is how a single line becomes a whole track.",
+   "Load a full loop or track from your Splice folder into the CDJ slot, set CDJ BARS to its length so it locks to the tempo and press J. Finger-drum bank B over it, then press J again to stop it and keep the room going on the pads alone.",
+   "Clear every bank (Backspace on each), arm the recorder with K and build the track from nothing, one bank at a time: chords first, then the voice, then hats, kick and clap. Hold B for four bars and let go for the drop."
+  ],
+  "manifesto": {
+   "name": "What would Fred again.. do? Play it live live: the Boiler Room pad set",
+   "short": "Fred again.. live",
+   "author": "Fred again.. (Fred Gibson, b. 1993, London)",
+   "year": "2022",
+   "where": "Boiler Room London (broadcast 29 July 2022), played on a Native Instruments Maschine+ with three Pioneer CDJs and a DJM mixer; and his 2022 Apple Music interview with Zane Lowe, where he showed how he plays the set (reported by MusicTech)",
+   "ideas": [
+    "The whole set can come from one pad sampler. He told Zane Lowe he wanted his live show to come from the Maschine, and on Boiler Room every pad he hits fires a vocal, a drum, a chord or an effect over the tracks on the CDJs.",
+    "Play a track as if you are making it from scratch. Demonstrating 'I Found You', he started with layers of drones and then brought in re-pitched pieces of its spoken-word sample.",
+    "One phrase can carry a song. A spoken or sung line, cut up and re-pitched across the pads, becomes the hook and the melody.",
+    "Tension and release: filters, rolls and risers build up, a moment of silence holds it, and the drop lets it go. The Boiler Room set is remembered for these moments, and for him keeping the room moving when a dancer accidentally pressed stop on a CDJ.",
+    "Electronic music played live, not just pressed play on. Fingers on pads, mistakes and all."
+   ],
+   "quotes": [
+    [
+     "You can play anything on it, like, it's so infinitely powerful",
+     "Fred again.. on the Maschine+, Apple Music with Zane Lowe, 2022 (as reported by MusicTech)"
+    ],
+    [
+     "with electronic music, it's often almost impossible to get it 'live live.'",
+     "Fred again.., same interview"
+    ],
+    [
+     "the whole [set] to come from [the Maschine]",
+     "Fred again.., same interview (MusicTech's brackets)"
+    ]
+   ],
+   "system": "Four banks of sixteen pads, like a pad sampler. Bank A is your phrase (slot 1), cut into chops at its word onsets or into equal slices, or one chop re-pitched to sixteen notes of the key. Bank B is a drum kit built from the kick, clap and hat slots, with a sub bass. Bank C holds chords in the key, played on the keys slot. Bank D is for performing: risers, impacts, reverse vocals, throws, tape stop, filter moves, a gap, a drop and the CDJ. A quantised pattern recorder loops whatever you play, so a set can start empty and be built in front of people. The CDJ deck locks a loop (slot 6) to the tempo. BUILD automates a high-pass filter, a snare roll and a riser and mutes the kick; on release, the beat stops for one beat and comes back with an impact. FROM SCRATCH adds the layers in order (drone, voice, hats, build, drop, break). Which pad holds which sound in his real set isn't documented: the bank layout here is our interpretation."
+  },
+  "design": {
+   "name": "Barney Bubbles",
+   "short": "Barney Bubbles",
+   "who": "Barney Bubbles (Colin Fulcher, 1942 to 1983), British designer for Stiff and Radar Records, Hawkwind, Ian Dury and Elvis Costello, who rarely signed his work",
+   "era": "London, late 1960s to 1983",
+   "hallmarks": [
+    "Modernism as a toybox: he borrowed from Kandinsky, Russian Constructivism, the Bauhaus and pop art and made it playful. Here the pads are geometric shapes in primary colours.",
+    "Many versions of one thing: Ian Dury's 'Do It Yourself' came in many different wallpaper-pattern sleeves. Here each bank has its own pattern and colourway.",
+    "Hidden jokes, codes and symbols, tightly condensed type and a lot of nerve. Look for the small marks around the pads."
+   ],
+   "works": [
+    "Ian Dury and the Blockheads, 'Do It Yourself' (1979)",
+    "Elvis Costello and the Attractions, 'Armed Forces' (1979)",
+    "Hawkwind, 'Space Ritual' (1973); and Paul Gorman's book 'Reasons to be Cheerful: The Life and Work of Barney Bubbles' (2008)"
+   ]
+  },
+  "no": "57",
+  "slug": "live-live",
+  "file": "tools/57-live-live.html"
+ },
+ {
+  "title": "Endless Music Box",
+  "deep": true,
+  "category": "Eno",
+  "date": "2026-10-28",
+  "kicker": "WHAT WOULD BRIAN ENO DO?",
+  "idea": "A playable generative instrument after Eno and Peter Chilvers' Bloom (2008): tap and each note blooms, comes back every cycle a little quieter and slowly drifts, and when you stop playing the music box carries on by itself, over a slowly recombining painting of colour fields.",
+  "controls": "5 slots (glass, piano, voice, drone, painting texture); 12 moods (key, scale, sounds and colours) with shuffle; cycle length and a second, out-of-step cycle for the right half; decay per repeat or FREEZE; drift (repeats wander to neighbouring notes); chord taps; range and brightness; evolve-when-idle with its own wait and density; drone and painting layers; echo and reverb; MIDI notes plant notes.",
+  "how": "Press PLAY. Nothing to learn: the box starts playing itself. Click or tap anywhere on the dark field: higher is a higher note, left and right is the stereo position. Each note comes back once every CYCLE and gets quieter each time, so what you play turns into a slowly fading loop. Stop touching it and after a few seconds EVOLVE takes over. M changes MOOD (Shift+M shuffles), X clears the field, F freezes every note so nothing fades, ↑ and ↓ change the cycle, and 1 to 8 plant notes from the keyboard. Turn on TWO CYCLES and notes on the right half repeat on a different cycle, so the two halves drift in and out of step. Open the DECK (D) to swap the glass, piano, voice, drone and texture for your own sounds.",
+  "fonts": "family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=Jost:wght@300;500",
+  "bpm": 60,
+  "try": [
+   "Load a single soft note from your Splice folder (a felt piano, a kalimba or a sung 'ooh') into GLASS, set the slot's PITCH so it reads as C, then tap a slow three-note phrase near the top and leave it. The phrase fades over a minute or two while EVOLVE adds to it.",
+   "Put a long pad or field recording into DRONE and a texture (rain, vinyl crackle, tape hiss) into PAINTING. Choose a mood, set DECAY high and EVOLVE density low, and leave it on as music you can ignore.",
+   "Turn on TWO CYCLES with a ratio near 1.5, play a few notes on the left and a few on the right, then FREEZE. You'll hear the halves line up differently every time, the Music for Airports idea played by hand."
+  ],
+  "manifesto": {
+   "name": "What would Brian Eno do? Bloom: an endless music machine",
+   "short": "Eno: Bloom",
+   "author": "Brian Eno (b. 1948) and Peter Chilvers",
+   "year": "1996 to 2008",
+   "where": "Generative Music 1 (SSEYO Koan, 1996), 77 Million Paintings (2006) and the Bloom app for iPhone (released 5 October 2008), made with the musician and software designer Peter Chilvers",
+   "ideas": [
+    "Generative music: write the rules, not the notes, and the music is different every time you hear it. Eno released Generative Music 1 in 1996 using the SSEYO Koan software.",
+    "Bloom is part instrument, part composition, part artwork. Touch the screen and a note plays and blooms into a circle, then repeats at a regular interval, getting softer, until it fades away.",
+    "When Bloom is left alone, a generative player takes over and keeps making music and pictures.",
+    "Moods change the scale, the sounds and the colours, so the same gesture gives a different piece.",
+    "77 Million Paintings applies the same idea to images: layers of Eno's painted slides recombine slowly, so you are unlikely ever to see the same picture twice."
+   ],
+   "quotes": [
+    [
+     "an endless music machine, a music box for the 21st century. You can play it, and you can watch it play itself.",
+     "Brian Eno on Bloom, 2008 (the app's description)"
+    ],
+    [
+     "Like live music, it is always different.",
+     "Brian Eno on generative music, The Independent, 1996"
+    ],
+    [
+     "You mean you used to listen to exactly the same thing over and over again?",
+     "Brian Eno, imagining his grandchildren, The Independent, 1996"
+    ]
+   ],
+   "system": "Every tap makes a note object with a pitch (height, in the mood's scale), a pan (left to right) and a sound (by height, or the one you pick). The note plays at once and then again every CYCLE seconds, losing a little level each time (DECAY) until it disappears. FREEZE stops the fading. DRIFT lets each repeat wander to a neighbouring note, so a phrase slowly changes. With TWO CYCLES, the right half of the field runs on a different, out-of-step cycle, like the unsynchronised loops of Music for Airports. If you stop for longer than the IDLE time, EVOLVE plays the box itself with a slow random walk. Behind it, a drone holds the key, and the PAINTING layer recombines coloured fields and swells a texture each time, after 77 Million Paintings. Moods here are our own, not Bloom's twelve."
+  },
+  "design": {
+   "name": "Vaughan Oliver and v23 (4AD)",
+   "short": "Vaughan Oliver / v23",
+   "who": "Vaughan Oliver (1957 to 2019), British designer for the record label 4AD, working as 23 Envelope with the photographer Nigel Grierson and later as v23 with Chris Bigg",
+   "era": "London, 1981 to the 2010s",
+   "hallmarks": [
+    "Atmosphere before information: blurred, close-up, often unidentifiable photography and textures that set a mood. Here the field is dark, grainy and soft-focus.",
+    "Elegant type used sparingly and very small, set against huge empty space, with serif italics and widely spaced capitals. Here the captions sit in the corners and run up the side.",
+    "Layering: transparent images, scratches and light leaks stacked over each other, so the cover rewards a long look, like ambient music. Here the painting layers stack and slowly change."
+   ],
+   "works": [
+    "Cocteau Twins, 'Treasure' (1984)",
+    "This Mortal Coil, 'It'll End in Tears' (1984)",
+    "Pixies, 'Doolittle' (1989); and Rick Poynor's book 'Vaughan Oliver: Visceral Pleasures' (2000)"
+   ]
+  },
+  "no": "58",
+  "slug": "endless-music-box",
+  "file": "tools/58-endless-music-box.html"
+ },
+ {
+  "title": "Closed Groove",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-10-28",
+  "kicker": "MUSIC THEORY · MUSIQUE CONCRÈTE",
+  "idea": "Pierre Schaeffer's musique concrète as a four-turntable instrument: cut any sound into eight sound objects, label each one with a simplified version of his typology, then loop them in closed grooves, slow them down, cut off their attacks and reverse them, the way the Étude aux chemins de fer was made from railway recordings in 1948.",
+  "controls": "4 source slots (railway, bell, voice, tone) cut into 4 to 8 objects at onsets or equally; per-turntable source, object, hit or closed-groove mode, speed, attack cut, length, reverse, level, pan, tone, space and a 16-step pattern; tempo and swing; acousmatic (reduced listening) mode; automatic étude; spatial relief.",
+  "how": "Press PLAY: four turntables (the wheels) play objects cut from a built-in railway recording and a bell. Click an object in the strip (A to H) to hear it and give it to the selected turntable, or press 1 to 8. Click the step grid on a turntable to change its rhythm. Set a turntable to CLOSED GROOVE and its object loops forever, the steps opening and closing it. Raise ATTACK CUT on the bell to hear Schaeffer's 'cut bell'. Tab picks the next turntable, G toggles closed groove, V reverses, ↑ ↓ change its speed, A switches on acousmatic listening (sources hidden), U starts the automatic étude. Load your own sounds into the four sources (D opens the deck).",
+  "fonts": "family=Poiret+One&family=Josefin+Sans:wght@300;600;700",
+  "bpm": 92,
+  "try": [
+   "Load one Splice one-shot you know well (a vocal 'hey', a snare, a door) into SOURCE A, switch on ACOUSMATIC and listen to its eight objects without knowing which is which. Describe each one only by its shape (attack, body, decay), which is reduced listening.",
+   "Put a piano or bell note into SOURCE B, set a turntable to CLOSED GROOVE on object A, then raise ATTACK CUT. With the strike gone, the tail becomes a new instrument, as Schaeffer found with his cut bell.",
+   "Record four seconds of your own street, kitchen or train journey on your phone, load it into SOURCE A, set objects to 8 at onsets and switch on the AUTOMATIC ÉTUDE. That's your own étude aux chemins de fer."
+  ],
+  "manifesto": {
+   "name": "Pierre Schaeffer: musique concrète and the sound object",
+   "short": "Schaeffer: the sound object",
+   "author": "Pierre Schaeffer (1910 to 1995), with Pierre Henry and the Groupe de Recherche de Musique Concrète",
+   "year": "1948 to 1966",
+   "where": "Studio d'Essai of French radio, Paris. The Étude aux chemins de fer (railway study) was broadcast in the 'Concert de bruits' on 5 October 1948. The theory was set out in 'Traité des objets musicaux' (1966).",
+   "ideas": [
+    "Musique concrète starts from recorded sounds rather than notes on paper. The composer works directly on the 'concrete' material and finds the structure by listening.",
+    "The 1948 études were made with discs. A 'sillon fermé' (closed groove) cut into the disc locked a fragment into an endless loop, about forty years before the sampler.",
+    "The 'cloche coupée' (cut bell): remove the attack from a bell and what you hear is no longer a bell. The identity of a sound lives a lot in its first moments.",
+    "Reduced listening (écoute réduite) means listening to a sound for its own qualities (shape, grain, mass, how it moves), not for its cause or its meaning.",
+    "The sound object (objet sonore) is what you hear when you listen that way. Schaeffer sorted objects with a typology, for example sustained against impulse against iterative, and tonic (with a pitch) against complex. The labels here simplify it.",
+    "Acousmatic listening means hearing a sound without seeing its source, as Pythagoras' students were said to hear him from behind a curtain. Radio and loudspeakers made this normal."
+   ],
+   "quotes": [
+    [
+     "For years, we often did phenomenology without knowing it",
+     "Pierre Schaeffer, Traité des objets musicaux (1966), in Brian Kane's translation"
+    ],
+    [
+     "a sound that one hears without seeing the causes behind it",
+     "Schaeffer's Traité (1966) quoting a dictionary definition of 'acousmatic'. This is a translation and the wording varies, so treat it as a paraphrase."
+    ],
+    [
+     "Deprived of its percussion, the bell becomes an oboe sound",
+     "Schaeffer on the cut bell, in English translation. The wording varies between sources."
+    ]
+   ],
+   "system": "Each source slot is analysed when it loads. Its region (start to end, reversed if set) is cut into OBJECTS at detected onsets, or into equal parts, giving objects A to H. Each object gets a simplified Schaeffer-style label from its loudness envelope and periodicity: N = tonic (clear pitch), X = complex (noisy), ' = impulse (short), \" = iterative (repeated pulses), and no mark = sustained. Four turntables each play one object. In HIT mode it is retriggered on the active steps of the turntable's 16-step pattern. In CLOSED GROOVE mode it loops continuously and the steps open and close a gate. SPEED changes pitch and duration together, like changing disc speed. ATTACK CUT skips the first milliseconds and fades in, which is the cut bell. RELIEF slowly moves the turntables around the stereo field, after the 'pupitre d'espace' (the spatialisation desk Schaeffer's studio built in 1951). The AUTOMATIC ÉTUDE changes one thing every two bars."
+  },
+  "design": {
+   "name": "A. M. Cassandre",
+   "short": "Cassandre",
+   "who": "A. M. Cassandre (Adolphe Jean-Marie Mouron, 1901 to 1968), Ukrainian-born French poster artist and type designer",
+   "era": "Paris, 1923 to 1939 (Art Deco)",
+   "hallmarks": [
+    "Geometry and huge scale: a locomotive, a ship's bow or a pair of rails reduced to bold shapes, often seen from very low down or converging to one vanishing point.",
+    "Airbrushed gradients and a limited palette of navy, black, cream and red, with light that glows like a lamp in fog.",
+    "Lettering built as part of the picture, often in his own display faces Bifur (1929) and Peignot (1937), with wide geometric capitals set along an edge. Here the turntables are drawn as locomotive wheels."
+   ],
+   "works": [
+    "Étoile du Nord (1927), rails converging to a star",
+    "Nord Express (1927), the locomotive as a wedge of speed",
+    "Normandie (1935), the ocean liner's bow towering over the viewer; and Dubonnet (1932), the drinker filled in panel by panel"
+   ]
+  },
+  "no": "59",
+  "slug": "closed-groove",
+  "file": "tools/59-closed-groove.html"
+ },
+ {
+  "title": "Golden Angle",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-10-28",
+  "kicker": "NATURE · PHILOSOPHY · GROWTH",
+  "idea": "A sunflower head as a sequencer: seeds are born one by one, each turned 137.5° from the last (the golden angle), as in H. Vogel's 1979 model of phyllotaxis. Every birth is a note, a rotating arm plays the seeds it passes, and a Fibonacci-word rhythm ticks underneath. Change the angle and you can hear (and see) why plants pick the irrational one.",
+  "controls": "5 slots (seed, petal, bell, drone, pulse); divergence angle with golden, Lucas and rational presets; birth rate, maximum seeds and what happens when the head is full; 1, 2, 3 or 5 arms, sweep speed, listening band and quantise; pitch from spiral family (n mod 8, 13, 21 or 34) or from radius; key, scale and octaves; Fibonacci-word rhythm of length 8, 13, 21 or 34; spiral overlay; drone, swing and space.",
+  "how": "Press PLAY: a seed is born every eighth note, 137.5° round from the last. Its pitch comes from which spiral it belongs to, and the angle sets its stereo position. The black arm sweeps round and plays any seed inside the dashed LISTENING BAND. Drag the ANGLE slider (or ← →) away from 137.5° and watch the even sunflower break into straight spokes: the sweep then plays in lumpy bursts. G snaps back to golden. 1, 2, 3 and 5 set the number of arms, F changes the spiral family used for pitch, S shows the spirals, W toggles the Fibonacci-word rhythm, Q quantise and N starts a new head. Load your own sounds into the deck (D): SEED plays most notes.",
+  "fonts": "family=Jost:ital,wght@0,400;0,700;0,900;1,400",
+  "bpm": 96,
+  "try": [
+   "Load a soft mallet or kalimba one-shot from Splice into SEED and a plucked string into PETAL, set PITCH FROM to 'spiral 13' with a pentatonic scale. Every 13th seed lands on the same note, so you hear the spirals as a slow melody.",
+   "Set the angle to exactly 180°, then 120°, 90° and 137.3°, listening to the sweep each time. Rational angles make spokes and bursts. 137.508° spreads seeds most evenly, which is why it packs a sunflower best.",
+   "Put a short percussive sample into PULSE, turn the Fibonacci word to 13 against the 16-step bar and swing up to 0.2. You get a never-quite-repeating groove from the rule 'a → ab, b → a'."
+  ],
+  "manifesto": {
+   "name": "Phyllotaxis: the golden angle and the sunflower",
+   "short": "Phyllotaxis",
+   "author": "H. Vogel; Stéphane Douady and Yves Couder; Alan Turing; D'Arcy Thompson",
+   "year": "1917 to 1992",
+   "where": "D'Arcy Thompson, 'On Growth and Form' (1917); Alan Turing's unfinished 'Morphogen theory of phyllotaxis' (early 1950s, published after his death); H. Vogel, 'A better way to construct the sunflower head', Mathematical Biosciences (1979); S. Douady and Y. Couder, 'Phyllotaxis as a physical self-organized growth process', Physical Review Letters (1992)",
+   "ideas": [
+    "Phyllotaxis means 'leaf arrangement'. Leaves, florets and seeds are laid down one at a time at the growing tip, each turned by roughly the same divergence angle from the last.",
+    "In many plants that angle is close to 137.5°, the golden angle: 360° divided by the golden ratio squared. Because it is the 'most irrational' angle, no two seeds ever line up into a spoke, so they pack evenly at every size.",
+    "Vogel's model puts seed n at angle n × 137.508° and radius c√n. That one rule produces the sunflower's crossing spirals, whose counts are neighbouring Fibonacci numbers (for example 34 and 55).",
+    "Douady and Couder showed in 1992 that the pattern appears from physics alone. Drops of magnetised fluid falling on oil repel each other and settle into Fibonacci spirals, so nothing needs to 'know' the golden ratio.",
+    "Philosophically, form is a record of growth: the pattern is what is left behind by a simple process repeated in time, which is also a fair description of a piece of music."
+   ],
+   "quotes": [
+    [
+     "Cell and tissue, shell and bone, leaf and flower, are so many portions of matter, and it is in obedience to the laws of physics that their particles have been moved, moulded and conformed.",
+     "D'Arcy Wentworth Thompson, On Growth and Form (1917)"
+    ],
+    [
+     "A better way to construct the sunflower head",
+     "the title of H. Vogel's paper, Mathematical Biosciences 44 (1979), which gave θ = n × 137.508°, r = c√n"
+    ],
+    [
+     "Phyllotaxis as a physical self-organized growth process",
+     "the title of Douady and Couder's paper, Physical Review Letters 68 (1992)"
+    ]
+   ],
+   "system": "Seed n is placed at angle n × ANGLE and radius √n (Vogel's model). A new seed is BORN every BIRTH steps and plays at once. Its pan is set by its angle, and its pitch by its spiral family (n mod F, mapped onto the scale) or by its radius. Its sound follows the Fibonacci word: 'a' seeds use SEED (about 62%), 'b' seeds use PETAL, and every F-th seed rings the BELL. One to five ARMS rotate once every SWEEP bars and replay any seed inside the LISTENING BAND as they pass it, either at its exact angle or quantised to the 16th-note grid. The PULSE track plays the first L letters of the Fibonacci word (a = hit, b = rest) as a looping rhythm, which goes in and out of phase with the 16-step bar. When the head is full it restarts, holds, or wilts (the oldest seeds drop out). The readout shows the two visible spiral counts, found from the newest seed's nearest neighbours."
+  },
+  "design": {
+   "name": "Max Huber",
+   "short": "Max Huber",
+   "who": "Max Huber (1919 to 1992), Swiss graphic designer trained in Zurich who worked mainly in Milan, for Studio Boggeri, La Rinascente, Einaudi and the Monza racetrack",
+   "era": "Milan, 1940 to the 1980s",
+   "hallmarks": [
+    "Overlapping transparent shapes in printing primaries (red, yellow, blue and black on white) that mix where they cross, like overprinted inks. Here the seeds overlap and multiply.",
+    "Motion and rotation shown with spirals, speed lines and swirling bands of colour. Here the sweep arm and birth rings.",
+    "Bold, clean sans-serif type and numbers used as images, in strong asymmetric layouts influenced by Swiss modernism and Max Bill. Here the angle itself is the headline."
+   ],
+   "works": [
+    "Gran Premio dell'Autodromo di Monza posters (from 1948)",
+    "La Rinascente logo (1950)",
+    "Book covers for the publisher Einaudi (1940s and 1950s)"
+   ]
+  },
+  "no": "60",
+  "slug": "golden-angle",
+  "file": "tools/60-golden-angle.html"
+ },
+ {
+  "title": "Rayonist Rays",
+  "deep": true,
+  "gemini": true,
+  "category": "art manifesto",
+  "date": "2026-10-28",
+  "kicker": "ART MANIFESTO · MOSCOW 1913",
+  "idea": "Larionov and Goncharova's Rayonist manifesto made playable: objects send out coloured rays, which reflect off the edges, and music happens only where rays cross. A scan line reads the intersections from left to right like a score, so the 'spatial forms arising from the intersection of the reflected rays' are what you hear.",
+  "controls": "5 slots (four ray timbres and an object hum); drag, add or delete objects and give each one a timbre, a ray count and a spin; rays, fan spread, length, rotation and edge reflection; 'objects play no role' mode; scan length, notes per step, key, scale and octaves; Futurist motor (kick and hats), swing, echo and space; optional Gemini that turns a scene you describe into objects.",
+  "how": "Press PLAY. The coloured rays slowly turn, and every white dot where two rays cross is a note: its height is the pitch, and the steeper the crossing, the louder and shorter the note. The black scan line plays the dots as it passes. Drag an object to move it, click empty space to add one, and Shift+click (or Delete) removes the selected one. 1 to 5 set the selected object's timbre, [ and ] change its number of rays. O switches on 'objects play no role' (only the rays remain), E toggles reflection, N makes a new scene and ← → change the scan speed. Describe a scene for Gemini, or leave the key empty and the built-in version picks things from the manifesto's own list.",
+  "fonts": "family=Righteous&family=Work+Sans:wght@400;600;800",
+  "bpm": 120,
+  "try": [
+   "Load four short tonal one-shots from your Splice folder (a synth stab, a glass hit, a sung note, a muted guitar) into RAY A to D, give each object a different one, then move two objects close together. Close objects mean many shallow crossings: long, soft notes.",
+   "Switch on OBJECTS PLAY NO ROLE and turn REFLECT on and off. The 'reflected rays' fill the whole canvas with crossings, so the music thickens from the edges in, which is the manifesto's point that the picture is made of rays, not things.",
+   "Ask Gemini for 'Moscow tram stop in the rain, 1913' (or press N for a built-in scene), set the Futurist motor to 0.6 and the scan to 1 bar. You get a city symphony where the objects are only the excuse."
+  ],
+  "manifesto": {
+   "name": "Rayonists and Futurists: A Manifesto",
+   "short": "Rayonism",
+   "author": "Mikhail Larionov (1881 to 1964) and Natalia Goncharova (1881 to 1962), signed with other Moscow artists",
+   "year": "1913",
+   "where": "Published in the miscellany 'Donkey's Tail and Target' (Oslinyi khvost i mishen), Moscow, 1913. English translation in John E. Bowlt, 'Russian Art of the Avant-Garde: Theory and Criticism 1902 to 1934' (1976).",
+   "ideas": [
+    "Rayonism (luchizm) paints not objects but the rays of light reflected from them, and the new forms made where those rays cross.",
+    "The painting should exist for its own sake, with its own laws of colour and line. The objects of everyday life are only a starting point.",
+    "The manifesto celebrates the modern city (trousers, jackets, shoes, trolleys, cars, airplanes, railways, grandiose steamships) while turning against Western imitation: 'Long live the beautiful East!'",
+    "Rayonism aimed at a kind of fourth dimension: time and movement in a still picture, so painting could flow like music.",
+    "Larionov and Goncharova were also stage designers for Diaghilev's Ballets Russes, carrying the coloured-ray style into theatre."
+   ],
+   "quotes": [
+    [
+     "spatial forms arising from the intersection of the reflected rays of various objects, forms chosen by the artist's will",
+     "Rayonists and Futurists: A Manifesto (1913), trans. John E. Bowlt"
+    ],
+    [
+     "The ray is depicted provisionally on the surface by a colored line.",
+     "Rayonists and Futurists: A Manifesto (1913), trans. Bowlt"
+    ],
+    [
+     "painting becomes equal to music while remaining itself",
+     "Rayonists and Futurists: A Manifesto (1913), trans. Bowlt"
+    ]
+   ],
+   "system": "Each object sends out a fan of RAYS that slowly rotate (SPIN). With REFLECT on, a ray that hits the edge bounces once, like light reflected around a room. Every point where two rays from different objects cross is a note. Its pitch comes from its height (in the scale), its timbre from the slot of one of the two objects (first, second, or alternating), and its loudness and length from the crossing angle: square crossings are short and loud, glancing ones long and soft. The SCAN line crosses the picture once every SCAN bars and plays the crossings it passes, up to NOTES PER STEP. When objects play a role, the scan also sounds each object itself as a low hum. With OBJECTS PLAY NO ROLE, they disappear from view and sound and only the rays remain. The Futurist MOTOR adds kick and hats."
+  },
+  "design": {
+   "name": "Milton Glaser",
+   "short": "Milton Glaser",
+   "who": "Milton Glaser (1929 to 2020), American graphic designer, co-founder of Push Pin Studios (1954, with Seymour Chwast, Reynold Ruffins and Edward Sorel) and of New York magazine (1968, with Clay Felker)",
+   "era": "New York, 1954 to 2020",
+   "hallmarks": [
+    "Flat, bright bands of colour against black silhouettes, with curling, rainbow-like forms. Here the rays are flat bands in a psychedelic palette.",
+    "Eclectic borrowing from Art Nouveau, Victorian type, comics and Persian miniatures, in reaction to strict Swiss modernism.",
+    "Wit and the rebus: a picture standing in for a word (as in I ♥ NY), plus rounded hand-drawn display faces such as Baby Teeth. Here the title is set in a rounded display face and the objects are rebus-like black dots."
+   ],
+   "works": [
+    "Bob Dylan poster for Columbia Records' Greatest Hits (1966/67)",
+    "I ♥ NY campaign logo (1977)",
+    "New York magazine (founded 1968) and the Push Pin Graphic"
+   ]
+  },
+  "no": "61",
+  "slug": "rayonist-rays",
+  "file": "tools/61-rayonist-rays.html"
  }
 ]

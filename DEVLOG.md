@@ -1,5 +1,33 @@
 # Devlog
 
+## 28 October 2026 · 57 to 61, five deep instruments
+
+**Feedback:** no new comments on the GitHub feedback issues. The direction still comes from Craig's 27 October chat: the tools bring him joy and are getting him back into music, and he wants five a day, deeper and more customisable for his own sounds.
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 57 | Live Live | Fred again.. | His Boiler Room London set (2022) played from a Maschine+ and three CDJs, and the Zane Lowe interview about playing electronic music "live live" | Barney Bubbles |
+| 58 | Endless Music Box | Eno | Bloom (2008, with Peter Chilvers), generative music (Koan, 1996) and 77 Million Paintings (2006) | Vaughan Oliver / v23 (4AD) |
+| 59 | Closed Groove | music theory | Pierre Schaeffer: musique concrète, the closed groove, the cut bell, reduced listening and the sound object (1948 to 1966) | A. M. Cassandre |
+| 60 | Golden Angle | nature/philosophy | Phyllotaxis: Vogel's sunflower model (1979), Douady and Couder (1992) and D'Arcy Thompson (1917) | Max Huber |
+| 61 | Rayonist Rays | art manifesto | Larionov and Goncharova, "Rayonists and Futurists: A Manifesto" (1913) | Milton Glaser |
+
+**What's new in each**
+
+- **57 Live Live:** 4 banks × 16 pads (vox chops at onsets or one chop re-pitched in a scale, named drum pads, chords, FX and performance pads). Also a quantised overdub pattern recorder with a clickable roll, a per-pad inspector, note repeat, four grooves with sidechain pump, a tempo-locked CDJ deck with tape stop, and hold-to-build with a beat of silence before the drop. A FROM SCRATCH autopilot adds layers in order. MIDI notes 36 to 51 play the pads.
+- **58 Endless Music Box:** tap to plant notes that return every cycle, quieter each time, and slowly drift. It has 12 moods (key, scale and colours), two out-of-step cycles, freeze, chord taps, evolve-when-idle, a drone and a "painting" texture layer that swells as the colour fields recombine.
+- **59 Closed Groove:** every source is cut into 4 to 8 sound objects at onsets or equally, and each object gets a simplified Schaeffer label (N/X, impulse ', iterative "). Four turntables have hit or closed-groove modes, speed, attack cut (the cut bell), per-turntable reverse, tone, level and a 16-step pattern. There's also an acousmatic mode, an automatic étude and spatial "relief". The railway and bell fallbacks are synthesised.
+- **60 Golden Angle:** Vogel's θ = n × angle, r = √n, with each birth a note. Pitch comes from the spiral family (n mod 8, 13, 21 or 34) or from radius, and timbre from the Fibonacci word. Rotating arms (1, 2, 3 or 5) play a listening band. A Fibonacci-word pulse runs underneath, angle presets include golden, Lucas and rational angles, and a live readout shows the visible spiral counts.
+- **61 Rayonist Rays:** objects send rotating fans of rays that reflect once off the edges. Ray intersections are the notes: height sets the pitch, and the crossing angle sets loudness and length. A scan line reads them. You can edit objects, switch on "objects play no role", and add a Futurist motor. Optional Gemini turns a described scene into objects (mock added to `test/config.js`).
+
+**Housekeeping**
+
+- Older Gemini tools (10, 13, 36, 41, 48) now carry `"gemini": true` in META, so the catalogue's Gemini filter finds all eight.
+- 57's factory default preset now stores the demo patterns, which are made after the deck takes its snapshot. Loading it no longer silences the pads.
+- 59's periodicity check was normalised properly, so bells and voices read as tonic (N) and railway noise as complex (X).
+
+**Tests:** `node test/run.js 57,58,59,60,61` passed 5/5 (audio, LEARN, WAV and AIFF loaded and played, WAV recording, Gemini mock for 61, no errors). `node test/deep.js 57,58,59,60,61` passed 5/5 (deck, slots, reverse, presets, export and import, key sheet, MIDI, 10-second soak). An extra headless check also pressed every shortcut and loaded every factory preset in all five, with no errors.
+
 ## 27 October 2026 · 52 to 56, the first five-a-day
 
 **Feedback:** Craig said these tools are bringing him joy and getting him back into music. He wants them more complex and more customisable for his own sounds, five a day across Fred again.., Brian Eno, a theory of composition, nature or philosophy, and an art manifesto.
