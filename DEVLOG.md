@@ -1,5 +1,31 @@
 # Devlog
 
+## 29 October 2026 · 62 to 66, five deep instruments
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #4), so no replies were needed. The direction still comes from Craig's 27 October chat: joy, getting back into music, five a day, deeper and built for his own sounds.
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 62 | Spoken Mantra | Fred again.. | The found-speech method of "Marea (we've lost dancing)" (2021, with The Blessed Madonna): one spoken phrase becomes the hook, the chords and the arrangement (paraphrased, no quotes) | Susan Kare |
+| 63 | Discreet System | Eno | Discreet Music (1975): two melodies of different lengths through a graphic EQ and echo into a two-machine tape-delay loop | Isotype (Otto and Marie Neurath, Gerd Arntz) |
+| 64 | Row Matrix | music theory | Schoenberg's method of composing with twelve tones (1923; lecture 1941) | Ladislav Sutnar |
+| 65 | Tide Predictor | nature/philosophy | Tidal harmonic constituents and Kelvin's tide-predicting machine (1872 to 1873) | Edward Tufte |
+| 66 | Plastic Unit | art manifesto | Vasarely, the Yellow Manifesto (1955, Galerie Denise René, "Le Mouvement") | Franco Grignani |
+
+**What's new in each**
+
+- **62 Spoken Mantra:** the speech slot is cut into words, either at the gaps or into equal slices, and each word's pitch is found by autocorrelation. The piano can "follow the speech" (it picks chords containing the word's note) or use set progressions. An arrangement runs INTRO, MANTRA, BUILD, DROP and BREAK, with sidechain pump, a riser and a beat of silence before the drop. Click words to build the mantra. Gemini can turn a described moment into key, mode, groove and section lengths. Six slots. A 1-bit Mac desktop look.
+- **63 Discreet System:** lines A, B and an optional C, each with its own length, drawn on grids. They run through an 8-band graphic EQ you draw (with optional drift), an echo, and two 20-second tape delays with saturation, tape tone and wow. Also: a "harp record" mode (very quiet, one speaker), Pachelbel canon players with tempo spread, and an Isotype chart counting the notes still on the tape at each pass.
+- **64 Row Matrix:** the full 12 × 12 P/I/R/RI matrix. Click a label to give a voice that form. Four voices, each with rhythm, chord segmentation (dyads to hexachords), register spread, rest chance and an end-of-row rule. Also: Klangfarben mode, an aggregate counter with a bell, an interval chart (all-interval rows highlighted), a combinatoriality finder (C pairs voice 2), random and all-interval row generators, and the Op. 25, Berg Violin Concerto, Webern Op. 21 and Lyric Suite rows.
+- **65 Tide Predictor:** eight constituents (M2, S2, N2, K2, K1, O1, M4, M6) with amplitude, phase and on/off, and five illustrative coast types (not real port data). Each constituent is a drone at its true speed ratio (M2 against S2 beats like spring and neap) or tuned to the scale. The water level plays a tide-gauge melody, and bells ring at high and low water. A shore loop opens with the water. Tufte sparklines and small multiples show Kelvin's pulleys turning, and a 30-day spring/neap strip runs along the bottom.
+- **66 Plastic Unit:** a 16 × 8 grid of plastic units, where inner form is articulation and pattern or colour is the slot. The Vega bulge is a moving lens that brightens and lengthens what it passes over. You can permute, retrograde, mirror, shift and multiply, play the negative (the outline of the empty space) and run a programme that transforms the grid every N bars. It uses Grignani black-and-white line patterns, with a Vasarely colour view as an option.
+
+**Tests:** `node test/run.js 62,63,64,65,66` passed 5/5: audio, LEARN, WAV and AIFF loaded and played, WAV recording, the Gemini mock for 62, and no console errors. `node test/deep.js 62,63,64,65,66` passed 5/5: deck, slots, reverse, presets, export and import, key sheet, MIDI and the 10-second soak. Extra headless checks covered several things:
+- 62's arrangement runs INTRO to BREAK, and its pitch tracking recovers the synthetic voice's notes.
+- 64's combinatoriality finder pairs Op. 25 P-4 with I-11, and the all-interval generator was verified.
+- 65 finds high and low water at 12 tidal hours a second.
+- 66's multiply and negative modes run without errors.
+
 ## 28 October 2026 · 57 to 61, five deep instruments
 
 **Feedback:** no new comments on the GitHub feedback issues. The direction still comes from Craig's 27 October chat: the tools bring him joy and are getting him back into music, and he wants five a day, deeper and more customisable for his own sounds.

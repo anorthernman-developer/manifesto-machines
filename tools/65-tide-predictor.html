@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
+<title>65 Tide Predictor · Tidal harmonics (Kelvin) × Tufte · Manifesto Machines</title>
+<meta name="description" content="The tide at any harbour can be predicted as a sum of a few simple cycles set by the Moon and the Sun, each with its own period, size and timing. Kelvin&#x27;s tide-predicting machine (1872 to 1873) added them with pulleys and a wire. Here each cycle (constituent) is a drone, the sum is a tide-gauge melody, and the slow swing between spring and neap tides is something you can hear: the lunar and solar drones beat against each other.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* MM kit chrome: tools restyle these with CSS variables --bg --fg --acc --bar-font, or override the selectors */
+:root{--bg:#fff;--fg:#111;--acc:#e00;--bar-bg:var(--fg);--bar-fg:var(--bg);--bar-font:system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html,body{margin:0;height:100%}body{background:var(--bg);color:var(--fg);overflow:hidden}
+#mm-stage{position:fixed;inset:0 0 40px 0;overflow:hidden}
+#mm-bar{position:fixed;left:0;right:0;bottom:0;height:40px;display:flex;align-items:center;gap:6px;padding:0 10px;background:var(--bar-bg);color:var(--bar-fg);font:600 12px/1 var(--bar-font);letter-spacing:.04em;z-index:50;white-space:nowrap;overflow:hidden}
+#mm-bar button,#mm-bar .mm-btn{font:inherit;color:inherit;background:transparent;border:1.5px solid currentColor;padding:6px 9px;cursor:pointer;border-radius:0}
+#mm-bar button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+#mm-bar a{color:inherit;text-decoration:none;opacity:.8}#mm-bar .mm-no{opacity:.6}#mm-bar .mm-name{margin-right:8px}
+#mm-bar .mm-vol{display:flex;gap:6px;align-items:center}#mm-bar input[type=range]{width:80px;accent-color:var(--acc)}
+#mm-smp{opacity:.6;font-weight:400;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+#mm-learn-dlg{position:fixed;inset:24px 24px 64px;z-index:60;background:var(--learn-bg,var(--bg));color:var(--learn-fg,var(--fg));border:3px solid var(--learn-fg,var(--fg));padding:28px 32px;overflow:auto;display:grid;grid-template-columns:1fr 1fr;gap:36px;font:15px/1.5 var(--learn-font,Georgia,serif);box-shadow:12px 12px 0 var(--acc)}
+#mm-learn-dlg.mm-hide{display:none}#mm-learn-dlg h2{font:700 28px/1.05 var(--head-font,var(--bar-font));margin:6px 0 4px}
+#mm-learn-dlg .mm-l-k{font:700 11px/1 var(--bar-font);letter-spacing:.16em;color:var(--acc);margin:18px 0 6px}#mm-learn-dlg .mm-l-by{opacity:.75;font-style:italic}
+#mm-learn-dlg ul{padding-left:18px;margin:6px 0}#mm-learn-dlg blockquote{margin:12px 0;padding-left:12px;border-left:4px solid var(--acc);font-size:17px}
+#mm-learn-dlg .mm-x{position:absolute;right:12px;top:8px;font:28px/1 var(--bar-font);background:none;border:0;color:inherit;cursor:pointer}.mm-l-note{font-size:12px;opacity:.6}
+@media (max-width:800px){#mm-learn-dlg{grid-template-columns:1fr}}
+#mm-toast{position:fixed;left:50%;bottom:56px;transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:8px 14px;font:600 13px var(--bar-font);z-index:70;opacity:0;transition:opacity .2s;pointer-events:none}#mm-toast.on{opacity:1}
+#mm-dropzone{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;font:800 64px var(--bar-font);background:color-mix(in srgb,var(--acc) 75%,transparent);color:#fff;pointer-events:none}#mm-dropzone.on{display:flex}
+.mm-ai{font:13px/1.4 var(--bar-font)}.mm-ai-t{font-weight:800;letter-spacing:.1em;margin-bottom:4px}.mm-ai textarea,.mm-ai input,.mm-ai select{width:100%;font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor;padding:4px;margin:3px 0}.mm-ai textarea{height:46px;resize:vertical}
+.mm-ai-row{display:flex;gap:6px;align-items:center}.mm-ai-row select{flex:1}.mm-ai button{font:inherit;font-weight:700;background:var(--acc);color:#fff;border:0;padding:5px 9px;cursor:pointer}.mm-ai-st,.mm-ai-help{font-size:11px;opacity:.75}.mm-ai-out{white-space:pre-wrap;font-size:12px;margin-top:4px}.mm-ai summary{cursor:pointer;font-size:11px;opacity:.7}
+
+/* MMX deck drawer: inherits each tool's --bg --fg --acc --bar-font, tools can restyle #mmx-deck */
+#mmx-deck{position:fixed;top:0;right:0;bottom:40px;width:min(440px,100vw);z-index:55;background:var(--deck-bg,var(--bg));color:var(--deck-fg,var(--fg));border-left:3px solid var(--deck-fg,var(--fg));font:12px/1.35 var(--bar-font);display:flex;flex-direction:column;box-shadow:-10px 0 0 color-mix(in srgb,var(--acc) 35%,transparent)}
+#mmx-deck.mmx-hide{display:none}
+.mmx-tabs{display:flex;border-bottom:2px solid currentColor}.mmx-tab,.mmx-close{font:700 12px var(--bar-font);letter-spacing:.08em;background:none;color:inherit;border:0;border-right:1px solid currentColor;padding:10px 12px;cursor:pointer}.mmx-tab.on{background:var(--acc);color:#fff}.mmx-close{margin-left:auto;border:0;font-size:20px;padding:4px 12px}
+.mmx-body{overflow:auto;padding:10px 12px;flex:1}.mmx-help{opacity:.75;margin:4px 0 10px}
+.mmx-slot{border:1.5px solid currentColor;padding:6px 8px;margin:0 0 8px}.mmx-sh{display:flex;gap:6px;align-items:center}.mmx-sh b{background:var(--fg);color:var(--bg);padding:1px 6px;font-weight:800}
+.mmx-deck .mmx-lab,.mmx-lab{font-weight:800;text-transform:uppercase;letter-spacing:.05em}.mmx-nm{flex:1;opacity:.65;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.mmx-b{font:700 11px var(--bar-font);background:none;color:inherit;border:1.5px solid currentColor;padding:3px 6px;cursor:pointer;white-space:nowrap}.mmx-b:hover{background:var(--acc);color:#fff;border-color:var(--acc)}.mmx-next{display:none}
+.mmx-wave{width:100%;height:34px;display:block;margin:5px 0}
+.mmx-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px}.mmx-p{display:grid;grid-template-columns:52px 1fr 40px;align-items:center;gap:4px;font-size:10px;font-weight:700;letter-spacing:.05em}.mmx-p input[type=range]{width:100%;accent-color:var(--acc)}.mmx-v{text-align:right;opacity:.75;font-weight:400}
+.mmx-chk{grid-template-columns:18px 1fr}.mmx-row{display:flex;gap:6px;margin:6px 0}.mmx-row input,.mmx-row select,#mmx-mlearn{flex:1;font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor;padding:4px}#mmx-mlearn{width:100%;margin-top:8px}
+.mmx-row select option,#mmx-mlearn option{color:#111;background:#fff}
+.mmx-keys{border-collapse:collapse;width:100%}.mmx-keys td{padding:4px 6px;border-bottom:1px solid color-mix(in srgb,currentColor 25%,transparent)}kbd{font:700 11px ui-monospace,monospace;border:1.5px solid currentColor;padding:1px 5px}
+.mmx-ctl{display:grid;grid-template-columns:auto 1fr auto;gap:6px;align-items:center}.mmx-ctl input[type=range]{width:100%;accent-color:var(--acc)}.mmx-ctl select{font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor}.mmx-ctl select option{color:#111;background:#fff}.mmx-cv{min-width:34px;text-align:right;opacity:.8;font-variant-numeric:tabular-nums}
+#mm-bar #mmx-deck-btn.on{background:var(--acc);border-color:var(--acc);color:#fff}
+#mm-learn-dlg blockquote cite{display:block;font:italic 12px var(--bar-font);opacity:.7;margin-top:3px}#mm-learn-dlg ol{padding-left:20px}#mm-learn-dlg ol li{margin:4px 0}
+
+/* ---- tool styles: homage to Edward Tufte ---- */
+:root{--bg:#fffff8;--fg:#111;--acc:#a00000;--bar-bg:#fffff8;--bar-fg:#111;--bar-font:'EB Garamond',serif;--learn-font:'EB Garamond',serif;--learn-bg:#fffff8;--deck-bg:#fffff8}
+#mm-bar{border-top:1px solid #111}
+#mm-stage{display:grid;grid-template-columns:minmax(0,1fr) 280px}
+#pic{position:relative;overflow:hidden;cursor:pointer}#cv{position:absolute;inset:0;width:100%;height:100%}
+#ttl{position:absolute;left:28px;top:12px;font:400 34px/1 'EB Garamond';pointer-events:none}#ttl small{display:block;font:italic 400 15px 'EB Garamond';margin-top:4px;color:#555}
+#side{overflow:auto;padding:12px 16px;border-left:1px solid #ccc;display:flex;flex-direction:column;gap:3px;font:400 14px 'EB Garamond'}
+#side h3{font:italic 400 17px 'EB Garamond';margin:10px 0 2px;border-bottom:1px solid #ddd}
+#side .mmx-ctl{grid-template-columns:96px 1fr 44px;font:400 13px 'EB Garamond'}#side .mmx-ctl select{grid-column:2/4;min-width:0}
+.note{font:italic 13px/1.3 'EB Garamond';color:#555;margin:2px 0 4px}
+.bb{font:400 14px 'EB Garamond';border:1px solid #111;background:#fffff8;padding:3px 8px;cursor:pointer;margin:2px 3px 2px 0}.bb.on{background:#111;color:#fffff8}
+#mm-learn-dlg h2{font:400 36px/1.05 'EB Garamond'}
+</style></head>
+<body><noscript>This music machine needs JavaScript and Web Audio (Chrome or Edge).</noscript>
+<main id="mm-stage">
+<div id="pic"><canvas id="cv"></canvas><div id="ttl">Tide Predictor<small>the tide as a sum of cycles, after Kelvin's machine (1872)</small></div></div>
+<div id="side"><div><button class="bb" id="b-sn">S · spring/neap only</button><button class="bb" id="b-all">A · all cycles</button><button class="bb" id="b-ph">P · new phases</button></div>
+<h3>Coast & time</h3><div id="s1"></div><h3>Constituents</h3><div class="note">Amplitude in metres; illustrative, not for navigation.</div><div id="s2"></div><h3>Sound</h3><div id="s3"></div></div>
+</main>
+<script>window.MM_META = {"title": "Tide Predictor", "deep": true, "gemini": false, "category": "nature/philosophy", "date": "2026-10-29", "kicker": "NATURE · THE TIDE AS A SUM OF CYCLES, AFTER KELVIN'S MACHINE OF 1872", "idea": "The tide at any harbour can be predicted as a sum of a few simple cycles set by the Moon and the Sun, each with its own period, size and timing. Kelvin's tide-predicting machine (1872 to 1873) added them with pulleys and a wire. Here each cycle (constituent) is a drone, the sum is a tide-gauge melody, and the slow swing between spring and neap tides is something you can hear: the lunar and solar drones beat against each other.", "controls": "5 slots (gauge melody, constituent drones, high-water bell, low-water note, shore); eight tidal constituents (M2, S2, N2, K2, K1, O1, M4, M6), each with amplitude, phase and on/off; five illustrative coast types (semidiurnal, mixed, diurnal, shallow-water double tides, macrotidal); time speed (tidal hours per second); drone pitch, drones at true frequency ratios or tuned to the scale, breathing drones; gauge note rate, key, scale and range; high and low water sounds; shore level and how much the water opens the filter; reverb.", "how": "Press PLAY. The black line is the predicted tide over three days; the thin red line is now. Each row underneath is one cycle (constituent), drawn as a sparkline at the same scale, with Kelvin's pulley for it turning on the left: the tide line is just those rows added up. Click a row to switch that cycle off and see and hear the tide change. The gauge melody plays the water level as notes (higher water, higher note); the bell rings at high water. Turn on only M2 and S2 and listen: the two drones beat, the same beat that makes spring and neap tides, shown in the 30-day strip at the bottom.", "fonts": "family=EB+Garamond:ital,wght@0,400;0,600;1,400", "bpm": 90, "try": ["Load a long pad or bowed note recorded at C from your Splice folder into DRONES and a mallet or kalimba note into GAUGE. Choose 'Shallow water, double high tide' and listen to the gauge melody stall and return at the top of each tide.", "Switch every constituent off except M2 and S2 (click the rows), set time to 12 hours a second and drone pitch low: you will hear and see the two-week spring and neap cycle compressed into about 30 seconds.", "Set drones to 'tuned to the scale' and compare with 'true ratios': in tune, the drones make a chord; at the true astronomical ratios they beat, and the beating is the tide's own interference pattern."], "manifesto": {"name": "Nature: the tide as a sum of cycles", "short": "Tidal harmonics (Kelvin)", "author": "William Thomson, Lord Kelvin (1824 to 1907), building on Laplace, with the harmonic analysis method developed by Kelvin and continued by George Darwin and Arthur Doodson", "year": "1872 to 1873 (first tide-predicting machine); harmonic analysis of tides from the 1860s", "where": "Kelvin's first tide-predicting machine (built with Edward Roberts and Alexander Légé) is in the Science Museum, London. Later machines, such as the Doodson-Légé machine, predicted tides for ports worldwide until computers took over in the 1960s. Kelvin's lectures 'Popular Lectures and Addresses' describe the method.", "ideas": ["The tide is not one wave but many cycles added together. The Moon's pull makes a cycle of about 12 hours 25 minutes (M2); the Sun's makes one of exactly 12 hours (S2). Others come from the Moon's changing distance (N2) and the tilt of the Earth and the orbits (K1, O1, K2).", "Because M2 and S2 have slightly different periods, they drift in and out of step. In step, they add up to big spring tides; out of step, they partly cancel into small neap tides. The cycle repeats about every 14.8 days. That is a beat, the same thing you hear when two strings are slightly out of tune.", "Each harbour has its own mix. The shape of a coast and seabed decides how big each cycle is and when it peaks there, so some places have two tides a day, some one, and some a mix; shallow water adds overtides (M4, M6) that can give double high waters.", "Measure a year of water levels at a port, find how big each cycle is and when it peaks, and you can predict that port's tides for years ahead. Kelvin's machine did the adding mechanically: a pulley for each cycle, turning at its own speed, with one wire running over them all so the wire's end traced the sum."], "quotes": [], "system": "The water height is h(t) = sum of A × cos(speed × t + phase) over the constituents you have switched on, where t is in hours and speed in degrees per hour (M2 28.984, S2 30.000, N2 28.440, K2 30.082, K1 15.041, O1 13.943, M4 57.968, M6 86.952). Amplitudes and phases are illustrative coast types, not real port data; do not use for navigation. Each constituent drives a looped DRONE whose pitch is its speed scaled so M2 sits at the drone pitch (true ratios) or the nearest note in the key (tuned); with breathing on, its loudness also follows its own cycle. Every gauge step the current height is mapped to a scale degree across the chosen range and plays GAUGE. High and low water are found where the height turns round and ring the bell and the low note. SHORE loops under everything, its filter opening as the water rises."}, "design": {"name": "Edward Tufte", "short": "Tufte", "who": "Edward R. Tufte (b. 1942), American statistician and political scientist, writer and self-publisher of books on information design", "era": "1983 to 2006 (four books), and continuing", "hallmarks": ["Maximise the data-ink ratio: almost all the ink shows data, with no chartjunk, heavy gridlines or decoration.", "Sparklines: small, intense, word-sized graphics set in line with text, used here for each tidal cycle.", "Small multiples: the same small chart repeated with one thing changing, so the eye compares them at a glance.", "Range frames, direct labels instead of legends, a warm off-white page, serif text and notes in the margin."], "works": ["'The Visual Display of Quantitative Information' (1983)", "'Envisioning Information' (1990), which includes Marey's train schedule and other classics", "'Beautiful Evidence' (2006), where sparklines are set out"]}, "no": "65", "slug": "tide-predictor", "file": "tools/65-tide-predictor.html"};</script>
+<script>
+/* MM kit: shared engine for Manifesto Machines, inlined into every tool at build time so each file stays standalone.
+   Audio graph: voices -> MM.out -> limiter (compressor + soft clip) -> master volume -> speakers (and the WAV recorder). */
+const MM = (() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const h = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs || {})) { if (k.startsWith('on')) e[k] = v; else if (k === 'html') e.innerHTML = v; else if (v !== false && v != null) e.setAttribute(k, v); } for (const c of kids) if (c != null && c !== false) e.append(c); return e; };
+  const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+  const mtof = (m) => 440 * Math.pow(2, (m - 69) / 12);
+  const rng = (seed = Date.now()) => { let a = seed >>> 0 || 1; return () => { a |= 0; a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; };
+  const pick = (a, r = Math.random) => a[Math.floor(r() * a.length)];
+  const SCALES = { major: [0, 2, 4, 5, 7, 9, 11], minor: [0, 2, 3, 5, 7, 8, 10], dorian: [0, 2, 3, 5, 7, 9, 10], phrygian: [0, 1, 3, 5, 7, 8, 10], lydian: [0, 2, 4, 6, 7, 9, 11], penta: [0, 2, 4, 7, 9], minpent: [0, 3, 5, 7, 10], hira: [0, 2, 3, 7, 8], whole: [0, 2, 4, 6, 8, 10], chrom: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], blues: [0, 3, 5, 6, 7, 10] };
+  const deg = (d, scale = 'minpent', root = 48) => { const s = SCALES[scale] || scale, n = s.length, o = Math.floor(d / n); return root + 12 * o + s[((d % n) + n) % n]; };
+  const S = { bpm: 100, div: 4, playing: false, step: 0, events: 0, samples: [], rec: null, lastModel: null };
+  let ctx, out, lim, clip, vol, cfg = {}, meta = {}, nextT = 0, FB = null, revIn, dlyIn, dly;
+
+  /* ---------- audio graph ---------- */
+  function ensure() {
+    if (ctx) return ctx;
+    ctx = new (window.AudioContext || window.webkitAudioContext)({ latencyHint: 'interactive' });
+    out = ctx.createGain(); out.gain.value = 0.9;
+    lim = ctx.createDynamicsCompressor(); lim.threshold.value = -12; lim.knee.value = 6; lim.ratio.value = 20; lim.attack.value = 0.002; lim.release.value = 0.18;
+    clip = ctx.createWaveShaper(); const c = new Float32Array(2048); for (let i = 0; i < c.length; i++) { const x = i / 1023.5 - 1; c[i] = Math.tanh(x * 1.2) / Math.tanh(1.2) * 0.92; } clip.curve = c; clip.oversample = '2x';
+    vol = ctx.createGain(); vol.gain.value = +(localStorage.getItem('mm.vol') || 0.8);
+    out.connect(lim); lim.connect(clip); clip.connect(vol); vol.connect(ctx.destination);
+    // shared space: reverb + tempo delay, used only by tools that ask for them
+    const rv = ctx.createConvolver(); rv.buffer = impulse(3, 2.4); revIn = ctx.createGain(); revIn.gain.value = 0.5; revIn.connect(rv); rv.connect(out);
+    dly = ctx.createDelay(3); dly.delayTime.value = 0.375; const fb = ctx.createGain(); fb.gain.value = 0.38; const lp = ctx.createBiquadFilter(); lp.frequency.value = 3000;
+    dlyIn = ctx.createGain(); dlyIn.connect(dly); dly.connect(lp); lp.connect(fb); fb.connect(dly); lp.connect(out);
+    FB = makeFallbacks();
+    return ctx;
+  }
+  function impulse(sec, decay) { const n = Math.floor(ctx.sampleRate * sec), b = ctx.createBuffer(2, n, ctx.sampleRate); for (let c = 0; c < 2; c++) { const d = b.getChannelData(c); for (let i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / n, decay); } return b; }
+
+  /* ---------- built-in fallback sounds, synthesised so every tool plays before any sample is loaded ---------- */
+  function makeFallbacks() {
+    const sr = ctx.sampleRate, buf = (sec, ch = 1) => ctx.createBuffer(ch, Math.floor(sr * sec), sr);
+    const kick = (d, o, g = 1) => { for (let i = 0; i < sr * 0.45 && o + i < d.length; i++) { const t = i / sr; d[o + i] += g * Math.sin(2 * Math.PI * (45 * t + 90 * (1 - Math.exp(-t * 28)) / 28)) * Math.exp(-t * 7); } };
+    const snare = (d, o, g = 1) => { for (let i = 0; i < sr * 0.25 && o + i < d.length; i++) { const t = i / sr; d[o + i] += g * ((Math.random() * 2 - 1) * 0.6 * Math.exp(-t * 18) + 0.4 * Math.sin(2 * Math.PI * 190 * t) * Math.exp(-t * 25)); } };
+    const hat = (d, o, g = 1) => { let p = 0; for (let i = 0; i < sr * 0.06 && o + i < d.length; i++) { const t = i / sr, n = Math.random() * 2 - 1; d[o + i] += g * (n - p) * 0.5 * Math.exp(-t * 60); p = n; } };
+    const tone = (d, o, f, dur, g = 1, harm = [1, 0.5, 0.33, 0.25]) => { for (let i = 0; i < sr * dur && o + i < d.length; i++) { const t = i / sr; let s = 0; harm.forEach((a, k) => (s += a * Math.sin(2 * Math.PI * f * (k + 1) * t))); d[o + i] += g * s * Math.min(1, t * 200) * Math.exp(-t * 3 / dur); } };
+    const F = {};
+    F.kick = buf(0.5); kick(F.kick.getChannelData(0), 0);
+    F.snare = buf(0.3); snare(F.snare.getChannelData(0), 0);
+    F.hat = buf(0.08); hat(F.hat.getChannelData(0), 0, 0.9);
+    F.tone = buf(2.5); tone(F.tone.getChannelData(0), 0, 130.81, 2.5, 0.45, [1, 0.6, 0.4, 0.25, 0.15, 0.1]);
+    F.loop = buf(60 / 96 * 8); { const d = F.loop.getChannelData(0), b = Math.floor(sr * 60 / 96 / 4); const K = [0, 6, 8, 11], N = [4, 12], bass = [36, 36, 39, 41, 36, 43, 41, 39];
+      for (let bar = 0; bar < 2; bar++) for (let s = 0; s < 16; s++) { const o = (bar * 16 + s) * b; if (K.includes(s)) kick(d, o, 0.8); if (N.includes(s)) snare(d, o, 0.55); hat(d, o, s % 2 ? 0.25 : 0.45); if (s % 4 === 2) tone(d, o, mtof(bass[(bar * 4 + s / 4) | 0] || 36), 0.3, 0.22, [1, 0.5, 0.2]); } }
+    F.voice = buf(1.6); { const d = F.voice.getChannelData(0); let ph = 0; const fm = [[730, 1], [1090, 0.5], [2440, 0.25]], st = fm.map(() => [0, 0]);
+      for (let i = 0; i < d.length; i++) { const t = i / sr, f0 = 150 * (1 + 0.01 * Math.sin(2 * Math.PI * 5.5 * t)); ph += f0 / sr; const src = (ph % 1) < 0.08 ? 1 : 0; let y = 0;
+        fm.forEach(([f, a], k) => { const r = Math.exp(-Math.PI * 90 / sr), w = 2 * Math.PI * f / sr, s = st[k]; const v = src + 2 * r * Math.cos(w) * s[0] - r * r * s[1]; s[1] = s[0]; s[0] = v; y += v * a; });
+        d[i] = y * 0.02 * Math.min(1, t * 12) * Math.min(1, (1.6 - t) * 6); } }
+    F.texture = buf(4, 2); for (let c = 0; c < 2; c++) { const d = F.texture.getChannelData(c); let lpv = 0; for (let i = 0; i < d.length; i++) { lpv += ((Math.random() * 2 - 1) - lpv) * 0.03; d[i] = lpv * 0.6 * (0.6 + 0.4 * Math.sin(i / sr * 1.3 + c)); } [57, 64, 69, 76].forEach((m, k) => tone(d, Math.floor(sr * k * 0.9), mtof(m + c * 0.1), 3, 0.08, [1, 0.3])); }
+    // normalise everything to a sane peak
+    Object.values(F).forEach((b) => { let m = 0; for (let c = 0; c < b.numberOfChannels; c++) for (const x of b.getChannelData(c)) m = Math.max(m, Math.abs(x)); if (m > 0) for (let c = 0; c < b.numberOfChannels; c++) { const d = b.getChannelData(c); for (let i = 0; i < d.length; i++) d[i] *= 0.8 / m; } });
+    return F;
+  }
+  /* sample i of the user's loaded samples, or the built-in fallback of a given kind */
+  function smp(i = 0, kind = 'loop') { ensure(); if (S.samples.length) return S.samples[((i % S.samples.length) + S.samples.length) % S.samples.length].buf; return FB[kind] || FB.loop; }
+  function smpName(i = 0, kind = 'loop') { return S.samples.length ? S.samples[((i % S.samples.length) + S.samples.length) % S.samples.length].name : 'built-in ' + kind; }
+
+  /* ---------- voices ---------- */
+  function env(g, t, a, peak, end) { g.gain.cancelScheduledValues(t); g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(peak, t + a); g.gain.exponentialRampToValueAtTime(0.0001, Math.max(t + a + 0.01, end)); }
+  function dest(o) { return (o && o.dest) || out; }
+  function pan(node, p, d) { if (p == null || !ctx.createStereoPanner) { node.connect(d); return; } const sp = ctx.createStereoPanner(); sp.pan.value = clamp(p, -1, 1); node.connect(sp); sp.connect(d); }
+  function tone(f, t, d, o = {}) {
+    ensure(); t = t ?? ctx.currentTime; const g = ctx.createGain(), e = t + d + (o.release ?? 0.2); env(g, t, o.attack ?? 0.005, o.gain ?? 0.25, e);
+    let node = g; if (o.cutoff) { const lp = ctx.createBiquadFilter(); lp.frequency.value = o.cutoff; lp.Q.value = o.q ?? 0.7; g.connect(lp); node = lp; }
+    pan(node, o.pan, dest(o)); if (o.send) sends(node, o.send);
+    const os = (o.partials || [[1, 1]]).map(([r, a]) => { const x = ctx.createOscillator(), gg = ctx.createGain(); x.type = o.type || 'sine'; x.frequency.setValueAtTime(f * r, t); if (o.glide) x.frequency.exponentialRampToValueAtTime(Math.max(20, o.glide * r), t + d); x.detune.value = o.detune || 0; gg.gain.value = a; x.connect(gg); gg.connect(g); x.start(t); x.stop(e + 0.05); return x; });
+    S.events++; return { g, osc: os, end: e };
+  }
+  function noise(t, d, o = {}) {
+    ensure(); t = t ?? ctx.currentTime; const s = ctx.createBufferSource(); s.buffer = noiseBuf(); s.loop = true; const g = ctx.createGain(), e = t + d; env(g, t, o.attack ?? 0.002, o.gain ?? 0.2, e);
+    let n = s; if (o.freq) { const f = ctx.createBiquadFilter(); f.type = o.type || 'bandpass'; f.frequency.setValueAtTime(o.freq, t); if (o.sweep) f.frequency.exponentialRampToValueAtTime(o.sweep, e); f.Q.value = o.q ?? 1; s.connect(f); n = f; }
+    n.connect(g); pan(g, o.pan, dest(o)); if (o.send) sends(g, o.send); s.start(t, Math.random()); s.stop(e + 0.05); S.events++; return { s, g };
+  }
+  let _nb; function noiseBuf() { if (_nb) return _nb; _nb = ctx.createBuffer(1, ctx.sampleRate * 2, ctx.sampleRate); const d = _nb.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1; return _nb; }
+  function play(buf, t, o = {}) {
+    ensure(); t = t ?? ctx.currentTime; const s = ctx.createBufferSource(); s.buffer = buf; s.playbackRate.value = o.rate || 1; if (o.detune) s.detune.value = o.detune;
+    if (o.loop) { s.loop = true; if (o.loopStart != null) { s.loopStart = o.loopStart; s.loopEnd = o.loopEnd ?? buf.duration; } }
+    const g = ctx.createGain(), gain = o.gain ?? 0.7, off = clamp(o.offset || 0, 0, Math.max(0, buf.duration - 0.005));
+    const dur = o.dur ?? (o.loop ? null : (buf.duration - off) / (o.rate || 1)); const fi = o.fadeIn ?? 0.003, fo = o.fadeOut ?? 0.01;
+    g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(gain, t + fi);
+    if (dur != null) { g.gain.setValueAtTime(gain, t + Math.max(fi, dur - fo)); g.gain.linearRampToValueAtTime(0.0001, t + dur); }
+    let n = s; if (o.filter) { const f = ctx.createBiquadFilter(); f.type = o.filter.type || 'lowpass'; f.frequency.value = o.filter.freq || 2000; f.Q.value = o.filter.q ?? 0.7; s.connect(f); n = f; }
+    n.connect(g); pan(g, o.pan, dest(o)); if (o.send) sends(g, o.send);
+    s.start(t, off); if (dur != null) s.stop(t + dur + 0.02); S.events++; return { s, g, stop(at) { const x = at ?? ctx.currentTime; try { g.gain.cancelScheduledValues(x); g.gain.setTargetAtTime(0.0001, x, 0.05); s.stop(x + 0.3); } catch (e) {} } };
+  }
+  function sends(node, s) { if (s.rev) { const g = ctx.createGain(); g.gain.value = s.rev; node.connect(g); g.connect(revIn); } if (s.dly) { const g = ctx.createGain(); g.gain.value = s.dly; node.connect(g); g.connect(dlyIn); } }
+  function setDelay(sec, fb) { ensure(); dly.delayTime.setTargetAtTime(clamp(sec, 0.01, 2.9), ctx.currentTime, 0.05); }
+  function crusher(bits = 6) { ensure(); const w = ctx.createWaveShaper(), n = 4096, c = new Float32Array(n), q = Math.pow(2, bits - 1); for (let i = 0; i < n; i++) { const x = i / (n / 2) - 1; c[i] = Math.round(x * q) / q; } w.curve = c; return w; }
+  function drive(k = 20) { ensure(); const w = ctx.createWaveShaper(), n = 2048, c = new Float32Array(n); for (let i = 0; i < n; i++) { const x = i / (n / 2) - 1; c[i] = Math.tanh(x * k) / Math.tanh(k); } w.curve = c; w.oversample = '4x'; return w; }
+  /* slice a buffer into n equal parts, or at detected onsets */
+  function onsets(buf, max = 16) { const d = buf.getChannelData(0), hop = 512, en = []; for (let i = 0; i + hop < d.length; i += hop) { let s = 0; for (let j = 0; j < hop; j++) s += d[i + j] * d[i + j]; en.push(Math.sqrt(s / hop)); } const pts = [0]; let avg = 0; for (let k = 1; k < en.length; k++) { avg = avg * 0.9 + en[k - 1] * 0.1; if (en[k] > avg * 1.8 && en[k] > 0.02 && (k * hop - pts[pts.length - 1] * buf.sampleRate) > buf.sampleRate * 0.08) pts.push(k * hop / buf.sampleRate); if (pts.length >= max) break; } return pts; }
+  function peaks(buf, n = 200) { const d = buf.getChannelData(0), step = Math.max(1, Math.floor(d.length / n)), p = []; for (let i = 0; i < n; i++) { let m = 0; for (let j = i * step; j < Math.min(d.length, (i + 1) * step); j += 4) m = Math.max(m, Math.abs(d[j])); p.push(m); } return p; }
+  function cloneBuf(b) { const c = ctx.createBuffer(b.numberOfChannels, b.length, b.sampleRate); for (let i = 0; i < b.numberOfChannels; i++) c.getChannelData(i).set(b.getChannelData(i)); return c; }
+
+  /* ---------- transport: a look-ahead step clock; tools get step(i, time, stepDur) and/or tick(now) ---------- */
+  function pump() {
+    if (!ctx || !S.playing) return; const now = ctx.currentTime;
+    if (cfg.step) { if (nextT < now - 0.2) nextT = now + 0.02; while (nextT < now + 0.12) { const sd = 60 / S.bpm / S.div; try { cfg.step(S.step, nextT, sd); } catch (e) { console.error(e); } S.step++; nextT += sd * (cfg.swing && S.step % 2 ? 1 + cfg.swing : cfg.swing && S.step % 2 === 0 ? 1 - cfg.swing : 1); } }
+    if (cfg.tick) try { cfg.tick(now); } catch (e) { console.error(e); }
+  }
+  async function toggle(on = !S.playing) {
+    ensure(); if (ctx.state !== 'running') await ctx.resume();
+    if (on === S.playing) return; S.playing = on; const b = $('#mm-play'); if (b) { b.classList.toggle('on', on); b.textContent = on ? '■ STOP' : '▶ PLAY'; }
+    document.body.classList.toggle('mm-playing', on);
+    if (on) { nextT = ctx.currentTime + 0.05; S.step = 0; cfg.start && cfg.start(); } else { cfg.stop && cfg.stop(); }
+  }
+
+  /* ---------- recording to WAV ---------- */
+  function rec() {
+    ensure(); const b = $('#mm-rec');
+    if (!S.rec) {
+      const sp = ctx.createScriptProcessor(4096, 2, 2), z = ctx.createGain(); z.gain.value = 0; const L = [], R = [];
+      sp.onaudioprocess = (e) => { L.push(new Float32Array(e.inputBuffer.getChannelData(0))); R.push(new Float32Array(e.inputBuffer.getChannelData(1))); };
+      vol.connect(sp); sp.connect(z); z.connect(ctx.destination); S.rec = { sp, z, L, R }; b && (b.classList.add('on'), (b.textContent = '■ SAVE WAV')); if (!S.playing) toggle(true); toast('Recording…');
+    } else {
+      const { sp, z, L, R } = S.rec; vol.disconnect(sp); sp.disconnect(); z.disconnect(); S.rec = null; b && (b.classList.remove('on'), (b.textContent = '● REC'));
+      const blob = wav(L, R, ctx.sampleRate); S.lastWav = blob; const a = h('a', { href: URL.createObjectURL(blob), download: `${meta.no}-${meta.slug}-${new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-')}.wav` }); document.body.append(a); a.click(); a.remove(); toast(`Saved WAV (${(blob.size / 1048576).toFixed(1)} MB)`);
+    }
+  }
+  function wav(L, R, sr) {
+    const n = L.reduce((s, x) => s + x.length, 0), buf = new ArrayBuffer(44 + n * 4), dv = new DataView(buf), ws = (o, s) => { for (let i = 0; i < s.length; i++) dv.setUint8(o + i, s.charCodeAt(i)); };
+    ws(0, 'RIFF'); dv.setUint32(4, 36 + n * 4, true); ws(8, 'WAVE'); ws(12, 'fmt '); dv.setUint32(16, 16, true); dv.setUint16(20, 1, true); dv.setUint16(22, 2, true); dv.setUint32(24, sr, true); dv.setUint32(28, sr * 4, true); dv.setUint16(32, 4, true); dv.setUint16(34, 16, true); ws(36, 'data'); dv.setUint32(40, n * 4, true);
+    let o = 44; for (let c = 0; c < L.length; c++) { const l = L[c], r = R[c]; for (let i = 0; i < l.length; i++) { dv.setInt16(o, clamp(l[i], -1, 1) * 32767, true); dv.setInt16(o + 2, clamp(r[i], -1, 1) * 32767, true); o += 4; } }
+    return new Blob([buf], { type: 'audio/wav' });
+  }
+
+  /* ---------- samples: WAV/MP3/OGG/FLAC via the browser, AIFF/AIFC (uncompressed) via a small reader ---------- */
+  const AUDIO_RE = /\.(wav|aiff?|aifc|mp3|ogg|flac|m4a)$/i;
+  function aiff(ab) {
+    const v = new DataView(ab); if (String.fromCharCode(...new Uint8Array(ab, 0, 4)) !== 'FORM') throw new Error('not AIFF');
+    let p = 12, ch, n, bytes, rate, off, le = false;
+    while (p + 8 <= v.byteLength) { const id = String.fromCharCode(...new Uint8Array(ab, p, 4)), z = v.getUint32(p + 4);
+      if (id === 'COMM') { ch = v.getInt16(p + 8); n = v.getUint32(p + 10); bytes = v.getInt16(p + 14) / 8; const ex = v.getUint16(p + 16) & 0x7fff, hi = v.getUint32(p + 18); rate = hi * Math.pow(2, ex - 16383 - 31); if (z >= 22) { const ct = String.fromCharCode(...new Uint8Array(ab, p + 26, 4)); if (ct === 'sowt') le = true; else if (!/NONE|twos/.test(ct)) throw new Error('compressed AIFC ' + ct); } }
+      if (id === 'SSND') off = p + 16 + v.getUint32(p + 8); p += 8 + z + (z & 1); }
+    if (!ch || off == null) throw new Error('bad AIFF'); const B = ctx.createBuffer(ch, n, Math.round(rate));
+    for (let k = 0; k < ch; k++) { const d = B.getChannelData(k); for (let i = 0; i < n; i++) { const q = off + (i * ch + k) * bytes; if (q + bytes > v.byteLength) break; d[i] = bytes === 1 ? v.getInt8(q) / 128 : bytes === 2 ? v.getInt16(q, le) / 32768 : bytes === 3 ? (le ? (v.getInt8(q + 2) * 65536 + v.getUint16(q, true)) : (v.getInt8(q) * 65536 + v.getUint16(q + 1))) / 8388608 : v.getInt32(q, le) / 2147483648; } }
+    return B;
+  }
+  async function decode(file) { const ab = await file.arrayBuffer(); try { return await ctx.decodeAudioData(ab.slice(0)); } catch (e) { return aiff(ab); } }
+  async function loadFiles(list) {
+    ensure(); let files = [...list].filter((f) => AUDIO_RE.test(f.name)); if (!files.length) return toast('No audio files found (WAV, AIFF, MP3, OGG, FLAC)');
+    const cap = cfg.maxSamples || 12, total = files.length; if (files.length > cap) { for (let i = files.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [files[i], files[j]] = [files[j], files[i]]; } files = files.slice(0, cap); }
+    const got = []; for (const f of files) { try { const buf = await decode(f); if (buf.duration > 0.01) got.push({ name: f.name, buf }); } catch (e) { console.warn('skipped', f.name, e.message); } }
+    if (!got.length) return toast('Could not decode those files');
+    S.samples = got; renderSamples(); toast(`Loaded ${got.length} sample${got.length > 1 ? 's' : ''}${total > cap ? ` (random ${cap} of ${total})` : ''}`);
+    try { cfg.onSamples && cfg.onSamples(S.samples); } catch (e) { console.error(e); }
+  }
+  function renderSamples() { const el = $('#mm-smp'); if (el) el.textContent = S.samples.length ? `${S.samples.length} sample${S.samples.length > 1 ? 's' : ''}: ${S.samples.map((s) => s.name).join(', ')}` : 'built-in sounds · drop your Splice samples anywhere'; }
+
+  /* ---------- Gemini (optional): key pasted by the user, kept only in this browser's localStorage ---------- */
+  const MODELS = ['gemini-3.8-flash', 'gemini-3.5-flash-lite', 'gemini-flash-latest', 'gemini-3.6-flash'];
+  function parseJSON(text) { let s = String(text || '').trim().replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/, '').trim(); try { return JSON.parse(s); } catch (e) {} const a = s.indexOf('{'), b = s.lastIndexOf('}'); if (a >= 0 && b > a) { try { return JSON.parse(s.slice(a, b + 1)); } catch (e) {} } throw new Error('Gemini reply was not valid JSON'); }
+  async function gemini({ system, user, schema, temperature = 1 }) {
+    const key = (localStorage.getItem('sr12.geminiKey') || '').trim(); if (!key) throw new Error('No Google AI Studio key saved');
+    const chosen = localStorage.getItem('gp.geminiModel') || MODELS[0], order = [chosen, ...MODELS.filter((m) => m !== chosen)]; let useSchema = !!schema, lastErr;
+    for (let i = 0; i < order.length; i++) { const m = order[i], gc = { temperature, responseMimeType: 'application/json' }; if (useSchema) gc.responseJsonSchema = schema;
+      let r; try { r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(m)}:generateContent`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key }, body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents: [{ role: 'user', parts: [{ text: user }] }], generationConfig: gc }) }); } catch (e) { lastErr = new Error('Network error: ' + e.message); continue; }
+      if (!r.ok) { const t = await r.text(); if (/API key|API_KEY/i.test(t) && (r.status === 400 || r.status === 403)) throw new Error('Key rejected by Google'); if (r.status === 400 && useSchema && /schema/i.test(t)) { useSchema = false; i--; continue; } lastErr = new Error(`${m}: HTTP ${r.status}`); continue; }
+      const j = await r.json(), text = (j?.candidates?.[0]?.content?.parts || []).filter((p) => !p.thought && p.text).map((p) => p.text).join('');
+      if (!text) { lastErr = new Error(`${m}: empty reply`); continue; } S.lastModel = m; return parseJSON(text); }
+    throw lastErr || new Error('No Gemini model answered');
+  }
+  /* a small Gemini box a tool can drop anywhere: opts = { title, help, placeholder, system, schema, user(prompt), apply(json) -> message, fallback(prompt) } */
+  function aiBox(el, o) {
+    const box = h('div', { class: 'mm-ai' }, h('div', { class: 'mm-ai-t' }, 'GEMINI · ' + (o.title || 'ASK')), o.help ? h('div', { class: 'mm-ai-help' }, o.help) : null,
+      h('textarea', { class: 'mm-ai-p', placeholder: o.placeholder || '' }), h('div', { class: 'mm-ai-row' }, h('button', { class: 'mm-ai-ask' }, o.button || 'ASK GEMINI'), h('span', { class: 'mm-ai-st' }, 'No key? The built-in version still works.')),
+      h('div', { class: 'mm-ai-out' }),
+      h('details', {}, h('summary', {}, 'key & model'), h('div', { class: 'mm-ai-help' }, 'Free key from aistudio.google.com/apikey. Stored only in this browser (shared with SR-12 and the other tools) and sent only to Google.'), h('input', { class: 'mm-ai-key', type: 'password', placeholder: 'Google AI Studio key', autocomplete: 'off' }), h('div', { class: 'mm-ai-row' }, h('select', { class: 'mm-ai-model' }), h('button', { class: 'mm-ai-forget' }, 'FORGET KEY'))));
+    el.append(box); const q = (s) => box.querySelector(s), ms = q('.mm-ai-model'); MODELS.forEach((m) => ms.append(new Option(m, m))); ms.value = localStorage.getItem('gp.geminiModel') || MODELS[0];
+    q('.mm-ai-key').value = localStorage.getItem('sr12.geminiKey') || ''; q('.mm-ai-forget').onclick = () => { localStorage.removeItem('sr12.geminiKey'); q('.mm-ai-key').value = ''; toast('Key removed'); };
+    q('.mm-ai-ask').onclick = async () => { const st = q('.mm-ai-st'), p = q('.mm-ai-p').value.trim() || o.placeholder || ''; const k = q('.mm-ai-key').value.trim(); if (k) localStorage.setItem('sr12.geminiKey', k); localStorage.setItem('gp.geminiModel', ms.value);
+      if (!localStorage.getItem('sr12.geminiKey')) { st.textContent = 'No key: used the built-in version.'; o.fallback && o.fallback(p); return; }
+      st.textContent = 'Asking Gemini…'; q('.mm-ai-ask').disabled = true;
+      try { const res = await gemini({ system: o.system, user: o.user ? o.user(p) : p, schema: o.schema, temperature: o.temperature ?? 1 }); const msg = await o.apply(res, p); S.aiApplied = (S.aiApplied || 0) + 1; st.textContent = `Applied (${S.lastModel}).`; q('.mm-ai-out').textContent = msg || ''; if (!S.playing) toggle(true); }
+      catch (e) { st.textContent = 'Gemini failed: ' + e.message + '. Built-in version kept.'; console.warn(e); o.fallback && o.fallback(p); } finally { q('.mm-ai-ask').disabled = false; } };
+    return box;
+  }
+
+  /* ---------- learn panel ---------- */
+  function learnHTML(m) {
+    const M = m.manifesto, D = m.design, esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+    return `<button class="mm-x" aria-label="close">×</button>
+<div class="mm-l-col"><div class="mm-l-k">THE MANIFESTO</div><h2>${esc(M.name)}</h2><div class="mm-l-by">${esc(M.author)} · ${esc(M.year)}${M.where ? ' · ' + esc(M.where) : ''}</div>
+<ul>${M.ideas.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
+${(M.quotes || []).map((q) => `<blockquote>“${esc(q)}”</blockquote>`).join('')}
+<div class="mm-l-k">HOW THIS MACHINE READS IT</div><p>${esc(M.system)}</p></div>
+<div class="mm-l-col"><div class="mm-l-k">THE DESIGN HOMAGE</div><h2>${esc(D.name)}</h2><div class="mm-l-by">${esc(D.who)} · ${esc(D.era)}</div>
+<div class="mm-l-k">HALLMARKS</div><ul>${D.hallmarks.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
+<div class="mm-l-k">LOOK UP</div><ul>${D.works.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
+<div class="mm-l-k">HOW TO PLAY</div><p>${esc(m.how)}</p>
+<p class="mm-l-note">Quotes are short and from the published text in common English translation; everything else is paraphrase. Tool ${esc(m.no)} of Manifesto Machines.</p></div>`;
+  }
+  let toastT; function toast(msg) { const t = $('#mm-toast'); if (!t) return; t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2400); }
+
+  /* ---------- init ---------- */
+  function init(c) {
+    cfg = c; meta = window.MM_META || {}; S.bpm = c.bpm || meta.bpm || 100; S.div = c.div || 4;
+    const bar = h('div', { id: 'mm-bar' },
+      h('a', { class: 'mm-back', href: '../index.html', title: 'All machines' }, '◂ ALL'),
+      h('span', { class: 'mm-no' }, meta.no), h('span', { class: 'mm-name' }, meta.title),
+      h('button', { id: 'mm-play', title: 'Space' }, '▶ PLAY'),
+      h('label', { class: 'mm-btn', title: 'Pick WAV, AIFF, MP3 files' }, 'SAMPLES', h('input', { id: 'mm-files', type: 'file', accept: 'audio/*,.wav,.aif,.aiff,.aifc,.mp3,.flac,.ogg', multiple: '', hidden: '' })),
+      h('label', { class: 'mm-btn', title: 'Pick a folder, e.g. F:\\01 Splice Sounds (a random handful is used)' }, 'FOLDER', h('input', { id: 'mm-folder', type: 'file', webkitdirectory: '', hidden: '' })),
+      h('button', { id: 'mm-rec', title: 'R: record to WAV' }, '● REC'),
+      h('button', { id: 'mm-learn', title: 'L: learn about the manifesto and the design' }, 'LEARN'),
+      h('label', { class: 'mm-vol' }, 'VOL', h('input', { id: 'mm-volume', type: 'range', min: 0, max: 1, step: 0.01, value: localStorage.getItem('mm.vol') || 0.8 })),
+      h('span', { id: 'mm-smp' }));
+    const dlg = h('div', { id: 'mm-learn-dlg', class: 'mm-hide', html: learnHTML(meta) });
+    document.body.append(bar, dlg, h('div', { id: 'mm-toast' }), h('div', { id: 'mm-dropzone' }, 'DROP SAMPLES'));
+    $('#mm-play').onclick = () => toggle(); $('#mm-rec').onclick = rec; $('#mm-learn').onclick = () => dlg.classList.toggle('mm-hide'); dlg.querySelector('.mm-x').onclick = () => dlg.classList.add('mm-hide');
+    $('#mm-volume').oninput = (e) => { localStorage.setItem('mm.vol', e.target.value); if (vol) vol.gain.value = +e.target.value; };
+    $('#mm-files').onchange = (e) => loadFiles(e.target.files); $('#mm-folder').onchange = (e) => loadFiles(e.target.files);
+    const dz = $('#mm-dropzone'); let dc = 0;
+    addEventListener('dragenter', (e) => { e.preventDefault(); dc++; dz.classList.add('on'); }); addEventListener('dragleave', () => { if (--dc <= 0) { dc = 0; dz.classList.remove('on'); } });
+    addEventListener('dragover', (e) => e.preventDefault()); addEventListener('drop', (e) => { e.preventDefault(); dc = 0; dz.classList.remove('on'); if (e.dataTransfer.files.length) loadFiles(e.dataTransfer.files); });
+    addEventListener('keydown', (e) => { if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || e.target.isContentEditable) return; if (e.code === 'Space' && !c.ownSpace) { e.preventDefault(); toggle(); } else if ((e.key === 'r' || e.key === 'R') && !c.ownR) rec(); else if ((e.key === 'l' || e.key === 'L') && !c.ownL) dlg.classList.toggle('mm-hide'); else if (e.key === 'Escape') dlg.classList.add('mm-hide'); else c.key && c.key(e); });
+    renderSamples(); setInterval(pump, 25);
+    if (c.draw) { const loop = (ts) => { try { c.draw(ts / 1000); } catch (e) { console.error(e); } requestAnimationFrame(loop); }; requestAnimationFrame(loop); }
+    try { c.setup && c.setup(); } catch (e) { console.error(e); }
+  }
+  /* canvas helper: keeps a canvas sized to its box at device pixel ratio; returns {cv, g, w, h} updated each call */
+  function canvas(el) { const cv = typeof el === 'string' ? $(el) : el, g = cv.getContext('2d'), o = { cv, g, w: 0, h: 0, fit() { const r = cv.getBoundingClientRect(), d = Math.min(2, devicePixelRatio || 1); if (cv.width !== Math.round(r.width * d) || cv.height !== Math.round(r.height * d)) { cv.width = Math.round(r.width * d) || 1; cv.height = Math.round(r.height * d) || 1; } o.w = r.width; o.h = r.height; g.setTransform(d, 0, 0, d, 0, 0); return o; } }; return o.fit(); }
+  /* drag helper: calls fn(x, y, phase, e) in element-relative px for pointer down/move/up */
+  function drag(el, fn) { el.addEventListener('pointerdown', (e) => { ensure(); if (ctx.state !== 'running') ctx.resume(); const r = el.getBoundingClientRect(); el.setPointerCapture && el.setPointerCapture(e.pointerId); fn(e.clientX - r.left, e.clientY - r.top, 'down', e); const mv = (ev) => { const r2 = el.getBoundingClientRect(); fn(ev.clientX - r2.left, ev.clientY - r2.top, 'move', ev); }, up = (ev) => { const r2 = el.getBoundingClientRect(); fn(ev.clientX - r2.left, ev.clientY - r2.top, 'up', ev); el.removeEventListener('pointermove', mv); el.removeEventListener('pointerup', up); el.removeEventListener('pointercancel', up); }; el.addEventListener('pointermove', mv); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up); }); }
+
+  return { init, toggle, rec, ensure, toast, aiBox, gemini, tone, noise, play, smp, smpName, setDelay, crusher, drive, onsets, peaks, cloneBuf, canvas, drag, rng, pick, clamp, mtof, deg, SCALES, S, h, $, $$, loadFiles, aiff,
+    get ctx() { return ensure(); }, get out() { ensure(); return out; }, get rev() { ensure(); return revIn; }, get dly() { ensure(); return dlyIn; }, get now() { return ctx ? ctx.currentTime : 0; },
+    get bpm() { return S.bpm; }, set bpm(v) { S.bpm = clamp(v, 10, 400); }, get playing() { return S.playing; }, get user() { return S.samples.length > 0; }, get fb() { ensure(); return FB; } };
+})();
+
+</script><script>
+/* MMX deck: the "proper instrument" layer for tools 52 onwards, inlined after the MM kit.
+   Adds: sample SLOTS (file or folder per slot, pitch, gain, start/end, reverse, filter, pan, reverb and delay sends),
+   bound CONTROLS that presets can save and restore, PRESETS (localStorage + JSON export/import), Web MIDI in,
+   an output TAP for resampling, and a keyboard-shortcut sheet (press ?). Everything lives in a DECK drawer (D). */
+const MMX = (() => {
+  const { h, $, $$, clamp } = MM;
+  const S = { slots: [], ctls: [], state: null, keys: [], midiOn: false, midiCb: null, ccMap: {}, learnCC: null, opts: {} };
+  const AUDIO_RE = /\.(wav|aiff?|aifc|mp3|ogg|flac|m4a)$/i;
+  const fmtN = (v, st) => (st >= 1 ? String(Math.round(v)) : st >= 0.1 ? (+v).toFixed(1) : (+v).toFixed(2));
+
+  /* ---------- drawer ---------- */
+  let drawer, tabs = {};
+  function makeDrawer() {
+    if (drawer) return drawer;
+    drawer = h('aside', { id: 'mmx-deck', class: 'mmx-hide' },
+      h('div', { class: 'mmx-tabs' }, ...['SOUNDS', 'PRESETS', 'MIDI', 'KEYS'].map((t) => h('button', { class: 'mmx-tab', 'data-t': t, onclick: () => showTab(t) }, t)), h('button', { class: 'mmx-close', onclick: () => deck(false), title: 'D' }, '×')),
+      h('div', { class: 'mmx-body' }));
+    ['SOUNDS', 'PRESETS', 'MIDI', 'KEYS'].forEach((t) => { tabs[t] = h('div', { class: 'mmx-pane', 'data-t': t }); drawer.querySelector('.mmx-body').append(tabs[t]); });
+    document.body.append(drawer);
+    const learn = $('#mm-learn'); if (learn) learn.before(h('button', { id: 'mmx-deck-btn', title: 'D: sounds, presets, MIDI, keys', onclick: () => deck() }, 'DECK'));
+    showTab('SOUNDS'); return drawer;
+  }
+  function showTab(t) { $$('.mmx-tab', drawer).forEach((b) => b.classList.toggle('on', b.dataset.t === t)); $$('.mmx-pane', drawer).forEach((p) => (p.style.display = p.dataset.t === t ? '' : 'none')); }
+  function deck(on, tab) { makeDrawer(); const show = on ?? drawer.classList.contains('mmx-hide'); drawer.classList.toggle('mmx-hide', !show); const b = $('#mmx-deck-btn'); b && b.classList.toggle('on', show); if (tab) showTab(tab); if (show) drawSlots(); }
+
+  /* ---------- sample slots ---------- */
+  function slots(defs) {
+    makeDrawer(); const pane = tabs.SOUNDS; pane.innerHTML = '';
+    pane.append(h('p', { class: 'mmx-help' }, 'Each slot is one sound. Load a file or pick a folder (a random file is drawn; ↻ draws another). The top-bar SAMPLES, FOLDER and drag-and-drop fill the slots in order.'));
+    S.slots = defs.map((d, i) => ({ i, label: d.label, kind: d.kind || 'loop', role: d.role || '', buf: null, rbuf: null, name: '', files: null,
+      pitch: d.pitch ?? 0, gain: d.gain ?? 0.8, start: 0, end: 1, rev: false, cut: d.cut ?? 18000, pan: d.pan ?? 0, rv: d.rv ?? 0.15, dl: d.dl ?? 0, mute: false, peaks: null }));
+    S.slots.forEach((s) => pane.append(slotUI(s)));
+    return S.slots;
+  }
+  function slotUI(s) {
+    const file = h('input', { type: 'file', class: 'mmx-file', accept: 'audio/*,.wav,.aif,.aiff,.aifc,.mp3,.flac,.ogg', hidden: '' });
+    const fold = h('input', { type: 'file', class: 'mmx-fold', webkitdirectory: '', hidden: '' });
+    file.onchange = () => file.files[0] && loadInto(s.i, file.files[0]);
+    fold.onchange = () => { s.files = [...fold.files].filter((f) => AUDIO_RE.test(f.name)); redraw(s); };
+    const cv = h('canvas', { class: 'mmx-wave', width: 300, height: 34 });
+    const row = (k, lab, min, max, st, fmt) => { const inp = h('input', { type: 'range', min, max, step: st, value: s[k], 'data-k': k }), out = h('span', { class: 'mmx-v' }, fmt ? fmt(s[k]) : fmtN(s[k], st));
+      inp.oninput = () => { s[k] = +inp.value; out.textContent = fmt ? fmt(s[k]) : fmtN(s[k], st); if (k === 'start' || k === 'end') { if (s.end <= s.start + 0.01) { if (k === 'start') s.end = Math.min(1, s.start + 0.01); else s.start = Math.max(0, s.end - 0.01); } drawWave(s); } };
+      return h('label', { class: 'mmx-p' }, h('span', {}, lab), inp, out); };
+    const el = h('div', { class: 'mmx-slot', 'data-i': s.i },
+      h('div', { class: 'mmx-sh' }, h('b', {}, String(s.i + 1)), h('span', { class: 'mmx-lab' }, s.label), h('span', { class: 'mmx-nm' }, 'built-in ' + s.kind),
+        h('label', { class: 'mmx-b', title: 'Load a file into this slot' }, 'FILE', file), h('label', { class: 'mmx-b', title: 'Pick a folder; a random file is drawn' }, 'DIR', fold),
+        h('button', { class: 'mmx-b mmx-next', title: 'Draw another file from the folder', onclick: () => drawFromFolder(s.i) }, '↻'),
+        h('button', { class: 'mmx-b mmx-aud', title: 'Audition', onclick: () => { MM.ensure(); MM.ctx.resume(); fire(s.i, MM.now + 0.01, { maxDur: 3 }); } }, '▶'),
+        h('button', { class: 'mmx-b mmx-clr', title: 'Back to the built-in sound', onclick: () => { s.buf = s.rbuf = null; s.name = ''; s.peaks = null; redraw(s); } }, '⌫')),
+      cv,
+      h('div', { class: 'mmx-grid' }, row('pitch', 'PITCH', -24, 24, 1, (v) => (v > 0 ? '+' : '') + v + ' st'), row('gain', 'GAIN', 0, 1.5, 0.01), row('start', 'START', 0, 0.99, 0.01), row('end', 'END', 0.01, 1, 0.01),
+        row('cut', 'FILTER', 80, 18000, 10, (v) => (v >= 1000 ? (v / 1000).toFixed(1) + 'k' : Math.round(v))), row('pan', 'PAN', -1, 1, 0.01), row('rv', 'REVERB', 0, 1, 0.01), row('dl', 'DELAY', 0, 1, 0.01),
+        h('label', { class: 'mmx-p mmx-chk' }, h('input', { type: 'checkbox', 'data-k': 'rev', onchange: (e) => { s.rev = e.target.checked; drawWave(s); } }), h('span', {}, 'REVERSE')),
+        h('label', { class: 'mmx-p mmx-chk' }, h('input', { type: 'checkbox', 'data-k': 'mute', onchange: (e) => (s.mute = e.target.checked) }), h('span', {}, 'MUTE'))));
+    s.el = el; return el;
+  }
+  function redraw(s) { if (!s.el) return; $('.mmx-nm', s.el).textContent = s.name || 'built-in ' + s.kind; $('.mmx-next', s.el).style.display = s.files && s.files.length ? '' : 'none'; $$('input[data-k]', s.el).forEach((inp) => { const k = inp.dataset.k; if (inp.type === 'checkbox') inp.checked = !!s[k]; else { inp.value = s[k]; inp.dispatchEvent(new Event('input')); } }); drawWave(s); }
+  function drawSlots() { S.slots.forEach(redraw); }
+  function drawWave(s) {
+    const cv = s.el && $('.mmx-wave', s.el); if (!cv || !cv.offsetParent) return; const g = cv.getContext('2d'), w = cv.width, hh = cv.height, st = getComputedStyle(drawer);
+    const b = raw(s); if (!s.peaks || s.peaksFor !== b) { s.peaks = MM.peaks(b, w); s.peaksFor = b; }
+    g.clearRect(0, 0, w, hh); g.fillStyle = st.getPropertyValue('--mmx-dim') || 'rgba(128,128,128,.25)'; g.fillRect(0, 0, w, hh);
+    const fg = st.color, acc = st.getPropertyValue('--acc') || '#e00', p = s.rev ? [...s.peaks].reverse() : s.peaks;
+    p.forEach((v, x) => { const inR = x / w >= s.start && x / w <= s.end; g.fillStyle = inR ? acc : fg; g.globalAlpha = inR ? 1 : 0.3; const y = Math.max(1, v * hh * 0.95); g.fillRect(x, (hh - y) / 2, 1, y); }); g.globalAlpha = 1;
+  }
+  async function decode(file) { MM.ensure(); const ab = await file.arrayBuffer(); try { return await MM.ctx.decodeAudioData(ab.slice(0)); } catch (e) { return MM.aiff(ab); } }
+  async function loadInto(i, file) { const s = S.slots[i]; if (!s) return; try { const b = await decode(file); setBuf(i, b, file.name); MM.toast(`Slot ${i + 1}: ${file.name}`); } catch (e) { MM.toast(`Could not decode ${file.name}`); console.warn(e); } }
+  async function drawFromFolder(i) { const s = S.slots[i]; if (!s || !s.files || !s.files.length) return; for (let k = 0; k < 6; k++) { const f = s.files[Math.floor(Math.random() * s.files.length)]; try { const b = await decode(f); setBuf(i, b, f.name); MM.toast(`Slot ${i + 1}: ${f.name}`); return; } catch (e) {} } MM.toast('No decodable files in that folder'); }
+  function setBuf(i, b, name) { const s = S.slots[i]; s.buf = b; s.rbuf = null; s.name = name; s.peaks = null; redraw(s); const el = $('#mm-smp'); if (el) el.textContent = S.slots.filter((x) => x.buf).map((x) => `${x.i + 1}: ${x.name}`).join(' · ') || 'built-in sounds'; S.opts.onSlot && S.opts.onSlot(i, s); }
+  /* fill slots from the kit's global loader (top-bar SAMPLES/FOLDER/drop) */
+  function assign(list, from = 0) { list.forEach((x, k) => { const i = from + k; if (i < S.slots.length) setBuf(i, x.buf, x.name); }); }
+  function raw(s) { return s.buf || MM.fb[s.kind] || MM.fb.loop; }
+  function buf(i) { const s = S.slots[i]; if (!s) return MM.fb.loop; const b = raw(s); if (!s.rev) return b; if (!s.rbuf || s.rbufFor !== b) { const c = MM.ctx.createBuffer(b.numberOfChannels, b.length, b.sampleRate); for (let k = 0; k < b.numberOfChannels; k++) { const src = b.getChannelData(k), d = c.getChannelData(k); for (let j = 0, n = src.length; j < n; j++) d[j] = src[n - 1 - j]; } s.rbuf = c; s.rbufFor = b; } return s.rbuf; }
+  function isUser(i) { return !!(S.slots[i] && S.slots[i].buf); }
+  /* region of the slot in seconds, honouring reverse */
+  function region(i) { const s = S.slots[i], b = buf(i), D = b.duration; let a = s.start * D, z = s.end * D; if (s.rev) [a, z] = [D - z, D - a]; return { a, z, len: Math.max(0.005, z - a), b }; }
+  /* play slot i at time t. o: rate (multiplier), semis (added), gain (multiplier), dur, pos (0..1 inside the region), maxDur, pan (overrides), send (adds), dest, fadeIn, fadeOut, loop */
+  let busCache = new WeakMap();
+  function fire(i, t, o = {}) {
+    const s = S.slots[i]; if (!s || s.mute) return null; MM.ensure(); t = t ?? MM.now;
+    const { a, len, b } = region(i), rate = (o.rate || 1) * Math.pow(2, (s.pitch + (o.semis || 0)) / 12), off = a + clamp(o.pos || 0, 0, 0.999) * len;
+    let dur = o.dur ?? (len - (off - a)) / rate; if (o.maxDur) dur = Math.min(dur, o.maxDur); if (!o.loop) dur = Math.min(dur, (len - (off - a)) / rate);
+    const filt = s.cut < 17500 || o.cut ? { type: 'lowpass', freq: Math.min(s.cut, o.cut || 20000), q: 0.8 } : null;
+    return MM.play(b, t, { offset: off, rate, dur: Math.max(0.01, dur), gain: s.gain * (o.gain ?? 1) * 0.8, pan: clamp((o.pan ?? 0) + s.pan, -1, 1), filter: filt, send: { rev: clamp(s.rv + (o.rev || 0), 0, 1.2), dly: clamp(s.dl + (o.dly || 0), 0, 1.2) }, dest: o.dest, fadeIn: o.fadeIn, fadeOut: o.fadeOut ?? Math.min(0.03, dur / 4), loop: o.loop, loopStart: o.loop ? a : undefined, loopEnd: o.loop ? a + len : undefined });
+  }
+
+  /* ---------- bound controls (presets restore them) ---------- */
+  /* ctl(parent, key, {label, min, max, step, type: range|select|check|text|number, options: [[v,label]...], fmt(v), on(v), hint}) reads and writes S.state[key] */
+  function bind(state) { S.state = state; return state; }
+  function ctl(parent, key, o = {}) {
+    const st = S.state, type = o.type || 'range'; let inp;
+    if (type === 'select') { inp = h('select', { 'data-key': key }); (o.options || []).forEach(([v, l]) => inp.append(new Option(l ?? v, v))); }
+    else if (type === 'check') inp = h('input', { type: 'checkbox', 'data-key': key });
+    else if (type === 'text') inp = h('input', { type: 'text', 'data-key': key });
+    else inp = h('input', { type: type === 'number' ? 'number' : 'range', min: o.min ?? 0, max: o.max ?? 1, step: o.step ?? 0.01, 'data-key': key });
+    const out = h('span', { class: 'mmx-cv' });
+    const show = () => { const v = st[key]; out.textContent = type === 'check' || type === 'text' ? '' : o.fmt ? o.fmt(v) : type === 'select' ? '' : fmtN(v, o.step ?? 0.01); };
+    const read = () => { const v = type === 'check' ? inp.checked : type === 'select' || type === 'text' ? (typeof st[key] === 'number' ? +inp.value : inp.value) : +inp.value; st[key] = v; show(); o.on && o.on(v); };
+    inp.addEventListener(type === 'select' || type === 'check' ? 'change' : 'input', read);
+    const el = h('label', { class: 'mmx-ctl ' + (o.cls || ''), title: o.hint || '' }, h('span', { class: 'mmx-cl' }, o.label || key), inp, out);
+    const rec = { key, inp, show, o, type, set(v) { st[key] = v; if (type === 'check') inp.checked = !!v; else inp.value = v; show(); o.on && o.on(v); } };
+    rec.set(st[key]); S.ctls.push(rec); if (parent) parent.append(el); rec.el = el;
+    if (o.cc != null) S.ccMap[o.cc] = key; return rec;
+  }
+  function setParam(key, v) { const r = S.ctls.find((c) => c.key === key); if (r) r.set(v); else if (S.state) S.state[key] = v; }
+  function refresh() { S.ctls.forEach((c) => c.set(S.state[c.key])); }
+
+  /* ---------- presets ---------- */
+  const PK = () => 'mm.presets.' + ((window.MM_META || {}).no || 'x');
+  const slotKeys = ['pitch', 'gain', 'start', 'end', 'rev', 'cut', 'pan', 'rv', 'dl', 'mute'];
+  function snapshot(name) { const x = S.opts.extra ? S.opts.extra.get() : null; return { tool: (window.MM_META || {}).no + '-' + (window.MM_META || {}).slug, name: name || 'preset', saved: new Date().toISOString(), bpm: MM.bpm, params: JSON.parse(JSON.stringify(S.state || {})), slots: S.slots.map((s) => Object.fromEntries([...slotKeys.map((k) => [k, s[k]]), ['sample', s.name || null]])), extra: x }; }
+  function apply(p) { if (!p) return false; if (p.bpm) MM.bpm = p.bpm; if (p.params && S.state) { Object.assign(S.state, p.params); refresh(); } (p.slots || []).forEach((x, i) => { const s = S.slots[i]; if (!s) return; slotKeys.forEach((k) => k in x && (s[k] = x[k])); redraw(s); }); if (p.extra && S.opts.extra) S.opts.extra.set(p.extra); S.opts.onPreset && S.opts.onPreset(p); return true; }
+  const all = () => { try { return JSON.parse(localStorage.getItem(PK()) || '{}'); } catch (e) { return {}; } };
+  function save(name) { name = (name || 'preset').trim(); const a = all(); a[name] = snapshot(name); localStorage.setItem(PK(), JSON.stringify(a)); listPresets(); MM.toast('Preset saved: ' + name); return a[name]; }
+  function load(name) { const p = all()[name]; if (!p) return false; apply(p); MM.toast('Preset loaded: ' + name); return true; }
+  function del(name) { const a = all(); delete a[name]; localStorage.setItem(PK(), JSON.stringify(a)); listPresets(); }
+  function exportJSON() { const sel = $('#mmx-psel'), a = all(), body = sel && a[sel.value] ? a[sel.value] : snapshot('current'); const blob = new Blob([JSON.stringify(body, null, 1)], { type: 'application/json' }); const m = window.MM_META || {}, el = h('a', { href: URL.createObjectURL(blob), download: `${m.no}-${m.slug}-preset-${(body.name || 'preset').replace(/\W+/g, '-')}.json` }); document.body.append(el); el.click(); el.remove(); return body; }
+  async function importJSON(file) { try { const p = JSON.parse(await file.text()); apply(p); const a = all(); a[p.name || file.name] = p; localStorage.setItem(PK(), JSON.stringify(a)); listPresets(); MM.toast('Imported preset: ' + (p.name || file.name)); return true; } catch (e) { MM.toast('Not a preset file'); return false; } }
+  function listPresets() { const sel = $('#mmx-psel'); if (!sel) return; const cur = sel.value; sel.innerHTML = ''; const a = all(); Object.keys(a).forEach((k) => sel.append(new Option(k, k))); if (a[cur]) sel.value = cur; }
+  function presetsUI(factory = {}) {
+    makeDrawer(); const pane = tabs.PRESETS; pane.innerHTML = '';
+    const a = all(); let changed = false; Object.entries(factory).forEach(([k, v]) => { if (!a[k]) { a[k] = Object.assign(snapshot(k), v.full ? v.full : { params: Object.assign(JSON.parse(JSON.stringify(S.state)), v.params || {}) }, { factory: true, name: k }); changed = true; } }); if (changed) localStorage.setItem(PK(), JSON.stringify(a));
+    const nm = h('input', { id: 'mmx-pname', type: 'text', placeholder: 'preset name', value: 'my preset' }), sel = h('select', { id: 'mmx-psel' }), imp = h('input', { id: 'mmx-pimp', type: 'file', accept: '.json,application/json', hidden: '' });
+    imp.onchange = () => imp.files[0] && importJSON(imp.files[0]);
+    pane.append(h('p', { class: 'mmx-help' }, 'A preset stores every control, the tempo and each slot\'s settings (not the audio itself; the sample names are noted so you can reload them). Saved in this browser; EXPORT writes a JSON file you can share or keep with your samples.'),
+      h('div', { class: 'mmx-row' }, nm, h('button', { class: 'mmx-b', id: 'mmx-psave', onclick: () => save(nm.value) }, 'SAVE')),
+      h('div', { class: 'mmx-row' }, sel, h('button', { class: 'mmx-b', id: 'mmx-pload', onclick: () => load(sel.value) }, 'LOAD'), h('button', { class: 'mmx-b', onclick: () => sel.value && del(sel.value) }, 'DELETE')),
+      h('div', { class: 'mmx-row' }, h('button', { class: 'mmx-b', id: 'mmx-pexp', onclick: exportJSON }, 'EXPORT JSON'), h('label', { class: 'mmx-b' }, 'IMPORT JSON', imp)));
+    listPresets();
+  }
+
+  /* ---------- MIDI ---------- */
+  function midiUI(help) {
+    makeDrawer(); const pane = tabs.MIDI; pane.innerHTML = '';
+    const st = h('div', { class: 'mmx-help', id: 'mmx-mst' }, 'MIDI is off.');
+    const learn = h('select', { id: 'mmx-mlearn' }); const fill = () => { const v = learn.value; learn.innerHTML = ''; learn.append(new Option('MIDI learn: pick a control, then move a knob', '')); S.ctls.filter((c) => c.type === 'range').forEach((c) => learn.append(new Option(c.o.label || c.key, c.key))); learn.value = v; }; fill(); learn.addEventListener('pointerdown', fill); learn.addEventListener('focus', fill);
+    learn.onchange = () => { S.learnCC = learn.value || null; st.textContent = S.learnCC ? 'Move a knob or fader to map it to ' + S.learnCC : st.textContent; };
+    pane.append(h('p', { class: 'mmx-help' }, help || 'Notes play the instrument. Any knob can be mapped with MIDI learn.'), h('button', { class: 'mmx-b', id: 'mmx-midi', onclick: midiStart }, 'ENABLE MIDI IN'), st, learn, h('div', { class: 'mmx-help', id: 'mmx-mlog' }));
+  }
+  async function midiStart() {
+    const st = $('#mmx-mst'); if (!navigator.requestMIDIAccess) { st.textContent = 'This browser has no Web MIDI (use Chrome or Edge).'; return; }
+    try { const acc = await navigator.requestMIDIAccess(); const hook = () => { let n = 0; acc.inputs.forEach((inp) => { n++; inp.onmidimessage = onMidi; }); st.textContent = n ? `MIDI on: ${n} input${n > 1 ? 's' : ''}.` : 'MIDI on, but no inputs found. Plug one in.'; }; hook(); acc.onstatechange = hook; S.midiOn = true; }
+    catch (e) { st.textContent = 'MIDI was blocked: ' + e.message; }
+  }
+  function onMidi(e) { const [a, b, c] = e.data, cmd = a & 0xf0; const lg = $('#mmx-mlog'); if (lg) lg.textContent = `last: ${[a, b, c].join(' ')}`;
+    if (cmd === 0x90 && c > 0) { MM.ensure(); MM.ctx.resume(); S.opts.midi && S.opts.midi(b, c / 127, true); }
+    else if (cmd === 0x80 || (cmd === 0x90 && c === 0)) S.opts.midi && S.opts.midi(b, 0, false);
+    else if (cmd === 0xb0) { if (S.learnCC) { S.ccMap[b] = S.learnCC; MM.toast(`CC ${b} → ${S.learnCC}`); S.learnCC = null; const l = $('#mmx-mlearn'); if (l) l.value = ''; }
+      const k = S.ccMap[b], r = k && S.ctls.find((x) => x.key === k); if (r) { const mn = +(r.o.min ?? 0), mx = +(r.o.max ?? 1), stp = +(r.o.step ?? 0.01); let v = mn + (c / 127) * (mx - mn); v = Math.round(v / stp) * stp; r.set(+v.toFixed(4)); } } }
+
+  /* ---------- keys ---------- */
+  function keysUI(list) {
+    S.keys = [['Space', 'play / stop'], ['R', 'record to WAV'], ['L', 'learn panel'], ['D', 'deck: sounds, presets, MIDI'], ['?', 'this sheet'], ...list]; makeDrawer();
+    tabs.KEYS.innerHTML = ''; tabs.KEYS.append(h('table', { class: 'mmx-keys' }, ...S.keys.map(([k, d]) => h('tr', {}, h('td', {}, h('kbd', {}, k)), h('td', {}, d)))));
+  }
+  /* call first from the tool's key handler; returns true if it handled the key */
+  function key(e) { if (e.key === 'd' || e.key === 'D') { deck(); return true; } if (e.key === '?') { const open = drawer && !drawer.classList.contains('mmx-hide') && tabs.KEYS.style.display !== 'none'; deck(!open, 'KEYS'); return true; } return false; }
+
+  /* ---------- output tap: keeps the last N seconds of the mix, for resampling ---------- */
+  let tapSt = null;
+  function tap(sec = 16) { if (tapSt) return tapSt; const ctx = MM.ctx, n = Math.ceil(sec * ctx.sampleRate), L = new Float32Array(n), R = new Float32Array(n), sp = ctx.createScriptProcessor(4096, 2, 2), z = ctx.createGain(); z.gain.value = 0; let w = 0, filled = 0;
+    sp.onaudioprocess = (e) => { const a = e.inputBuffer.getChannelData(0), b = e.inputBuffer.getChannelData(1); for (let i = 0; i < a.length; i++) { L[w] = a[i]; R[w] = b[i]; w = (w + 1) % n; } filled = Math.min(n, filled + a.length); };
+    MM.out.connect(sp); sp.connect(z); z.connect(ctx.destination);
+    tapSt = { grab(s) { const m = Math.min(filled, Math.floor(s * ctx.sampleRate)); if (m < 128) return null; const B = ctx.createBuffer(2, m, ctx.sampleRate), l = B.getChannelData(0), r = B.getChannelData(1); for (let i = 0; i < m; i++) { const j = (w - m + i + n) % n; l[i] = L[j]; r[i] = R[j]; } let pk = 0; for (let i = 0; i < m; i++) pk = Math.max(pk, Math.abs(l[i]), Math.abs(r[i])); if (pk > 0) for (let i = 0; i < m; i++) { l[i] *= 0.85 / pk; r[i] *= 0.85 / pk; } const f = Math.min(m >> 2, 600); for (let i = 0; i < f; i++) { const g = i / f; l[i] *= g; r[i] *= g; l[m - 1 - i] *= g; r[m - 1 - i] *= g; } return B; } };
+    return tapSt; }
+
+
+  /* ---------- richer LEARN panel: quotes with sources, a "try this with your own sounds" list, and the deck ---------- */
+  function learn() {
+    const m = window.MM_META || {}, M = m.manifesto, D = m.design, dlg = $('#mm-learn-dlg'); if (!dlg || !M) return;
+    const esc = (x) => String(x).replace(/&/g, '&amp;').replace(/</g, '&lt;'), q = (x) => (Array.isArray(x) ? `<blockquote>“${esc(x[0])}”<cite>${esc(x[1])}</cite></blockquote>` : `<blockquote>“${esc(x)}”</blockquote>`);
+    dlg.innerHTML = `<button class="mm-x" aria-label="close">×</button>
+<div class="mm-l-col"><div class="mm-l-k">${esc(m.kicker || 'THE SOURCE IDEA')}</div><h2>${esc(M.name)}</h2><div class="mm-l-by">${esc(M.author)} · ${esc(M.year)}${M.where ? ' · ' + esc(M.where) : ''}</div>
+<div class="mm-l-k">KEY IDEAS</div><ul>${M.ideas.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
+${(M.quotes || []).map(q).join('')}
+<div class="mm-l-k">HOW THIS INSTRUMENT READS IT</div><p>${esc(M.system)}</p>
+${m.try ? `<div class="mm-l-k">TRY THIS WITH YOUR OWN SOUNDS</div><ol>${m.try.map((i) => `<li>${esc(i)}</li>`).join('')}</ol>` : ''}</div>
+<div class="mm-l-col"><div class="mm-l-k">THE DESIGN HOMAGE</div><h2>${esc(D.name)}</h2><div class="mm-l-by">${esc(D.who)} · ${esc(D.era)}</div>
+<div class="mm-l-k">HALLMARKS, AND WHERE THEY SHOW UP HERE</div><ul>${D.hallmarks.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
+<div class="mm-l-k">WORKS TO LOOK UP</div><ul>${D.works.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
+<div class="mm-l-k">HOW TO PLAY</div><p>${esc(m.how)}</p>
+<div class="mm-l-k">THE DECK (PRESS D)</div><p>Sample slots with pitch, gain, start and end, reverse, filter, pan, reverb and delay sends; presets (save, load, export and import JSON); MIDI in with MIDI learn for any slider; and every keyboard shortcut (press ?).</p>
+<p class="mm-l-note">Quotes are short and taken from the published sources named under each one; everything else is paraphrase. Tool ${esc(m.no)} of Manifesto Machines.</p></div>`;
+    dlg.querySelector('.mm-x').onclick = () => dlg.classList.add('mm-hide');
+  }
+
+  /* ---------- setup ---------- */
+  function init(o) { S.opts = o; makeDrawer(); learn(); if (o.state) bind(o.state); if (o.slots) slots(o.slots); presetsUI(o.factory || {}); midiUI(o.midiHelp); keysUI(o.keys || []); return S; }
+  return { init, slots, ctl, bind, setParam, refresh, fire, buf, region, isUser, assign, loadInto, setBuf, save, load, del, exportJSON, importJSON, snapshot, apply, deck, key, tap, onMidi, decode, S };
+})();
+
+</script>
+<script>
+const C = [{ k: 'M2', sp: 28.984104, name: 'principal lunar, twice a day' }, { k: 'S2', sp: 30.0, name: 'principal solar, twice a day' }, { k: 'N2', sp: 28.43973, name: 'lunar distance (elliptic)' }, { k: 'K2', sp: 30.082137, name: 'lunisolar declination, twice a day' },
+  { k: 'K1', sp: 15.041069, name: 'lunisolar declination, once a day' }, { k: 'O1', sp: 13.943036, name: 'lunar declination, once a day' }, { k: 'M4', sp: 57.96821, name: 'shallow-water overtide of M2' }, { k: 'M6', sp: 86.95232, name: 'shallow-water overtide of M2' }];
+const COAST = { semi: { name: 'Semidiurnal (North Sea style)', A: [1.6, 0.55, 0.32, 0.15, 0.12, 0.13, 0.05, 0.02], P: [0, 40, 340, 40, 200, 30, 120, 60] },
+  mixed: { name: 'Mixed (Pacific coast style)', A: [0.58, 0.14, 0.12, 0.04, 0.37, 0.23, 0.01, 0], P: [0, 30, 340, 30, 110, 90, 0, 0] },
+  diurnal: { name: 'Diurnal (Gulf of Mexico style)', A: [0.05, 0.02, 0.01, 0.01, 0.16, 0.15, 0, 0], P: [0, 10, 330, 10, 0, 350, 0, 0] },
+  double: { name: 'Shallow water, double high tide', A: [1.35, 0.45, 0.25, 0.12, 0.08, 0.08, 0.28, 0.12], P: [0, 45, 340, 45, 160, 20, 250, 30] },
+  macro: { name: 'Macrotidal funnel (Bay of Fundy style)', A: [5.1, 0.8, 1.0, 0.25, 0.25, 0.18, 0.08, 0.03], P: [0, 50, 330, 50, 200, 30, 90, 0] } };
+const def = { bpm: 90, coast: 'semi', speed: 3, gate: 1, root: 2, scale: 'dorian', range: 2, drone: 0.4, dpitch: 110, tuned: false, breathe: true, hw: 0.6, lw: 0.6, shore: 0.25, shoreF: 0.7, verb: 0.35, gate1: true };
+C.forEach((c, i) => { def['a' + i] = COAST.semi.A[i]; def['p' + i] = COAST.semi.P[i]; def['on' + i] = true; });
+const st = MMX.bind(def);
+const NOTES = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'], RED = '#a00000', INK = '#111', PAPER = '#fffff8', GREY = '#999';
+const cv = MM.canvas('#cv'); let T = 0, lastNow = 0, N = {}, drones = [], lastH = null, lastDir = 0, events = [], nextGate = 0, lastDeg = null, cursorMarks = [], crank = C.map(() => 0), fl = { hw: 0, lw: 0, g: 0 }, cache = null;
+const D2R = Math.PI / 180, amp = (i) => (st['on' + i] ? st['a' + i] : 0);
+const h = (t) => C.reduce((s, c, i) => s + amp(i) * Math.cos((c.sp * t + st['p' + i]) * D2R), 0);
+const hi = (i, t) => amp(i) * Math.cos((C[i].sp * t + st['p' + i]) * D2R);
+const Amax = () => Math.max(0.05, C.reduce((s, c, i) => s + amp(i), 0));
+const fmtT = (t) => { const d = Math.floor(t / 24), hh = Math.floor(t % 24), mm = Math.floor(((t % 1) + 1) % 1 * 60); return `day ${d + 1}, ${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`; };
+/* ---------- audio ---------- */
+function build() { const c = MM.ctx; N.dBus = c.createGain(); N.dLP = c.createBiquadFilter(); N.dLP.type = 'lowpass'; N.dLP.frequency.value = 1200; N.dBus.connect(N.dLP); N.dLP.connect(MM.out);
+  N.bus = c.createGain(); N.bus.connect(MM.out); N.vs = c.createGain(); N.cv = c.createConvolver(); N.cv.buffer = imp(3.2); N.bus.connect(N.vs); N.dLP.connect(N.vs); N.vs.connect(N.cv); N.cv.connect(MM.out);
+  N.sLP = c.createBiquadFilter(); N.sLP.type = 'lowpass'; N.sLP.frequency.value = 800; N.sG = c.createGain(); N.sLP.connect(N.sG); N.sG.connect(MM.out);
+  N.cg = C.map(() => { const g = c.createGain(); g.gain.value = 0; g.connect(N.dBus); return g; }); apply(); }
+function imp(sec) { const c = MM.ctx, n = (c.sampleRate * sec) | 0, b = c.createBuffer(2, n, c.sampleRate); for (let ch = 0; ch < 2; ch++) { const d = b.getChannelData(ch); for (let i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / n, 2.8) * 0.5; } return b; }
+function apply() { if (!N.bus) return; const t = MM.now; N.dBus.gain.setTargetAtTime(st.drone, t, 0.2); N.vs.gain.setTargetAtTime(st.verb, t, 0.1); N.sG.gain.setTargetAtTime(st.shore, t, 0.3); droneRates(); cache = null; }
+function droneHz(i) { const f = st.dpitch * (C[i].sp / C[0].sp); if (!st.tuned) return f; const m = 12 * Math.log2(f / 440) + 69; let best = m, bd = 99; for (let n = 12; n < 120; n++) { const pc = ((n - st.root) % 12 + 12) % 12; if (!MM.SCALES[st.scale].includes(pc)) continue; if (Math.abs(n - m) < bd) { bd = Math.abs(n - m); best = n; } } return MM.mtof(best); }
+function droneRates() { drones.forEach((d, i) => d && d.s && d.s.playbackRate.setTargetAtTime((droneHz(i) / MM.mtof(60)) * Math.pow(2, (MMX.S.slots[1] ? MMX.S.slots[1].pitch : 0) / 12), MM.now, 0.1)); }
+function startDrones(t) { stopDrones(t); drones = C.map((c, i) => MMX.fire(1, t, { rate: droneHz(i) / MM.mtof(60), loop: true, dur: 36000, gain: 0.5, fadeIn: 1.5, pan: (i % 2 ? 0.35 : -0.35) * (i < 4 ? 1 : 0.5), dest: N.cg[i] })); }
+function stopDrones(t) { drones.forEach((d) => d && d.stop(t + 0.3)); drones = []; }
+function startShore(t) { if (N.shH) N.shH.stop(t); N.shH = MMX.fire(4, t, { loop: true, dur: 36000, gain: 0.8, fadeIn: 2, dest: N.sLP }); }
+function tick(now) { if (!N.bus) return; const dt = Math.min(0.2, Math.max(0, now - lastNow)); lastNow = now; T += dt * st.speed; const A = Amax(), H = h(T), x = H / A;
+  C.forEach((c, i) => { crank[i] = (c.sp * T + st['p' + i]) * D2R; const lv = amp(i) / A; const b = st.breathe ? 0.35 + 0.65 * (0.5 + 0.5 * Math.cos(crank[i])) : 1; N.cg[i].gain.setTargetAtTime(lv * b * 0.9, now, 0.15); });
+  N.dLP.frequency.setTargetAtTime(500 + 2500 * (0.5 + 0.5 * x), now, 0.2); N.sLP.frequency.setTargetAtTime(300 + 5000 * st.shoreF * (0.5 + 0.5 * x), now, 0.2);
+  // turning points: high and low water
+  if (lastH != null) { const dir = Math.sign(H - lastH); if (dir && lastDir && dir !== lastDir) { const isHW = lastDir > 0; events.push({ t: T, h: H, hw: isHW }); events = events.filter((e) => T - e.t < 48);
+      if (isHW) { fl.hw = performance.now(); if (st.hw > 0.01) MMX.fire(2, now + 0.02, { gain: st.hw * (0.5 + 0.5 * Math.max(0, x)), dur: 4, fadeOut: 1.5, dest: N.bus }); }
+      else { fl.lw = performance.now(); if (st.lw > 0.01) MMX.fire(3, now + 0.02, { gain: st.lw * (0.5 + 0.5 * Math.max(0, -x)), dur: 3, fadeOut: 1, dest: N.bus }); } } if (dir) lastDir = dir; } lastH = H;
+  // gauge melody: one note per gauge step of tidal time
+  const stepS = st.gate / st.speed; if (nextGate < now - 0.3) nextGate = now + 0.05;
+  while (nextGate < now + 0.15) { const Tg = T + (nextGate - now) * st.speed, xg = h(Tg) / A, steps = st.range * 7, deg = Math.round((0.5 + 0.5 * xg) * steps), m = MM.deg(deg, st.scale, 48 + st.root);
+    const rising = h(Tg + 0.05) > h(Tg); if (deg !== lastDeg || !st.gate1) { MMX.fire(0, nextGate, { rate: MM.mtof(m) / MM.mtof(60), gain: deg === lastDeg ? 0.35 : 0.7, dur: Math.min(1.6, stepS * 1.6), fadeOut: 0.2, pan: rising ? 0.25 : -0.25, dest: N.bus }); fl.g = performance.now(); }
+    lastDeg = deg; nextGate += Math.max(0.08, stepS); } }
+/* ---------- drawing: Tufte ---------- */
+function spark(g, x, y, w, hgt, fn, t0, t1, scale, col = INK, lw = 1) { g.strokeStyle = col; g.lineWidth = lw; g.beginPath(); const n = Math.max(60, Math.floor(w)); for (let j = 0; j <= n; j++) { const t = t0 + ((t1 - t0) * j) / n, v = fn(t), yy = y + hgt / 2 - (v / scale) * (hgt / 2); j ? g.lineTo(x + (w * j) / n, yy) : g.moveTo(x + (w * j) / n, yy); } g.stroke(); }
+function draw() { cv.fit(); const g = cv.g, W = cv.w, H = cv.h, A = Amax(), pnow = performance.now(); g.fillStyle = PAPER; g.fillRect(0, 0, W, H);
+  const L = 74, R = W - 150, t0 = T - 24, t1 = T + 48, X = (t) => L + ((t - t0) / (t1 - t0)) * (R - L);
+  // 1. main tide curve with a range frame
+  const my = 84, mh = Math.max(110, H * 0.3), Y = (v) => my + mh / 2 - (v / A) * (mh / 2 - 4); let mn = 1e9, mx = -1e9; for (let t = t0; t <= t1; t += 0.25) { const v = h(t); mn = Math.min(mn, v); mx = Math.max(mx, v); }
+  g.strokeStyle = '#ccc'; g.lineWidth = 1; g.beginPath(); g.moveTo(L - 10, Y(mx)); g.lineTo(L - 10, Y(mn)); g.stroke(); g.fillStyle = '#555'; g.font = "13px 'EB Garamond'"; g.textAlign = 'right'; g.fillText(`${mx.toFixed(2)} m`, L - 14, Y(mx) + 4); g.fillText(`${mn.toFixed(2)} m`, L - 14, Y(mn) + 4);
+  for (let d = Math.ceil(t0 / 24) * 24; d <= t1; d += 24) { g.fillStyle = '#999'; g.textAlign = 'center'; g.fillText(fmtT(d).split(',')[0], X(d), my + mh + 14); g.fillRect(X(d), my + mh + 1, 1, 4); }
+  g.fillStyle = '#f2f0e4'; g.fillRect(X(T), my, R - X(T), mh); g.fillStyle = '#777'; g.font = "italic 13px 'EB Garamond'"; g.textAlign = 'left'; g.fillText('predicted', X(T) + 6, my + 12); g.textAlign = 'right'; g.fillText('past', X(T) - 6, my + 12);
+  spark(g, L, my + 4, R - L, mh - 8, h, t0, t1, A, INK, 1.5);
+  // direct labels at high and low water in the window
+  g.font = "12px 'EB Garamond'"; g.textAlign = 'center'; let prev = h(t0), pd = 0; for (let t = t0 + 0.1; t <= t1; t += 0.1) { const v = h(t), d = Math.sign(v - prev); if (pd && d && d !== pd) { const isH = pd > 0; g.fillStyle = isH ? INK : '#777'; g.fillText(`${v.toFixed(1)}`, X(t), Y(v) + (isH ? -6 : 14)); } if (d) pd = d; prev = v; }
+  g.strokeStyle = RED; g.lineWidth = 1; g.beginPath(); g.moveTo(X(T), my - 6); g.lineTo(X(T), my + mh); g.stroke(); const hn = h(T); g.fillStyle = RED; g.beginPath(); g.arc(X(T), Y(hn), 3.5, 0, 7); g.fill();
+  g.textAlign = 'left'; g.font = "15px 'EB Garamond'"; g.fillStyle = INK; g.fillText(`${hn >= 0 ? '+' : ''}${hn.toFixed(2)} m`, R + 12, Y(hn) + 4); g.font = "italic 13px 'EB Garamond'"; g.fillStyle = '#555'; g.fillText(fmtT(T), R + 12, Y(hn) + 20); g.fillText(h(T + 0.05) > hn ? 'rising' : 'falling', R + 12, Y(hn) + 36);
+  const ev = events[events.length - 1]; if (ev && T - ev.t < 1.2) { g.fillStyle = ev.hw ? RED : '#555'; g.fillText(ev.hw ? 'high water' : 'low water', R + 12, Y(hn) - 14); }
+  // 2. small multiples: one sparkline per constituent, same vertical scale
+  const sy = my + mh + 46, rows = C.length, rh = Math.max(22, Math.min(38, (H - sy - 96) / rows)); lay.rows = [];
+  g.font = "italic 13px 'EB Garamond'"; g.fillStyle = '#555'; g.textAlign = 'left'; g.fillText('the same three days, one cycle at a time (same vertical scale); click a row to switch it off', L, sy - 8);
+  C.forEach((c, i) => { const y = sy + i * rh, on = st['on' + i], a = st['a' + i]; lay.rows.push({ y, h: rh, i });
+    // Kelvin's pulley: a wheel turning at the constituent's speed with an offset pin
+    const px = 30, py = y + rh / 2, pr = Math.min(9, rh * 0.35); g.strokeStyle = on ? INK : '#ccc'; g.lineWidth = 1; g.beginPath(); g.arc(px, py, pr, 0, 7); g.stroke(); const ang = crank[i] || 0; g.fillStyle = on ? RED : '#ccc'; g.beginPath(); g.arc(px + Math.cos(ang) * pr * 0.65, py - Math.sin(ang) * pr * 0.65, 2, 0, 7); g.fill();
+    g.fillStyle = on ? INK : '#bbb'; g.font = "600 14px 'EB Garamond'"; g.fillText(c.k, 46, py + 5);
+    if (on && a > 0.001) spark(g, L, y + 2, R - L, rh - 4, (t) => hi(i, t), t0, t1, A, INK, 1); else { g.strokeStyle = '#ddd'; g.beginPath(); g.moveTo(L, py); g.lineTo(R, py); g.stroke(); }
+    if (on && a > 0.001) { const v = hi(i, T); g.fillStyle = RED; g.beginPath(); g.arc(X(T), py - (v / A) * (rh / 2 - 2), 2.2, 0, 7); g.fill(); }
+    g.fillStyle = on ? '#333' : '#bbb'; g.font = "12px 'EB Garamond'"; g.fillText(`${a.toFixed(2)} m · ${(360 / c.sp).toFixed(2)} h`, R + 12, py - 1); g.font = "italic 11px 'EB Garamond'"; g.fillStyle = '#888'; g.fillText(c.name, R + 12, py + 11); });
+  // 3. spring/neap: the tidal range over 30 days
+  const ny = sy + rows * rh + 22, nh = Math.max(34, H - ny - 30); if (!cache) { cache = []; for (let d = 0; d < 30 * 24; d += 1) { let a = -1e9, b = 1e9; for (let k = 0; k < 25; k += 0.5) { const v = h(d + k); a = Math.max(a, v); b = Math.min(b, v); } cache.push(a - b); } }
+  const cmax = Math.max(...cache, 0.01), cmin = Math.min(...cache), crng = Math.max(0.01, cmax - cmin), base = Math.floor(T / (30 * 24)) * 30 * 24; g.strokeStyle = INK; g.lineWidth = 1; g.beginPath(); cache.forEach((v, j) => { const x = L + (j / cache.length) * (R - L), y = ny + nh - ((v - cmin) / crng) * nh; j ? g.lineTo(x, y) : g.moveTo(x, y); }); g.stroke();
+  const ci = Math.floor((T - base) % (30 * 24)), cx = L + (ci / cache.length) * (R - L); g.fillStyle = RED; g.beginPath(); g.arc(cx, ny + nh - ((cache[ci] - cmin) / crng) * nh, 3, 0, 7); g.fill();
+  let jx = 0; cache.forEach((v, j) => { if (v > cache[jx]) jx = j; }); g.fillStyle = '#555'; g.font = "italic 12px 'EB Garamond'"; g.textAlign = 'left'; g.textAlign = 'right'; g.fillText(cmax.toFixed(1) + ' m', L - 14, ny + 4); g.fillText(cmin.toFixed(1) + ' m', L - 14, ny + nh + 4); g.textAlign = 'left'; g.fillText('tidal range over 30 days: springs (big) and neaps (small), the M2 and S2 beat', L, ny - 6);
+  g.textAlign = 'left'; g.fillStyle = '#333'; g.font = "12px 'EB Garamond'"; g.fillText(`range now ${cache[ci].toFixed(2)} m`, R + 12, ny + nh / 2); g.fillText(`beat period ${(1 / (1 / 12 - 1 / 12.4206) / 24).toFixed(1)} days`, R + 12, ny + nh / 2 + 14); }
+let lay = {};
+MM.drag(MM.$('#pic'), (px, py, ph) => { if (ph !== 'down') return; const r = (lay.rows || []).find((q) => py >= q.y && py < q.y + q.h); if (r) { MMX.setParam('on' + r.i, !st['on' + r.i]); MM.toast(`${C[r.i].k} ${st['on' + r.i] ? 'on' : 'off'}`); cache = null; } });
+function coast(k) { const c = COAST[k]; if (!c) return; C.forEach((_, i) => { MMX.setParam('a' + i, c.A[i]); MMX.setParam('p' + i, c.P[i]); MMX.setParam('on' + i, true); }); cache = null; }
+function only(keys) { C.forEach((c, i) => MMX.setParam('on' + i, keys.includes(c.k))); cache = null; }
+const cfg = { bpm: 90, tick, draw, start: () => { const t = MM.now + 0.05; lastNow = MM.now; nextGate = t; lastH = null; lastDir = 0; startDrones(t); startShore(t); }, stop: () => { stopDrones(MM.now); if (N.shH) N.shH.stop(MM.now); N.shH = null; },
+  onSamples: (list) => MMX.assign(list),
+  key: (e) => { if (MMX.key(e)) return; const k = e.key.toLowerCase(); if (k === 's') only(['M2', 'S2']); else if (k === 'a') only(C.map((c) => c.k)); else if (k === 'p') newPhases(); else if (k === 't') MMX.setParam('tuned', !st.tuned); else if (k === 'b') MMX.setParam('breathe', !st.breathe);
+    else if (/^[1-8]$/.test(e.key)) { const i = +e.key - 1; MMX.setParam('on' + i, !st['on' + i]); cache = null; } else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') MMX.setParam('speed', MM.clamp(+(st.speed * (e.key === 'ArrowRight' ? 1.25 : 0.8)).toFixed(2), 0.25, 24));
+    else if (k === 'j') { T += 24; } else if (k === 'w') { T += 24 * 7; MM.toast('A week later'); } },
+  setup() { MM.ensure(); MM.fb.tGauge = mallet(); MM.fb.tDrone = droneBuf(); MM.fb.tBell = bell(); MM.fb.tLow = low(); MM.fb.tShore = shore(); build();
+    MMX.init({ state: st, slots: [{ label: 'Gauge melody', kind: 'tGauge', rv: 0, gain: 0.8 }, { label: 'Drones', kind: 'tDrone', rv: 0, gain: 0.7 }, { label: 'High-water bell', kind: 'tBell', rv: 0, gain: 0.6 }, { label: 'Low-water note', kind: 'tLow', rv: 0, gain: 0.7 }, { label: 'Shore', kind: 'tShore', rv: 0, gain: 0.6 }],
+      onSlot: (i) => { if (!MM.playing) return; if (i === 1) startDrones(MM.now + 0.05); if (i === 4) startShore(MM.now + 0.05); },
+      extra: { get: () => ({ T }), set: (x) => { if (x && typeof x.T === 'number') T = x.T; cache = null; } },
+      onPreset: () => { cache = null; apply(); if (MM.playing) startDrones(MM.now + 0.05); }, factory: fac(),
+      keys: [['click a row', 'switch that cycle on / off'], ['1 to 8', 'switch constituent M2 ... M6'], ['S', 'only M2 and S2 (spring/neap)'], ['A', 'all cycles'], ['P', 'new phases'], ['T', 'drones: true ratios / tuned'], ['B', 'breathing drones'], ['← →', 'time slower / faster'], ['J', 'jump a day'], ['W', 'jump a week']],
+      midiHelp: 'Each MIDI note sets the drone pitch (M2 sits on the note you play) and plays the gauge sound there; the other cycles follow at their own ratios.',
+      midi: (n, v, on) => { if (!on) return; MMX.setParam('dpitch', +MM.mtof(n).toFixed(1)); droneRates(); MMX.fire(0, MM.now + 0.005, { rate: MM.mtof(n) / MM.mtof(60), gain: 0.3 + v * 0.6, dur: 1, dest: N.bus }); } });
+    const S1 = MM.$('#s1'), S2 = MM.$('#s2'), S3 = MM.$('#s3');
+    MMX.ctl(S1, 'coast', { type: 'select', label: 'Coast', options: Object.entries(COAST).map(([k, c]) => [k, c.name]), on: (v) => coast(v) });
+    MMX.ctl(S1, 'speed', { label: 'Hours / second', min: 0.25, max: 24, step: 0.25, }); MMX.ctl(S1, 'gate', { type: 'select', label: 'Gauge note every', options: [[0.25, '15 minutes'], [0.5, '30 minutes'], [1, 'hour'], [2, '2 hours'], [3, '3 hours']] });
+    C.forEach((c, i) => { MMX.ctl(S2, 'on' + i, { type: 'check', label: c.k + ' on', on: () => (cache = null) }); MMX.ctl(S2, 'a' + i, { label: c.k + ' amplitude', min: 0, max: i === 0 ? 6 : 2, step: 0.01, on: () => (cache = null) }); MMX.ctl(S2, 'p' + i, { label: c.k + ' phase °', min: 0, max: 359, step: 1, on: () => (cache = null) }); });
+    MMX.ctl(S3, 'root', { type: 'select', label: 'Key', options: NOTES.map((x, k) => [k, x]), on: apply }); MMX.ctl(S3, 'scale', { type: 'select', label: 'Scale', options: Object.keys(MM.SCALES).map((k) => [k, k]), on: apply });
+    MMX.ctl(S3, 'range', { label: 'Gauge octaves', min: 1, max: 4, step: 1 }); MMX.ctl(S3, 'gate1', { type: 'check', label: 'Only on change' }); MMX.ctl(S3, 'drone', { label: 'Drones', min: 0, max: 1, on: apply }); MMX.ctl(S3, 'dpitch', { label: 'Drone pitch (M2)', min: 30, max: 440, step: 0.5, fmt: (v) => Math.round(v) + ' Hz', on: apply });
+    MMX.ctl(S3, 'tuned', { type: 'check', label: 'Tuned to scale (T)', on: apply }); MMX.ctl(S3, 'breathe', { type: 'check', label: 'Breathing (B)' }); MMX.ctl(S3, 'hw', { label: 'High-water bell', min: 0, max: 1 }); MMX.ctl(S3, 'lw', { label: 'Low-water note', min: 0, max: 1 });
+    MMX.ctl(S3, 'shore', { label: 'Shore', min: 0, max: 1, on: apply }); MMX.ctl(S3, 'shoreF', { label: 'Water opens filter', min: 0, max: 1 }); MMX.ctl(S3, 'verb', { label: 'Reverb', min: 0, max: 1, on: apply });
+    MM.$('#b-sn').onclick = () => only(['M2', 'S2']); MM.$('#b-all').onclick = () => only(C.map((c) => c.k)); MM.$('#b-ph').onclick = newPhases; apply(); } };
+function newPhases() { C.forEach((_, i) => MMX.setParam('p' + i, (Math.random() * 360) | 0)); cache = null; MM.toast('New phases: the same cycles, a different harbour'); }
+function fac() { const base = JSON.parse(JSON.stringify(st)), F = (k, o) => { const c = COAST[k], p = Object.assign({}, base, { coast: k }); C.forEach((_, i) => { p['a' + i] = c.A[i]; p['p' + i] = c.P[i]; p['on' + i] = true; }); return { full: { params: Object.assign(p, o), extra: { T: 0 } } }; };
+  const sn = {}; C.forEach((c, i) => (sn['on' + i] = i < 2));
+  return { 'North Sea style (default)': {}, 'Mixed, Pacific style': F('mixed', { scale: 'lydian', root: 7, speed: 2 }), 'Diurnal, one tide a day': F('diurnal', { speed: 4, scale: 'minpent', root: 9, range: 3 }), 'Double high water': F('double', { speed: 2, gate: 0.5, scale: 'major', root: 5 }),
+    'Fundy, macrotidal': F('macro', { speed: 3, range: 4, dpitch: 55, drone: 0.55 }), 'Spring/neap beat': F('semi', Object.assign({ speed: 12, dpitch: 65, breathe: false, drone: 0.6, tuned: false }, sn)) }; }
+/* built-in sounds, tuned to C4 where pitched */
+function mk(len, fn) { const c = MM.ctx, sr = c.sampleRate, B = c.createBuffer(1, (sr * len) | 0, sr), d = B.getChannelData(0); let pk = 0; for (let i = 0; i < d.length; i++) { d[i] = fn(i / sr, i); pk = Math.max(pk, Math.abs(d[i])); } for (let i = 0; i < d.length; i++) d[i] *= 0.7 / (pk || 1); return B; }
+function mallet() { const f = MM.mtof(60); return mk(2, (t) => (Math.sin(2 * Math.PI * f * t) + 0.3 * Math.sin(2 * Math.PI * f * 4 * t) * Math.exp(-t * 18) + 0.15 * Math.sin(2 * Math.PI * f * 10.1 * t) * Math.exp(-t * 40)) * Math.exp(-t * 2.2) * Math.min(1, t * 500)); }
+function droneBuf() { const sr = MM.ctx.sampleRate, per = Math.round(sr / MM.mtof(60)), len = per * 1046, f = sr / per; return mk(len / sr, (t) => { let s = 0; for (let k = 1; k < 7; k++) s += Math.sin(2 * Math.PI * f * k * t) / (k * k); return s; }); }
+function bell() { const f = MM.mtof(72); return mk(4, (t) => [[1, 1], [2.4, 0.4], [3.9, 0.2], [5.4, 0.1]].reduce((s, [r, a], k) => s + a * Math.sin(2 * Math.PI * f * r * t) * Math.exp(-t * (0.7 + k * 0.8)), 0) * Math.min(1, t * 300)); }
+function low() { const f = MM.mtof(36); return mk(3, (t) => (Math.sin(2 * Math.PI * f * t) + 0.3 * Math.sin(4 * Math.PI * f * t)) * Math.exp(-t * 1.1) * Math.min(1, t * 60)); }
+function shore() { let b = 0, p = 0; return mk(8, (t) => { b = b * 0.985 + (Math.random() * 2 - 1) * 0.015; p = 0.5 + 0.5 * Math.sin(2 * Math.PI * t / 8 - Math.PI / 2); return b * (0.3 + 0.7 * p * p) * 10; }); }
+MM.init(cfg);
+
+</script>
+</body></html>

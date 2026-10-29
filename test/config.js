@@ -10,4 +10,5 @@ module.exports = {
   '52': { ai: true, mock: { name: 'Sam', line: 'you always find the light', style: 'house', bpm: 124, root: 2, prog: 'I-V-vi-IV', crhythm: 'held', note: 'test' } },
   '56': { ai: true, mock: { title: 'Test', bpm: 96, scale: 'dorian', shapes: [{ s: 'triangle', c: 0, x: 0.1, y: 0.2, size: 0.05 }, { s: 'circle', c: 2, x: 0.3, y: 0.8, size: 0.1 }, { s: 'line', c: 3, x: 0.5, y: 0.5, size: 0.03, x2: 0.7, y2: 0.2 }], note: 'test' } },
   '61': { ai: true, mock: { objects: [{ name: 'tram', x: 0.2, y: 0.6, c: 0, slot: 0, rays: 5, spin: 1 }, { name: 'lamp', x: 0.7, y: 0.3, c: 3, slot: 1, rays: 4, spin: -1 }], bpm: 120, scale: 'dorian', note: 'test' } },
+  '62': { ai: true, mock: { bpm: 124, root: 2, mode: 'minor', prog: 'vi-IV-I-V', groove: 'two-step', buildBars: 6, dropBars: 16, title: 'Sam (night bus)', note: 'test' } },
 };

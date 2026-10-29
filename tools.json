@@ -2775,5 +2775,282 @@
   "no": "61",
   "slug": "rayonist-rays",
   "file": "tools/61-rayonist-rays.html"
+ },
+ {
+  "title": "Spoken Mantra",
+  "deep": true,
+  "gemini": true,
+  "category": "Fred",
+  "date": "2026-10-29",
+  "kicker": "WHAT WOULD FRED AGAIN.. DO? · FOUND SPEECH",
+  "ideas_note": "",
+  "idea": "A spoken sentence, not a sung one, becomes the whole song, the way Fred again.. built 'Marea (we've lost dancing)' around The Blessed Madonna's speaking voice. The speech is cut into words, you choose which words make the mantra, a piano listens to the pitch of each word and harmonises it, and the arrangement runs intro, mantra, build (the phrase shrinks to one stuttering word), a beat of silence, then a pumping house or two-step drop.",
+  "controls": "6 slots (speech, piano, kick, clap, hats, field recording); click words to build the mantra; word chopping by gaps or equal slices; phrase timing natural or quantised; key, mode and progression or 'follow the speech'; groove (house, two-step, half-time, none), sidechain pump, hook density and re-pitched hooks; section lengths, auto-arrange or play sections by hand with a held build; riser, echo and space; optional Gemini that turns a moment you describe into an arrangement.",
+  "how": "Press PLAY. The built-in 'speech' is cut into words (the boxes in the SPEECH window). Click a word to take it in or out of the mantra. The piano reads the pitch of each word and picks a chord that contains it. With AUTO on, the song moves through INTRO, MANTRA, BUILD, DROP and BREAK by itself; press 1 to 5 to jump to a section at the next bar, or Enter for the next one. With AUTO off, the build holds on its last stutter until you press Enter, and the drop lands after a beat of silence. Drop a voice memo or any spoken sample onto the page (it goes to the SPEECH slot), or press D for all six slots.",
+  "fonts": "family=Pixelify+Sans:wght@400;600;700&family=Inconsolata:wght@400;700",
+  "bpm": 128,
+  "try": [
+   "Record ten seconds of a friend talking on your phone (a voice note is perfect), drop it in, and switch off every word except the two that hit you. Set CHOP to 'gaps' and PHRASE TIMING to '8ths' so the words land on the grid, then let AUTO run to the drop.",
+   "Load a long field recording from your Splice folder (rain, a station, a crowd) into FIELD and a soft felt-piano one-shot recorded at C into PIANO. Set PROGRESSION to 'follow the speech', GROOVE to 'two-step' and PUMP to 0.7: the piano follows your talker's voice and breathes with the kick.",
+   "Turn AUTO off, play MANTRA for a while, press 3 for the BUILD and let it hold on the one-word stutter as long as you can bear. Press Enter, listen to the beat of silence, then the drop. Record it with R and use the WAV as a new speech sample."
+  ],
+  "manifesto": {
+   "name": "What would Fred again.. do? Found speech as the song: the 'Marea (we've lost dancing)' method",
+   "short": "Fred again.. found speech",
+   "author": "Fred again.. (Fred Gibson, b. 1993, London), with The Blessed Madonna (Marea Stamper)",
+   "year": "2021",
+   "where": "'Marea (we've lost dancing)', Fred again.. and The Blessed Madonna, single released in early 2021 and later on 'Actual Life (April 14 – December 17 2020)'. Also his habit of naming tracks after the person whose voice is in them: 'Kyle (i found you)', 'Delilah (pull me out of this)', 'Billie (loving arms)'.",
+   "ideas": [
+    "The voice in a Fred again.. track is often speaking, not singing: a few words lifted from a conversation, a voice note or a video, repeated until they become a hook. 'Marea (we've lost dancing)' is built around The Blessed Madonna talking about the loss of dancing during the 2020 lockdowns.",
+    "The track is named after the person whose voice it uses, with their phrase in brackets. The sample is treated as a portrait of a real person at a real moment.",
+    "Repetition changes meaning: a sentence heard once is information; heard sixteen times over chords it becomes a mantra, and then something you can dance to.",
+    "The arrangement does the emotional work: a quiet, almost ambient opening with piano, a long build in which the phrase is cut shorter and shorter, and a euphoric drop with a pumping house kick.",
+    "He has often said in interviews that he collects these moments constantly on his phone and that the emotional weight of the real voice matters more than polish. (Paraphrase.)"
+   ],
+   "quotes": [],
+   "system": "The SPEECH slot is cut into words, either at the gaps between them (energy below a threshold) or into equal slices. Each word's pitch is estimated by autocorrelation and snapped to the key. You choose which words form the MANTRA. In PROGRESSION 'follow the speech', each bar's chord is a diatonic triad that contains the pitch of that bar's lead word, so the piano harmonises the speaking voice (this is the instrument's interpretation, not a claim about how Fred works). Sections: INTRO (speech, field recording and soft held piano), MANTRA (the phrase every bar, piano on the beat), BUILD (the phrase shrinks: whole phrase, last two words, last word on beats, then 8ths and 16ths, with a riser, rising filter and snare roll; the final beat is silent), DROP (full groove, sidechain pump on piano and field, and re-pitched hooks made of the lead word tuned to the chord), BREAK (no drums, long reverb). AUTO moves through them; without AUTO the build holds until you press Enter."
+  },
+  "design": {
+   "name": "Susan Kare",
+   "short": "Susan Kare",
+   "who": "Susan Kare (b. 1954), American artist and designer, who drew the original icons, bitmap fonts and interface graphics for the Apple Macintosh (1983 to 1986), and later icons for Windows 3.0 and many others",
+   "era": "Apple, Cupertino, 1983 to 1986, and after",
+   "hallmarks": [
+    "Icons drawn on a grid of square pixels, often 32 × 32, in pure black and white, with enormous character in very few dots. Here every section is a hand-drawn pixel icon (moon, speech balloon, stairs, bomb, cup), and the bomb nods to her system-error icon.",
+    "Bitmap typefaces designed for the screen and named after cities (Chicago, Geneva, New York). Here a pixel face stands in for Chicago in the title bars and menus.",
+    "The 1-bit desktop: a dithered grey pattern, windows with striped title bars and close boxes, the menu bar across the top. The command-key symbol she adopted (⌘) came from a Swedish sign for a place of interest; it appears in the menu bar here."
+   ],
+   "works": [
+    "Original Macintosh icons: the trash can, the watch, the paintbrush, the bomb (1984)",
+    "The Chicago, Geneva and Monaco bitmap fonts (1984)",
+    "Windows 3.0 Solitaire card deck (1990)"
+   ]
+  },
+  "no": "62",
+  "slug": "spoken-mantra",
+  "file": "tools/62-spoken-mantra.html"
+ },
+ {
+  "title": "Discreet System",
+  "deep": true,
+  "category": "Eno",
+  "date": "2026-10-29",
+  "kicker": "WHAT WOULD BRIAN ENO DO? · DISCREET MUSIC, 1975",
+  "idea": "Brian Eno's Discreet Music (1975) as an instrument you set going and then leave alone: two short melodies of different lengths feed a graphic equaliser and a long tape-delay loop of two tape machines, so every note comes back, quieter and darker, for minutes. Draw the EQ, let it drift, turn the listening level down to the edge of hearing like the harp record Eno couldn't get up to turn up, and bring in canon players who each slow down at a different rate.",
+  "controls": "4 slots (line A, line B, canon players, room tone); two (or three) melodies with their own note counts and lengths, drawn on a grid; key and scale; tape delay time, feedback, wow, tape tone and saturation, a short echo; an 8-band graphic EQ you draw, with optional slow drift; listening level and a one-speaker 'harp record' mode; Pachelbel canon players with tempo spread; tempo and space.",
+  "how": "Press PLAY and leave it. Line A and line B (the two bars at the bottom) repeat at different lengths, so they line up differently each time. Every note goes into the TAPE loop and comes back after the delay time, a little quieter and duller, which is what the generation chart counts: one symbol per note still circulating on the tape. Click a line's grid to change a note (higher is higher), drag the EQ columns to reshape the sound, F lets the EQ drift by itself. H is the harp record: very quiet, one speaker. V brings in the canon players. ← → change the delay time, ↑ ↓ the feedback, C clears the tape.",
+  "fonts": "family=Jost:wght@400;500;700",
+  "bpm": 60,
+  "try": [
+   "Load two soft sustained one-shots from your Splice folder recorded at C (a pad note and a breathy synth) into LINE A and LINE B, set the tape to about 8 seconds and feedback to 0.85, and do nothing for five minutes. Then change one note.",
+   "Put a long, quiet room tone or rain into ROOM, switch on H (the harp record) and work on something else with this playing. Notice when you notice it: that is the point of ambient music as Eno described it.",
+   "Load a short string or vocal phrase into CANON, switch V on, set the players to 4 and the spread to 0.3, and pull the line levels down. The players start together and slowly fall apart, like the B side of Discreet Music."
+  ],
+  "manifesto": {
+   "name": "What would Brian Eno do? Discreet Music: a system set into operation",
+   "short": "Eno, Discreet Music",
+   "author": "Brian Eno (b. 1948); B side performed by the Cockpit Ensemble, conducted by Gavin Bryars",
+   "year": "1975",
+   "where": "'Discreet Music', Obscure Records no. 3 (1975). The sleeve reproduces Eno's operational diagram of the system and his notes on how the piece came about. See also Fripp and Eno, '(No Pussyfooting)' (1973), for the two-tape-recorder delay system.",
+   "ideas": [
+    "Set up a system, then let it run. The title piece came from two simple melodic lines of different lengths, stored on an EMS synthesiser's digital recall, fed through a graphic equaliser and an echo unit into a long tape-delay loop made of two tape recorders.",
+    "The diagram is the score. The sleeve shows the patch, not the notes, because the music is what that arrangement of machines does.",
+    "Eno adjusted the timbre only occasionally with the equaliser; the rest of the time the system played itself for about half an hour.",
+    "Listening at the edge of hearing: in the sleeve notes he describes lying in bed after an accident with a record of eighteenth-century harp music playing too quietly from one speaker, unable to get up and fix it, and starting to hear it as part of the room, like the light and the rain. (Paraphrase.)",
+    "On the B side, the Cockpit Ensemble play three variations on Pachelbel's Canon in D, each built from a simple system applied to the parts, such as changes of tempo between the players (Fullness of Wind, French Catalogues, Brutal Ardour)."
+   ],
+   "quotes": [
+    [
+     "Since I have always preferred making plans to executing them, I have gravitated towards situations and systems that, once set into operation, could create music with little or no intervention on my part.",
+     "Brian Eno, sleeve notes to Discreet Music (1975)"
+    ]
+   ],
+   "system": "Line A and line B are short loops of notes (scale degrees) with different total lengths in beats, so their alignment keeps changing. They play the LINE slots into an 8-band graphic EQ (peaking filters you draw; DRIFT nudges one band every few seconds, as Eno occasionally turned a knob), then a short echo, then the TAPE: two long delay lines (left and right, the right one about 7% longer, standing in for the two tape machines) whose output is fed back through tape saturation and a low-pass filter, so each pass is quieter and duller. WOW wobbles the tape speed slightly. The generation chart is an Isotype count: one symbol per note on the tape, one row per pass. LISTENING LEVEL and the H 'harp record' mode drop everything to a whisper in one speaker. The CANON players play the Pachelbel bass line (in your key) in different octaves, each at a slightly slower tempo than the last, so they start together and drift apart: the instrument's simplified take on the B side's tempo systems."
+  },
+  "design": {
+   "name": "Isotype (Otto Neurath, Marie Neurath and Gerd Arntz)",
+   "short": "Isotype",
+   "who": "Isotype (International System of Typographic Picture Education), developed by the philosopher Otto Neurath (1882 to 1945) with the 'transformer' Marie Reidemeister, later Neurath (1898 to 1986), and the artist Gerd Arntz (1900 to 1988), who cut the pictograms in linocut",
+   "era": "Vienna 1925 to 1934 (as the 'Vienna Method of Pictorial Statistics'), then The Hague and, from 1942, Oxford and London",
+   "hallmarks": [
+    "Count, don't scale: a larger quantity is shown by more identical symbols, never by a bigger symbol. Here every note still on the tape is one symbol, and each pass of the tape is one row.",
+    "Flat, simplified pictograms with no perspective, drawn to work at small sizes. Here the synthesiser, the equaliser and the two tape machines are drawn as flat pictograms, as in the Discreet Music diagram.",
+    "A restrained palette of flat colours (red, blue, ochre, black) on cream paper, and a geometric sans serif (Futura was the house face; Jost stands in for it here)."
+   ],
+   "works": [
+    "'Gesellschaft und Wirtschaft' (Society and Economy), a 100-chart atlas (1930)",
+    "Gerd Arntz's pictogram archive (about 4,000 symbols), now online from the Gemeentemuseum Den Haag",
+    "Marie Neurath's Isotype children's books, such as 'If You Could See Inside' (1940s and 1950s)"
+   ]
+  },
+  "no": "63",
+  "slug": "discreet-system",
+  "file": "tools/63-discreet-system.html"
+ },
+ {
+  "title": "Row Matrix",
+  "deep": true,
+  "gemini": false,
+  "category": "music theory",
+  "date": "2026-10-29",
+  "kicker": "THEORY OF COMPOSITION · SCHOENBERG'S TWELVE-TONE METHOD, 1923",
+  "idea": "Arnold Schoenberg's method of composing with twelve tones as a four-voice instrument. One row of all twelve pitch classes is laid out as the full 12 × 12 matrix of its 48 forms (prime, inversion, retrograde, retrograde inversion, at every transposition). Give each voice a form, cut its row into chords, scatter it across octaves and hear the aggregate (all twelve notes) complete, again and again, with no note given priority over another.",
+  "controls": "5 slots (four voices plus an aggregate bell); the row itself (swap notes, random row, all-interval row, four famous rows); for each of four voices: form (P, I, R, RI) and transposition, chosen by clicking the matrix, rhythm in 16ths, chord segmentation (single notes, dyads, trichords, tetrachords, hexachords), octave, register spread, rest chance, level and what happens at the end of a row (repeat, mirror, transpose by the row, random form); Klangfarben mode that passes the melody between instruments; a hexachordal combinatoriality finder that pairs voices so their hexachords complete aggregates; tempo, swing, reverb and echo.",
+  "how": "Press PLAY. Voice 1 (red) plays the row's prime form P. Click any label round the matrix to give the selected voice that form: left edge P, top I, right R, bottom RI. Select a voice with 1 to 4 or by clicking its card. The circle at the right fills one pitch class at a time and flashes when all twelve have sounded: that is an aggregate. Press C to pair voice 2 with a form whose first six notes are exactly the six notes voice 1 leaves out, then listen to the aggregates close twice as fast. Click two notes in THE ROW to swap them and the whole matrix rebuilds.",
+  "fonts": "family=Archivo:wght@400;600;800;900",
+  "bpm": 84,
+  "try": [
+   "Load a felt piano, a clarinet or flute, a pizzicato or plucked bass and a bell (single notes recorded at C) from your Splice folder into voices 1 to 4, choose the Berg row, set voice 1 to trichords and hear the major and minor triads hiding inside a twelve-tone row.",
+   "Choose the Webern Op. 21 row, switch on Klangfarben (K) and set every voice to single notes with a wide register spread: one line passed between instruments, note by note, as in Webern's orchestration.",
+   "Swap two notes of the row and watch the interval chart: try to build your own all-interval row (all eleven bars different heights), then press C and see whether it is combinatorial."
+  ],
+  "manifesto": {
+   "name": "Composition with twelve tones related only with one another",
+   "short": "Schoenberg, twelve-tone method",
+   "author": "Arnold Schoenberg (1874 to 1951)",
+   "year": "1923 (first wholly twelve-tone pieces, the Piano Suite Op. 25, 1921 to 1923); explained in the lecture 'Composition with Twelve Tones', 1941",
+   "where": "First used in the Five Piano Pieces Op. 23 (last piece) and the Suite for Piano Op. 25. Schoenberg's own account is the 1941 lecture 'Composition with Twelve Tones (1)', printed in his essay collection 'Style and Idea' (1950, expanded 1975). Pupils Alban Berg and Anton Webern each used the method in their own way.",
+   "ideas": [
+    "A row (series) orders all twelve pitch classes once each. The piece is built from that row and its mirror forms: inversion (intervals turned upside down), retrograde (backwards) and retrograde inversion, each at any of the twelve transpositions, so 48 forms in all.",
+    "No pitch class is meant to dominate: you go through all twelve before repeating one, so there is no home key pulling the music back. Schoenberg described this as the emancipation of the dissonance: dissonances no longer need to resolve to consonances.",
+    "Order is about pitch class, not register. A row note may appear in any octave, and consecutive row notes may sound together as chords, so one row gives both melody and harmony.",
+    "Schoenberg wanted the row to unify a piece the way a key once did, and compared musical space to an absolute space in which up and down, forwards and backwards, are views of the same idea.",
+    "Rows can be designed. If the first six notes of a form and the first six of another form together make all twelve (hexachordal combinatoriality), two forms played at once complete aggregates as they go: Schoenberg relied on this in later works."
+   ],
+   "quotes": [
+    [
+     "Method of composing with twelve tones which are related only with one another",
+     "Arnold Schoenberg, 'Composition with Twelve Tones (1)', 1941, in Style and Idea"
+    ]
+   ],
+   "system": "The row is a list of twelve pitch classes (C = 0 ... B = 11). The matrix puts the prime form P-n in each row, read left to right, and the inversion I-n in each column, read top to bottom; R-n reads a row right to left and RI-n reads a column bottom to top. Labels use the pitch class each form starts on (P-4 starts on E). Each voice steps through its form, taking 1, 2, 3, 4 or 6 consecutive notes at a time as a chord, on its own rhythm in 16ths. Each note's octave is fixed by a per-voice register seed so a form always lands the same way until you re-roll it. At the end of a form the voice repeats it, mirrors it (P, R, I, RI in turn), moves to the transposition given by the next note of the row, or jumps to a random form. The aggregate circle counts pitch classes since the last completion; when all twelve have sounded the bell slot rings. The combinatoriality finder lists every form whose first hexachord is the complement of voice 1's first hexachord."
+  },
+  "design": {
+   "name": "Ladislav Sutnar",
+   "short": "Sutnar",
+   "who": "Ladislav Sutnar (1897 to 1976), Czech designer who emigrated to New York in 1939 and became a pioneer of information design, working with the architect Knud Lönberg-Holm as art director of Sweet's Catalog Service",
+   "era": "Prague 1920s to 1930s; New York 1940s to 1960s",
+   "hallmarks": [
+    "Function, flow, form: the page is designed so the eye moves in a planned order through the information, guided by arrows, numbers and coloured bars.",
+    "Big, bold numerals and simple geometric signs (circles, squares, arrows) used as navigation, not decoration.",
+    "Brackets and rules that group related items, and a strong hierarchy of type sizes so the most important fact reads first.",
+    "Flat primary colour (red, blue, yellow) on white with black type, used to code categories consistently from page to page."
+   ],
+   "works": [
+    "'Catalog Design' (1944) and 'Catalog Design Progress' (1950), both with Knud Lönberg-Holm, for Sweet's Catalog Service",
+    "'Visual Design in Action: Principles, Purposes' (1961)",
+    "The brackets around US telephone area codes, from his 1950s Bell System work"
+   ]
+  },
+  "no": "64",
+  "slug": "row-matrix",
+  "file": "tools/64-row-matrix.html"
+ },
+ {
+  "title": "Tide Predictor",
+  "deep": true,
+  "gemini": false,
+  "category": "nature/philosophy",
+  "date": "2026-10-29",
+  "kicker": "NATURE · THE TIDE AS A SUM OF CYCLES, AFTER KELVIN'S MACHINE OF 1872",
+  "idea": "The tide at any harbour can be predicted as a sum of a few simple cycles set by the Moon and the Sun, each with its own period, size and timing. Kelvin's tide-predicting machine (1872 to 1873) added them with pulleys and a wire. Here each cycle (constituent) is a drone, the sum is a tide-gauge melody, and the slow swing between spring and neap tides is something you can hear: the lunar and solar drones beat against each other.",
+  "controls": "5 slots (gauge melody, constituent drones, high-water bell, low-water note, shore); eight tidal constituents (M2, S2, N2, K2, K1, O1, M4, M6), each with amplitude, phase and on/off; five illustrative coast types (semidiurnal, mixed, diurnal, shallow-water double tides, macrotidal); time speed (tidal hours per second); drone pitch, drones at true frequency ratios or tuned to the scale, breathing drones; gauge note rate, key, scale and range; high and low water sounds; shore level and how much the water opens the filter; reverb.",
+  "how": "Press PLAY. The black line is the predicted tide over three days; the thin red line is now. Each row underneath is one cycle (constituent), drawn as a sparkline at the same scale, with Kelvin's pulley for it turning on the left: the tide line is just those rows added up. Click a row to switch that cycle off and see and hear the tide change. The gauge melody plays the water level as notes (higher water, higher note); the bell rings at high water. Turn on only M2 and S2 and listen: the two drones beat, the same beat that makes spring and neap tides, shown in the 30-day strip at the bottom.",
+  "fonts": "family=EB+Garamond:ital,wght@0,400;0,600;1,400",
+  "bpm": 90,
+  "try": [
+   "Load a long pad or bowed note recorded at C from your Splice folder into DRONES and a mallet or kalimba note into GAUGE. Choose 'Shallow water, double high tide' and listen to the gauge melody stall and return at the top of each tide.",
+   "Switch every constituent off except M2 and S2 (click the rows), set time to 12 hours a second and drone pitch low: you will hear and see the two-week spring and neap cycle compressed into about 30 seconds.",
+   "Set drones to 'tuned to the scale' and compare with 'true ratios': in tune, the drones make a chord; at the true astronomical ratios they beat, and the beating is the tide's own interference pattern."
+  ],
+  "manifesto": {
+   "name": "Nature: the tide as a sum of cycles",
+   "short": "Tidal harmonics (Kelvin)",
+   "author": "William Thomson, Lord Kelvin (1824 to 1907), building on Laplace, with the harmonic analysis method developed by Kelvin and continued by George Darwin and Arthur Doodson",
+   "year": "1872 to 1873 (first tide-predicting machine); harmonic analysis of tides from the 1860s",
+   "where": "Kelvin's first tide-predicting machine (built with Edward Roberts and Alexander Légé) is in the Science Museum, London. Later machines, such as the Doodson-Légé machine, predicted tides for ports worldwide until computers took over in the 1960s. Kelvin's lectures 'Popular Lectures and Addresses' describe the method.",
+   "ideas": [
+    "The tide is not one wave but many cycles added together. The Moon's pull makes a cycle of about 12 hours 25 minutes (M2); the Sun's makes one of exactly 12 hours (S2). Others come from the Moon's changing distance (N2) and the tilt of the Earth and the orbits (K1, O1, K2).",
+    "Because M2 and S2 have slightly different periods, they drift in and out of step. In step, they add up to big spring tides; out of step, they partly cancel into small neap tides. The cycle repeats about every 14.8 days. That is a beat, the same thing you hear when two strings are slightly out of tune.",
+    "Each harbour has its own mix. The shape of a coast and seabed decides how big each cycle is and when it peaks there, so some places have two tides a day, some one, and some a mix; shallow water adds overtides (M4, M6) that can give double high waters.",
+    "Measure a year of water levels at a port, find how big each cycle is and when it peaks, and you can predict that port's tides for years ahead. Kelvin's machine did the adding mechanically: a pulley for each cycle, turning at its own speed, with one wire running over them all so the wire's end traced the sum."
+   ],
+   "quotes": [],
+   "system": "The water height is h(t) = sum of A × cos(speed × t + phase) over the constituents you have switched on, where t is in hours and speed in degrees per hour (M2 28.984, S2 30.000, N2 28.440, K2 30.082, K1 15.041, O1 13.943, M4 57.968, M6 86.952). Amplitudes and phases are illustrative coast types, not real port data; do not use for navigation. Each constituent drives a looped DRONE whose pitch is its speed scaled so M2 sits at the drone pitch (true ratios) or the nearest note in the key (tuned); with breathing on, its loudness also follows its own cycle. Every gauge step the current height is mapped to a scale degree across the chosen range and plays GAUGE. High and low water are found where the height turns round and ring the bell and the low note. SHORE loops under everything, its filter opening as the water rises."
+  },
+  "design": {
+   "name": "Edward Tufte",
+   "short": "Tufte",
+   "who": "Edward R. Tufte (b. 1942), American statistician and political scientist, writer and self-publisher of books on information design",
+   "era": "1983 to 2006 (four books), and continuing",
+   "hallmarks": [
+    "Maximise the data-ink ratio: almost all the ink shows data, with no chartjunk, heavy gridlines or decoration.",
+    "Sparklines: small, intense, word-sized graphics set in line with text, used here for each tidal cycle.",
+    "Small multiples: the same small chart repeated with one thing changing, so the eye compares them at a glance.",
+    "Range frames, direct labels instead of legends, a warm off-white page, serif text and notes in the margin."
+   ],
+   "works": [
+    "'The Visual Display of Quantitative Information' (1983)",
+    "'Envisioning Information' (1990), which includes Marey's train schedule and other classics",
+    "'Beautiful Evidence' (2006), where sparklines are set out"
+   ]
+  },
+  "no": "65",
+  "slug": "tide-predictor",
+  "file": "tools/65-tide-predictor.html"
+ },
+ {
+  "title": "Plastic Unit",
+  "deep": true,
+  "gemini": false,
+  "category": "art manifesto",
+  "date": "2026-10-29",
+  "kicker": "ART MANIFESTO · VASARELY, THE YELLOW MANIFESTO, 1955",
+  "idea": "Victor Vasarely's Yellow Manifesto (1955) as a grid sequencer built from 'plastic units': a square holding a contrasting inner form. Here the inner form is how a note is played, its pattern or colour is which of your samples plays it, and the grid is a 'plastic alphabet' you can permute, mirror, invert, multiply and bulge, as Vasarely did, so one small set of units makes endless variations.",
+  "controls": "5 slots (one per colour or pattern); a 16 × 8 grid of units (row = scale degree, column = 16th); six inner forms (circle, square, rhombus, tall ellipse, wide ellipse, dot) as six articulations; brush form and colour; key, scale, octave per colour; the Vega bulge (a moving lens that brightens and lengthens what it passes over) with size, speed and strength; negative mode (plays the outline of the empty space); mirror, retrograde, shift, permute colours, multiply a 4-step motif, generate with density; a 'programme' that applies a transformation every few bars; tempo, swing, reverb, echo; black-and-white or colour view.",
+  "how": "Press PLAY. Each column is a 16th; each row a note of the scale (higher row, higher note). Click a square to place the brush unit there (click it again to clear it). The inner form sets how it plays: circle a plain note, square short, rhombus a note with an octave grace, tall ellipse a long note, wide ellipse a repeated note, dot a ghost note. Watch the bulge drift across the grid: what it passes over gets louder, longer and brighter. Press P to permute the colours (re-orchestrate the same rhythm), M to multiply the first four steps across the bar, N for the negative, and O to let the programme run.",
+  "fonts": "family=Syne:wght@400;700;800",
+  "bpm": 112,
+  "try": [
+   "Load five short one-shots from your Splice folder with different characters (a pluck, a marimba, a sub bass note, a rim or click, a glass or bell) into the five slots, press G for a new grid, then press P a few times: the rhythm and melody stay, the orchestration changes, which is Vasarely's idea of one alphabet giving many works.",
+   "Draw a four-step motif in the first four columns, press M to multiply it with permuted colours, then switch on the programme (O) with 'every 2 bars' and leave it: a whole piece from one unit.",
+   "Switch on negative (N) with a sparse grid: you hear the outline of the empty space around your notes, positive and negative as two equal parts of the same image."
+  ],
+  "manifesto": {
+   "name": "The Yellow Manifesto: notes for a manifesto",
+   "short": "Vasarely, Yellow Manifesto",
+   "author": "Victor Vasarely (1906 to 1997), Hungarian-French painter, father figure of Op Art",
+   "year": "1955",
+   "where": "Published on yellow paper for the exhibition 'Le Mouvement' at Galerie Denise René, Paris, April 1955, alongside works by Agam, Bury, Calder, Duchamp, Jacobsen, Soto and Tinguely. Vasarely developed the 'plastic unit' and the 'plastic alphabet' in the late 1950s and 1960s.",
+   "ideas": [
+    "Movement belongs in art. Vasarely argued that the new art should be kinetic, made to move in the viewer's eye (and sometimes in fact) rather than imitate movement.",
+    "The plastic unit: form and colour cannot be separated. A square of one colour carrying a contrasting inner form (circle, square, ellipse, rhombus) of another is the basic unit, like a cell or an atom, and works are built by combining units.",
+    "An alphabet, not a single masterpiece. A small set of units with rules for combining and permuting them can be programmed into countless variations, the way letters make all words.",
+    "Art should be reproducible and shared. Vasarely wanted works made in series, as 'multiples', available to many people rather than as unique objects for a few, and imagined art becoming part of everyday surroundings and architecture.",
+    "Positive and negative are equal. Contrast (black and white, figure and ground) is the engine of the work: invert it and you get a new work of equal weight."
+   ],
+   "quotes": [],
+   "system": "The grid is 16 columns (16ths) by 8 rows (scale degrees, low at the bottom). Each unit has an inner form and a colour. Colour picks the slot (with its own octave); form picks the articulation: circle a note one step long, square a short note, rhombus the note plus an octave-up grace note, tall ellipse a note four steps long, wide ellipse two quick repeats, dot a quiet ghost note. The Vega bulge is a circular lens moving on a slow Lissajous path; units inside it are drawn larger and play louder, longer and with the filter fully open; outside, the filter closes a little. Negative mode plays every empty unit next to a filled one (the outline of the empty space), as dots, in the colour of its neighbour. The programme picks one transformation every N bars: permute colours, retrograde, mirror, shift by one step, or multiply."
+  },
+  "design": {
+   "name": "Franco Grignani",
+   "short": "Grignani",
+   "who": "Franco Grignani (1908 to 1999), Italian graphic designer, painter and photographer, who explored optical illusion and perceptual distortion in advertising and art",
+   "era": "Milan, 1930s to 1990s; best known for 1950s to 1960s work",
+   "hallmarks": [
+    "Black and white lines and grids bent, swollen and twisted until they appear to move: optical distortion as the message.",
+    "Type distorted in the same way, stretched, squeezed or seen through a lens, so lettering becomes part of the illusion.",
+    "Systematic experiments: one structure varied step by step (his 'Psicoplastica' and 'Dissociazioni' series), close to Op Art but rooted in perception studies.",
+    "Spare, high-contrast advertising pages where a single optical idea carries the brand."
+   ],
+   "works": [
+    "Advertisements for the printer Alfieri & Lacroix (1950s to 1960s)",
+    "Covers and pages for the magazine 'Pubblicità in Italia'",
+    "The Woolmark logo (1964), entered under the name Francesco Saroglia and widely attributed to Grignani"
+   ]
+  },
+  "no": "66",
+  "slug": "plastic-unit",
+  "file": "tools/66-plastic-unit.html"
  }
 ]
