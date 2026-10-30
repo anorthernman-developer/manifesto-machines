@@ -3052,5 +3052,296 @@
   "no": "66",
   "slug": "plastic-unit",
   "file": "tools/66-plastic-unit.html"
+ },
+ {
+  "title": "USB Folder",
+  "deep": true,
+  "gemini": true,
+  "category": "Fred",
+  "date": "2026-10-30",
+  "kicker": "WHAT WOULD FRED AGAIN.. DO? · USB, 2024 TO 2025",
+  "bpm": 126,
+  "idea": "Fred again..'s USB as an instrument: not an album but an ever-growing folder of tunes for rooms full of people. Cut a live vocal into its lines and switch their order round (the way he rebuilt Jamie T's words for 'Lights Burn Dimmer'), stack three loops on house or garage drums, pick the room, then add the tune to your USB and let the folder roll from one track into the next.",
+  "controls": "8 slots (live vocal, three loops, kick, clap, hats, crowd); vocal cut at the gaps or into equal lines, a line order you build, switch, reverse and rotate, vocal isolation and pitch; three stacked loops with their own bar lengths, played as tempo-locked slices or varispeed; grooves (house, two-step, breakbeat, half-time), swing, sidechain pump, sub bass and progression; key and mode; five rooms (bedroom to arena) with crowd; intro, lines, build, drop and outro lengths with auto-arrange; the USB folder: add, load, delete, roll every N bars, make ten; optional Gemini room-to-track.",
+  "how": "Press PLAY: the built-in 'live' vocal comes in, then the loops, a build and a drop. The cards on the left are the vocal's LINES: click one to add it to the ORDER, click a chip in the order to take it out. S switches every line round, V reverses, T rotates. Turn loops on and off on the right. 1 to 5 jump to a section at the next bar, Enter moves on. U adds this tune to the USB folder at the bottom; click a card to play it next; O rolls through the folder, one track every few bars. Drop a live recording into slot 1 and three loops into slots 2 to 4 (press D).",
+  "fonts": "family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600",
+  "try": [
+   "Find a live recording of a song you love where the voice is easy to hear (a stripped-back session works best), put it in LIVE VOCAL, set the chop to 'at the gaps' and raise ISOLATE until the band thins out. Then press S a few times until the lines say something new in their new order.",
+   "Stack three Splice loops in LOOPS 1 to 3 (a chord loop, a melodic one-shot loop and a texture), set each loop's bars to its real length and leave FIT on 'slices' so they lock to the tempo whatever key or bpm they came in at. Mute two and bring them back one by one in the build.",
+   "Make five tunes with different vocals or orders, press U after each, then turn on ROLL with 16 bars a track and set the room to 'warehouse'. It becomes a set: a folder of things you want to hear in a room with people, which is the whole idea of USB."
+  ],
+  "manifesto": {
+   "name": "What would Fred again.. do? USB: an infinite folder, and switching the lines around",
+   "short": "Fred again.., USB",
+   "author": "Fred again.. (Fred Gibson, b. 1993, London), with Jamie T on 'Lights Burn Dimmer'",
+   "year": "2024 to 2025",
+   "where": "USB (2024) and USB002 (2025, released track by track over a ten-week, ten-city tour). He explained the idea on BBC Radio 6 Music's Tape Notes (episode 176), and talked about the Jamie T track there.",
+   "ideas": [
+    "USB is meant to keep growing. Rather than a fixed album, it is an 'infinite' record: new tunes, remixes and edits can be added over time, and USB002 arrived one track at a time during a tour of ten cities in ten weeks.",
+    "Different releases do different jobs. In the same interview he says his Actual Life albums need to feel like honed statements and diary entries, with narrative and cohesion, while USB only has to hold together as things he wants to play in rooms with people. (Paraphrase.)",
+    "On 'Lights Burn Dimmer' he started from Jamie T's song 'Hippodrome', found a live performance where the vocal was easier to isolate, chopped it into pieces and rebuilt the verse in a new order. He says Jamie joked that he then had to learn his own song with every line switched round. (Paraphrase of Tape Notes.)",
+    "Stacking loops is allowed. 'ten', from Ten Days (2024), is built on melodic loops from a commercial sample pack (the pack's maker, Oliver River, described the sound as a sine wave with pitch modulation, noise, tube saturation and reverb). The composition is in the choosing, the order and the arrangement.",
+    "The room is part of the music. His shows mix camera-roll videos with the crowd itself, and the USB tunes are written for that moment of playing to people."
+   ],
+   "quotes": [
+    [
+     "an infinitely rolling mixtape or folder",
+     "Fred again.., Tape Notes (BBC Radio 6 Music), episode 176"
+    ],
+    [
+     "things I want to hear in rooms with people",
+     "Fred again.., Tape Notes (BBC Radio 6 Music), episode 176"
+    ]
+   ],
+   "system": "Slot 1 is a live vocal. It is cut into LINES at its gaps (or into equal pieces) and the ORDER decides which lines are sung and in what order, so the same words can tell a different story. ISOLATE narrows the vocal to its middle band, the way you might pick a live take where the voice sits apart from the band. Slots 2 to 4 are LOOPS stacked on top of each other; in 'slices' mode each loop is cut into sixteenths and re-triggered on the beat, so it locks to any tempo without changing key; 'varispeed' stretches it like a turntable instead. The drums (kick, clap, hats) play house, two-step garage, breakbeat or half-time patterns, with sidechain pump on the loops and a sine sub following the progression. The arrangement runs INTRO, LINES, BUILD (the vocal tightens to the last line, a riser and a beat of silence), DROP (hook chops of the lines over everything) and OUTRO. The USB is a folder of tunes: each card stores the settings and the line order, and ROLL plays the folder as a set, one track every N bars, with an echo throw between them. The ROOM sets the reverb, tone and crowd.",
+   "gemini": "Describe a room and who is in it; Gemini chooses tempo, groove, room, key, mode and progression, and names the tune."
+  },
+  "design": {
+   "name": "Karel Martens",
+   "short": "Karel Martens",
+   "who": "Karel Martens (b. 1939, Mook, Netherlands), Dutch graphic designer, typographer and teacher, co-founder of the Werkplaats Typografie in Arnhem (1998)",
+   "era": "1960s to now",
+   "hallmarks": [
+    "Overprinting: transparent inks (often cyan, magenta and yellow) laid over each other so new colours appear where shapes overlap. Here each loop, the drums and the vocal are translucent shapes that multiply where they play together.",
+    "Monoprints on found paper: Martens printed with letterpress and found metal parts onto old library index cards and other found sheets. The vocal lines and the USB tracks here are index cards.",
+    "Simple geometric units (circles, squares, grids) repeated and shifted to make rhythm; a calm grid and plain sans-serif and monospaced type that leave room for colour."
+   ],
+   "works": [
+    "'Printed Matter / Drukwerk' (Hyphen Press, 1996; expanded edition 2001)",
+    "Covers for the architecture journal OASE (from 1990)",
+    "His monoprints on found index cards (from the 1990s), and the Werkplaats Typografie"
+   ]
+  },
+  "no": "67",
+  "slug": "usb-folder",
+  "file": "tools/67-usb-folder.html"
+ },
+ {
+  "title": "No Starting Point",
+  "deep": true,
+  "category": "Eno",
+  "date": "2026-10-30",
+  "kicker": "WHAT WOULD BRIAN ENO DO? · THE STUDIO AS COMPOSITIONAL TOOL, 1979",
+  "bpm": 72,
+  "idea": "Brian Eno's lecture 'The Studio as Compositional Tool' (1979) as an instrument. Start with an empty multitrack tape and no plan, put something on, put something else on, then take some of the original things off and see what you're left with. The mixing desk is the instrument: level, pan, echo, tone and tape speed per track, a bus compressor where pushing one sound up pushes the others down, and a brush to paint parts of the tape out.",
+  "controls": "6 slots (pad, piano, bass, bell, percussion, texture); a 12-track loop tape with cycle length, tempo, key and scale; PUT ON (any part type or a chosen one), TAKE OFF, TAKE A MIXTURE OFF, bring back, clear; per track: fader, pan, echo send, tone, tape speed (half, normal, double, backwards), mute, solo, erase; paint out or paint back on the tape; bus squash, echo time and feedback, space, tape hiss; mix drift and a 'gardener' that adds and subtracts by itself; MIDI overdub onto the selected track.",
+  "how": "Press PLAY: the tape is empty, so nothing happens. That is the point. Press A to put something on (or click a part name), and again, and again. Then S takes something off (the older things first) and X takes a mixture off. Each strip at the bottom is a mixer channel: fader, pan, echo, tone, tape speed, M (mute), S (solo), × (erase). Drag across the tape to paint notes out; hold Shift to paint them back. G lets the gardener add and subtract on its own, F lets the faders drift. C clears the tape.",
+  "fonts": "family=Special+Elite&family=Cormorant+Garamond:ital,wght@0,500;1,500",
+  "try": [
+   "Load five unrelated sounds into the slots (a piano note, a bass hit, a bell, a found percussion sound and a long field recording). Put on six parts, let them play for four passes, then take off the first three you put on. Listen to what is left as if someone else had made it.",
+   "Set one track to half speed and another to backwards, and push the SQUASH up: now raising one fader pushes the rest down, the way Eno describes heavy compression on a whole track. Ride a single fader as if it were the instrument.",
+   "Turn on the GARDENER with the cycle at 8 bars and leave it running while you do something else for ten minutes. When something catches your ear, switch it off, save a preset and export the JSON, then load your own samples into the same arrangement."
+  ],
+  "manifesto": {
+   "name": "What would Brian Eno do? The studio as compositional tool: in-studio composition",
+   "short": "Eno, Studio as Compositional Tool",
+   "author": "Brian Eno (b. 1948)",
+   "year": "1979 (lecture); published 1983",
+   "where": "A lecture at New Music New York, the first New Music America festival, organised by The Kitchen (1979); printed in Down Beat magazine, July and August 1983.",
+   "ideas": [
+    "Recording takes music out of time and puts it into space: a recorded piece can be heard again and again, so details nobody intended can become the point. He adds that almost any arbitrary collision of events, heard enough times, starts to seem meaningful. (Paraphrase.)",
+    "Tape made sound a material: something that can be cut, looped, reversed, squeezed or stretched.",
+    "Multitrack recording led to 'in-studio composition': you arrive with a bare skeleton or with nothing at all, put something on, put something else on, then take some of the original things off and see what you're left with.",
+    "The composer becomes like a painter, working directly with the material and always able to paint a bit out or add a piece. There is no score, no conductor and no players between the idea and the sound.",
+    "The mixer is the centre of the studio. Each channel has level, pan, echo and EQ, and heavy compression across a whole track means that pushing one instrument up pushes the others down."
+   ],
+   "quotes": [
+    [
+     "you no longer come to the studio with a conception of the finished piece. Instead, you come with actually rather a bare skeleton of the piece, or perhaps with nothing at all.",
+     "Brian Eno, 'The Studio as Compositional Tool' (lecture 1979; Down Beat, 1983)"
+    ],
+    [
+     "The mixer is really the central part of the studio.",
+     "Brian Eno, 'The Studio as Compositional Tool'"
+    ]
+   ],
+   "system": "The tape is a loop of N bars with twelve tracks, and it starts empty. PUT ON writes a new part onto the next free track: a drone, piano fragments, a bass figure, bells, a pulse or a texture, generated in your key and scale from the matching slot. TAKE OFF mutes one of the older tracks (taking the original things off), and TAKE A MIXTURE OFF mutes about half of them. Every track runs through its own channel strip: fader, pan, an echo send, a tone (tilt EQ) control, and a tape SPEED that halves, doubles or reverses it (half speed is an octave down and twice as long, as on a real tape machine; 'backwards' plays the part in reverse order, with every note swelling in). All the channels meet in a bus compressor, and SQUASH sets how hard it works, so a loud fader ducks the others. The brush paints notes out of the tape, or back in with Shift. The pass counter counts how many times you have heard the loop. The GARDENER puts on and takes off one part every few passes, and DRIFT moves the faders slowly, as if someone were mixing."
+  },
+  "design": {
+   "name": "Russell Mills",
+   "short": "Russell Mills",
+   "who": "Russell Mills (b. 1952, Ripon, England), artist, illustrator and designer of record sleeves and books, who worked closely with Brian Eno",
+   "era": "1970s to now",
+   "hallmarks": [
+    "Layered mixed media: paint, wax, rust, earth, scratched and stained surfaces, torn paper and found fragments, built up and partly taken away again. Here the tape is a stained, layered surface and erased notes stay visible as scratches.",
+    "Muted earth colours (umber, ochre, rust, bone, charcoal) with small areas of warm light.",
+    "Small, quiet typewriter-like and serif text set on top of the texture, like labels or notes on a collage."
+   ],
+   "works": [
+    "'More Dark Than Shark' (1986), the book of Eno's lyrics with Mills's paintings",
+    "The cover art for Nine Inch Nails, 'The Downward Spiral' (1994)",
+    "His 'Undark' projects of the 1990s, music and installations made with many collaborators"
+   ]
+  },
+  "no": "68",
+  "slug": "no-starting-point",
+  "file": "tools/68-no-starting-point.html"
+ },
+ {
+  "title": "Tonality Diamond",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-10-30",
+  "kicker": "MUSIC THEORY · HARRY PARTCH, GENESIS OF A MUSIC, 1949",
+  "bpm": 84,
+  "idea": "Harry Partch's Tonality Diamond and his 43-tone just-intonation scale as a playable instrument. Every cell of the diamond is a pure ratio. Each row is an 'Otonality' (a chord built up from the overtones) and each column a 'Utonality' (its mirror image, built downwards). A walk pivots from one to the other through the note they share, while a gliding 'adapted viola' line slides between the 43 notes. A switch snaps everything to ordinary equal temperament so you can hear what is lost.",
+  "controls": "6 slots (diamond marimba, kithara, chromelodeon, adapted viola, cloud-chamber bowls, boo), all treated as pitched at C4; the diamond at the 5, 7, 9 or 11 limit; 1/1 pitch (G 392 Hz, as on Partch's instruments, or C or A); click a cell for a note or an edge label for a whole hexad; the pivot walk with beats per chord, meter (4, 5, 7 or 11), strum, density and glide; the 43-tone strip with cents and the difference from 12-ET; 12-ET compare; MIDI mapped to 43 steps an octave; levels per voice.",
+  "how": "Press PLAY: the walk starts on the 1/1 Otonality (a chord whose notes all sit over the same number below the line) and pivots through a shared note into a Utonality (all over the same number above the line), and back again. Click any diamond cell to hear its ratio; click the red labels down the left edge for an Otonality and the blue ones down the right edge for a Utonality. The strip along the bottom is Partch's 43-tone octave: click a key, and look at how far each note is from the piano (in cents). Press E to snap to 12-tone equal temperament and hear the difference.",
+  "fonts": "family=Alfa+Slab+One&family=Work+Sans:wght@400;600;800",
+  "try": [
+   "Record yourself singing or playing one steady note, trim it to the cleanest second in the deck and load it into all six slots with different reverse and start settings. The walk then plays chords made only of your own voice, tuned in pure ratios, which sounds very different from pitch-shifting to a piano.",
+   "Load a plucked string or a kalimba into the KITHARA slot and a bowed or sustained sound into ADAPTED VIOLA, set the limit to 11 and glide to the maximum. Listen for the 11/8 and 7/4 (the notes with the largest cents numbers on the strip): they have no near neighbour on a piano.",
+   "Turn the walk off, set the meter to 7 and use MIDI: each key is one step of the 43-tone scale, so a single octave of Partch fills more than three and a half octaves of your keyboard. Load your own percussion into BOO and play rhythms on the low keys."
+  ],
+  "manifesto": {
+   "name": "Harry Partch: Genesis of a Music, the Tonality Diamond and the 43-tone scale",
+   "short": "Partch, Genesis of a Music",
+   "author": "Harry Partch (1901 to 1974), American composer, theorist and instrument builder",
+   "year": "1949 (first edition; second edition 1974)",
+   "where": "Genesis of a Music (University of Wisconsin Press, 1949), written over many years in which he travelled, worked odd jobs and built his own instruments to play music in his tuning",
+   "ideas": [
+    "Just intonation: every interval is a ratio of whole numbers, as in the natural overtone series, rather than the compromised equal steps of the piano. Partch tuned his instruments with 1/1 at G (392 Hz).",
+    "The Tonality Diamond arranges the 'identities' 1, 9, 5, 11, 3 and 7 along two edges. Every cell is one identity over another, so each line of cells sharing a denominator is an Otonality (an 'over' chord, from the overtones) and each line sharing a numerator is a Utonality (its 'under' mirror). The 11-limit diamond gives 29 different notes in an octave.",
+    "He filled out the octave to 43 notes by adding 14 further ratios that link the diamond's notes, so that melody could move in small, purposeful steps (paraphrase of his reasoning).",
+    "He called his system Monophony: a single, unified tonal fabric growing from one source, the 1/1.",
+    "He wanted 'corporeal' music, rooted in the body, the voice, speech and theatre, rather than 'abstract' music made only for its own patterns. That is why he built instruments to be played and seen on stage: the Diamond Marimba, the Kithara, the Chromelodeon (an adapted reed organ), the Adapted Viola with its long neck, the Cloud-Chamber Bowls and the Boo (a bamboo marimba)."
+   ],
+   "quotes": [],
+   "system": "The diamond's cells are numerator over denominator, brought into one octave. Cells along one diagonal share a denominator (an Otonality: the tones that a single fundamental's overtones would give); cells along the other diagonal share a numerator (a Utonality: the mirror chord). Every cell sits on exactly one of each, so a walk can pivot: it picks a note of the current chord and moves to the other kind of chord through that note, the way Partch shows tonalities linked by a common tone. Each chord lasts a number of beats in the chosen meter: the kithara strums it, the chromelodeon holds it, the marimba marks the pivot note, the bowls ring at each change and the boo plays the meter. The adapted viola holds a note and glides slowly to neighbouring notes of the 43-tone scale, because Partch's music is full of sliding voices. The 43-tone strip shows each ratio's size in cents and how far it is from the nearest piano note. 12-ET COMPARE snaps every frequency to equal temperament. Samples are assumed to be at C4 and are retuned to each ratio exactly by playback rate."
+  },
+  "design": {
+   "name": "Lester Beall",
+   "short": "Lester Beall",
+   "who": "Lester Beall (1903 to 1969), American graphic designer who brought European modernism into American posters, magazines and corporate identity",
+   "era": "1930s to 1960s",
+   "hallmarks": [
+    "Bold primary colour, mostly red and blue on cream or white, often as flat stripes and blocks. The diamond here is red for Otonalities and blue for Utonalities.",
+    "Big arrows, diagonals and simple symbols to point the eye, as in his posters for rural electrification. The arrow on the diamond shows where the walk is heading next.",
+    "Heavy slab-serif and bold sans type mixed with photographs and flat shapes, laid out with plenty of empty space."
+   ],
+   "works": [
+    "His posters for the Rural Electrification Administration (1937 and 1939)",
+    "His covers for PM and A-D magazines (late 1930s)",
+    "The International Paper Company identity and logo (1960)"
+   ]
+  },
+  "no": "69",
+  "slug": "tonality-diamond",
+  "file": "tools/69-tonality-diamond.html"
+ },
+ {
+  "title": "Dawn Syntax",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-10-30",
+  "kicker": "NATURE · THE GRAMMAR OF BIRDSONG",
+  "bpm": 96,
+  "idea": "Birdsong as grammar. Each bird cuts its sound into syllables and sings them through its own finite-state 'grammar': a table of which syllable may follow which, like the Bengalese finch songs studied by Kazuo Okanoya. Birds that repeat themselves rest longer between songs, after Charles Hartshorne's 'monotony threshold'. A dawn clock brings the chorus in bird by bird. A Japanese tit's call shows that order matters: ABC then D draws the flock in, while the same calls reversed barely gets a response, as in Toshitaka Suzuki's 2016 experiments.",
+  "controls": "6 slots (five birds and a dawn ambience); syllables cut at the gaps or into equal pieces, with a syllable count; an editable grammar table per bird (click a cell to change the weight); versatility (how often a bird changes its song) and the monotony pause; time of day with an automatic dawn and its length; free or pulsed rhythm, tempo, key, scale and pitch snapping; per-bird mute and pitch; the ABC–D and D–ABC calls; density, echo and space.",
+  "how": "Press PLAY: it is just before dawn and the first bird starts. Drag TIME or let the dawn run, and more birds join. Click a bird to select it: its grammar appears on the right (rows are 'this syllable', columns are 'what comes next', END finishes the song). Click a cell to make that step more likely (it cycles 0 to 3). Press Q for ABC–D: the tit sounds the alarm, then the recruit call, and the other birds go quiet, then come in close and sing. Press W for D–ABC, the same calls in the wrong order, and little happens.",
+  "fonts": "family=Josefin+Sans:wght@300;600;700",
+  "try": [
+   "Record birds from your window at dawn (or use field recordings from Splice), load one recording into each bird slot and set the cut to 'at the gaps'. Each bird now sings its own real syllables, rearranged by its grammar. Raise MONOTONY PAUSE and lower VERSATILITY to hear a patient, repetitive bird.",
+   "Load spoken words, single drum hits or short synth notes as the birds instead. With SNAP TO SCALE on and the rhythm set to PULSE, the grammar becomes a sequencer that writes phrases with a beginning and an end, which is a different thing from a loop.",
+   "Edit one bird's grammar so that syllable 1 can only go to 2, 2 only to 3 and 3 only to END, then compare it with a bird whose table is all 1s. Then try ABC–D with your own sounds in the TIT slot (its first three syllables are A, B and C, and its last syllable is D)."
+  ],
+  "manifesto": {
+   "name": "The grammar of birdsong: syntax, the monotony threshold and the dawn chorus",
+   "short": "Birdsong syntax",
+   "author": "Charles Hartshorne (1897 to 2000), philosopher and ornithologist; Kazuo Okanoya, on Bengalese finch song; Toshitaka Suzuki, David Wheatcroft and Michael Griesser, on Japanese tits",
+   "year": "1956 (Hartshorne); 2000s (Okanoya); 2016 (Suzuki and colleagues)",
+   "where": "Hartshorne, 'The Monotony-Threshold in Singing Birds', The Auk (1956), and his book Born to Sing (1973); Okanoya's studies of Bengalese finch song sequences; Suzuki, Wheatcroft and Griesser, 'Experimental evidence for compositional syntax in bird calls', Nature Communications (2016)",
+   "ideas": [
+    "Many songbirds string a small set of syllables together according to rules: some syllables can follow others and some cannot. Kazuo Okanoya and colleagues described Bengalese finch songs with finite-state grammars, in which each syllable leads on to a few possible next ones with different probabilities.",
+    "Charles Hartshorne, a philosopher who also studied birds, argued that birds avoid monotony as we do. Species that repeat the same song over and over tend to leave longer pauses between songs, while more varied singers can sing almost continuously.",
+    "He believed birdsong was close to music in our sense, and that birds sing partly for the pleasure of it, not only for territory and mates (his book Born to Sing, 1973).",
+    "Japanese tits use an ABC call that means scan for danger and a D call that means come here. Played back as ABC–D, the combination makes tits both scan and approach (for example, to mob a predator). Played in the reversed order, D–ABC, they respond much less: the order carries the meaning.",
+    "The dawn chorus: many species sing most at first light, and different species start at different times, so the chorus grows in layers as the light comes up."
+   ],
+   "quotes": [
+    [
+     "What stimulates animal organisms is change; what deadens response is sameness, or persistent repetition.",
+     "Charles Hartshorne, 'The Monotony-Threshold in Singing Birds', The Auk, 1956"
+    ]
+   ],
+   "system": "Each bird slot is cut into syllables (at its silent gaps, or into equal pieces), and each syllable is given a letter. Every bird has a grammar table with a weight for each move from one syllable to the next, or to END. A song starts on one of the bird's 'start' syllables and walks through the table until it reaches END. VERSATILITY is how often a bird starts its next song differently. The MONOTONY PAUSE scales the rest after a song by how similar it was to the last one, so a repetitive bird waits longer. The dawn clock (TIME) controls the light and which birds are awake, since each has a start time and its singing peaks around sunrise. With SNAP TO SCALE on, each syllable's pitch is estimated and nudged onto the chosen scale; in PULSE rhythm the syllables land on sixteenth notes. ABC–D plays the tit's A, B and C syllables followed by D: the other birds stop to 'scan' for about a second, then move close and sing. D–ABC plays the same syllables reversed, and the birds barely react."
+  },
+  "design": {
+   "name": "Charley Harper",
+   "short": "Charley Harper",
+   "who": "Charley Harper (1922 to 2007), American illustrator from Cincinnati, known for wildlife drawn in flat colour and simple geometry",
+   "era": "1950s to 2000s",
+   "hallmarks": [
+    "What he called 'minimal realism': animals reduced to circles, triangles and flat shapes, yet still clearly a cardinal or a wren. Here the birds are a circle, a wedge, a triangle and a dot.",
+    "Flat, unshaded colour in strong but natural palettes, with light shown by stepped bands rather than gradients (as in the sky here).",
+    "Witty, pattern-like compositions where the repeated shapes (wings, branches, leaves) become a rhythm, often with a short, punning caption."
+   ],
+   "works": [
+    "His illustrations for 'The Golden Book of Biology' (1961)",
+    "His wildlife illustrations for Ford Times magazine (from the late 1940s)",
+    "His National Park Service posters, and the book 'Birds & Words' (1974)"
+   ]
+  },
+  "no": "70",
+  "slug": "dawn-syntax",
+  "file": "tools/70-dawn-syntax.html"
+ },
+ {
+  "title": "Merz Collage",
+  "deep": true,
+  "gemini": true,
+  "category": "art manifesto",
+  "date": "2026-10-30",
+  "kicker": "ART MANIFESTO · KURT SCHWITTERS, DIE MERZMALEREI, 1919",
+  "bpm": 100,
+  "idea": "Kurt Schwitters's Merz as a sound collage. Tear fragments out of six materials (a tram ticket, newspaper, wood, wire, a voice and a piano) and glue them onto a page that loops. Across is time, up and down is pitch, size is loudness and the angle tilts the tone. EQUAL EVALUATION evens out every fragment's loudness, so no material outranks another, which is the principle of his 1919 text. The Merzbau mode keeps adding scraps, with older layers sinking under the new ones.",
+  "controls": "6 slots (ticket, newspaper, wood, wire/spring, voice, piano); click to glue a fragment of the chosen material, drag to move, wheel to tilt, Shift + wheel to resize, Shift + click to tear one off; TEAR (random fragment), tear length, equal evaluation, grid snap, key and scale for pitch snapping, loop bars and tempo; Merzbau growth with fade and a fragment limit; reverse and the 'Commerz → Merz' cut on the last fragment touched; echo, space and paper grit; optional Gemini: describe your found materials and get a collage.",
+  "how": "Press PLAY: a small collage is already glued down and loops. Press T to tear a new fragment from a random material, or click anywhere on the page to glue the selected material (1 to 6) there. Drag a fragment to move it in time (across) or pitch (up and down), use the mouse wheel over it to tilt it (darker or brighter, left or right) and Shift + wheel to make it bigger or smaller. Shift + click tears it off. E switches EQUAL EVALUATION, B lets the Merzbau grow on its own, K cuts the front off the last fragment (Commerz → Merz).",
+  "fonts": "family=Archivo+Black&family=Archivo+Narrow:wght@400;600",
+  "try": [
+   "Go through your own things: record a bus ticket being torn, a newspaper page turning, a pencil tapping a desk, a door spring and a few seconds of your own voice, and load them into the six slots. With EQUAL EVALUATION on, the tiny sounds are as loud as the big ones, which is the point.",
+   "Load one long Splice loop (a whole drum break or a vocal phrase) into every slot, set tear length short and the grid to sixteenths, then press T a dozen times. You get a cut-up of a single source, rearranged as a collage rather than a sequence.",
+   "Turn on MERZBAU with the fade at 0.9 and let it build for a few minutes, like the Merzbau that grew through his house in Hanover. When the room is full, press C to clear it, or save it first as a preset and export the JSON."
+  ],
+  "manifesto": {
+   "name": "Kurt Schwitters: Merz, and the equal evaluation of materials",
+   "short": "Schwitters, Merz",
+   "author": "Kurt Schwitters (1887 to 1948), German artist, poet and typographer from Hanover",
+   "year": "1919",
+   "where": "'Die Merzmalerei' (Merz painting), published in Der Sturm, Berlin, July 1919, the year he made his first Merz pictures; he continued with the magazine Merz (1923 to 1932)",
+   "ideas": [
+    "Merz means using any material for art: tickets, labels, newspaper, wood, wire, string, buttons, rubbish. The value of a work lies in how the materials are combined, not in how fine they are.",
+    "He found the name by accident. In the collage 'Das Merzbild' (1919) a scrap from an advertisement for the Commerz- und Privatbank had been cut down to the letters MERZ, and he took it as the name for everything he made.",
+    "Merz extended to poetry, typography and sound. His Ursonate (1922 to 1932), a sound poem of invented syllables performed by voice, begins with 'Fümms bö wö tää zää Uu'. The built-in voice slot here sings syllables in that spirit.",
+    "The Merzbau: from the 1920s he turned rooms of his house in Hanover into a growing, constantly changed architectural collage. It was destroyed in a bombing raid in 1943; he began new versions in exile in Norway and later in England.",
+    "Merz was not Dada, though he was close to it and worked with Dada artists. It was his own one-person movement, more interested in form and balance than in provocation."
+   ],
+   "quotes": [
+    [
+     "the combination of all conceivable materials for artistic purposes, and technically the principle of equal evaluation of the individual materials.",
+     "Kurt Schwitters, 'Die Merzmalerei', Der Sturm, 1919 (English translation)"
+    ]
+   ],
+   "system": "Each slot is a material. Tearing takes a random piece of that material (a start point and a length, up to TEAR LENGTH) and glues it on the page. The page is a loop of N bars: a fragment's position across is when it sounds, its height is its pitch (in semitones, snapped to the scale if you like), its size is its loudness, and its angle tilts its tone (left is darker and to the left, right is brighter and to the right). EQUAL EVALUATION measures every fragment's loudness and scales it to the same level, so a whisper of ticket paper sits level with a piano chord. MERZBAU tears a new fragment every cycle and lets the older ones sink (each pass multiplies their level by the fade) until they are cleared away. K is the 'Commerz → Merz' cut: it trims the front off the last fragment you touched, the way the bank's name was cut down to MERZ."
+  },
+  "design": {
+   "name": "Piet Zwart",
+   "short": "Piet Zwart",
+   "who": "Piet Zwart (1885 to 1977), Dutch designer, architect and typographer, who called himself a 'typotekt' (a typographer-architect)",
+   "era": "1920s to 1930s",
+   "hallmarks": [
+    "Red and black on white, with bold sans-serif letters used as shapes and big letters running diagonally across the page.",
+    "Dynamic, asymmetric layouts in which type, rules and photographs are placed at angles and overlap, inspired by Constructivism and De Stijl.",
+    "Photographs and photograms cut out and combined with type, and halftone screens used as texture."
+   ],
+   "works": [
+    "His catalogues and advertisements for the NKF (Nederlandsche Kabelfabriek), especially the 1928 catalogue",
+    "His self-portrait as a 'typotekt' (1927)",
+    "His book 'Het boek van PTT' (1938), a children's book about the postal service"
+   ]
+  },
+  "no": "71",
+  "slug": "merz-collage",
+  "file": "tools/71-merz-collage.html"
  }
 ]

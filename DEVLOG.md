@@ -1,5 +1,31 @@
 # Devlog
 
+## 30 October 2026 · 67 to 71, five deep instruments
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #5), so no replies were needed. The direction still comes from Craig's 27 October chat: joy, getting back into music, five a day, deeper and built for his own sounds.
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 67 | USB Folder | Fred again.. | USB (2024) and USB002 (2025) as "an infinitely rolling mixtape or folder", and rebuilding Jamie T's live vocal line by line for "Lights Burn Dimmer" (Tape Notes, episode 176) | Karel Martens |
+| 68 | No Starting Point | Eno | "The Studio as Compositional Tool" (lecture 1979, Down Beat 1983): in-studio composition, the mixer as instrument | Russell Mills |
+| 69 | Tonality Diamond | music theory | Harry Partch, Genesis of a Music (1949): the Tonality Diamond, Otonality and Utonality, the 43-tone scale (paraphrased, no quotes) | Lester Beall |
+| 70 | Dawn Syntax | nature/philosophy | Birdsong syntax: Hartshorne's monotony threshold (1956), Okanoya's finite-state finch songs, Suzuki et al.'s ABC–D calls (2016), the dawn chorus | Charley Harper |
+| 71 | Merz Collage | art manifesto | Kurt Schwitters, "Die Merzmalerei" (Der Sturm, 1919): the equal evaluation of materials; the Merzbau | Piet Zwart |
+
+**What's new in each**
+
+- **67 USB Folder:** a live vocal is cut into LINES (at the gaps or equally) and an ORDER you build, switch (S), reverse and rotate. ISOLATE narrows it to the voice band. Three stacked loops with their own bar lengths play as tempo-locked sixteenth slices (keeping key) or varispeed. House, two-step, breakbeat or half-time drums, sidechain pump, a sub following a progression, and sections INTRO, LINES, BUILD (the last line tightens, riser, a beat of silence), DROP (pitched hook chops) and OUTRO. Five rooms with their own reverb and crowd. The USB folder stores tunes (settings plus line order) in localStorage and presets; ROLL plays the folder as a set; MAKE TEN fills it. Gemini turns a described room into tempo, groove, room, key and a tune name. Eight slots. Overprinted CMY and index-card look.
+- **68 No Starting Point:** a 12-track loop tape that starts empty. PUT ON writes a generated part (drone, piano, bass, bell, pulse, texture) in your key; TAKE OFF mutes older parts first; TAKE A MIXTURE OFF mutes about half. Twelve channel strips (fader, pan, echo, tilt EQ, half/double/backwards tape speed, mute, solo, erase) into a bus compressor where SQUASH makes one fader duck the rest. A brush paints notes out of the tape or back in. A gardener adds and removes parts, fader drift mixes, and MIDI can overdub onto a track. Six slots. Stained, layered Russell Mills surfaces.
+- **69 Tonality Diamond:** the 5-, 7-, 9- or 11-limit diamond with 1/1 at G 392 Hz. Click cells for ratios and edge circles for Otonality and Utonality hexads. A pivot walk moves between them through a shared note: kithara strums, chromelodeon holds, marimba marks the pivot, bowls ring and the boo plays a meter of 4, 5, 7 or 11. The adapted viola glides between neighbouring notes of the 43-tone scale. A 43-key strip shows cents and the difference from 12-ET, a 12-ET switch snaps everything to the piano for comparison, and MIDI is mapped at 43 keys an octave. Six slots, all retuned exactly by playback rate.
+- **70 Dawn Syntax:** five bird slots are cut into syllables, each bird with an editable grammar table (syllable to next syllable or END). There is versatility, a monotony pause that grows with repetition, and a dawn clock that wakes the birds in turn. ABC–D on the tit makes the other birds pause, come close and sing; D–ABC barely moves them. Free or pulsed rhythm and pitch snapping to a scale turn it into a phrase sequencer. Five synthesised birds and a dawn ambience. Flat Charley Harper birds and stepped skies.
+- **71 Merz Collage:** six materials (ticket, newspaper, wood, wire, voice with Ursonate-style syllables, piano). Tear fragments and glue them onto a looping page: x is time, y is pitch, size is level and angle is tone and pan. EQUAL EVALUATION RMS-matches every fragment; MERZBAU grows a fragment a pass while older layers fade; K is the Commerz → Merz cut; R reverses. Gemini turns a list of found things into a collage. Red and black Piet Zwart diagonals and halftones.
+
+**Tests:** `node test/run.js 67,68,69,70,71` passed 5/5: audio, LEARN, WAV and AIFF loaded and played, WAV recording, the Gemini mocks for 67 and 71, and no console errors. `node test/deep.js 67,68,69,70,71` passed 5/5: deck, slots, reverse, presets, export and import, key sheet, MIDI and the 10-second soak. Fixes during testing:
+- 70's first parameter moved with the dawn clock, so presets could not be checked; it was reordered.
+- 70's built-in birds had an envelope bug that merged syllables.
+- 68's vertical faders did not render.
+- 68, 70 and 71 now audition a slot as soon as you load a sound into it, so a new sample is heard straight away.
+
 ## 29 October 2026 · 62 to 66, five deep instruments
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #4), so no replies were needed. The direction still comes from Craig's 27 October chat: joy, getting back into music, five a day, deeper and built for his own sounds.
