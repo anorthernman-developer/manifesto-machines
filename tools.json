@@ -3343,5 +3343,336 @@
   "no": "71",
   "slug": "merz-collage",
   "file": "tools/71-merz-collage.html"
+ },
+ {
+  "title": "Tube Brakes",
+  "deep": true,
+  "category": "Fred",
+  "date": "2026-10-31",
+  "kicker": "WHAT WOULD FRED AGAIN.. DO? · THE UGLY SOUND, AUTO-TUNED, OVER THE ROOM",
+  "bpm": 128,
+  "idea": "Fred again.. said he had sampled the London Underground 'loads': the ugly screech when a tube train brakes becomes 'quite beautiful' through auto-tune, and every tune he makes has the room it was made in quietly underneath. This is that method as an instrument. Load any found noise (a brake, a kettle, a door hinge, a gull, a squeaky trolley) and a pitch tracker follows it. A retuner snaps it to your key, either hard and robotic or gently, or makes it sing a riff or the chord tones. A room recording runs under everything through a phone-style squash that 'amplifies the room', and house or two-step garage drums, pumping chords and an intro, build, drop and break arrangement sit on top.",
+  "controls": "6 slots (found sound, room tone, kick, clap, hats, keys); retune: mode (nearest note, chord tones, riff, MIDI), correction, retune speed, range, key and scale, harmony voices, time stretch, grain size, hook every N bars; room: level, phone squash, pump; drums: house or two-step, swing, density; chords: progression and style; arrangement auto or manual (intro, build, drop, break); reverb and delay; pitch-track display showing the raw and tuned lines.",
+  "how": "Press PLAY. The built-in 'tube brake' squeal is already being auto-tuned in A minor over a room recording and a house beat. Load your own found noise into slot 1 (or drop it on the page) and a room recording into slot 2. Turn CORRECTION down to hear the raw sound, and RETUNE SPEED up for the hard robotic snap. T changes the tune mode, H fires the hook now, 1 to 4 pick intro, build, drop and break, A toggles the automatic arrangement, P switches the phone squash and G switches house and two-step. With MIDI, hold a note and the found sound sings that note.",
+  "fonts": "family=Inter:wght@300;400;600;800",
+  "try": [
+   "Record the ugliest sound you can find on your phone: the tube braking, a bus kneeling at a stop, a shopping trolley, a fridge door. Load it into slot 1, choose CHORD TONES and set RETUNE SPEED to 1 for the hard auto-tune effect. The squeal stops being a noise and becomes a lead line in your key.",
+   "Every Fred tune has the room it was made in underneath. Record two minutes of the place you're sitting in (a café, a platform, your kitchen) with the phone held still and nobody talking, load it into slot 2 and push PHONE SQUASH up: the quiet parts get louder, the way an iPhone's compression 'amplifies the room'.",
+   "Pick a Splice vocal one-shot or a field recording of a gull or a creaking door, set the mode to RIFF and the time stretch to 0.5. The sound keeps its own grain but sings an eight-note riff at half speed. Save it as a preset, then try the same settings with a completely different sound."
+  ],
+  "manifesto": {
+   "name": "What would Fred again.. do? The tube brake through auto-tune, and the room under every tune",
+   "short": "Fred again.., tube brakes",
+   "author": "Fred again.. (Fred Gibson, b. 1993, London)",
+   "year": "2021 to 2022",
+   "where": "Interviews with NME (2021) about Actual Life and with Mixmag (his cover feature) about recording on his phone",
+   "ideas": [
+    "Fred again.. records much of his raw material on his phone: voice notes, videos of friends and strangers, nights out, the background noise of the places he works. He told Mixmag he records 'everything from drums, vocals, piano' on it.",
+    "He likes the phone because of what it does to the room. Studio microphones leave 'no room for the world'; the phone's heavy compression brings the background up whenever you stop talking.",
+    "He made Actual Life in public places, and in 2021 told NME that the background of the place he worked goes into every tune, even if quietly. During lockdown that meant the South Bank and the tube.",
+    "He said he had sampled the tube 'loads', and that the horrible screech of a train braking, put through auto-tune, becomes beautiful. Auto-tune snaps a pitched sound to the nearest note of a scale; set fast, it jumps between notes in the robotic way familiar from pop records.",
+    "Around those found sounds sit the things the earlier tools in this series also use: house and two-step garage drums, piano chords, and euphoric builds and drops."
+   ],
+   "quotes": [
+    [
+     "That horrific ugly sound when it brakes – if you put that through auto-tune, it becomes quite beautiful.",
+     "Fred again.. on sampling the tube, NME, 2021"
+    ],
+    [
+     "On every tune I do, even if it's quietly, I play in the background of the place where I made it.",
+     "Fred again.., NME, 2021"
+    ],
+    [
+     "when you record something with your iPhone and stop speaking for a second, it amplifies the room around you.",
+     "Fred again.., Mixmag cover feature"
+    ]
+   ],
+   "system": "Slot 1 is the found sound. When it loads, a pitch tracker (an autocorrelation method like YIN) measures its pitch every 10 ms and shows it as a grey line. Playback is granular: short overlapping grains are read from the sound in order, and each grain is re-pitched by the distance between the measured pitch and the target note, so the sound keeps its timing and texture but sings in tune. The orange line is the tuned result. The target is the nearest note in your key and scale (NEAREST), the nearest note of the current chord (CHORD TONES), an eight-step riff (RIFF) or the note you hold on a MIDI keyboard (MIDI). CORRECTION sets how far each grain moves towards the target, and RETUNE SPEED sets how quickly the correction follows the sound: 1 snaps instantly (the hard, robotic effect) and low values glide. Parts with no clear pitch (noise, breath) are left alone. HARMONY adds one or two more grain streams a third and a fifth above in the scale. Slot 2, the room, loops underneath all the time through a 'phone' chain (band-limited, heavily compressed, with make-up gain), which pulls the quiet background up. The kick ducks the room and the chords (PUMP).",
+   "dubious": ""
+  },
+  "design": {
+   "name": "Mark Farrow",
+   "short": "Mark Farrow",
+   "who": "Mark Farrow (b. 1960), British graphic designer, founder of Farrow Design (now Farrow), known for record packaging for Pet Shop Boys, Spiritualized and others",
+   "era": "1980s to now",
+   "hallmarks": [
+    "Reduction: lots of white space, a single strong idea, small precise sans-serif type and very little else.",
+    "Packaging treated as the idea itself, as in the medicine box and blister pack for Spiritualized: here the steps are pill pockets in a blister strip and the controls read like a dosage label.",
+    "Systematic, catalogue-like typography (numbers, codes, small capitals), with one bright accent colour."
+   ],
+   "works": [
+    "Spiritualized, 'Ladies and Gentlemen We Are Floating in Space' (1997), the album packaged as a prescription medicine box with a blister pack",
+    "Pet Shop Boys, 'Very' (1993), the orange, bumpy plastic CD case",
+    "Pet Shop Boys, 'Please' (1986), the small photograph on a white sleeve"
+   ]
+  },
+  "no": "72",
+  "slug": "tube-brakes",
+  "file": "tools/72-tube-brakes.html"
+ },
+ {
+  "title": "Long Now Bells",
+  "deep": true,
+  "category": "Eno",
+  "date": "2026-10-31",
+  "kicker": "WHAT WOULD BRIAN ENO DO? · CHANGE RINGING, ONE PERMUTATION A DAY FOR TEN THOUSAND YEARS",
+  "bpm": 60,
+  "idea": "In 2003 Brian Eno released January 07003: Bell Studies for the Clock of the Long Now. It was his research into the chimes for the Long Now Foundation's 10,000-year clock, which is meant to ring a different sequence of its ten bells every day. Eno started from English change ringing, where n bells are rung in every possible order without repeating one; ten bells give 10! (3,628,800) orders, roughly the number of days in 10,000 years. He also imagined bells with physical properties no real bell has. This instrument rings real change-ringing methods from place notation (rounds, plain hunt, Plain Bob, or your own notation), with a 'blue line' diagram tracing one bell. It also has a Long Now mode that gives every date its own permutation, so you can hear January 07003 as Eno wanted to. The bells are additive (church, harmonic or enharmonic partials) and a STRETCH control bends them into imaginary metals; your own sample can be the bell.",
+  "controls": "4 slots (bell sample, hum drone, air, clock tick); method (rounds, plain hunt, Plain Bob, Grandsire-style custom place notation, Long Now day); bells 3 to 10; blow interval; handstroke gap; humanise; scale and key; partial set (church, fixed-ratio harmonic, enharmonic) with stretch, decay and brightness; synth and sample mix; drone and air levels; traced bell; Long Now year, month, day, repeats per day, auto-advance; reverb and delay; blue-line diagram and row list.",
+  "how": "Press PLAY: eight bells ring Plain Bob Major with the treble (red) and bell 8 (blue) traced through the changes. Change METHOD to LONG NOW to hear one permutation of ten bells per day, starting on 1 January 07003, with N moving to the next day. Turn STRETCH away from 1 to imagine bells that could not be cast. Load a struck sound (a glass, a pan, a Splice bell) into slot 1 and raise SAMPLE MIX. Keys 1 to 9 and 0 ring single bells, M changes the method, G toggles the handstroke gap, B changes the traced bell, and [ and ] make it slower or faster.",
+  "fonts": "family=Space+Grotesk:wght@300;500;700",
+  "try": [
+   "Tap a wine glass, a radiator, a saucepan lid or a bicycle bell into your phone, trim the hit tightly and load it into slot 1. Set SAMPLE MIX to 1 and SYNTH MIX to 0: your object is now a ring of eight tuned bells, rung in Plain Bob, and no order repeats until the whole extent is done.",
+   "Take a long Splice pad or a field recording of wind, load it into slot 2 (the hum drone) and slot 3 (the air), choose LONG NOW, set the interval to 0.5 s and the reverb high. Let it run as Eno's 'ignorable as it is interesting' ambient piece, with N walking through the days of January.",
+   "Record your own voice singing one steady 'ahh', load it into slot 1, choose ENHARMONIC partials at a low synth mix and set STRETCH to 1.15. The sample keeps the melody of the changes while the synthetic partials pull each strike into an impossible metal."
+  ],
+  "manifesto": {
+   "name": "January 07003: Bell Studies for the Clock of the Long Now",
+   "short": "Eno, Long Now bells",
+   "author": "Brian Eno (b. 1948), with the Long Now Foundation (Danny Hillis, Stewart Brand and others)",
+   "year": "2003",
+   "where": "Album and liner notes, Opal Music, released through the Long Now Foundation",
+   "ideas": [
+    "The Long Now Foundation, set up in 1996, is building a mechanical clock meant to run for 10,000 years. Danny Hillis designed the clock and the algorithm that decides its chimes; Eno, a founding board member, gave the foundation its name.",
+    "The clock rings ten bells, and the idea is that it never repeats a day's sequence: 10! = 3,628,800 permutations, close to the 3,652,500 days in 10,000 years.",
+    "Eno took the idea from English change ringing. Ringers move each bell by at most one place per row, following 'methods' written in place notation. An 'extent' rings every possible row exactly once and returns to rounds.",
+    "He did not stop at real bells. Working with software synthesis, he imagined bells made of materials and in shapes that could not exist, and track titles such as 'Fixed Ratio Harmonic Bells' and 'Emphasizing Enharmonic Partials' name the partial structures he tried.",
+    "He wanted to hear a specific moment: the bells of January 07003, about halfway through the clock's life. The five-digit year is Long Now's convention for thinking past the year 9999."
+   ],
+   "quotes": [
+    [
+     "Stated briefly, change-ringing is the art (or, to many practitioners, the science) of ringing a given number of bells such that all possible sequences are used without any being repeated.",
+     "Brian Eno, liner notes to January 07003 (2003)"
+    ],
+    [
+     "The ! is not an expression of surprise but the sign for a factorial",
+     "Brian Eno, liner notes to January 07003"
+    ],
+    [
+     "I might therefore imagine bells with quite different physical properties from those we now know",
+     "Brian Eno, liner notes to January 07003"
+    ],
+    [
+     "I wanted to hear the bells of the month of January, 07003 — approximately halfway through the life of the Clock.",
+     "Brian Eno, liner notes to January 07003"
+    ]
+   ],
+   "system": "Rows are generated from place notation, the ringers' own shorthand. 'x' (or '-') means every pair of bells swaps places, and a group of numbers such as '18' or '12' lists the places that stay put while every other pair swaps. Plain hunt, Plain Bob (on odd or even numbers of bells) and rounds are built in, and CUSTOM accepts any place notation you type, which repeats until rounds come back. Bell 1 (the treble) is the highest, tuned down the chosen scale to the tenor. The blue-line diagram draws the paths of the treble and one traced bell through the rows, the way method diagrams in ringing books do. LONG NOW mode turns each date into a day number counted from 1 January 02003 and maps it to one of the 3,628,800 orders of ten bells using the factorial number system (a Lehmer code). That gives every day a unique sequence for 10,000 years, but it is this tool's own mapping, NOT Danny Hillis's actual chime algorithm, which this does not reproduce. Each strike is either additive synthesis (hum, prime, tierce, quint and nominal for a church bell; whole-number ratios for 'fixed ratio harmonic'; the inharmonic modes of a struck bar for 'enharmonic') with every partial ratio raised to the power STRETCH, or the slot 1 sample re-pitched, or a mix of both. The handstroke gap adds one blow's silence before every other row, as in tower ringing.",
+   "dubious": "The Long Now day-to-permutation mapping here is invented for this tool and is not Hillis's algorithm."
+  },
+  "design": {
+   "name": "8vo",
+   "short": "8vo",
+   "who": "8vo (Octavo), the London design group founded in the mid-1980s by Simon Johnston, Mark Holt and Hamish Muir",
+   "era": "1985 to 2001",
+   "hallmarks": [
+    "Rigorous modular grids taken from Swiss typography, then layered and overprinted so the structure shows through.",
+    "Numerals, rules and small grotesque type used as image; information treated as a visual system (here the blue-line ringing diagram).",
+    "A restrained palette (off-white, black, one or two strong colours) with transparent overlapping planes and huge numbers set against tiny captions."
+   ],
+   "works": [
+    "Octavo, International Journal of Typography (eight issues, 1986 to 1992), designed and published by 8vo",
+    "Record sleeves and posters for Factory Records in Manchester, notably for The Durutti Column",
+    "Hamish Muir and Mark Holt, 'Octavo 86–92' (Unit Editions, 2017), the book about the journal"
+   ]
+  },
+  "no": "73",
+  "slug": "long-now-bells",
+  "file": "tools/73-long-now-bells.html"
+ },
+ {
+  "title": "Gradus",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-10-31",
+  "kicker": "MUSIC THEORY · SPECIES COUNTERPOINT AFTER FUX, GRADUS AD PARNASSUM (1725)",
+  "bpm": 84,
+  "idea": "For two centuries composers learned to write music from Johann Joseph Fux's Gradus ad Parnassum (1725). It teaches counterpoint in five 'species', each adding one new freedom: note against note, two against one, four against one, then tied syncopations, then florid writing. Every step has rules about consonance, motion and cadence. This instrument writes a fresh counterpoint to a cantus firmus (Fux's own D dorian tune, or a generated one) in species 1 to 4, above or below, in any of the six modes, and plays it with your sounds. You can also click to change any note and a rule checker tells you, live, which of Fux's rules you just broke and why. Each time round it can write a new line, move to the next mode or swap voices.",
+  "controls": "3 slots (cantus firmus voice, counterpoint voice, cadence bell); species 1 to 4; counterpoint above or below; mode (dorian, phrygian, lydian, mixolydian, aeolian, ionian); cantus: Fux's D dorian, or generate with a length; strictness (strict or relaxed); on each loop: repeat, new counterpoint, next mode, swap voices; tempo; transpose; articulation; humanise; reverb and delay; click-to-edit notes with live rule checking; interval figures.",
+  "how": "Press PLAY: Fux's cantus firmus (D F E D G F A G F E D) is played with a first-species counterpoint above it, and a new counterpoint is written on every pass. Keys 1 to 4 choose the species, V puts the counterpoint above or below, M moves to the next mode, G writes a new counterpoint now, C generates a new cantus firmus and F brings back Fux's. Click anywhere on the grid to move a counterpoint note (shift-click moves a cantus note); broken rules show in red with an explanation.",
+  "fonts": "family=Hanken+Grotesk:wght@200;400;800",
+  "try": [
+   "Load a sustained sound (a Splice vocal 'ooh', a cello note, a harmonium) into slot 1 for the cantus firmus and a short plucked sample (kalimba, harp, muted guitar) into slot 2 for the counterpoint. Set the slot pitch so each sample's own note reads as C, and the rules turn your two sounds into a two-part motet.",
+   "Choose species 3 (four against one), set the tempo to 140 and ON LOOP to NEXT MODE. Record a few minutes as a WAV and chop it in your DAW: you get a library of strictly voice-led melodic phrases in six modes over the same tune, all from your own sample.",
+   "Break the rules on purpose: click notes to make parallel fifths or a leap of a seventh, and listen to what each 'error' does. Keep the ones you like and save the line as a preset. Eno's Oblique Strategies says to honour your error as a hidden intention; Fux would not agree, but your sampler won't mind."
+  ],
+  "manifesto": {
+   "name": "Gradus ad Parnassum: the five species of counterpoint",
+   "short": "Fux, species counterpoint",
+   "author": "Johann Joseph Fux (c. 1660 to 1741), court composer in Vienna",
+   "year": "1725",
+   "where": "Gradus ad Parnassum, Vienna, 1725, written in Latin. The counterpoint chapters were translated by Alfred Mann as The Study of Counterpoint (1943, revised 1965)",
+   "ideas": [
+    "The book is a dialogue between a pupil, Josephus, and a master, Aloysius, who stands for Palestrina, the sixteenth-century composer Fux held up as the model of pure part-writing.",
+    "Counterpoint is learned in five species. The first is note against note; the second two notes against one; the third four against one; the fourth tied notes across the beat (syncopation), where dissonant suspensions resolve downwards by step; the fifth, 'florid' counterpoint, mixes them all.",
+    "Consonances are perfect (unison, fifth, octave) or imperfect (thirds, sixths); seconds, fourths, sevenths and the tritone are dissonant. In the first species every note must be consonant; later species allow dissonance only on weak beats as passing notes, or as prepared suspensions.",
+    "Four rules of motion follow. One perfect consonance may only follow another by contrary or oblique motion (never similar motion), and the same goes for imperfect to perfect. Perfect to imperfect, and imperfect to imperfect, may use any motion. Beginning and end must be perfect consonances, and the note before the end is the leading note.",
+    "Haydn taught himself from the Gradus, and Mozart and Beethoven used it in study and teaching. It is still the basis of counterpoint courses today."
+   ],
+   "quotes": [
+    [
+     "From one perfect consonance to another perfect consonance one must proceed in contrary or oblique motion.",
+     "Fux, Gradus ad Parnassum (1725), the first rule of motion, in Alfred Mann's translation, The Study of Counterpoint"
+    ]
+   ],
+   "system": "The cantus firmus (CF) is one whole note per bar. The counterpoint (CP) is written by a randomised depth-first search, which tries notes (mostly steps, sometimes leaps) and backs up whenever a rule fails, so every pass gives a different correct line. The rules checked are: consonance on strong beats; perfect consonances at the start (unison, fifth or octave above; unison or octave below) and the end; the leading note before the end (raised in dorian, mixolydian and aeolian, as Fux raises it); no parallel fifths or octaves between successive downbeats; no similar motion into a perfect consonance (Fux's first and third rules of motion); no unisons except at the ends; no tritone, seventh or major-sixth leaps, and minor sixths only upwards; no voice crossing; no more than three parallel thirds or sixths in a row; leaps turned back by step; no repeated notes except tied ones. Species 2 and 3 allow weak-beat dissonance only as a step-in, step-out passing note (or a neighbour note in species 3). Species 4 ties each upbeat over the barline. A dissonant downbeat must be a 7–6 or 4–3 suspension above, or 2–3 below, resolving down by step. RELAXED drops the softer melodic rules when strict ones cannot be met. The checker uses the same rules on your edited notes. Fifth species, cambiata figures and Fux's three- and four-voice chapters are not modelled.",
+   "dubious": "The rules are paraphrased from Fux, via Mann's translation and standard teaching summaries; the one quotation is Mann's wording."
+  },
+  "design": {
+   "name": "Emil Ruder",
+   "short": "Emil Ruder",
+   "who": "Emil Ruder (1914 to 1970), Swiss typographer and teacher at the Allgemeine Gewerbeschule in Basel",
+   "era": "1940s to 1970",
+   "hallmarks": [
+    "Typography built on contrast: light against heavy, large against small, black against white, horizontal against vertical (here the hairline cantus against the heavy counterpoint).",
+    "Asymmetric layouts on a clear grid where empty space is an active part of the composition, and rhythm comes from repetition and interval.",
+    "A single grotesque family (he championed Univers) used in many weights, with red as the only colour."
+   ],
+   "works": [
+    "Typographie: A Manual of Design (1967), his textbook",
+    "His covers and articles for Typographische Monatsblätter (TM), the Swiss typography journal",
+    "Posters for the Basel Gewerbemuseum"
+   ]
+  },
+  "no": "74",
+  "slug": "gradus",
+  "file": "tools/74-gradus.html"
+ },
+ {
+  "title": "Same River",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-10-31",
+  "kicker": "NATURE / PHILOSOPHY · HERACLITUS: DIFFERENT AND DIFFERENT WATERS FLOW",
+  "bpm": 96,
+  "idea": "Heraclitus of Ephesus (around 500 BC) left about a hundred fragments. The most famous says that those who step into the same rivers are met by different and different waters, so the river stays the same because its water never does. That is also a fair description of a loop in music. Here the riverbed (rhythm, melody, which sound plays where) repeats every pass, while a CURRENT moves the point each hit reads from in your samples, so every pass is the same pattern made of different water. EROSION lets the bed itself change slowly. Three more fragments shape the rest. 'The way up and the way down are one and the same' becomes a melody that turns into its own inversion. The 'attunement turning back on itself, like that of the bow and the lyre' becomes two strings pulled out of tune and back. The 'ever-living fire, kindling in measures and going out in measures' becomes density that grows and dies in bar-length measures.",
+  "controls": "5 slots (river water, second water, stone, lyre string, fire); current (how far the read point moves each pass), Cratylus mode (new water on every hit), erosion (how much the riverbed changes each pass), steps and bars, density; way up and down: river, way up / way down (alternating inversion), circle (palindrome); bow and lyre: tension (cents), turning period, lyre level; fire: measures, depth, crackle; high and low (octave spread); key and scale; tempo; reverb and delay; new riverbed.",
+  "how": "Press PLAY: a two-bar riverbed loops, and each pass the read points move further into the built-in water and stone sounds, so the pattern repeats while the sound keeps changing. Turn CURRENT to 0 to step into the same water every time (a plain loop), or press K for Cratylus mode, where no hit is ever the same water. W cycles the way up and down modes, E sets erosion, N makes a new riverbed and B pulls the bow-and-lyre strings apart. Load a long recording (a river, a city street, a whole Splice loop) into slot 1 and you'll hear it flowing through the same pattern.",
+  "fonts": "family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;500",
+  "try": [
+   "Record a few minutes of real moving water (a tap, a stream, rain on a window) or any long field recording, and load it into slot 1. With CURRENT around 0.2 the same rhythm plays, but every pass carries different water, which is Heraclitus's river made literal.",
+   "Load a whole Splice drum loop or a long vocal take into slots 1 and 2, set EROSION to 0 and turn CURRENT slowly up from 0. At 0 it is a plain loop (one step into one river); a little further and it becomes a 'slice remix' that never repeats. Record the moment where it tips over.",
+   "Put a sustained string or synth note into slot 4 (the lyre) and set TENSION high with a long TURNING period. The two copies beat against each other and slowly pull back into tune. Add a crackly vinyl or campfire recording to slot 5 and let the fire breathe in measures."
+  ],
+  "manifesto": {
+   "name": "Heraclitus: the river, the bow and lyre, the way up and down, the ever-living fire",
+   "short": "Heraclitus, the river",
+   "author": "Heraclitus of Ephesus (fl. c. 500 BC)",
+   "year": "c. 500 BC",
+   "where": "His book is lost. About a hundred fragments survive as quotations in later writers (Plato, Aristotle, Plutarch, Arius Didymus, Hippolytus and others), numbered by Diels and Kranz",
+   "ideas": [
+    "Everything flows. The popular saying 'you cannot step into the same river twice' is Plato's and Plutarch's version; the fragment most scholars think is closest to Heraclitus's own words keeps the river the same and the waters different, so identity survives because of change, not in spite of it.",
+    "The unity of opposites: the road up and the road down are one road, and a thing can agree with itself by being at variance with itself, like the tension in a strung bow or lyre.",
+    "The world is an 'ever-living fire', kindling and going out in measures. Change is constant but measured, not chaotic.",
+    "His pupil Cratylus is said to have gone further, saying you could not step into the same river even once. Aristotle reports that Heraclitus said there would be no harmony without high and low notes.",
+    "He was called 'the obscure' in antiquity for his riddling style, but his fragments are among the earliest Western reflections on process, flux and harmony."
+   ],
+   "quotes": [
+    [
+     "On those who step into the same rivers, different and different waters flow",
+     "Heraclitus, fragment B12 (quoted by Arius Didymus)"
+    ],
+    [
+     "They do not comprehend how a thing agrees at variance with itself; it is an attunement turning back on itself, like that of the bow and the lyre.",
+     "Heraclitus, fragment B51 (trans. Charles Kahn)"
+    ],
+    [
+     "The way up is the way down",
+     "Heraclitus, fragment B60"
+    ],
+    [
+     "ever-living fire, kindling in measures and being quenched in measures",
+     "Heraclitus, fragment B30"
+    ]
+   ],
+   "system": "The riverbed is a grid of steps (8 to 32 per bar, 1 to 4 bars) holding hits, scale degrees, lengths and which sound plays. It repeats every pass. Each hit reads its sound from a start point that moves by CURRENT times the sample length (times an irrational step, so it never lines up exactly) on every pass. At 0 the same slice of water plays every time; higher values flow faster. CRATYLUS also moves the read point on every hit, so nothing ever repeats. EROSION re-rolls that fraction of the bed between passes, so even the riverbed is slowly worn away. WAY UP / WAY DOWN plays the melody, then its mirror inversion around the root, on alternate passes; CIRCLE makes the bed a palindrome, since 'the beginning and the end are common' on a circle. The lyre is two copies of slot 4 detuned by TENSION cents, whose detuning swings out and back over the TURNING period, so the beating grows and resolves. FIRE runs a triangle over N bar-length 'measures' that raises and lowers the density and the crackle. HIGH AND LOW doubles notes at the octave below and above.",
+   "dubious": "Translations of the fragments vary; B12, B51 (Kahn), B60 and B30 are given in standard English renderings."
+  },
+  "design": {
+   "name": "Alexey Brodovitch",
+   "short": "Brodovitch",
+   "who": "Alexey Brodovitch (1898 to 1971), Russian-born art director of Harper's Bazaar (1934 to 1958) and teacher of the Design Laboratory",
+   "era": "1930s to 1950s",
+   "hallmarks": [
+    "Generous white space and layouts that move across the spread like choreography, with type and photographs paced like a film.",
+    "Elegant high-contrast Didone serifs (Didot and Bodoni) set large and often italic, against small captions.",
+    "Motion and blur: he loved photographs of movement and printed them big, cropping boldly (here the streaks of the river)."
+   ],
+   "works": [
+    "Harper's Bazaar spreads with Richard Avedon and Lillian Bassman, 1940s to 1950s",
+    "'Ballet' (1945), his photobook of blurred, moving ballet photographs",
+    "'Portfolio' magazine (1949 to 1951), which he co-edited and designed"
+   ]
+  },
+  "no": "75",
+  "slug": "same-river",
+  "file": "tools/75-same-river.html"
+ },
+ {
+  "title": "Pop Art Is",
+  "deep": true,
+  "gemini": true,
+  "category": "art manifesto",
+  "date": "2026-10-31",
+  "kicker": "ART MANIFESTO · RICHARD HAMILTON, LETTER TO PETER AND ALISON SMITHSON, 16 JANUARY 1957",
+  "bpm": 120,
+  "idea": "In January 1957 Richard Hamilton wrote to the architects Peter and Alison Smithson with a definition of 'Pop Art'. He meant the popular culture of adverts, films, cars and records, not yet the gallery art that later took the name. His definition was eleven words long: Popular, Transient, Expendable, Low cost, Mass produced, Young, Witty, Sexy, Gimmicky, Glamorous, Big business. This instrument is a pop-song factory driven by those eleven words. Each one is a giant typographic fader that changes the music: Transient sets how short each song is, Expendable how completely the next one forgets it, Low cost crushes the bits, Mass produced stacks copies of the hook, Big business squashes the master and stamps a jingle on the end. Songs are generated, sold and replaced one after another. Hamilton also admitted he was 'not yet sure about the sincerity' of Pop Art, so there is a SINCERITY? knob too. An optional Gemini panel writes a jingle for any product you describe.",
+  "controls": "6 slots (hook voice, kick, clap, hats, bass/keys, gimmick); eleven characteristic faders (drag the words, or keys 1 to 9, 0 and -); sincerity?; key and major/minor; base tempo; hook, drums, bass and pad levels; new song, jingle now; Gemini jingle writer (optional, using your own key); chart of past songs fading as they are forgotten; units-sold counter.",
+  "how": "Press PLAY: a pop song is generated, played and sold, and when it ends a new one replaces it. Drag any of the eleven words up or down (or click it to switch it on and off) and hear that characteristic change the song. Keys 1 to 9, 0 and - toggle the words in order, N writes a new song now, J plays the jingle and S turns up the sincerity. Load a vocal one-shot into slot 1 and it becomes the singer of every hook. Open the Gemini panel, paste your key, describe a product, and it writes the jingle's title, tagline, tempo and settings.",
+  "fonts": "family=Jost:ital,wght@0,400;0,800;0,900;1,800&family=Abril+Fatface",
+  "try": [
+   "Sing or say one syllable ('yeah', 'buy', 'pop', 'ooh') into your phone, trim it and load it into slot 1. It becomes the hook singer of every song the factory makes. Turn MASS PRODUCED up and it is copied into a stack of identical singers.",
+   "Load a Splice drum kit into slots 2 to 4 (kick, clap, hats) using a whole folder, set TRANSIENT to maximum and EXPENDABLE to maximum, and record ten minutes as a WAV: a hundred eight-bar jingles, each forgotten as the next arrives, ready to chop for samples.",
+   "Pull every word down to zero except SINCERITY?, then bring the words back one by one and listen for the moment it turns from a song into a product. Save presets named after real adverts you remember, then ask Gemini for a jingle about something ordinary in your kitchen."
+  ],
+  "manifesto": {
+   "name": "Pop Art is: Richard Hamilton's letter to the Smithsons",
+   "short": "Hamilton, Pop Art is",
+   "author": "Richard Hamilton (1922 to 2011), British artist and member of the Independent Group",
+   "year": "1957",
+   "where": "Letter to Peter and Alison Smithson, 16 January 1957, later published in Hamilton's Collected Words 1953–1982 (1982)",
+   "ideas": [
+    "Hamilton was part of the Independent Group, artists, architects and critics who met at the Institute of Contemporary Arts in London in the 1950s to talk about adverts, science fiction, cars and Hollywood as seriously as fine art.",
+    "For the exhibition This is Tomorrow (Whitechapel Gallery, 1956) he made the small collage 'Just what is it that makes today's homes so different, so appealing?', which is often called the first work of Pop Art.",
+    "In the 1957 letter he wrote down what popular art is: eleven characteristics of mass culture, from 'Popular (designed for a mass audience)' to 'Big business'. He asked whether a fine artist could take on these values.",
+    "He called the list 'just a beginning' and openly worried about the 'sincerity' of a Pop Art made by fine artists.",
+    "He then used the list as a working programme for his own paintings, starting with 'Hommage à Chrysler Corp.' (1957). The word Pop soon came to mean the art itself."
+   ],
+   "quotes": [
+    [
+     "Pop Art is: Popular (designed for a mass audience), Transient (short-term solution), Expendable (easily forgotten), Low cost, Mass produced, Young (aimed at youth), Witty, Sexy, Gimmicky, Glamorous, Big business",
+     "Richard Hamilton, letter to Peter and Alison Smithson, 16 January 1957"
+    ],
+    [
+     "This is just a beginning.",
+     "Richard Hamilton, same letter"
+    ],
+    [
+     "I find I am not yet sure about the 'sincerity' of Pop Art.",
+     "Richard Hamilton, same letter"
+    ]
+   ],
+   "system": "Each of the eleven words is a 0 to 1 fader. POPULAR picks familiar chord loops (I–V–vi–IV and friends) and a steady four-to-the-floor; low values pick modal, less familiar loops. TRANSIENT sets the song length, from 32 bars down to 8. EXPENDABLE sets how much of the last hook the next song keeps; old titles fade from the chart at the same rate. LOW COST mixes in a bit-crusher and a cheap low-pass. MASS PRODUCED stacks up to five detuned, slightly delayed copies of the hook across the stereo field (and counts the units). YOUNG adds tempo, bright filters and sixteenth hats. WITTY adds gags: stop-time, a cartoon 'boing' from the gimmick slot and a gear-change key change up a semitone. SEXY adds swing, a half-time backbeat and sub bass. GIMMICKY adds risers, stutters and drum fills. GLAMOROUS adds a string pad, octave sparkle and a long shimmering reverb. BIG BUSINESS drives and squashes the master and stamps a three-note sonic logo at the end of each song. SINCERITY? adds a plain, dry piano that plays the chords. Hooks are eight-step melodies built on chord tones, sung by slot 1.",
+   "dubious": ""
+  },
+  "design": {
+   "name": "Herb Lubalin",
+   "short": "Herb Lubalin",
+   "who": "Herb Lubalin (1918 to 1981), American graphic designer and typographer, co-designer of ITC Avant Garde",
+   "era": "1950s to 1970s",
+   "hallmarks": [
+    "'Typographics': words made into images, so the letters act out what they say, in tight, touching, overlapping letterforms.",
+    "Geometric sans (Avant Garde) set with daring ligatures next to fat Didone display faces, very large and very close.",
+    "Bold black-and-white pages with one hot colour, made for magazines and advertising."
+   ],
+   "works": [
+    "The 'Mother & Child' logotype (1965), with the ampersand and the 'Child' inside the 'O'",
+    "Avant Garde magazine (1968 to 1971) and the ITC Avant Garde Gothic typeface (1970, with Tom Carnase)",
+    "U&lc (Upper and lower case), the ITC magazine he designed from 1973"
+   ]
+  },
+  "no": "76",
+  "slug": "pop-art-is",
+  "file": "tools/76-pop-art-is.html"
  }
 ]

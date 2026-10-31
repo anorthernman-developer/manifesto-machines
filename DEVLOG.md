@@ -1,5 +1,32 @@
 # Devlog
 
+## 31 October 2026 · 72 to 76, five deep instruments
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #6), so no replies were needed. The direction still comes from Craig's 27 October chat: joy, getting back into music, five a day, deeper and built for his own sounds.
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 72 | Tube Brakes | Fred again.. | Fred again..'s voice-note method: recording on an iPhone, which "amplifies the room", and building tracks from pitched, auto-tuned found vocals such as the tube-brakes moment he described to NME (2021) | Mark Farrow |
+| 73 | Long Now Bells | Eno | Brian Eno, January 07003: Bell Studies for The Clock of the Long Now (2003): change ringing and a ten-bell row for each day | 8vo |
+| 74 | Gradus | music theory | Johann Joseph Fux, Gradus ad Parnassum (1725): the five species of counterpoint (one quote, from Alfred Mann's translation; the other rules are paraphrased) | Emil Ruder |
+| 75 | Same River | nature/philosophy | Heraclitus: the river fragments (B12), the way up and down (B60), the bow and lyre (B51), the ever-living fire (B30) | Alexey Brodovitch |
+| 76 | Pop Art Is | art manifesto | Richard Hamilton's letter to Peter and Alison Smithson (16 January 1957), defining Pop Art in eleven words | Herb Lubalin |
+
+**What's new in each**
+
+- **72 Tube Brakes:** YIN-style pitch tracking of a voice note in slot 1, then granular auto-tune to the nearest note, chord tones, a riff or MIDI, with correction amount, retune speed, range and harmony voices. Time stretch, a hook every N bars, a room-tone slot through a phone chain (high and low pass, a heavily squashed compressor) with a dry/wet blend, sidechain pump, house or two-step drums, chord progressions, and an automatic intro, build, drop and break. The pitch track is drawn as a Farrow blister pack. Six slots.
+- **73 Long Now Bells:** methods from place notation (rounds, Plain Hunt, Plain Bob on odd or even numbers of bells, or your own notation, with Grandsire Doubles as a preset). LONG NOW mode gives a different ten-bell permutation for every day since 1 January 02003. This is the tool's own mapping (a Lehmer code of the day number), **not** Danny Hillis's algorithm. Additive bells (church, harmonic or enharmonic partials with a stretch control) are mixed with your sample, with a hum drone, air, clock tick and handstroke gap. The display shows the blue-line diagram and a ring of bells in 8vo layers.
+- **74 Gradus:** Fux's D dorian cantus firmus or a generated one. Species 1 to 4 counterpoint is composed above or below in six modes by a randomised search, with a raised leading note in cadences (not in phrygian). A rule checker lists every violation, and you can click to edit notes (shift-click edits the cantus). The loop can repeat, compose again, change mode, swap voices or make a new cantus. Ruder grid and Univers-style type.
+- **75 Same River:** a riverbed pattern that stays the same while CURRENT moves where each hit reads from in your samples on every pass. Cratylus mode moves it on every hit, and erosion slowly changes the bed. The way up and down inverts or mirrors the melody; the bow and lyre is two detuned loops of one sample, with the tension swinging out and back; fire is a density envelope that kindles and goes out, with crackle. Brodovitch whitespace and motion-blur water.
+- **76 Pop Art Is:** eleven giant typographic word faders (Popular, Transient, Expendable, Low cost, Mass produced, Young, Witty, Sexy, Gimmicky, Glamorous, Big business) drive a pop-song factory. It makes songs with titles, a chart and a units-sold counter, plus a sonic-logo jingle and a SINCERITY? knob. The master chain runs through a crusher, a cheap or bright filter and drive. Gemini (optional, with your own key) turns a product description into a jingle and fader settings. Lubalin's tight, expressive type in black with red flashes.
+
+**Tests:** `node test/run.js 72,73,74,75,76` passed 5/5: audio, LEARN, WAV and AIFF loaded and played, WAV recording, the Gemini mock for 76, and no console errors. `node test/deep.js 72,73,74,75,76` passed 5/5: deck, slots, reverse, presets, export and import, key sheet, MIDI and the 10-second soak. Fixes during testing:
+- 72's pitch line jumped between voices; it is now drawn per stream.
+- 73 had an intermittent non-finite envelope value, now guarded, and its row list overlapped the header.
+- 74 now checks fourth species for consecutive fifths and octaves on the upbeats, and transposes the cantus correctly when the mode changes.
+- 75's "steps per bar" did not change the step rate.
+- 76's word faders all flashed red (a `classList.toggle` with an undefined force), long words overflowed, and song length was miscalculated.
+
 ## 30 October 2026 · 67 to 71, five deep instruments
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #5), so no replies were needed. The direction still comes from Craig's 27 October chat: joy, getting back into music, five a day, deeper and built for his own sounds.
