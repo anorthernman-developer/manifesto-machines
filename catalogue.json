@@ -1383,7 +1383,9 @@
   "gemini": true,
   "date": "2026-11-01",
   "file": "tools/77-emotional-frameworks.html",
-  "thumb": "screenshots/thumbs/77-emotional-frameworks.png"
+  "thumb": "screenshots/thumbs/77-emotional-frameworks.png",
+  "live": "https://emotional-frameworks-live.netlify.app",
+  "live_repo": "https://github.com/anorthernman-developer/emotional-frameworks-live"
  },
  {
   "number": "78",

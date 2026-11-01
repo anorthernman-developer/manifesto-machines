@@ -3679,6 +3679,8 @@
   "title": "Emotional Frameworks",
   "deep": true,
   "gemini": true,
+  "live": "https://emotional-frameworks-live.netlify.app",
+  "live_repo": "https://github.com/anorthernman-developer/emotional-frameworks-live",
   "category": "Fred",
   "date": "2026-11-01",
   "kicker": "WHAT WOULD FRED AGAIN.. DO? · ONE VOCAL LINE, MANY EMOTIONAL FRAMEWORKS",
