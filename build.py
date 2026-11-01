@@ -21,7 +21,7 @@ for f in sorted(glob.glob('src/tools/*.js')):
 {link}
 <style>
 {css_kit}
-{(css_deck + chr(10)) if meta.get('deep') else ''}/* ---- tool styles: homage to {meta['design']['name']} ---- */
+{(css_deck + chr(10)) if meta.get('deep') else ''}/* ---- tool styles: {meta['design']['short']} ---- */
 {block('CSS', src)}
 </style></head>
 <body><noscript>This music machine needs JavaScript and Web Audio (Chrome or Edge).</noscript>
@@ -40,7 +40,7 @@ for f in sorted(glob.glob('src/tools/*.js')):
     open(f'tools/{slug}.html', 'w').write(page)
 json.dump(metas, open('tools.json', 'w'), indent=1, ensure_ascii=False)
 # ---------- catalogue.json: one entry per tool, the source of truth for the gallery ----------
-BACKFILL_CAT = {'03': 'music theory', '17': 'music theory', '18': 'music theory', '42': 'music theory', '47': 'music theory', '35': 'Eno', '20': 'nature/philosophy', '22': 'nature/philosophy', '33': 'nature/philosophy'}
+BACKFILL_CAT = {'03': 'music theory', '17': 'music theory', '18': 'music theory', '42': 'music theory', '47': 'music theory', '35': 'generative systems', '20': 'nature/philosophy', '22': 'nature/philosophy', '33': 'nature/philosophy'}
 def first_sentences(s, n=2):
     parts = re.split(r'(?<=[.!?])\s+', s.strip()); out = ' '.join(parts[:n]); return out
 def date_for(no):
@@ -49,23 +49,23 @@ cat = []
 for m in metas:
     M, D = m['manifesto'], m['design']
     cat.append({'number': m['no'], 'title': m['title'], 'category': m.get('category') or BACKFILL_CAT.get(m['no'], 'art manifesto'),
-                'source': M['name'], 'source_short': M['short'], 'author': M['author'], 'year': M['year'], 'design_homage': D['name'], 'design_short': D['short'],
+                'source': M['name'], 'source_short': M['short'], 'author': M['author'], 'year': M['year'], 'design_homage': D['short'], 'design_short': D['short'], 'design_credit': D['name'],
                 'idea': m['idea'], 'controls': m.get('controls') or first_sentences(m['how'].replace('Press PLAY. ', ''), 2),
                 'deep': bool(m.get('deep')), 'gemini': bool(m.get('gemini')), 'date': m.get('date') or date_for(m['no']), 'file': m['file'], 'thumb': f"screenshots/thumbs/{m['no']}-{m['slug']}.png", **({'live': m['live'], 'live_repo': m.get('live_repo', '')} if m.get('live') else {})})
 json.dump(cat, open('catalogue.json', 'w'), indent=1, ensure_ascii=False)
 # ---------- index.html: searchable, filterable catalogue built from catalogue.json (data inlined so it also works from disk) ----------
 open('index.html', 'w').write(open('src/index.template.html').read().replace('/*CATALOGUE*/[]', json.dumps(cat, ensure_ascii=False)).replace('{{N}}', str(len(cat))))
-rows = '\n'.join(f"| {c['number']} | {c['category']} | {c['source']} | {c['year']} | {c['author']} | {c['design_homage']} | {c['date']} | [{c['file']}]({c['file']}) |" for c in cat)
+rows = '\n'.join(f"| {c['number']} | {c['category']} | {c['source']} | {c['year']} | {c['author']} | {c['design_homage']} (inspired by {c['design_credit']}) | {c['date']} | [{c['file']}]({c['file']}) |" for c in cat)
 open('LEDGER.md', 'w').write(f"""# Ledger
 
-Every source idea and design homage used so far. Since 27 Oct 2026 the daily routine adds five tools a day (one each: Fred again.., Brian Eno, music theory, nature/philosophy, art manifesto) and must not reuse a source idea or a design style/designer already in this table. The same data, with one-line ideas and control summaries, is in [catalogue.json](catalogue.json).
+Every source idea and design style used so far. Since 27 Oct 2026 the daily routine adds five tools a day (one each: found-sound production, generative systems, music theory, nature/philosophy, art manifesto) and must not reuse a source idea or a design style/designer already in this table. The same data, with one-line ideas and control summaries, is in [catalogue.json](catalogue.json).
 
-| # | Category | Source idea | Year | Author(s) | Design style / designer | Date | File |
+| # | Category | Source idea | Year | Author(s) | Design style (inspired by) | Date | File |
 |---|---|---|---|---|---|---|---|
 {rows}
 """)
-lst = '\n'.join(f"| {c['number']} | [{c['title']}]({c['file']}) | {c['category']} | {c['source']} ({c['author']}, {c['year']}) | {c['design_homage']} | {c['idea']} |" for c in cat)
+lst = '\n'.join(f"| {c['number']} | [{c['title']}]({c['file']}) | {c['category']} | {c['source']} ({c['author']}, {c['year']}) | {c['design_homage']} (inspired by {c['design_credit']}) | {c['idea']} |" for c in cat)
 rd = open('README.md').read() if os.path.exists('README.md') else '<!--LIST-->\n<!--/LIST-->'
-rd = re.sub(r'<!--LIST-->.*?<!--/LIST-->', '<!--LIST-->\n| # | Tool | Category | Source idea | Design homage | Idea |\n|---|---|---|---|---|---|\n' + lst + '\n<!--/LIST-->', rd, flags=re.S)
+rd = re.sub(r'<!--LIST-->.*?<!--/LIST-->', '<!--LIST-->\n| # | Tool | Category | Source idea | Design style (inspired by) | Idea |\n|---|---|---|---|---|---|\n' + lst + '\n<!--/LIST-->', rd, flags=re.S)
 open('README.md', 'w').write(rd)
 print('built', len(metas))
