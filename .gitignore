@@ -2,3 +2,16 @@ test/node_modules
 test/results*.json
 test/out.wav
 *.log
+# secrets: never commit keys
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+*.local.json
+# OS and tools
+.DS_Store
+node_modules/
+.netlify/
+
+test/out*.wav

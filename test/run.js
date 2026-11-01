@@ -48,7 +48,7 @@ const HOOK = () => {
     }
     const dl = page.waitForEvent('download', { timeout: 8000 }).catch(() => null);
     await page.click('#mm-rec'); await page.waitForTimeout(1200); await page.click('#mm-rec');
-    const d = await dl; if (d) { const p = path.join(__dirname, 'out.wav'); await d.saveAs(p); const b = fs.readFileSync(p); r.wav = b.slice(0, 4).toString() === 'RIFF' ? b.length : 'bad'; fs.unlinkSync(p); } else r.wav = 'none';
+    const d = await dl; if (d) { const p = path.join(__dirname, 'out-' + process.pid + '.wav'); await d.saveAs(p); const b = fs.readFileSync(p); r.wav = b.slice(0, 4).toString() === 'RIFF' ? b.length : 'bad'; fs.unlinkSync(p); } else r.wav = 'none';
     if (cfg.ai) { await page.evaluate(() => localStorage.setItem('sr12.geminiKey', 'TEST')); await page.click('.mm-ai-ask'); await page.waitForTimeout(800); r.ai = await page.evaluate(() => MM.S.aiApplied === 1); await page.evaluate(() => localStorage.removeItem('sr12.geminiKey')); }
     await page.waitForTimeout(cfg.shotWait || 2500);
     await page.screenshot({ path: ROOT + '/screenshots/thumbs/' + file.replace('.html', '.png') });
