@@ -9,7 +9,7 @@ The idea is to learn about art, manifestos and graphic design while making music
 
 **Play them:** https://anorthernman-developer.github.io/manifesto-machines/ (a searchable catalogue: filter by category, source, design style, deep instruments or Gemini; press `/` to search)
 
-**Stand-alone live apps:** [Emotional Frameworks Live](https://emotional-frameworks-live.netlify.app) ([repo](https://github.com/anorthernman-developer/emotional-frameworks-live)) is machine 77 turned into a performance app. Play the instrument on your laptop while an OUTPUT window on the projector shows audio-reactive VJ / digital-signage visuals you control live: scenes, themes, text, brand, blackout and freeze.
+**Stand-alone live apps:** [Emotional Frameworks Live](https://emotional-frameworks-live.netlify.app) ([repo](https://github.com/anorthernman-developer/emotional-frameworks-live)) is machine 77 turned into a performance app. Play the instrument on your laptop while an OUTPUT window on the projector shows audio-reactive VJ / digital-signage visuals you control live: scenes, themes, text, brand, blackout and freeze. [Fifty-Three Cells](https://fifty-three-cells.netlify.app) ([repo](https://github.com/anorthernman-developer/fifty-three-cells)) is machine 79 turned into a performance app: up to 12 players on 53 app-written cells, with an OUTPUT window of ensemble-driven visuals (player lanes, cell strip, op-art pulse, phase wheel, graphic score, big type, signage, sample scope).
 
 ## Using them
 

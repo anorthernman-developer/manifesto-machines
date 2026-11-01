@@ -1500,7 +1500,9 @@
   "gemini": false,
   "date": "2026-11-01",
   "file": "tools/79-in-c.html",
-  "thumb": "screenshots/thumbs/79-in-c.png"
+  "thumb": "screenshots/thumbs/79-in-c.png",
+  "live": "https://fifty-three-cells.netlify.app",
+  "live_repo": "https://github.com/anorthernman-developer/fifty-three-cells"
  },
  {
   "number": "80",
