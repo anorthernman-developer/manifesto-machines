@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
-<title>50 Ecstatic Truth · Minnesota Declaration × Saul Bass · Manifesto Machines</title>
+<title>50 Ecstatic Truth · Minnesota Declaration × Cut-paper film titles · Manifesto Machines</title>
 <meta name="description" content="One slider from the accountant&#x27;s truth to ecstatic truth: the same recording, played plainly as fact or stylised, slowed and staged into something deeper.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Crimson+Pro:ital@0;1&display=swap">
 <style>
@@ -24,8 +24,10 @@
 #mm-dropzone{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;font:800 64px var(--bar-font);background:color-mix(in srgb,var(--acc) 75%,transparent);color:#fff;pointer-events:none}#mm-dropzone.on{display:flex}
 .mm-ai{font:13px/1.4 var(--bar-font)}.mm-ai-t{font-weight:800;letter-spacing:.1em;margin-bottom:4px}.mm-ai textarea,.mm-ai input,.mm-ai select{width:100%;font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor;padding:4px;margin:3px 0}.mm-ai textarea{height:46px;resize:vertical}
 .mm-ai-row{display:flex;gap:6px;align-items:center}.mm-ai-row select{flex:1}.mm-ai button{font:inherit;font-weight:700;background:var(--acc);color:#fff;border:0;padding:5px 9px;cursor:pointer}.mm-ai-st,.mm-ai-help{font-size:11px;opacity:.75}.mm-ai-out{white-space:pre-wrap;font-size:12px;margin-top:4px}.mm-ai summary{cursor:pointer;font-size:11px;opacity:.7}
+/* accessibility: visible keyboard focus */
+:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 
-/* ---- tool styles: homage to Saul Bass ---- */
+/* ---- tool styles: Cut-paper film titles ---- */
 :root{--bg:#f2e6cf;--fg:#151515;--acc:#d72a12;--bar-font:'Oswald',sans-serif;--head-font:'Oswald',sans-serif}
 #mm-stage{background:#f2e6cf;overflow:hidden}#cv{position:absolute;inset:0;width:100%;height:100%}
 .ctl{position:absolute;left:5%;right:5%;bottom:22px;display:flex;align-items:center;gap:16px;font:700 18px 'Oswald';letter-spacing:.2em}
@@ -36,7 +38,7 @@
 <main id="mm-stage">
 <canvas id="cv"></canvas><div id="log"></div><div class="ctl">FACT<input id="ex" type="range" min="0" max="1" step="0.01" value="0.35">ECSTASY<button id="stage">STAGE A SCENE</button></div>
 </main>
-<script>window.MM_META = {"title": "Ecstatic Truth", "idea": "One slider from the accountant's truth to ecstatic truth: the same recording, played plainly as fact or stylised, slowed and staged into something deeper.", "how": "Press PLAY. Your sample is the 'footage'. With the slider at FACT, it plays exactly as recorded, cut on a strict grid, with a dry log of the facts (times, levels). As you move towards ECSTASY, the machine starts to invent: it slows and stretches the sound, adds a choir drone built from it, reverb, and staged scenes (footsteps in snow, a ship's horn, a far-off bell) that were never in the recording. STAGE A SCENE invents one now. The log changes from facts to stranger, invented captions.", "fonts": "family=Oswald:wght@300;700&family=Crimson+Pro:ital@0;1", "bpm": 76, "manifesto": {"name": "Minnesota Declaration: Truth and Fact in Documentary Cinema", "short": "Minnesota Declaration", "author": "Werner Herzog", "year": "1999", "where": "read at the Walker Art Center, Minneapolis, on 30 April 1999", "ideas": ["Cinéma vérité gives only a superficial 'accountant's truth' of facts.", "Deeper truth can be reached only through fabrication, imagination and stylisation.", "Ecstatic truth is mysterious and elusive, reached through poetry and invention."], "quotes": ["Fact creates norms, and truth illumination.", "There are deeper strata of truth in cinema, and there is such a thing as poetic, ecstatic truth."], "system": "One slider moves between fact and fabrication. At FACT the sample is only documented, but towards ECSTASY the machine stylises and stages it, inventing sounds that were never recorded to reach something truer."}, "design": {"name": "Saul Bass", "short": "Saul Bass", "who": "Saul Bass, American graphic designer and film-title designer", "era": "Los Angeles, 1950s to 1990s", "hallmarks": ["Jagged paper cut-out shapes and a single symbolic image", "Bold flat colour (often red, black and orange) with hand-cut type", "Spirals, fragmented bodies and kinetic title sequences"], "works": ["The Man with the Golden Arm titles and poster (1955)", "Vertigo titles and poster (1958)", "Anatomy of a Murder poster (1959)"]}, "no": "50", "slug": "ecstatic-truth", "file": "tools/50-ecstatic-truth.html"};</script>
+<script>window.MM_META = {"title": "Ecstatic Truth", "idea": "One slider from the accountant's truth to ecstatic truth: the same recording, played plainly as fact or stylised, slowed and staged into something deeper.", "how": "Press PLAY. Your sample is the 'footage'. With the slider at FACT, it plays exactly as recorded, cut on a strict grid, with a dry log of the facts (times, levels). As you move towards ECSTASY, the machine starts to invent: it slows and stretches the sound, adds a choir drone built from it, reverb, and staged scenes (footsteps in snow, a ship's horn, a far-off bell) that were never in the recording. STAGE A SCENE invents one now. The log changes from facts to stranger, invented captions.", "fonts": "family=Oswald:wght@300;700&family=Crimson+Pro:ital@0;1", "bpm": 76, "manifesto": {"name": "Minnesota Declaration: Truth and Fact in Documentary Cinema", "short": "Minnesota Declaration", "author": "Werner Herzog", "year": "1999", "where": "read at the Walker Art Center, Minneapolis, on 30 April 1999", "ideas": ["Cinéma vérité gives only a superficial 'accountant's truth' of facts.", "Deeper truth can be reached only through fabrication, imagination and stylisation.", "Ecstatic truth is mysterious and elusive, reached through poetry and invention.", "In our words: Herzog separates fact from truth: facts make rules, truth brings light, and cinema can reach a deeper, poetic, ecstatic kind of truth."], "quotes": [], "system": "One slider moves between fact and fabrication. At FACT the sample is only documented, but towards ECSTASY the machine stylises and stages it, inventing sounds that were never recorded to reach something truer."}, "design": {"name": "Saul Bass", "short": "Cut-paper film titles", "who": "Saul Bass, American graphic designer and film-title designer", "era": "Los Angeles, 1950s to 1990s", "hallmarks": ["Jagged paper cut-out shapes and a single symbolic image", "Bold flat colour (often red, black and orange) with hand-cut type", "Spirals, fragmented bodies and kinetic title sequences"], "works": ["The Man with the Golden Arm titles and poster (1955)", "Vertigo titles and poster (1958)", "Anatomy of a Murder poster (1959)"]}, "no": "50", "slug": "ecstatic-truth", "file": "tools/50-ecstatic-truth.html"};</script>
 <script>
 /* MM kit: shared engine for Manifesto Machines, inlined into every tool at build time so each file stays standalone.
    Audio graph: voices -> MM.out -> limiter (compressor + soft clip) -> master volume -> speakers (and the WAV recorder). */
@@ -207,7 +209,7 @@ const MM = (() => {
     const box = h('div', { class: 'mm-ai' }, h('div', { class: 'mm-ai-t' }, 'GEMINI · ' + (o.title || 'ASK')), o.help ? h('div', { class: 'mm-ai-help' }, o.help) : null,
       h('textarea', { class: 'mm-ai-p', placeholder: o.placeholder || '' }), h('div', { class: 'mm-ai-row' }, h('button', { class: 'mm-ai-ask' }, o.button || 'ASK GEMINI'), h('span', { class: 'mm-ai-st' }, 'No key? The built-in version still works.')),
       h('div', { class: 'mm-ai-out' }),
-      h('details', {}, h('summary', {}, 'key & model'), h('div', { class: 'mm-ai-help' }, 'Free key from aistudio.google.com/apikey. Stored only in this browser (shared with SR-12 and the other tools) and sent only to Google.'), h('input', { class: 'mm-ai-key', type: 'password', placeholder: 'Google AI Studio key', autocomplete: 'off' }), h('div', { class: 'mm-ai-row' }, h('select', { class: 'mm-ai-model' }), h('button', { class: 'mm-ai-forget' }, 'FORGET KEY'))));
+      h('details', {}, h('summary', {}, 'key & model'), h('div', { class: 'mm-ai-help' }, 'Your key stays in your browser. Get a free key from aistudio.google.com/apikey and paste it here: it is saved only in this browser (localStorage, shared with the other tools on this site), sent only to Google with your Gemini requests, and never to us. Press FORGET KEY to delete it. Without a key the built-in version is used.'), h('input', { class: 'mm-ai-key', type: 'password', placeholder: 'Google AI Studio key', autocomplete: 'off' }), h('div', { class: 'mm-ai-row' }, h('select', { class: 'mm-ai-model' }), h('button', { class: 'mm-ai-forget' }, 'FORGET KEY'))));
     el.append(box); const q = (s) => box.querySelector(s), ms = q('.mm-ai-model'); MODELS.forEach((m) => ms.append(new Option(m, m))); ms.value = localStorage.getItem('gp.geminiModel') || MODELS[0];
     q('.mm-ai-key').value = localStorage.getItem('sr12.geminiKey') || ''; q('.mm-ai-forget').onclick = () => { localStorage.removeItem('sr12.geminiKey'); q('.mm-ai-key').value = ''; toast('Key removed'); };
     q('.mm-ai-ask').onclick = async () => { const st = q('.mm-ai-st'), p = q('.mm-ai-p').value.trim() || o.placeholder || ''; const k = q('.mm-ai-key').value.trim(); if (k) localStorage.setItem('sr12.geminiKey', k); localStorage.setItem('gp.geminiModel', ms.value);
@@ -219,24 +221,26 @@ const MM = (() => {
   }
 
   /* ---------- learn panel ---------- */
+  const MM_NOTE = 'Only public-domain texts are quoted, marked as such and in our own translation; everything else is our own paraphrase. Names are short credits for the sources and styles that inspired this tool; it is not made by, or endorsed by, any of them. Privacy: no trackers, analytics or cookies. Your settings and any Gemini key stay in this browser (localStorage); the key is sent only to Google when you ask Gemini. Fonts load from Google Fonts.';
   function learnHTML(m) {
     const M = m.manifesto, D = m.design, esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
     return `<button class="mm-x" aria-label="close">×</button>
 <div class="mm-l-col"><div class="mm-l-k">THE MANIFESTO</div><h2>${esc(M.name)}</h2><div class="mm-l-by">${esc(M.author)} · ${esc(M.year)}${M.where ? ' · ' + esc(M.where) : ''}</div>
 <ul>${M.ideas.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
-${(M.quotes || []).map((q) => `<blockquote>“${esc(q)}”</blockquote>`).join('')}
+${(M.quotes || []).map((q) => (Array.isArray(q) ? `<blockquote>“${esc(q[0])}”<cite>${esc(q[1])}</cite></blockquote>` : `<blockquote>“${esc(q)}”</blockquote>`)).join('')}
 <div class="mm-l-k">HOW THIS MACHINE READS IT</div><p>${esc(M.system)}</p></div>
-<div class="mm-l-col"><div class="mm-l-k">THE DESIGN HOMAGE</div><h2>${esc(D.name)}</h2><div class="mm-l-by">${esc(D.who)} · ${esc(D.era)}</div>
+<div class="mm-l-col"><div class="mm-l-k">DESIGN STYLE</div><h2>${esc(D.short)}</h2><div class="mm-l-by">Inspired by ${esc(D.name)} · ${esc(D.era)}</div>
 <div class="mm-l-k">HALLMARKS</div><ul>${D.hallmarks.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
 <div class="mm-l-k">LOOK UP</div><ul>${D.works.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
 <div class="mm-l-k">HOW TO PLAY</div><p>${esc(m.how)}</p>
-<p class="mm-l-note">Quotes are short and from the published text in common English translation; everything else is paraphrase. Tool ${esc(m.no)} of Manifesto Machines.</p></div>`;
+<p class="mm-l-note">${MM_NOTE} Tool ${esc(m.no)} of Manifesto Machines.</p></div>`;
   }
   let toastT; function toast(msg) { const t = $('#mm-toast'); if (!t) return; t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2400); }
 
   /* ---------- init ---------- */
   function init(c) {
     cfg = c; meta = window.MM_META || {}; S.bpm = c.bpm || meta.bpm || 100; S.div = c.div || 4;
+    setTimeout(() => document.querySelectorAll('canvas:not([aria-label])').forEach((cv) => { cv.setAttribute('role', 'img'); cv.setAttribute('aria-label', (document.title.split(' · ')[0] || 'Instrument') + ': visuals that follow the sound'); }), 0); /* accessibility */
     const bar = h('div', { id: 'mm-bar' },
       h('a', { class: 'mm-back', href: '../index.html', title: 'All machines' }, '◂ ALL'),
       h('span', { class: 'mm-no' }, meta.no), h('span', { class: 'mm-name' }, meta.title),
@@ -265,7 +269,7 @@ ${(M.quotes || []).map((q) => `<blockquote>“${esc(q)}”</blockquote>`).join('
   /* drag helper: calls fn(x, y, phase, e) in element-relative px for pointer down/move/up */
   function drag(el, fn) { el.addEventListener('pointerdown', (e) => { ensure(); if (ctx.state !== 'running') ctx.resume(); const r = el.getBoundingClientRect(); el.setPointerCapture && el.setPointerCapture(e.pointerId); fn(e.clientX - r.left, e.clientY - r.top, 'down', e); const mv = (ev) => { const r2 = el.getBoundingClientRect(); fn(ev.clientX - r2.left, ev.clientY - r2.top, 'move', ev); }, up = (ev) => { const r2 = el.getBoundingClientRect(); fn(ev.clientX - r2.left, ev.clientY - r2.top, 'up', ev); el.removeEventListener('pointermove', mv); el.removeEventListener('pointerup', up); el.removeEventListener('pointercancel', up); }; el.addEventListener('pointermove', mv); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up); }); }
 
-  return { init, toggle, rec, ensure, toast, aiBox, gemini, tone, noise, play, smp, smpName, setDelay, crusher, drive, onsets, peaks, cloneBuf, canvas, drag, rng, pick, clamp, mtof, deg, SCALES, S, h, $, $$, loadFiles, aiff,
+  return { NOTE: MM_NOTE, init, toggle, rec, ensure, toast, aiBox, gemini, tone, noise, play, smp, smpName, setDelay, crusher, drive, onsets, peaks, cloneBuf, canvas, drag, rng, pick, clamp, mtof, deg, SCALES, S, h, $, $$, loadFiles, aiff,
     get ctx() { return ensure(); }, get out() { ensure(); return out; }, get rev() { ensure(); return revIn; }, get dly() { ensure(); return dlyIn; }, get now() { return ctx ? ctx.currentTime : 0; },
     get bpm() { return S.bpm; }, set bpm(v) { S.bpm = clamp(v, 10, 400); }, get playing() { return S.playing; }, get user() { return S.samples.length > 0; }, get fb() { ensure(); return FB; } };
 })();

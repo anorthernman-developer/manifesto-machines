@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
-<title>48 Constellation · Concrete Poetry × Bradbury Thompson · Manifesto Machines</title>
+<title>48 Constellation · Concrete Poetry × Process-colour magazine · Manifesto Machines</title>
 <meta name="description" content="Place a few words on the page like stars: their positions make the rhythm and space, and their letters make the melody.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;600&display=swap">
 <style>
@@ -24,8 +24,10 @@
 #mm-dropzone{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;font:800 64px var(--bar-font);background:color-mix(in srgb,var(--acc) 75%,transparent);color:#fff;pointer-events:none}#mm-dropzone.on{display:flex}
 .mm-ai{font:13px/1.4 var(--bar-font)}.mm-ai-t{font-weight:800;letter-spacing:.1em;margin-bottom:4px}.mm-ai textarea,.mm-ai input,.mm-ai select{width:100%;font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor;padding:4px;margin:3px 0}.mm-ai textarea{height:46px;resize:vertical}
 .mm-ai-row{display:flex;gap:6px;align-items:center}.mm-ai-row select{flex:1}.mm-ai button{font:inherit;font-weight:700;background:var(--acc);color:#fff;border:0;padding:5px 9px;cursor:pointer}.mm-ai-st,.mm-ai-help{font-size:11px;opacity:.75}.mm-ai-out{white-space:pre-wrap;font-size:12px;margin-top:4px}.mm-ai summary{cursor:pointer;font-size:11px;opacity:.7}
+/* accessibility: visible keyboard focus */
+:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 
-/* ---- tool styles: homage to Bradbury Thompson ---- */
+/* ---- tool styles: Process-colour magazine ---- */
 :root{--bg:#fbfaf6;--fg:#1a1a1a;--acc:#e6007e;--bar-font:'Jost',sans-serif;--head-font:'Libre Bodoni',serif}
 #mm-stage{background:#fbfaf6;display:grid;grid-template-columns:1fr 300px;overflow:hidden}
 #cv{width:100%;height:100%;display:block;cursor:move;touch-action:none}
@@ -36,7 +38,7 @@
 <main id="mm-stage">
 <canvas id="cv"></canvas><div class="side"><h1>konstellation</h1><div>LAYOUT</div><div id="lay" style="display:flex;flex-direction:column;gap:4px"></div><div id="ai"></div></div>
 </main>
-<script>window.MM_META = {"gemini": true, "title": "Constellation", "idea": "Place a few words on the page like stars: their positions make the rhythm and space, and their letters make the melody.", "how": "Press PLAY. Each word is a star in a constellation. A slow sweep moves from left to right, and when it reaches a word, the word is sung: each letter is a note (vowels are long and consonants are short, struck with your sample), its height is the pitch register and its size is the loudness. Drag words to move them, double-click the page to add a word (you will be asked for it) and double-click a word to remove it. LAYOUT offers a few starting constellations, including one built on a single word repeated around an empty centre. With a Gemini key, give a theme and Gemini places a new constellation of words.", "fonts": "family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;600", "bpm": 80, "manifesto": {"name": "From Line to Constellation (vom vers zur konstellation)", "short": "Concrete Poetry", "author": "Eugen Gomringer", "year": "1954", "where": "published in Switzerland in 1954; Gomringer was then secretary to Max Bill at the Ulm School of Design", "ideas": ["Replace the line of verse with the constellation: a few words grouped on the page, read in any direction.", "The poem becomes an object for seeing and using, closer to a sign, a logo or a playful thought game.", "Reduction: very few words, with space as active material, as in his poems avenidas (1951) and silencio (1953 to 1954)."], "quotes": [], "system": "There are no bars or lines. The sweep reads words wherever you place them, so space, size and position on the page are the score, and the letters themselves are the melody."}, "design": {"name": "Bradbury Thompson", "short": "Bradbury Thompson", "who": "Bradbury Thompson, American graphic designer and art director", "era": "New York, 1930s to 1980s", "hallmarks": ["Playful use of letters as images, printed in overlapping process colours (cyan, magenta and yellow)", "Bold experiments with type and halftone in printers' magazines", "A rational lower-case-only alphabet idea, Alphabet 26"], "works": ["Westvaco Inspirations for Printers (1939 to 1962)", "Alphabet 26 (1950)", "Design for Mademoiselle magazine (1945 to 1959)"]}, "no": "48", "slug": "constellation", "file": "tools/48-constellation.html"};</script>
+<script>window.MM_META = {"gemini": true, "title": "Constellation", "idea": "Place a few words on the page like stars: their positions make the rhythm and space, and their letters make the melody.", "how": "Press PLAY. Each word is a star in a constellation. A slow sweep moves from left to right, and when it reaches a word, the word is sung: each letter is a note (vowels are long and consonants are short, struck with your sample), its height is the pitch register and its size is the loudness. Drag words to move them, double-click the page to add a word (you will be asked for it) and double-click a word to remove it. LAYOUT offers a few starting constellations, including one built on a single word repeated around an empty centre. With a Gemini key, give a theme and Gemini places a new constellation of words.", "fonts": "family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;600", "bpm": 80, "manifesto": {"name": "From Line to Constellation (vom vers zur konstellation)", "short": "Concrete Poetry", "author": "Eugen Gomringer", "year": "1954", "where": "published in Switzerland in 1954; Gomringer was then secretary to Max Bill at the Ulm School of Design", "ideas": ["Replace the line of verse with the constellation: a few words grouped on the page, read in any direction.", "The poem becomes an object for seeing and using, closer to a sign, a logo or a playful thought game.", "Reduction: very few words, with space as active material, as in his poems avenidas (1951) and silencio (1953 to 1954)."], "quotes": [], "system": "There are no bars or lines. The sweep reads words wherever you place them, so space, size and position on the page are the score, and the letters themselves are the melody."}, "design": {"name": "Bradbury Thompson", "short": "Process-colour magazine", "who": "Bradbury Thompson, American graphic designer and art director", "era": "New York, 1930s to 1980s", "hallmarks": ["Playful use of letters as images, printed in overlapping process colours (cyan, magenta and yellow)", "Bold experiments with type and halftone in printers' magazines", "A rational lower-case-only alphabet idea, Alphabet 26"], "works": ["Westvaco Inspirations for Printers (1939 to 1962)", "Alphabet 26 (1950)", "Design for Mademoiselle magazine (1945 to 1959)"]}, "no": "48", "slug": "constellation", "file": "tools/48-constellation.html"};</script>
 <script>
 /* MM kit: shared engine for Manifesto Machines, inlined into every tool at build time so each file stays standalone.
    Audio graph: voices -> MM.out -> limiter (compressor + soft clip) -> master volume -> speakers (and the WAV recorder). */
@@ -207,7 +209,7 @@ const MM = (() => {
     const box = h('div', { class: 'mm-ai' }, h('div', { class: 'mm-ai-t' }, 'GEMINI · ' + (o.title || 'ASK')), o.help ? h('div', { class: 'mm-ai-help' }, o.help) : null,
       h('textarea', { class: 'mm-ai-p', placeholder: o.placeholder || '' }), h('div', { class: 'mm-ai-row' }, h('button', { class: 'mm-ai-ask' }, o.button || 'ASK GEMINI'), h('span', { class: 'mm-ai-st' }, 'No key? The built-in version still works.')),
       h('div', { class: 'mm-ai-out' }),
-      h('details', {}, h('summary', {}, 'key & model'), h('div', { class: 'mm-ai-help' }, 'Free key from aistudio.google.com/apikey. Stored only in this browser (shared with SR-12 and the other tools) and sent only to Google.'), h('input', { class: 'mm-ai-key', type: 'password', placeholder: 'Google AI Studio key', autocomplete: 'off' }), h('div', { class: 'mm-ai-row' }, h('select', { class: 'mm-ai-model' }), h('button', { class: 'mm-ai-forget' }, 'FORGET KEY'))));
+      h('details', {}, h('summary', {}, 'key & model'), h('div', { class: 'mm-ai-help' }, 'Your key stays in your browser. Get a free key from aistudio.google.com/apikey and paste it here: it is saved only in this browser (localStorage, shared with the other tools on this site), sent only to Google with your Gemini requests, and never to us. Press FORGET KEY to delete it. Without a key the built-in version is used.'), h('input', { class: 'mm-ai-key', type: 'password', placeholder: 'Google AI Studio key', autocomplete: 'off' }), h('div', { class: 'mm-ai-row' }, h('select', { class: 'mm-ai-model' }), h('button', { class: 'mm-ai-forget' }, 'FORGET KEY'))));
     el.append(box); const q = (s) => box.querySelector(s), ms = q('.mm-ai-model'); MODELS.forEach((m) => ms.append(new Option(m, m))); ms.value = localStorage.getItem('gp.geminiModel') || MODELS[0];
     q('.mm-ai-key').value = localStorage.getItem('sr12.geminiKey') || ''; q('.mm-ai-forget').onclick = () => { localStorage.removeItem('sr12.geminiKey'); q('.mm-ai-key').value = ''; toast('Key removed'); };
     q('.mm-ai-ask').onclick = async () => { const st = q('.mm-ai-st'), p = q('.mm-ai-p').value.trim() || o.placeholder || ''; const k = q('.mm-ai-key').value.trim(); if (k) localStorage.setItem('sr12.geminiKey', k); localStorage.setItem('gp.geminiModel', ms.value);
@@ -219,24 +221,26 @@ const MM = (() => {
   }
 
   /* ---------- learn panel ---------- */
+  const MM_NOTE = 'Only public-domain texts are quoted, marked as such and in our own translation; everything else is our own paraphrase. Names are short credits for the sources and styles that inspired this tool; it is not made by, or endorsed by, any of them. Privacy: no trackers, analytics or cookies. Your settings and any Gemini key stay in this browser (localStorage); the key is sent only to Google when you ask Gemini. Fonts load from Google Fonts.';
   function learnHTML(m) {
     const M = m.manifesto, D = m.design, esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
     return `<button class="mm-x" aria-label="close">×</button>
 <div class="mm-l-col"><div class="mm-l-k">THE MANIFESTO</div><h2>${esc(M.name)}</h2><div class="mm-l-by">${esc(M.author)} · ${esc(M.year)}${M.where ? ' · ' + esc(M.where) : ''}</div>
 <ul>${M.ideas.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
-${(M.quotes || []).map((q) => `<blockquote>“${esc(q)}”</blockquote>`).join('')}
+${(M.quotes || []).map((q) => (Array.isArray(q) ? `<blockquote>“${esc(q[0])}”<cite>${esc(q[1])}</cite></blockquote>` : `<blockquote>“${esc(q)}”</blockquote>`)).join('')}
 <div class="mm-l-k">HOW THIS MACHINE READS IT</div><p>${esc(M.system)}</p></div>
-<div class="mm-l-col"><div class="mm-l-k">THE DESIGN HOMAGE</div><h2>${esc(D.name)}</h2><div class="mm-l-by">${esc(D.who)} · ${esc(D.era)}</div>
+<div class="mm-l-col"><div class="mm-l-k">DESIGN STYLE</div><h2>${esc(D.short)}</h2><div class="mm-l-by">Inspired by ${esc(D.name)} · ${esc(D.era)}</div>
 <div class="mm-l-k">HALLMARKS</div><ul>${D.hallmarks.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
 <div class="mm-l-k">LOOK UP</div><ul>${D.works.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
 <div class="mm-l-k">HOW TO PLAY</div><p>${esc(m.how)}</p>
-<p class="mm-l-note">Quotes are short and from the published text in common English translation; everything else is paraphrase. Tool ${esc(m.no)} of Manifesto Machines.</p></div>`;
+<p class="mm-l-note">${MM_NOTE} Tool ${esc(m.no)} of Manifesto Machines.</p></div>`;
   }
   let toastT; function toast(msg) { const t = $('#mm-toast'); if (!t) return; t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2400); }
 
   /* ---------- init ---------- */
   function init(c) {
     cfg = c; meta = window.MM_META || {}; S.bpm = c.bpm || meta.bpm || 100; S.div = c.div || 4;
+    setTimeout(() => document.querySelectorAll('canvas:not([aria-label])').forEach((cv) => { cv.setAttribute('role', 'img'); cv.setAttribute('aria-label', (document.title.split(' · ')[0] || 'Instrument') + ': visuals that follow the sound'); }), 0); /* accessibility */
     const bar = h('div', { id: 'mm-bar' },
       h('a', { class: 'mm-back', href: '../index.html', title: 'All machines' }, '◂ ALL'),
       h('span', { class: 'mm-no' }, meta.no), h('span', { class: 'mm-name' }, meta.title),
@@ -265,7 +269,7 @@ ${(M.quotes || []).map((q) => `<blockquote>“${esc(q)}”</blockquote>`).join('
   /* drag helper: calls fn(x, y, phase, e) in element-relative px for pointer down/move/up */
   function drag(el, fn) { el.addEventListener('pointerdown', (e) => { ensure(); if (ctx.state !== 'running') ctx.resume(); const r = el.getBoundingClientRect(); el.setPointerCapture && el.setPointerCapture(e.pointerId); fn(e.clientX - r.left, e.clientY - r.top, 'down', e); const mv = (ev) => { const r2 = el.getBoundingClientRect(); fn(ev.clientX - r2.left, ev.clientY - r2.top, 'move', ev); }, up = (ev) => { const r2 = el.getBoundingClientRect(); fn(ev.clientX - r2.left, ev.clientY - r2.top, 'up', ev); el.removeEventListener('pointermove', mv); el.removeEventListener('pointerup', up); el.removeEventListener('pointercancel', up); }; el.addEventListener('pointermove', mv); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up); }); }
 
-  return { init, toggle, rec, ensure, toast, aiBox, gemini, tone, noise, play, smp, smpName, setDelay, crusher, drive, onsets, peaks, cloneBuf, canvas, drag, rng, pick, clamp, mtof, deg, SCALES, S, h, $, $$, loadFiles, aiff,
+  return { NOTE: MM_NOTE, init, toggle, rec, ensure, toast, aiBox, gemini, tone, noise, play, smp, smpName, setDelay, crusher, drive, onsets, peaks, cloneBuf, canvas, drag, rng, pick, clamp, mtof, deg, SCALES, S, h, $, $$, loadFiles, aiff,
     get ctx() { return ensure(); }, get out() { ensure(); return out; }, get rev() { ensure(); return revIn; }, get dly() { ensure(); return dlyIn; }, get now() { return ctx ? ctx.currentTime : 0; },
     get bpm() { return S.bpm; }, set bpm(v) { S.bpm = clamp(v, 10, 400); }, get playing() { return S.playing; }, get user() { return S.samples.length > 0; }, get fb() { ensure(); return FB; } };
 })();
@@ -290,7 +294,7 @@ function sing(o, t) { const B = MM.smp(0, 'voice'), base = 48 + Math.round((1 - 
 let lastS = 0, flashes = {};
 MM.init({ bpm: 80, div: 4,
   setup() { MM.aiBox(MM.$('#ai'), { title: 'place a constellation', help: 'Gemini places a few words on the page as a concrete poem; the machine sings them.', placeholder: 'the sea at night',
-      system: 'You make concrete-poetry constellations in the spirit of Eugen Gomringer (do not quote his poems). Use 3 to 12 placements of very few distinct words (1 to 4 different words, lower case, each under 12 letters). Space matters: leave gaps, use repetition and position. x and y are 0 to 1 (x up to 0.85), s is size from 0.6 to 2. Return JSON {"words":[{"w":"...","x":0.2,"y":0.3,"s":1}]}.',
+      system: 'You make concrete-poetry constellations in the concrete-poetry tradition (write your own; never quote existing poems). Use 3 to 12 placements of very few distinct words (1 to 4 different words, lower case, each under 12 letters). Space matters: leave gaps, use repetition and position. x and y are 0 to 1 (x up to 0.85), s is size from 0.6 to 2. Return JSON {"words":[{"w":"...","x":0.2,"y":0.3,"s":1}]}.',
       schema: { type: 'object', properties: { words: { type: 'array', items: { type: 'object', properties: { w: { type: 'string' }, x: { type: 'number' }, y: { type: 'number' }, s: { type: 'number' } }, required: ['w', 'x', 'y'] } } }, required: ['words'] },
       apply(j) { const ws = (j.words || []).filter((o) => o && o.w).slice(0, 16).map((o) => ({ w: String(o.w).toLowerCase().slice(0, 14), x: MM.clamp(+o.x || 0, 0, 0.85), y: MM.clamp(+o.y || 0.5, 0.05, 0.95), s: MM.clamp(+o.s || 1, 0.5, 2) })); if (!ws.length) throw new Error('no words'); W = ws; return ws.length + ' words placed.'; },
       fallback() { W = JSON.parse(JSON.stringify(MM.pick(Object.values(LAYOUTS)))); } }); },
