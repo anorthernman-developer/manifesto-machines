@@ -1,13 +1,28 @@
 # Devlog
 
+## 1 November 2026 · rights, privacy and key-safety pass
+
+**Why:** Craig asked to protect his Gemini keys, check compliance, remove personal references to artists and anything that may affect copyright, before the tools move to digitalplay.work.
+
+**What:** secrets scan of every repo's history, the gists and the live sites (clean: no key found); key box says the key stays in the browser, with FORGET KEY; `.githooks/pre-commit`, a gitleaks GitHub Action and push protection; titles, kickers, categories, design labels and Gemini prompts are now technique-first, with short "inspired by" credits; in-copyright quotes replaced by our own paraphrase and public-domain quotes marked; personal anecdotes removed; CREDITS.md, PRIVACY.md and RIGHTS-LOG.md added.
+
+**Standing rules (apply to every future tool):**
+
+1. **No imitation of named people.** Gemini prompts, titles and UI never ask for work "in the style of", "like" or "after" a named living or recently deceased person. Prompts describe the technique instead.
+2. **Technique first.** Tools, themes, presets and kickers are named by the technique or style (for example "Grunge layout", "Generative systems"), not by a person.
+3. **Short, neutral credits only.** A person, studio or movement may appear once as a short factual "Inspired by …" credit. No biography, personal details or anecdotes, and nothing that suggests endorsement.
+4. **No copyrighted quotes.** Only quote texts that are in the public domain in the UK (author died in 1955 or earlier), marked "public domain; our translation". Everything else is our own paraphrase, marked "In our words".
+5. **Keys stay in the browser.** A Gemini key is pasted by the visitor, kept only in `localStorage`, sent only to Google, and never committed. Run the secret scan before every commit.
+6. **Keep the START/END trim controls** on every sample slot.
+
 ## 1 November 2026 · 77 to 81, five deep instruments
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #7), so no replies were needed. The direction still comes from Craig's 27 October chat: joy, getting back into music, five a day, deeper and built for his own sounds.
 
 | # | Tool | Category | Source idea | Design homage |
 |---|---|---|---|---|
-| 77 | Emotional Frameworks | Fred again.. | Fred again.. in The FADER (27 October 2022): "loads of versions" of 'Delilah (pull me out of this)' built around one vocal line, put "in lots of different emotional frameworks"; Eno's rule of starting from a random sketch "that you have no control over"; keeping fragments in the back of his mind; the two very differently recorded voices of 'Clara'; plus Eno putting reverb on the master (Nardwuar interview, MusicRadar 2024) | Tomato |
-| 78 | Lantern Marsh | Eno | Brian Eno, sleeve notes to Ambient 4: On Land (1982): "non-instruments like pieces of chain and sticks and stones", composting old recordings, sounds out of earshot, no sharp line between foreground and background | Hipgnosis |
+| 77 | Emotional Frameworks | found-sound production | Fred again..'s method as described in interviews (The FADER, 2022; paraphrased, no quotes): many versions of one vocal line, each in a different emotional framework; starting from a random sketch you have no control over; keeping fragments to bring back later | Tomato |
+| 78 | Lantern Marsh | generative systems | Brian Eno, sleeve notes to Ambient 4: On Land (1982), paraphrased: found non-instruments, composting old recordings, sounds out of earshot, no sharp line between foreground and background | Hipgnosis |
 | 79 | In C, Your Way | music theory | Terry Riley, In C (1964) and its performing directions: stay on a pattern, stay within 2 or 3 patterns of each other, merge into unison, the pulse. The 53 cells are the tool's own, not Riley's | Reid Miles (Blue Note) |
 | 80 | Zeno's Race | nature/philosophy | Zeno of Elea's paradoxes of motion (Dichotomy, Achilles, Arrow, Stadium) and Aristotle's answer, Physics VI.9 | Shigeo Fukuda |
 | 81 | Make Way for Magic | art manifesto | Refus global (Montreal, 9 August 1948), Borduas and the Automatistes: automatism, "Place à la magie !", refusal and full responsibility | Robert Massin |
@@ -16,7 +31,7 @@
 
 - **77 Emotional Frameworks:** one vocal line goes through seven complete frameworks (lifted house, two-step, numb, panic in the club, gospel, the rave, a meditative Secret Life space). Each framework has its own tempo, four-chord loop, drums, keys style, filter, sidechain pump and space. Every version runs intro, groove, build (a doubling roll, a riser and one empty beat), drop and break. In the drop the vocal is chopped at its detected syllables and pitched onto the chord tones. VERSIONS mode moves to a new framework after every version and keeps a log. The second voice answers through a night-out chain with room tone. A "no control" sketch is drawn at random from a folder (or generated) and looped slowed down. REMEMBER and RECALL bring back a two-bar fragment of the mix, and there is reverb on the master. Gemini (optional) turns a described day into a framework. Tomato-style night bokeh, streams of log type and a huge overprinted word.
 - **78 Lantern Marsh:** a map you walk across. Eight sources each keep their own irregular period, and every source has its own channel: distance sets level, air darkening (lowpass), pan and a long distance reverb, and beyond the earshot ring a source goes silent but keeps living. FLATTEN removes the foreground/background split. Tape speed and wow distort time, sources wander and the listener walks. COMPOST grabs the last eight seconds into slot 9 and plays them back as slow, dark grains. There are eight place presets named after On Land tracks. Built-in non-instruments: chain, sticks, stones, rooks, frogs, insects, drone and a far bell. Hipgnosis-style marsh photograph with white deadpan objects, reflections and a lone figure.
-- **79 In C, Your Way:** up to twelve players follow Riley's rules: random stays between a min and max, a spread limit relative to the slowest player, drop-outs, rhythmic shifts, augmentation, octave choices and individual dynamics. A high-C eighth-note pulse holds it together, with UNISON, a real ENDING (everyone to 53, swell, drop out one by one, pulse last) and restart. The 53 cells are generated from a seed along In C's broad harmonic path, with an editor (semitones:eighths) to write your own. Reid Miles-style cropped giant type, one blue and an orange flash.
+- **79 In C, Your Way:** up to twelve players follow the In C performing rules: random stays between a min and max, a spread limit relative to the slowest player, drop-outs, rhythmic shifts, augmentation, octave choices and individual dynamics. A high-C eighth-note pulse holds it together, with UNISON, a real ENDING (everyone to 53, swell, drop out one by one, pulse last) and restart. The 53 cells are generated from a seed along In C's broad harmonic path, with an editor (semitones:eighths) to write your own. Reid Miles-style cropped giant type, one blue and an orange flash.
 - **80 Zeno's Race:** the four paradoxes play at once, with a ZENO / ARISTOTLE switch. Dichotomy: a half-way riser that never lands, or an accelerating roll that adds up to exactly the race length and lands on the goal hit. Achilles: a melody canon in which the fast copy overtakes, or (Zeno) every stage gets a whole bar so the canon tightens and freezes. Arrow: granular stills of a moment held N times, or continuous flight. Stadium: three drum rows (still, right, left) heard from the still row or from the moving row. Fukuda-style four flat panels in black, white and one red.
 - **81 Make Way for Magic:** paint and the painting plays: x is time, y is pitch, the speed of your hand is level and brightness. Four layers (magic, objective mysteries, love, necessity) each have their own slot, and four brushes (dab, line, splash, syllables) turn strokes into different events. The automatic hand paints by itself with a rate and a wildness, and strokes fade unless kept. REFUS wipes everything, RESPONSABILITÉ keeps every stroke, and there is undo and hear-as-you-paint. Gemini (optional) paints strokes for a sentence. Massin-style letters set along each stroke, sized by speed, a typeface per voice.
 
@@ -32,8 +47,8 @@
 
 | # | Tool | Category | Source idea | Design homage |
 |---|---|---|---|---|
-| 72 | Tube Brakes | Fred again.. | Fred again..'s voice-note method: recording on an iPhone, which "amplifies the room", and building tracks from pitched, auto-tuned found vocals such as the tube-brakes moment he described to NME (2021) | Mark Farrow |
-| 73 | Long Now Bells | Eno | Brian Eno, January 07003: Bell Studies for The Clock of the Long Now (2003): change ringing and a ten-bell row for each day | 8vo |
+| 72 | Tube Brakes | found-sound production | The voice-note method (paraphrased): recording on a phone, which brings the room into the sound, and building tracks from pitched, auto-tuned found vocals (Fred again.., interviews, 2021) | Mark Farrow |
+| 73 | Long Now Bells | generative systems | Brian Eno, January 07003: Bell Studies for The Clock of the Long Now (2003): change ringing and a ten-bell row for each day | 8vo |
 | 74 | Gradus | music theory | Johann Joseph Fux, Gradus ad Parnassum (1725): the five species of counterpoint (one quote, from Alfred Mann's translation; the other rules are paraphrased) | Emil Ruder |
 | 75 | Same River | nature/philosophy | Heraclitus: the river fragments (B12), the way up and down (B60), the bow and lyre (B51), the ever-living fire (B30) | Alexey Brodovitch |
 | 76 | Pop Art Is | art manifesto | Richard Hamilton's letter to Peter and Alison Smithson (16 January 1957), defining Pop Art in eleven words | Herb Lubalin |
@@ -59,8 +74,8 @@
 
 | # | Tool | Category | Source idea | Design homage |
 |---|---|---|---|---|
-| 67 | USB Folder | Fred again.. | USB (2024) and USB002 (2025) as "an infinitely rolling mixtape or folder", and rebuilding Jamie T's live vocal line by line for "Lights Burn Dimmer" (Tape Notes, episode 176) | Karel Martens |
-| 68 | No Starting Point | Eno | "The Studio as Compositional Tool" (lecture 1979, Down Beat 1983): in-studio composition, the mixer as instrument | Russell Mills |
+| 67 | USB Folder | found-sound production | USB (2024) and USB002 (2025) as an ever-growing mixtape folder, and rebuilding a live vocal line by line (Fred again.., Tape Notes, episode 176; paraphrased) | Karel Martens |
+| 68 | No Starting Point | generative systems | "The Studio as Compositional Tool" (lecture 1979, Down Beat 1983): in-studio composition, the mixer as instrument | Russell Mills |
 | 69 | Tonality Diamond | music theory | Harry Partch, Genesis of a Music (1949): the Tonality Diamond, Otonality and Utonality, the 43-tone scale (paraphrased, no quotes) | Lester Beall |
 | 70 | Dawn Syntax | nature/philosophy | Birdsong syntax: Hartshorne's monotony threshold (1956), Okanoya's finite-state finch songs, Suzuki et al.'s ABC–D calls (2016), the dawn chorus | Charley Harper |
 | 71 | Merz Collage | art manifesto | Kurt Schwitters, "Die Merzmalerei" (Der Sturm, 1919): the equal evaluation of materials; the Merzbau | Piet Zwart |
@@ -85,8 +100,8 @@
 
 | # | Tool | Category | Source idea | Design homage |
 |---|---|---|---|---|
-| 62 | Spoken Mantra | Fred again.. | The found-speech method of "Marea (we've lost dancing)" (2021, with The Blessed Madonna): one spoken phrase becomes the hook, the chords and the arrangement (paraphrased, no quotes) | Susan Kare |
-| 63 | Discreet System | Eno | Discreet Music (1975): two melodies of different lengths through a graphic EQ and echo into a two-machine tape-delay loop | Isotype (Otto and Marie Neurath, Gerd Arntz) |
+| 62 | Spoken Mantra | found-sound production | The found-speech method of "Marea (we've lost dancing)" (2021, with The Blessed Madonna): one spoken phrase becomes the hook, the chords and the arrangement (paraphrased, no quotes) | Susan Kare |
+| 63 | Discreet System | generative systems | Discreet Music (1975): two melodies of different lengths through a graphic EQ and echo into a two-machine tape-delay loop | Isotype (Otto and Marie Neurath, Gerd Arntz) |
 | 64 | Row Matrix | music theory | Schoenberg's method of composing with twelve tones (1923; lecture 1941) | Ladislav Sutnar |
 | 65 | Tide Predictor | nature/philosophy | Tidal harmonic constituents and Kelvin's tide-predicting machine (1872 to 1873) | Edward Tufte |
 | 66 | Plastic Unit | art manifesto | Vasarely, the Yellow Manifesto (1955, Galerie Denise René, "Le Mouvement") | Franco Grignani |
@@ -111,8 +126,8 @@
 
 | # | Tool | Category | Source idea | Design homage |
 |---|---|---|---|---|
-| 57 | Live Live | Fred again.. | His Boiler Room London set (2022) played from a Maschine+ and three CDJs, and the Zane Lowe interview about playing electronic music "live live" | Barney Bubbles |
-| 58 | Endless Music Box | Eno | Bloom (2008, with Peter Chilvers), generative music (Koan, 1996) and 77 Million Paintings (2006) | Vaughan Oliver / v23 (4AD) |
+| 57 | Live Live | found-sound production | A live set played from one pad sampler and three CDJs (Fred again.., Boiler Room London, 2022; paraphrased) | Barney Bubbles |
+| 58 | Endless Music Box | generative systems | Bloom (2008, with Peter Chilvers), generative music (Koan, 1996) and 77 Million Paintings (2006) | Vaughan Oliver / v23 (4AD) |
 | 59 | Closed Groove | music theory | Pierre Schaeffer: musique concrète, the closed groove, the cut bell, reduced listening and the sound object (1948 to 1966) | A. M. Cassandre |
 | 60 | Golden Angle | nature/philosophy | Phyllotaxis: Vogel's sunflower model (1979), Douady and Couder (1992) and D'Arcy Thompson (1917) | Max Huber |
 | 61 | Rayonist Rays | art manifesto | Larionov and Goncharova, "Rayonists and Futurists: A Manifesto" (1913) | Milton Glaser |
@@ -135,12 +150,12 @@
 
 ## 27 October 2026 · 52 to 56, the first five-a-day
 
-**Feedback:** Craig said these tools are bringing him joy and getting him back into music. He wants them more complex and more customisable for his own sounds, five a day across Fred again.., Brian Eno, a theory of composition, nature or philosophy, and an art manifesto.
+**Feedback:** Craig said these tools are bringing him joy and getting him back into music. He wants them more complex and more customisable for his own sounds, five a day across found-sound production, generative systems, a theory of composition, nature or philosophy, and an art manifesto.
 
 | # | Tool | Category | Source idea | Design homage |
 |---|---|---|---|---|
-| 52 | Actual Life Journal | Fred again.. | Fred's diary-sampling method (Actual Life, 2021 to 2022) | Tibor Kalman / M&Co |
-| 53 | Seed Garden | Eno | Generative music: tape loops of unequal length, Oblique Strategies, the studio as a tool, gardening | Karl Gerstner, *Designing Programmes* |
+| 52 | Actual Life Journal | found-sound production | The voice-memo diary method (Fred again.., Actual Life, 2021 to 2022) | Tibor Kalman / M&Co |
+| 53 | Seed Garden | generative systems | Generative music: tape loops of unequal length, Oblique Strategies, the studio as a tool, gardening | Karl Gerstner, *Designing Programmes* |
 | 54 | Gradual Process | music theory | Steve Reich, "Music as a Gradual Process" (1968) | Anton Stankowski |
 | 55 | Murmuration | nature/philosophy | Emergence: Reynolds's boids (1987) and the STARFLAG starling study (Ballerini et al., PNAS 2008) | Muriel Cooper |
 | 56 | The Colour Keyboard | art manifesto | Kandinsky, *Concerning the Spiritual in Art* (1911) | Paul Rand |
@@ -156,7 +171,7 @@
   - a keys sheet (`?`);
   - an output tap, so tools can resample what they play (53 "prints to tape");
   - a LEARN panel with a "Try this" list.
-- **Catalogue:** `catalogue.json` has number, title, category, source, year, design, idea, controls and date for every tool. 01 to 51 were backfilled: music theory for 03, 17, 18, 42 and 47; Eno for 35; nature/philosophy for 20, 22 and 33; everything else is art manifesto. `index.html` is now a searchable, filterable catalogue with category chips, source and design selects, sort, "deep" and "Gemini" toggles, and state kept in the URL hash.
+- **Catalogue:** `catalogue.json` has number, title, category, source, year, design, idea, controls and date for every tool. 01 to 51 were backfilled: music theory for 03, 17, 18, 42 and 47; generative systems for 35; nature/philosophy for 20, 22 and 33; everything else is art manifesto. `index.html` is now a searchable, filterable catalogue with category chips, source and design selects, sort, "deep" and "Gemini" toggles, and state kept in the URL hash.
 - **Tests:** `test/deep.js` covers the deck: slots, AIFF into one slot and WAV into another, reverse, preset save, change and load, JSON export and import, the keys sheet, simulated MIDI, and a 10-second soak checking level and errors. `test/procs.js` is a quick evaluator used to check each tool's modes (for example all four of 54's processes, and placing shapes and radial reading in 56).
 - **Fixes on the way:**
   - 53 started too quietly, and its hiss handle had no `stop()`. Now the first loops sound in under a second, and a sample you load is planted as a new loop straight away.
