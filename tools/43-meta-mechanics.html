@@ -260,7 +260,7 @@ ${(M.quotes || []).map((q) => (Array.isArray(q) ? `<blockquote>â€œ${esc(q[0])}â€
     const dz = $('#mm-dropzone'); let dc = 0;
     addEventListener('dragenter', (e) => { e.preventDefault(); dc++; dz.classList.add('on'); }); addEventListener('dragleave', () => { if (--dc <= 0) { dc = 0; dz.classList.remove('on'); } });
     addEventListener('dragover', (e) => e.preventDefault()); addEventListener('drop', (e) => { e.preventDefault(); dc = 0; dz.classList.remove('on'); if (e.dataTransfer.files.length) loadFiles(e.dataTransfer.files); });
-    addEventListener('keydown', (e) => { if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || e.target.isContentEditable) return; if (e.code === 'Space' && !c.ownSpace) { e.preventDefault(); toggle(); } else if ((e.key === 'r' || e.key === 'R') && !c.ownR) rec(); else if ((e.key === 'l' || e.key === 'L') && !c.ownL) dlg.classList.toggle('mm-hide'); else if (e.key === 'Escape') dlg.classList.add('mm-hide'); else c.key && c.key(e); });
+    addEventListener('keydown', (e) => { if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || e.target.isContentEditable) return; if (e.code === 'Space' && !c.ownSpace) { e.preventDefault(); toggle(); } else if ((e.key === 'r' || e.key === 'R') && !c.ownR) rec(); else if ((e.key === 'l' || e.key === 'L') && !c.ownL) dlg.classList.toggle('mm-hide'); else if (e.key === 'Escape') { dlg.classList.add('mm-hide'); typeof MMX !== 'undefined' && MMX.vjOn && MMX.vjToggle(false); } else c.key && c.key(e); });
     renderSamples(); setInterval(pump, 25);
     if (c.draw) { const loop = (ts) => { try { c.draw(ts / 1000); } catch (e) { console.error(e); } requestAnimationFrame(loop); }; requestAnimationFrame(loop); }
     try { c.setup && c.setup(); } catch (e) { console.error(e); }

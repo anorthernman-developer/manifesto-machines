@@ -35,7 +35,7 @@
 .mmx-slot{border:1.5px solid currentColor;padding:6px 8px;margin:0 0 8px}.mmx-sh{display:flex;gap:6px;align-items:center}.mmx-sh b{background:var(--fg);color:var(--bg);padding:1px 6px;font-weight:800}
 .mmx-deck .mmx-lab,.mmx-lab{font-weight:800;text-transform:uppercase;letter-spacing:.05em}.mmx-nm{flex:1;opacity:.65;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .mmx-b{font:700 11px var(--bar-font);background:none;color:inherit;border:1.5px solid currentColor;padding:3px 6px;cursor:pointer;white-space:nowrap}.mmx-b:hover{background:var(--acc);color:#fff;border-color:var(--acc)}.mmx-next{display:none}
-.mmx-wave{width:100%;height:34px;display:block;margin:5px 0}
+.mmx-wave{width:100%;height:52px;display:block;margin:5px 0}
 .mmx-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px}.mmx-p{display:grid;grid-template-columns:52px 1fr 40px;align-items:center;gap:4px;font-size:10px;font-weight:700;letter-spacing:.05em}.mmx-p input[type=range]{width:100%;accent-color:var(--acc)}.mmx-v{text-align:right;opacity:.75;font-weight:400}
 .mmx-chk{grid-template-columns:18px 1fr}.mmx-row{display:flex;gap:6px;margin:6px 0}.mmx-row input,.mmx-row select,#mmx-mlearn{flex:1;font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor;padding:4px}#mmx-mlearn{width:100%;margin-top:8px}
 .mmx-row select option,#mmx-mlearn option{color:#111;background:#fff}
@@ -281,7 +281,7 @@ ${(M.quotes || []).map((q) => (Array.isArray(q) ? `<blockquote>“${esc(q[0])}�
     const dz = $('#mm-dropzone'); let dc = 0;
     addEventListener('dragenter', (e) => { e.preventDefault(); dc++; dz.classList.add('on'); }); addEventListener('dragleave', () => { if (--dc <= 0) { dc = 0; dz.classList.remove('on'); } });
     addEventListener('dragover', (e) => e.preventDefault()); addEventListener('drop', (e) => { e.preventDefault(); dc = 0; dz.classList.remove('on'); if (e.dataTransfer.files.length) loadFiles(e.dataTransfer.files); });
-    addEventListener('keydown', (e) => { if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || e.target.isContentEditable) return; if (e.code === 'Space' && !c.ownSpace) { e.preventDefault(); toggle(); } else if ((e.key === 'r' || e.key === 'R') && !c.ownR) rec(); else if ((e.key === 'l' || e.key === 'L') && !c.ownL) dlg.classList.toggle('mm-hide'); else if (e.key === 'Escape') dlg.classList.add('mm-hide'); else c.key && c.key(e); });
+    addEventListener('keydown', (e) => { if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || e.target.isContentEditable) return; if (e.code === 'Space' && !c.ownSpace) { e.preventDefault(); toggle(); } else if ((e.key === 'r' || e.key === 'R') && !c.ownR) rec(); else if ((e.key === 'l' || e.key === 'L') && !c.ownL) dlg.classList.toggle('mm-hide'); else if (e.key === 'Escape') { dlg.classList.add('mm-hide'); typeof MMX !== 'undefined' && MMX.vjOn && MMX.vjToggle(false); } else c.key && c.key(e); });
     renderSamples(); setInterval(pump, 25);
     if (c.draw) { const loop = (ts) => { try { c.draw(ts / 1000); } catch (e) { console.error(e); } requestAnimationFrame(loop); }; requestAnimationFrame(loop); }
     try { c.setup && c.setup(); } catch (e) { console.error(e); }
@@ -336,7 +336,7 @@ const MMX = (() => {
     const fold = h('input', { type: 'file', class: 'mmx-fold', webkitdirectory: '', hidden: '' });
     file.onchange = () => file.files[0] && loadInto(s.i, file.files[0]);
     fold.onchange = () => { s.files = [...fold.files].filter((f) => AUDIO_RE.test(f.name)); redraw(s); };
-    const cv = h('canvas', { class: 'mmx-wave', width: 300, height: 34 });
+    const cv = h('canvas', { class: 'mmx-wave', width: 600, height: 104, title: 'Drag the S and E handles to trim; drag inside the region to move it; double-click to reset' }); waveDrag(cv, s);
     const row = (k, lab, min, max, st, fmt) => { const inp = h('input', { type: 'range', min, max, step: st, value: s[k], 'data-k': k }), out = h('span', { class: 'mmx-v' }, fmt ? fmt(s[k]) : fmtN(s[k], st));
       inp.oninput = () => { s[k] = +inp.value; out.textContent = fmt ? fmt(s[k]) : fmtN(s[k], st); if (k === 'start' || k === 'end') { if (s.end <= s.start + 0.01) { if (k === 'start') s.end = Math.min(1, s.start + 0.01); else s.start = Math.max(0, s.end - 0.01); } drawWave(s); } };
       return h('label', { class: 'mmx-p' }, h('span', {}, lab), inp, out); };
@@ -355,13 +355,36 @@ const MMX = (() => {
   }
   function redraw(s) { if (!s.el) return; $('.mmx-nm', s.el).textContent = s.name || 'built-in ' + s.kind; $('.mmx-next', s.el).style.display = s.files && s.files.length ? '' : 'none'; $$('input[data-k]', s.el).forEach((inp) => { const k = inp.dataset.k; if (inp.type === 'checkbox') inp.checked = !!s[k]; else { inp.value = s[k]; inp.dispatchEvent(new Event('input')); } }); drawWave(s); }
   function drawSlots() { S.slots.forEach(redraw); }
+  /* waveform: the whole sample (as recorded), the trimmed region lit, draggable START (S) and END (E) handles, a play direction arrow and a moving playhead */
   function drawWave(s) {
     const cv = s.el && $('.mmx-wave', s.el); if (!cv || !cv.offsetParent) return; const g = cv.getContext('2d'), w = cv.width, hh = cv.height, st = getComputedStyle(drawer);
     const b = raw(s); if (!s.peaks || s.peaksFor !== b) { s.peaks = MM.peaks(b, w); s.peaksFor = b; }
     g.clearRect(0, 0, w, hh); g.fillStyle = st.getPropertyValue('--mmx-dim') || 'rgba(128,128,128,.25)'; g.fillRect(0, 0, w, hh);
-    const fg = st.color, acc = st.getPropertyValue('--acc') || '#e00', p = s.rev ? [...s.peaks].reverse() : s.peaks;
-    p.forEach((v, x) => { const inR = x / w >= s.start && x / w <= s.end; g.fillStyle = inR ? acc : fg; g.globalAlpha = inR ? 1 : 0.3; const y = Math.max(1, v * hh * 0.95); g.fillRect(x, (hh - y) / 2, 1, y); }); g.globalAlpha = 1;
+    const fg = st.color, acc = (st.getPropertyValue('--acc') || '#e00').trim(), x0 = s.start * w, x1 = s.end * w, top = 18, mid = top + (hh - top) / 2, amp = (hh - top) / 2 - 2;
+    g.fillStyle = acc; g.globalAlpha = 0.14; g.fillRect(x0, top, x1 - x0, hh - top); g.globalAlpha = 1;
+    s.peaks.forEach((v, x) => { const inR = x >= x0 && x <= x1; g.fillStyle = inR ? acc : fg; g.globalAlpha = inR ? 1 : 0.28; const y = Math.max(1, v * amp); g.fillRect(x, mid - y, 1, y * 2); }); g.globalAlpha = 1;
+    g.font = '700 20px ui-monospace,monospace'; g.textBaseline = 'middle';
+    [[x0, 'S', 1], [x1, 'E', -1]].forEach(([x, l, d]) => { g.fillStyle = fg; g.fillRect(x - 1.5, 0, 3, hh); g.fillRect(d > 0 ? x : x - 26, 0, 26, top); g.fillStyle = st.getPropertyValue('--deck-bg') || '#fff'; g.fillStyle = getComputedStyle(drawer).backgroundColor; g.fillText(l, d > 0 ? x + 6 : x - 20, top / 2 + 1); });
+    g.fillStyle = fg; g.font = '700 16px ui-monospace,monospace'; const D = b.duration; g.fillText(`${(s.start * D).toFixed(2)}s → ${(s.end * D).toFixed(2)}s  ${s.rev ? '◀ REVERSED' : '▶'}`, Math.min(w - 230, Math.max(32, x0 + 32)), top / 2 + 1);
+    const ph = s.ph; if (ph && MM.now < ph.t + ph.dur) { const el = Math.max(0, MM.now - ph.t) * ph.rate, f = ph.dir > 0 ? ph.f + el / D : ph.f - el / D; if (MM.now >= ph.t) { g.fillStyle = acc; g.fillRect(MM.clamp(f, 0, 1) * w - 2, top, 4, hh - top); } }
   }
+  function syncTrim(s) { if (!s.el) return; ['start', 'end'].forEach((k) => { const inp = $(`input[data-k="${k}"]`, s.el); if (!inp) return; inp.value = s[k]; const o = inp.parentElement.querySelector('.mmx-v'); if (o) o.textContent = (+s[k]).toFixed(2); }); drawWave(s); S.opts.onTrim && S.opts.onTrim(s.i, s); }
+  function waveDrag(cv, s) {
+    let mode = null, grab = 0, w0 = 0;
+    const fx = (e) => { const r = cv.getBoundingClientRect(); return clamp((e.clientX - r.left) / Math.max(1, r.width), 0, 1); };
+    cv.style.touchAction = 'none'; cv.style.cursor = 'ew-resize';
+    cv.addEventListener('pointerdown', (e) => { const x = fx(e), dS = Math.abs(x - s.start), dE = Math.abs(x - s.end); cv.setPointerCapture && cv.setPointerCapture(e.pointerId);
+      if (Math.min(dS, dE) < 0.035) mode = dS <= dE ? 'start' : 'end'; else if (x > s.start && x < s.end) { mode = 'move'; grab = x - s.start; w0 = s.end - s.start; } else mode = dS <= dE ? 'start' : 'end';
+      move(e); });
+    const move = (e) => { if (!mode) return; const x = fx(e);
+      if (mode === 'start') s.start = +clamp(x, 0, s.end - 0.005).toFixed(4); else if (mode === 'end') s.end = +clamp(x, s.start + 0.005, 1).toFixed(4); else { const a = clamp(x - grab, 0, 1 - w0); s.start = +a.toFixed(4); s.end = +(a + w0).toFixed(4); }
+      syncTrim(s); };
+    cv.addEventListener('pointermove', move);
+    const up = () => { if (mode && S.opts.trimAudition !== false && !MM.playing) { MM.ensure(); fire(s.i, MM.now + 0.01, { maxDur: 2 }); } mode = null; };
+    cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', () => (mode = null));
+    cv.addEventListener('dblclick', () => { s.start = 0; s.end = 1; syncTrim(s); });
+  }
+  let waveLoop = false; function animWaves() { if (waveLoop) return; waveLoop = true; const f = () => { if (drawer && !drawer.classList.contains('mmx-hide')) S.slots.forEach((s) => { if (s.ph && MM.now < s.ph.t + s.ph.dur + 0.1) { drawWave(s); s.phDrawn = true; } else if (s.phDrawn) { s.phDrawn = false; drawWave(s); } }); requestAnimationFrame(f); }; requestAnimationFrame(f); }
   async function decode(file) { MM.ensure(); const ab = await file.arrayBuffer(); try { return await MM.ctx.decodeAudioData(ab.slice(0)); } catch (e) { return MM.aiff(ab); } }
   async function loadInto(i, file) { const s = S.slots[i]; if (!s) return; try { const b = await decode(file); setBuf(i, b, file.name); MM.toast(`Slot ${i + 1}: ${file.name}`); } catch (e) { MM.toast(`Could not decode ${file.name}`); console.warn(e); } }
   async function drawFromFolder(i) { const s = S.slots[i]; if (!s || !s.files || !s.files.length) return; for (let k = 0; k < 6; k++) { const f = s.files[Math.floor(Math.random() * s.files.length)]; try { const b = await decode(f); setBuf(i, b, f.name); MM.toast(`Slot ${i + 1}: ${f.name}`); return; } catch (e) {} } MM.toast('No decodable files in that folder'); }
@@ -380,6 +403,7 @@ const MMX = (() => {
     const { a, len, b } = region(i), rate = (o.rate || 1) * Math.pow(2, (s.pitch + (o.semis || 0)) / 12), off = a + clamp(o.pos || 0, 0, 0.999) * len;
     let dur = o.dur ?? (len - (off - a)) / rate; if (o.maxDur) dur = Math.min(dur, o.maxDur); if (!o.loop) dur = Math.min(dur, (len - (off - a)) / rate);
     const filt = s.cut < 17500 || o.cut ? { type: 'lowpass', freq: Math.min(s.cut, o.cut || 20000), q: 0.8 } : null;
+    { const D = b.duration, fo = s.rev ? (D - off) / D : off / D; s.ph = { t, f: fo, dir: s.rev ? -1 : 1, rate, dur: Math.max(0.01, dur) }; }
     return MM.play(b, t, { offset: off, rate, dur: Math.max(0.01, dur), gain: s.gain * (o.gain ?? 1) * 0.8, pan: clamp((o.pan ?? 0) + s.pan, -1, 1), filter: filt, send: { rev: clamp(s.rv + (o.rev || 0), 0, 1.2), dly: clamp(s.dl + (o.dly || 0), 0, 1.2) }, dest: o.dest, fadeIn: o.fadeIn, fadeOut: o.fadeOut ?? Math.min(0.03, dur / 4), loop: o.loop, loopStart: o.loop ? a : undefined, loopEnd: o.loop ? a + len : undefined });
   }
 
@@ -453,7 +477,23 @@ const MMX = (() => {
     tabs.KEYS.innerHTML = ''; tabs.KEYS.append(h('table', { class: 'mmx-keys' }, ...S.keys.map(([k, d]) => h('tr', {}, h('td', {}, h('kbd', {}, k)), h('td', {}, d)))));
   }
   /* call first from the tool's key handler; returns true if it handled the key */
-  function key(e) { if (e.key === 'd' || e.key === 'D') { deck(); return true; } if (e.key === '?') { const open = drawer && !drawer.classList.contains('mmx-hide') && tabs.KEYS.style.display !== 'none'; deck(!open, 'KEYS'); return true; } return false; }
+  function key(e) { if (VJ.el && (e.key === 'f' || e.key === 'F')) { vjToggle(); return true; } if (VJ.on && e.key === 'Escape') { vjToggle(false); return true; } if (e.key === 'd' || e.key === 'D') { deck(); return true; } if (e.key === '?') { const open = drawer && !drawer.classList.contains('mmx-hide') && tabs.KEYS.style.display !== 'none'; deck(!open, 'KEYS'); return true; } return false; }
+
+  /* ---------- VJ / big-screen mode: the tool's visuals full screen, audio-reactive levels for the drawing ---------- */
+  let an = null, anD = null, lv = { rms: 0, low: 0, high: 0, peak: 0, beat: false }, lvT = 0, fq = null;
+  function level() { MM.ensure(); const c = MM.ctx; if (!an) { an = c.createAnalyser(); an.fftSize = 1024; an.smoothingTimeConstant = 0.6; MM.out.connect(an); const z = c.createGain(); z.gain.value = 0; an.connect(z); z.connect(c.destination); anD = new Float32Array(an.fftSize); fq = new Uint8Array(an.frequencyBinCount); }
+    const now = performance.now(); if (now - lvT < 12) return lv; lvT = now; an.getFloatTimeDomainData(anD); let s = 0, p = 0; for (const x of anD) { s += x * x; p = Math.max(p, Math.abs(x)); } an.getByteFrequencyData(fq); let lo = 0, hi = 0; for (let i = 1; i < 12; i++) lo += fq[i]; for (let i = 60; i < 300; i++) hi += fq[i];
+    const r = Math.sqrt(s / anD.length), L = lo / 11 / 255, H = hi / 240 / 255; lv.beat = L > lv.low * 1.25 + 0.05; lv.rms = lv.rms * 0.6 + r * 0.4; lv.low = lv.low * 0.7 + L * 0.3; lv.high = lv.high * 0.7 + H * 0.3; lv.peak = p; return lv; }
+  const VJ = { on: false, el: null };
+  function vj(el) { VJ.el = typeof el === 'string' ? $(el) : el; const learnB = $('#mm-learn'); if (learnB && !$('#mmx-vj-btn')) learnB.before(h('button', { id: 'mmx-vj-btn', title: 'F: full-screen performance visuals for a big screen or projector', onclick: () => vjToggle() }, 'VJ'));
+    if (!$('#mmx-vj-css')) document.head.append(h('style', { id: 'mmx-vj-css' }, 'body.mmx-vj #mm-bar,body.mmx-vj #mmx-deck,body.mmx-vj #mm-learn-dlg{display:none!important}body.mmx-vj #mm-stage{inset:0!important}.mmx-vj-full{position:fixed!important;inset:0!important;z-index:90!important;width:100vw!important;height:100vh!important}#mmx-vj-hint{position:fixed;right:14px;top:10px;z-index:95;font:600 12px ui-monospace,monospace;color:#fff;background:rgba(0,0,0,.55);padding:5px 8px;opacity:0;transition:opacity 1s;pointer-events:none}body.mmx-vj #mmx-vj-hint.on{opacity:1}'));
+    if (!$('#mmx-vj-hint')) document.body.append(h('div', { id: 'mmx-vj-hint' }, 'VJ MODE · F or Esc to leave · Space play/stop · keys still work'));
+    document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && VJ.on) vjToggle(false); });
+    S.keys.push(['F', 'VJ: full-screen performance visuals']); keysUI(S.keys.slice(5)); }
+  function vjToggle(on = !VJ.on) { if (!VJ.el) return; VJ.on = on; document.body.classList.toggle('mmx-vj', on); VJ.el.classList.toggle('mmx-vj-full', on); const b = $('#mmx-vj-btn'); b && b.classList.toggle('on', on); level();
+    const hint = $('#mmx-vj-hint'); if (on && hint) { hint.classList.add('on'); setTimeout(() => hint.classList.remove('on'), 3000); }
+    try { if (on && document.documentElement.requestFullscreen && !document.fullscreenElement) document.documentElement.requestFullscreen().catch(() => {}); else if (!on && document.fullscreenElement) document.exitFullscreen().catch(() => {}); } catch (e) {}
+    S.opts.onVJ && S.opts.onVJ(on); }
 
   /* ---------- output tap: keeps the last N seconds of the mix, for resampling ---------- */
   let tapSt = null;
@@ -478,14 +518,14 @@ ${m.try ? `<div class="mm-l-k">TRY THIS WITH YOUR OWN SOUNDS</div><ol>${m.try.ma
 <div class="mm-l-k">HALLMARKS, AND WHERE THEY SHOW UP HERE</div><ul>${D.hallmarks.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
 <div class="mm-l-k">WORKS TO LOOK UP</div><ul>${D.works.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
 <div class="mm-l-k">HOW TO PLAY</div><p>${esc(m.how)}</p>
-<div class="mm-l-k">THE DECK (PRESS D)</div><p>Sample slots with pitch, gain, start and end, reverse, filter, pan, reverb and delay sends; presets (save, load, export and import JSON); MIDI in with MIDI learn for any slider; and every keyboard shortcut (press ?).</p>
+<div class="mm-l-k">THE DECK (PRESS D)</div><p>Sample slots with pitch, gain, START and END trim (drag the S and E handles on each waveform, drag inside to move the region, double-click to reset), reverse, filter, pan, reverb and delay sends; presets (save, load, export and import JSON); MIDI in with MIDI learn for any slider; and every keyboard shortcut (press ?).</p>
 <p class="mm-l-note">${(window.MM && MM.NOTE) || ''} Tool ${esc(m.no)} of Manifesto Machines.</p></div>`;
     dlg.querySelector('.mm-x').onclick = () => dlg.classList.add('mm-hide');
   }
 
   /* ---------- setup ---------- */
-  function init(o) { S.opts = o; makeDrawer(); learn(); if (o.state) bind(o.state); if (o.slots) slots(o.slots); presetsUI(o.factory || {}); midiUI(o.midiHelp); keysUI(o.keys || []); return S; }
-  return { init, slots, ctl, bind, setParam, refresh, fire, buf, region, isUser, assign, loadInto, setBuf, save, load, del, exportJSON, importJSON, snapshot, apply, deck, key, tap, onMidi, decode, S };
+  function init(o) { S.opts = o; makeDrawer(); animWaves(); learn(); if (o.state) bind(o.state); if (o.slots) slots(o.slots); presetsUI(o.factory || {}); midiUI(o.midiHelp); keysUI(o.keys || []); return S; }
+  return { init, vj, vjToggle, level, get vjOn() { return VJ.on; }, slots, ctl, bind, setParam, refresh, fire, buf, region, isUser, assign, loadInto, setBuf, save, load, del, exportJSON, importJSON, snapshot, apply, deck, key, tap, onMidi, decode, S };
 })();
 
 </script>

@@ -16,4 +16,5 @@ module.exports = {
   '81': { ai: true, mock: { title: 'place à l\'amour', strokes: [{ layer: 2, brush: 'line', speed: 0.3, points: [[0.1, 0.5], [0.2, 0.4], [0.3, 0.35], [0.45, 0.3]] }, { layer: 3, brush: 'dab', speed: 0.9, points: [[0.5, 0.7], [0.6, 0.72], [0.7, 0.68]] }] } },
   '77': { ai: true, mock: { framework: 'numb', bpm: 80, key: 'D', chops: true, second_voice: 0.7, master_reverb: 0.6, title: 'walk home (cold)' } },
   '76': { ai: true, mock: { title: 'Chrome Toaster Kiss', tagline: 'toast for tomorrow', bpm: 126, key: 'D', values: { popular: 0.9, transient: 0.7, expendable: 0.5, lowcost: 0.2, mass: 0.8, young: 0.9, witty: 0.6, sexy: 0.3, gimmicky: 0.7, glam: 0.5, biz: 0.9 }, hook: [0, 1, 2, -1, 3, 2, 1, 0] } },
+  '83': { ai: true, mock: { cards: [{ text: 'let the rain lead', action: 'slower' }, { text: 'one small bell', action: 'plant' }] } },
 };

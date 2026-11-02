@@ -3811,5 +3811,281 @@
   "no": "81",
   "slug": "make-way-for-magic",
   "file": "tools/81-make-way-for-magic.html"
+ },
+ {
+  "title": "Pavement Garage",
+  "deep": true,
+  "category": "found-sound production",
+  "date": "2026-11-02",
+  "kicker": "FOUND-SOUND PRODUCTION · THE STREET AS THE DRUM KIT AND THE CHORDS",
+  "bpm": 132,
+  "idea": "Turn a field recording into the band. Its own clatter is cut out and layered under house and garage drums, its hiss is tuned into the chords by a bank of resonators, and a phone voice memo is chopped into an emotional hook on top. A journal of four pages, one recording and one line of writing each, builds to a euphoric drop and then lets the street back in. Found-sound dance producers of the 2020s work this way: phone audio, field recordings and journal-like sampling over two-step and four-to-the-floor drums.",
+  "controls": "8 slots (voice memo, field recording A, field recording B, kick, clap, hats, keys, sub); groove (two-step garage, four-to-the-floor house, speed-garage bassline, broken), swing, tempo, key; FIELD KIT (the field recording's own hits layered on the drums, sorted low, mid and high); TUNED STREET (six resonators tuned to the chord tones); phone-ness of the voice; a 16-step chop lane you click; chop pitch and density; page length, build bars, euphoria and key lift for the drop; four journal pages (a line of writing, a progression and a field recording each); VJ full-screen mode.",
+  "how": "Press PLAY. A built-in street recording becomes the groove: its clicks are layered on two-step garage drums, its hiss is tuned to the chords, and a voice-memo phrase is chopped into the hook. Each journal page runs intro, groove, build, an empty beat, the drop and a break. Press J to read the journal page by page (1 to 4 jump to a page), X to go straight to the build, C for new chops, K for the field kit, T for the tuned street and P for the phone voice. Click the chop lane at the bottom to change a chop. Load your own voice memo into slot 1 and two field recordings into slots 2 and 3 (D opens the deck; drag the S and E handles to trim them). F goes full screen for a projector.",
+  "fonts": "family=Anton&family=Caveat:wght@500;700&family=Space+Mono:wght@400;700",
+  "try": [
+   "Walk one street with your phone and record two minutes, then record yourself saying one sentence about the walk. Put the sentence in slot 1 and the street in slot 2, drag the S and E handles to the busiest ten seconds, and turn FIELD KIT up until the street plays the hi-hats.",
+   "Make it a journal: record one field recording a day for four days (kettle, bus stop, rain, the pub). Load them into slots 2 and 3 over the week, write one line per day into the journal pages, switch JOURNAL on (J) and record a WAV of the four pages in a row.",
+   "Load a held synth note or a choir sample from your Splice library into slot 3, set the page's field to B and TUNED STREET to full: the resonators turn it into chords that follow the progression. Then try the same with plain traffic noise and compare."
+  ],
+  "manifesto": {
+   "name": "Found-sound production: the field recording as the drum kit and the chords",
+   "short": "Field recordings over garage drums",
+   "author": "Inspired by found-sound house and garage producers of the 2020s (for example Fred again..), and by UK garage",
+   "year": "1990s (UK garage) to 2020s (phone-audio production)",
+   "where": "A working method described in many producer interviews and tutorials; paraphrased here, nothing quoted",
+   "ideas": [
+    "In our words: record your actual life on the phone (a voice memo, a street, a room) and treat it as the raw material of a dance track rather than as decoration.",
+    "In our words: field recordings can do more than sit underneath. Their own clicks, footsteps and slams can be cut out and layered with the kick, the clap and the hats, so the place is inside the groove.",
+    "In our words: noise holds every pitch. Pass it through narrow filters tuned to the notes of a chord and the hiss of a street or of rain starts to sing that chord.",
+    "In our words: a voice memo cut into syllables and pitched to the chord tones becomes an emotional hook, even if the words are hard to make out.",
+    "In our words: UK garage swings. The kick skips (the two-step), the hats shuffle, and the bass moves under the chords.",
+    "In our words: the euphoric drop works by contrast: thin the track out, hold your breath for one empty beat, then bring everything back wider and brighter, sometimes a tone higher.",
+    "In our words: a journal is a good structure. One recording and one line per day, played in order, tells the week."
+   ],
+   "quotes": [],
+   "system": "Slot 1 is the voice memo, slots 2 and 3 are field recordings. FIELD KIT finds the hits inside the trimmed field recording and sorts them by brightness into low, mid and high, then layers them on the kick, clap and hat steps. TUNED STREET runs the field recording through six narrow resonators set to the current chord's tones, so the noise follows the progression. The chop lane plays one of eight chops of the voice memo per step, pitched to the chord. A journal page runs for PAGE BARS: intro (the street alone), groove, build (high-pass sweep, an accelerating snare roll, a riser and one empty beat), drop (everything, wider, with optional key lift), and break (voice and street). With JOURNAL on, the pages play in order with their own progression and field recording.",
+   "dubious": "The grooves, progressions and sounds are this tool's own. No recording, lyric or arrangement by any producer is used."
+  },
+  "design": {
+   "name": "Risograph zine printing (DIY self-publishing, 1990s to now)",
+   "short": "Risograph zine",
+   "who": "The risograph stencil duplicator, used by zine makers, small presses and art-school print studios",
+   "era": "1990s to now",
+   "hallmarks": [
+    "Two spot inks, fluorescent pink and blue, printed one after the other so they never quite line up. Here the pink layer is offset from the blue, and the offset moves with the music.",
+    "Grainy halftone dots, photocopier texture and cheap paper. The field recording is printed as a halftone strip, and the paper is off-white.",
+    "Handwritten notes, typewriter text and big condensed headlines stapled together like a diary. The journal line is in handwriting, the section name is a huge headline."
+   ],
+   "works": [
+    "Look up risograph zines from small presses such as Colorama, Hato Press or Knust",
+    "The Riso Book (Hato Press), a guide to printing with a risograph",
+    "Printed Matter's NY Art Book Fair zine tables"
+   ]
+  },
+  "no": "82",
+  "slug": "pavement-garage",
+  "file": "tools/82-pavement-garage.html"
+ },
+ {
+  "title": "Return Time",
+  "deep": true,
+  "gemini": true,
+  "category": "generative systems",
+  "date": "2026-11-02",
+  "kicker": "GENERATIVE SYSTEMS · UNEQUAL TAPE LOOPS, YOUR OWN CARDS, LISTENING AND IGNORING",
+  "bpm": 60,
+  "idea": "Tape loops of different lengths never quite line up, so a few simple phrases keep making new combinations, and the moment they all return together can be days or centuries away. This machine runs six loops of unequal length, four of notes and two of your own trimmed sounds, and works out exactly when they will next meet. Each loop is a channel of an imaginary tape studio with its own speed, wear, wow and echo, so the studio itself is the instrument. You write your own prompt cards, the machine draws one every few minutes and acts on it, a gardener lets worn loops fade and plants new ones, and an attention fader moves the music between something to listen to closely and something to leave in the background.",
+  "controls": "6 slots (piano, voice pad, glass, low tone, tape loop A, tape loop B); four note loops with their own length (3 to 40 s), speed, level and phrase; two audio tape loops whose length is the trimmed region (drag S and E); return-time readout (when all six loops line up again) and meetings counter; attention fader from IGNORE to LISTEN; tape wear per pass, wow and flutter, saturation, tape echo; gardener on/off and rate; scale and key; density; your own prompt cards (one per line, optional [action] tag), drawn by hand or every N minutes; Gemini writes new cards from a mood (optional, your own key).",
+  "how": "Press PLAY. Six reels start turning together, each a different length, and the readout tells you when they will all line up again. Drag the ATTENTION fader (or press C to listen closely, B to let it sit in the background) and hear the music come forward or recede. Press O to draw one of your prompt cards; the machine acts on it. Edit the cards in the side panel: one per line, with a tag like [slower], [thin], [plant] or [echo] if you want the machine to act. G turns the gardener on and off; N plants a new phrase; P prunes one; A starts every loop together again (realign). Load your own sounds with the deck (D): slots 5 and 6 are true tape loops, so trimming them with S and E changes the loop length and the return time.",
+  "fonts": "family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600",
+  "try": [
+   "Load a long, soft recording (a room, rain, a held chord from your Splice folder) into slot 5 and a shorter one into slot 6. Drag the S and E handles on each and watch the RETURN TIME readout jump from minutes to years. Find a trim where it reads more than a year, then press A to realign and let it run while you do something else.",
+   "Write six cards of your own before you press PLAY, about the room you are in (for example: 'the radiator is the bass [low]', 'someone just came in, get quieter [ignore]'). Set CARD EVERY to 2 minutes and record a WAV of whatever the cards make of the evening.",
+   "Put four short one-shots from your own library into slots 1 to 4 (a pluck, a breath, a bell, a low hit). Turn WEAR up and leave the GARDENER on for ten minutes: write down which planted phrase you missed when it faded, then plant it back by hand with the number key."
+  ],
+  "manifesto": {
+   "name": "Generative tape loops: unequal lengths, your own cards, the studio as instrument",
+   "short": "Unequal tape loops and the return time",
+   "author": "Inspired by Brian Eno's ambient and generative working methods",
+   "year": "1975 to 1978",
+   "where": "Ambient and generative records and liner notes of the late 1970s; his talks on the studio as a compositional tool",
+   "ideas": [
+    "Tape loops of different lengths never quite line up, so a few simple phrases keep making new combinations, and the moment they all return together can be days or centuries away.",
+    "In the late 1970s ambient records were made by setting loops of unequal, unrelated lengths running together and letting the combinations happen, instead of writing every note in order.",
+    "The studio was treated as an instrument in its own right: speed, echo, saturation and tape wear became parts of the composition, not just ways of recording it.",
+    "A deck of prompt cards, each a short suggestion to act on when stuck, was used to break habits in the studio. Here you write your own cards: no published card text is used or imitated.",
+    "In our words: ambient music was meant to reward close listening but also to be easy to ignore, so the same piece could sit in the background or be the centre of attention.",
+    "In our words: a generative piece is more like a garden than an architecture: you set conditions, plant, prune and let it grow, rather than building every part.",
+    "In our words: the return time of unequal loops is simple arithmetic: it is the least common multiple of their lengths, which grows astonishingly fast as the lengths become less related."
+   ],
+   "quotes": [],
+   "system": "Four note loops each hold a short phrase (one to four notes from the chosen scale) at fixed places in a loop of their own length; two audio loops play the trimmed region of slots 5 and 6, so their length is the trim divided by the speed. All six start together on PLAY or R. The return time is the least common multiple of the six effective lengths, rounded to tenths of a second, counted from that start. Each pass wears the tape: level and brightness fall by WEAR, and a loop that is nearly gone is replanted by the GARDENER with a new phrase; the gardener also adds or removes single notes now and then. ATTENTION changes how often notes play, how soft their attacks are, the overall brightness and whether small ornaments appear. A card's [tag] acts on the machine: slower, faster, thin, plant, prune, reverse, silence, low, echo, dry, wow, listen, ignore, realign. Wow and flutter drift each note's pitch; saturation and a tape echo with a wavering delay time colour the whole mix.",
+   "dubious": "The phrases, loop lengths, sounds and every card are this tool's own; no record, loop length or published card text is reproduced. The least common multiple is exact for the rounded lengths, but real tape loops drift, so they would never quite meet."
+  },
+  "design": {
+   "name": "Ulm functionalist product design: the Braun and Ulm School of Design approach (Dieter Rams, Hans Gugelot and colleagues)",
+   "short": "Ulm / Braun functionalism",
+   "who": "Braun product design and the Ulm School of Design",
+   "era": "1955 to 1980s",
+   "hallmarks": [
+    "Warm light grey and off-white surfaces, dark grey type and a single accent colour (orange or green) reserved for the one control that matters. Here the attention fader's knob is the only orange thing.",
+    "Controls laid out on a strict grid with small lower-case labels, round knobs and perforated speaker grilles made of regular dot patterns. The grille here breathes with the level.",
+    "Less but better: nothing decorative, every element explains how the device works. The reels show their length, pass count and wear."
+   ],
+   "works": [
+    "Braun SK 4 radio-phonograph (1956), with its white case and clear lid",
+    "Braun T3 pocket radio (1958) and the TP 1 radio-phonograph combination (1959)",
+    "The Ulm School of Design (HfG Ulm) exhibitions and its journal ulm"
+   ]
+  },
+  "no": "83",
+  "slug": "return-time",
+  "file": "tools/83-return-time.html"
+ },
+ {
+  "title": "Circle Walk",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-11-02",
+  "kicker": "MUSIC THEORY · THE CIRCLE OF FIFTHS, WALKED, TUNED AND HEARD",
+  "bpm": 96,
+  "idea": "Arrange the twelve keys in a circle where each step is a perfect fifth and the whole of Western harmony becomes a map: neighbouring keys share all but one note, relative minors share a key signature, and the strongest chord progressions move round the circle one fifth at a time. This instrument walks that map with your own sounds. Pick a walk (the diatonic chain of falling fifths, two-five-one chains, a tour of all twelve dominants, or a pivot-chord modulation to a neighbouring key) and hear every chord voice-led to the next by the smallest moves. Switch to pure fifths and the circle stops closing: after twelve perfect fifths you arrive about a quarter of a semitone sharp, the gap that equal temperament spreads around the circle.",
+  "controls": "7 slots (keys C4, bass C2, lead C5, pad C4, kick, hat, snare/rim); four walks (falling fifths in the key, ii-V-I chains, the twelve-dominant tour, pivot modulation); key (on the circle) and major or relative minor; modulate after each lap (stay, flatwards, sharpwards, to a random neighbour); sevenths or triads; harmonic-minor V; chord length; equal or pure-fifth tuning with drift readout and comma reset; groove (bossa, brushes, four, none); swing; guide-tone melody amount; keys, bass, lead, pad and drum levels.",
+  "how": "Press PLAY. The walker moves round the circle: each chord's root lights up and a line joins it to the last, while the panel names the chord, its Roman numeral, the key and its signature. Press 1 to 4 to change walk, M for the relative minor, and click any key on the circle to jump there. Set MODULATE to flatwards or sharpwards and the key moves one step each lap, adding one flat or one sharp. Press T to switch to pure fifths and watch the drift readout grow as the walk goes round; K resets the comma. Load your own keys, bass and lead sounds with the deck (D); slots say which note they should be.",
+  "fonts": "family=Atomic+Age&family=Righteous&family=Josefin+Sans:wght@400;600;700",
+  "try": [
+   "Load a single sustained note from your own library (a Rhodes, a sung 'ooh', a synth pad) into slot 1, trim it with the S and E handles to the steadiest part, and listen to the FALLING FIFTHS walk with SEVENTHS on. Sing along with the lead line: it only ever uses each chord's third and seventh, and you will hear how they slide by a semitone into the next chord.",
+   "Choose the TWELVE-DOMINANT TOUR, switch TUNING to pure fifths (T) and let it go round twice. Record a WAV, then play it next to the same walk in equal tuning: where does the drift start to sound wrong to you, and where does the pure version sound sweeter?",
+   "Set MODULATE to sharpwards and the walk to PIVOT. Every lap the music moves one key clockwise through a chord the two keys share. Load a vocal phrase or a field recording into the pad slot (slot 4) and listen to how one sound takes on a new role in each key."
+  ],
+  "manifesto": {
+   "name": "The circle of fifths: keys, relative minors and progressions by fifths",
+   "short": "The circle of fifths",
+   "author": "Nikolai Diletskii's Grammatika (1679) and Johann David Heinichen's Der General-Bass in der Composition (1728); the Pythagorean comma (ancient Greek tuning theory)",
+   "year": "1679 and 1728 (circle diagrams); about 500 BC onwards (the comma)",
+   "where": "Diletskii's treatise on composition, written in Moscow; Heinichen's thorough-bass treatise, Dresden",
+   "ideas": [
+    "Arrange the twelve keys in a circle where each step is a perfect fifth and the whole of Western harmony becomes a map: neighbouring keys share all but one note, relative minors share a key signature, and the strongest chord progressions move round the circle one fifth at a time.",
+    "Seventeenth-century treatises drew the keys in a circle of fifths to show how a composer could move from any key to any other; an eighteenth-century thorough-bass manual drew a circle of major and minor keys side by side.",
+    "Moving clockwise adds one sharp to the key signature; moving anticlockwise adds one flat. Every major key has a relative minor three steps clockwise round the circle (or a minor third below) that shares its notes.",
+    "In our words: a root moving down a fifth (or up a fourth) is the strongest progression in tonal music. Chains of falling fifths, such as two-five-one or the diatonic cycle through every chord of the key, drive harmony forward.",
+    "In our words: when chords move by fifths, their thirds and sevenths move by step: the seventh of one chord falls a semitone to become the third of the next. These guide tones are the smallest, smoothest line through the changes.",
+    "In our words: a pivot chord belongs to two neighbouring keys at once, so it can carry the music from one key into the next without a jolt.",
+    "In our words: twelve perfect fifths overshoot seven octaves by a small interval, the Pythagorean comma (about 23.5 cents). Equal temperament narrows every fifth very slightly so the circle closes; pure fifths turn the circle into a spiral."
+   ],
+   "quotes": [],
+   "system": "Every pitch is stored as a position on the line of fifths. In equal tuning a position p sounds 7p semitones above C (folded into one octave); in pure tuning it sounds 7.01955p semitones, so a walk that goes all the way round the circle comes back 23.46 cents away from where it started, and the drift readout shows how far you are from the key where you last pressed comma reset. Chord tones are also positions on the line (major third +4, minor third -3, fifth +1, minor seventh -2, major seventh +5, diminished fifth -6), so pure tuning gives Pythagorean chords with bright, wide thirds. Each new chord is voiced by trying every inversion in two octaves and picking the one with the least total movement from the last. FALLING FIFTHS plays the diatonic cycle (I IV vii iii vi ii V I, or i iv VII III VI ii V i in minor). TWO-FIVE-ONE plays ii V I. THE TOUR plays dominant sevenths on all twelve roots in falling fifths. PIVOT plays I, then the chord shared by this key and its neighbour, then V and I of the new key. After each lap MODULATE can move the key one step round the circle. The lead plays guide tones (thirds and sevenths).",
+   "dubious": "The walks, voicings, melodies and grooves are this tool's own. The two-five-one is common practice and belongs to everyone. Historians debate who drew the first circle of fifths; we give the two best-known early treatises."
+  },
+  "design": {
+   "name": "Googie: mid-century coffee-shop and space-age roadside architecture and signage of Southern California",
+   "short": "Googie / atomic age",
+   "who": "Southern California coffee-shop architects and neon sign makers of the 1950s and early 1960s",
+   "era": "1949 to mid-1960s",
+   "hallmarks": [
+    "Upswept roofs, boomerangs, parabolas and kidney shapes that seem to be in motion. The background here is made of drifting boomerangs.",
+    "Starbursts, atoms with orbiting electrons and flying saucers: the space race as decoration. The circle is drawn as an atom, and the walker is an electron that jumps from orbit to orbit.",
+    "Turquoise, tangerine, pink and cream with jaunty, futuristic lettering on tall signs. Key names are set in an atomic-age display face."
+   ],
+   "works": [
+    "Googies coffee shop on the Sunset Strip, Los Angeles (1949, demolished), which gave the style its name",
+    "The Theme Building at Los Angeles International Airport (1961)",
+    "The 'Welcome to Fabulous Las Vegas' sign (1959)"
+   ]
+  },
+  "no": "84",
+  "slug": "circle-walk",
+  "file": "tools/84-circle-walk.html"
+ },
+ {
+  "title": "Mycelial Network",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-11-02",
+  "kicker": "NATURE · FUNGAL THREADS THAT JOIN A FOREST, PLAYED AS A NETWORK OF SOUNDS",
+  "bpm": 80,
+  "idea": "Under a forest floor, fungal threads branch, fuse and wrap the roots of the trees, trading minerals and water for sugar, so the forest is joined by a living network you never see. This instrument grows one. Five trees are five of your sounds; threads grow out from them, branch and fuse where they meet, and once two trees are joined a pulse sent from one reaches the other after a delay set by the length of the path. The network becomes the score: rhythms come from distances, a well-fed web fruits into mushrooms that ring out as chords, and drought makes it die back to silence.",
+  "controls": "7 slots (five trees: bell, wood, low string, voice, pluck; forest floor grains; fruiting chime); growth rate, branching, fusion distance; drought (die-back) and FEED (a growth burst); pulse speed along the threads, reach, how often the trees pulse (mother tree only, or every tree on its own period), relay chance (a tree that receives a pulse sends its own); hum of the branch points (grains); fruiting threshold; scale and key; quantise to the grid or free time; levels; click to drop a spore or fire a tree.",
+  "how": "Press PLAY. The network has already started to grow from the five trees. A pulse leaves the first tree every couple of beats and travels along the threads in red; wherever it reaches another tree, that tree sounds. Click any tree to send a pulse from it, or click empty ground to drop a spore and start a new thread. Press E to feed the network (a growth burst), raise DROUGHT to make it die back, and X to clear it and start again from spores. When enough trees are joined and the threads are busy, a mushroom fruits and rings out. Load your own sounds into the trees with the deck (D).",
+  "fonts": "family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=IM+Fell+DW+Pica",
+  "try": [
+   "Load five sounds recorded on one walk (a gate, a branch snapping, a bird, a footstep in leaves, your own voice saying where you are) into the five trees and switch PULSES to 'every tree'. Let the network grow for a few minutes: the rhythm you hear is the shape of the web between the places.",
+   "Set RELAY to about 0.6 and drop the pulse rate low, then click one tree. Listen to the message spread through the forest as each tree passes it on. Turn SPEED down to hear it travel slowly; trim each sample short with the S and E handles so the cascade stays clear.",
+   "Feed the network (E) until it fruits, then raise DROUGHT slowly to 0.8 and record a WAV as it dies back and goes quiet. Lower DROUGHT again and hear it regrow from what is left."
+  ],
+  "manifesto": {
+   "name": "Mycelial networks: the fungal web beneath a forest",
+   "short": "Mycelial networks",
+   "author": "Inspired by research on mycorrhizal fungi and fungal growth",
+   "year": "Late 1990s to now",
+   "where": "Field studies of carbon moving between trees through shared fungi (from 1997), and laboratory studies of how fungal networks grow and fuse",
+   "ideas": [
+    "Under a forest floor, fungal threads branch, fuse and wrap the roots of the trees, trading minerals and water for sugar, so the forest is joined by a living network you never see.",
+    "A fungus is mostly a mycelium: a web of microscopic threads called hyphae that grow at their tips, branch and spread through soil and wood. The mushroom is only its short-lived fruit.",
+    "Where two threads meet they can fuse (anastomosis), turning a branching tree of threads into a true network with loops and shortcuts.",
+    "Most plants live with mycorrhizal fungi: the fungus brings water and minerals to the root and takes sugars made by the plant in return.",
+    "Field experiments from 1997 found traces of carbon moving between trees through shared fungi, and a popular nickname compared the forest to a web.",
+    "In our words: networks thicken where they carry most and thin where they are not used; laboratory fungi have even been shown to rebuild efficient transport networks between food sources.",
+    "In our words: thinking of a forest as a network, not as separate trees competing, changes how you see a wood, even where the details are still argued about."
+   ],
+   "quotes": [],
+   "system": "Five trees are fixed points in the soil, one per sample slot. Hyphal tips grow from them in short steps, wandering a little and branching now and then; when a tip comes within FUSION DISTANCE of a thread from another lineage the two fuse and the tip stops. Pulses leave the mother tree (or every tree, each on its own period) and travel along the threads at SPEED, using the shortest path, out to REACH. When a pulse arrives at another tree, that tree sounds a note from the scale (its own degree plus the number of fusions on the way), so rhythm comes from distance. Branch points it passes hum with tiny grains of the forest floor slot. Threads that carry pulses gather nutrient; when at least FRUIT trees are joined and a branch point is rich enough, a mushroom fruits there with a rising chord from the fruiting slot and spores start new threads. DROUGHT slows growth and makes unused tips die back; FEED gives a burst of growth. With QUANTISE on, every arrival snaps to the nearest sixteenth.",
+   "dubious": "Real fungal networks grow over weeks and any signals between trees take hours or days; here time is enormously compressed. Popular claims that trees deliberately share food, warn each other or nurture their young through 'mother trees' are contested: recent reviews argue the field evidence is weaker than popular accounts suggest. This tool uses the network as a picture of connection, not as proof of tree communication."
+  },
+  "design": {
+   "name": "Arts and Crafts private-press printing: the Kelmscott Press of William Morris (1891 to 1898)",
+   "short": "Arts and Crafts private press",
+   "who": "The Kelmscott Press and the private-press movement",
+   "era": "1891 to 1910s",
+   "hallmarks": [
+    "Dense woodcut borders of interlaced vines, leaves and flowers framing a block of heavy black text. Here the border grows like the network inside it.",
+    "Black ink with red for titles and rubrics, on warm handmade paper, inspired by medieval manuscripts and early printed books. The pulses travel in red ink.",
+    "Large decorated initials set in a square of foliage, and type set tight for an even, dark page. The page opens with a foliated initial."
+   ],
+   "works": [
+    "The Works of Geoffrey Chaucer, Kelmscott Press (1896)",
+    "The Story of the Glittering Plain, Kelmscott Press (1891), the press's first book",
+    "The Doves Press Bible (1903 to 1905), a plainer private-press contrast"
+   ]
+  },
+  "no": "85",
+  "slug": "mycelial-network",
+  "file": "tools/85-mycelial-network.html"
+ },
+ {
+  "title": "Regulating Lines",
+  "deep": true,
+  "category": "art manifesto",
+  "date": "2026-11-02",
+  "kicker": "ART MANIFESTO · PURISM: STANDARD OBJECTS, REGULATING LINES, A MUSIC OF ORDER",
+  "bpm": 92,
+  "idea": "After the fragments of Cubism, a 1918 Paris manifesto asked for an art of order: plain standard objects such as bottles, glasses, pipes and guitars, perfected by use like good machines, arranged on regulating lines of exact proportion and painted in a calm, ranked scale of colours. This instrument makes that still life playable. Six standard objects are six of your sounds; where you place each one on the canvas sets when it plays, how high it is sets its pitch and how wide sets how long it lasts. Regulating lines (halves, thirds, the golden section or the square root of two) pull every object into proportion, objects that share a contour sound together, and the colour scale decides each object's character.",
+  "controls": "7 slots (bottle, glass, pipe, guitar, jug C2, plate, machine pulse); drag objects to move them (they snap to the regulating lines), drag the right edge to change length; four proportion systems (halves, thirds, golden section, root two); snap on or off; marriage of contours (overlapping objects play together); constants (married objects tuned to unisons, fourths and fifths); colour scale per object (the calm major scale, the dynamic scale, the transitional scale); canvas length in beats; tempo; key and scale; legato; the hand (human timing) versus the machine; machine pulse level; ORDER snaps everything, SCATTER throws it into cubist disorder.",
+  "how": "Press PLAY. A playhead sweeps the still life from left to right and each object sounds as it is reached: higher objects play higher notes, wider ones last longer. Drag an object to move it and watch it snap to the red regulating lines; drag its right edge to stretch it. Press G to change the proportion system and O to put every object in order on the new lines; X scatters them into cubist disorder for comparison. Click an object and press C to change its colour (and so its character), 1 to 6 to add a new object, Delete to remove one. Load your own standard sounds (a bottle tapped, a glass, a pipe, a guitar) with the deck (D).",
+  "fonts": "family=Work+Sans:wght@400;600;800&family=DM+Mono:wght@400;500",
+  "try": [
+   "Record six everyday objects from your kitchen or desk (tap a bottle, ring a glass, knock a mug, pluck a rubber band) and load one into each object slot. Trim each with the S and E handles to a single clean hit, then press O with the GOLDEN SECTION system and listen to your kitchen in proportion.",
+   "Build a still life with HALVES, record a WAV, then press G until you reach GOLDEN SECTION and press O. Record again. The objects are the same and only the proportions changed: which version feels more like a groove, and which like architecture?",
+   "Turn CONSTANTS on and drag two objects so they overlap. They marry, play together and tune to a fourth or fifth. Then colour one from the dynamic scale (citron, orange, vermilion) and hear it push forward against the calm earth colours."
+  ],
+  "manifesto": {
+   "name": "Purism: After Cubism (1918)",
+   "short": "Purism",
+   "author": "Amédée Ozenfant and Charles-Édouard Jeanneret (later known as Le Corbusier)",
+   "year": "1918 to 1925",
+   "where": "The manifesto Après le cubisme (Paris, 1918) and the journal L'Esprit Nouveau (1920 to 1925)",
+   "ideas": [
+    "After the fragments of Cubism, a 1918 Paris manifesto asked for an art of order: plain standard objects such as bottles, glasses, pipes and guitars, perfected by use like good machines, arranged on regulating lines of exact proportion and painted in a calm, ranked scale of colours.",
+    "In our words: the authors felt Cubism had become decorative and fragmented, and wanted painting to be as clear, exact and universal as engineering.",
+    "In our words: everyday objects shaped by long use (a wine bottle, a glass, a pipe, a jug, a guitar) are 'standard' or type objects: their forms have been refined by use until nothing is extra, like a well-made machine part.",
+    "In our words: a composition should be ordered by regulating lines, simple geometry such as diagonals, right angles and golden-section divisions, that fix where things go.",
+    "In our words: in a Purist still life the objects overlap and share outlines, so one contour belongs to two objects at once (sometimes called a marriage of contours).",
+    "In our words: colours were ranked. A calm, constructive major scale of ochres, earth reds, white, black and ultramarine; a dynamic, agitating scale of citron yellow, orange and vermilion; and a transitional scale of madder, emerald and lakes.",
+    "In our words: the aim was a universal art based on constants that anyone, anywhere, would feel the same way, rather than on personal expression."
+   ],
+   "quotes": [],
+   "system": "The canvas is one loop of N beats. An object's left edge is its onset, its width is its length, and the height of its centre is its pitch in the chosen scale (the jug sounds two octaves lower). With SNAP on, every edge snaps to the regulating lines of the chosen system: HALVES (sixteenths of the canvas), THIRDS (twelfths), GOLDEN SECTION (the canvas cut at 0.382 and 0.618, and each part cut again the same way) or ROOT TWO (cuts at 0.293 and 0.707, repeated). Golden and root-two lines make rhythms that are proportional but not on the usual grid. Objects whose outlines overlap are married: the later one plays at the earlier one's onset, and with CONSTANTS on its pitch is moved to the nearest unison, fourth or fifth above the other. Colour sets character: the major scale is warm and steady (filtered, full length), the dynamic scale is bright and short with an accent, the transitional scale is soft and drifts into reverb and echo. The machine pulse marks the beats; THE HAND adds human timing.",
+   "dubious": "Purism was a painting movement; it had no music. The sounds, proportions-to-rhythm mapping and the colour-to-timbre mapping are this tool's own reading. The manifesto text is in copyright and is only paraphrased here."
+  },
+  "design": {
+   "name": "The mid-century paperback cover grid: Romek Marber's grid for Penguin crime and Pelican covers (1961)",
+   "short": "Paperback cover grid",
+   "who": "1960s paperback cover design for Penguin crime and Pelican books",
+   "era": "1961 to early 1970s",
+   "hallmarks": [
+    "A strict horizontal grid: a narrow coloured band for the publisher, rules, a title band in a plain grotesque typeface, and a large image area below. This page uses the same three bands.",
+    "One flat signal colour per series (the green of the crime books) with black and white, and generous white space.",
+    "Abstract or photographic images that fill their area exactly and line up with the type above. The still life sits in the image area, aligned to the grid."
+   ],
+   "works": [
+    "Penguin crime (green) covers from 1961 onwards",
+    "Pelican covers of the mid-1960s",
+    "The book Penguin by Design (2005), a history of the covers"
+   ]
+  },
+  "no": "86",
+  "slug": "regulating-lines",
+  "file": "tools/86-regulating-lines.html"
  }
 ]

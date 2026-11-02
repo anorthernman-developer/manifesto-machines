@@ -1,5 +1,37 @@
 # Devlog
 
+## 2 November 2026 · 82 to 86, five deep instruments, draggable trim handles and VJ mode
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #8), so no replies were needed. The direction comes from Craig's 1 November note on 77: keep and improve the START/END trim controls in every tool, and add VJ / big-screen visual modes.
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 82 | Pavement Garage | found-sound production | The found-sound producer method (paraphrased, nothing quoted): one field recording becomes the drum kit, the chords (tuned resonators) and, with a phone voice memo, the hook, over two-step or four-to-the-floor drums | Risograph zine printing |
+| 83 | Return Time | generative systems | Generative tape loops of unequal length, self-written prompt cards and the studio as an instrument (late-1970s ambient practice, paraphrased) | Ulm / Braun functionalism |
+| 84 | Circle Walk | music theory | The circle of fifths (Diletskii 1679, Heinichen 1728) and the Pythagorean comma | Googie / atomic age |
+| 85 | Mycelial Network | nature/philosophy | Mycorrhizal and fungal networks: growth, branching, fusion (anastomosis), signalling between trees, fruiting | Arts and Crafts private press |
+| 86 | Regulating Lines | art manifesto | Purism, Après le cubisme (Paris, 1918), paraphrased only: standard objects, regulating lines, marriage of contours, the colour scales | Paperback cover grid |
+
+**Deck upgrade (every deep instrument, 52 onwards):** each slot's waveform is now 600 × 104 with draggable **S** and **E** handles, a shaded region, a playhead while it plays, drag-inside to move the region and double-click to reset (the START/END sliders stay too). New `MMX.vj(el)`, `MMX.vjToggle()` and `MMX.level()` (RMS, low, high, peak, beat) give any tool a full-screen VJ mode: F or the VJ button, Escape to leave. 82 to 86 use it; older tools can opt in later.
+
+**What's new in each**
+
+- **82 Pavement Garage:** one street recording is sliced by transient into a kit (kick, snare and hat candidates chosen by spectrum), its hiss runs through a bank of tuned resonators that play the chords, and a voice memo is chopped into a hook. Two-step, four-to-the-floor or broken grooves, a four-page journal (one recording and one line each) that builds to a drop and lets the street back in, sidechain pump and a Risograph VJ scene.
+- **83 Return Time:** six loops of unequal length (four note loops and two of your own trimmed sounds, whose length is the trimmed region divided by the speed). The exact return time is the LCM of all six lengths, shown in days or centuries. Each channel has speed, wear, wow and echo; you write prompt cards with action tags (slower, thin, plant, prune, reverse, silence, echo, wow, listen, ignore, realign and more), one is drawn every few minutes, a gardener fades worn loops and plants new ones, and an attention fader moves between foreground and background. An optional Gemini panel writes new cards.
+- **84 Circle Walk:** pitches are positions on the line of fifths, so equal and pure fifths are both exact; in pure tuning the comma piles up visibly and RESET COMMA brings it back. Four walks (diatonic falling fifths, ii-V-I chains, the twelve-dominant tour, pivot modulation), modulation flatwards, sharpwards or to a neighbour, smallest-move voice-leading, a guide-tone lead, harmonic-minor V and bossa, brush or four grooves.
+- **85 Mycelial Network:** hyphae grow, branch and fuse (anastomosis merges lineages), pulses travel by shortest path at a set speed so path length becomes rhythm, branch points throw grains, relays pass pulses on, a well-fed web fruits into mushrooms that ring a chord and drop spores that start new growth, and drought makes it die back.
+- **86 Regulating Lines:** six standard objects (bottle, glass, pipe, guitar, jug, plate) on a still-life canvas: x is onset, width is duration, height is pitch. Halves, thirds, golden section or root-two regulating lines with snapping, marriage of contours (objects that share an edge sound together), consonant constants, the major, dynamic and transitional colour scales as timbres, and a machine pulse.
+
+**Tests:** `node test/run.js 82,83,84,85,86` passed 5/5 (audio, LEARN, WAV and AIFF loaded and played, WAV recording, the Gemini mock for 83, no console errors). `node test/deep.js 82,83,84,85,86,77,81` passed 7/7 (deck, slots, reverse, presets, export and import, key sheet, MIDI, 10-second soak). New `node test/handles.js` drags the S and E handles with the mouse and checks start and end change (77, 81 and 82 to 86 pass) and that F enters VJ mode (82 to 86).
+
+**Bugs fixed while building**
+
+- 82: a fake tempo control broke presets; the chop cache key was built from an object.
+- 83: the kit grabs R and L, which would have stolen realign and listen; shortcuts moved to A, C, B and others.
+- 84: the Atomic Age typeface makes F look like 7, so the key names use Righteous; minor keys were misspelled (now sharp or flat spelling by side of the circle).
+- 85: the network saturated without ever fruiting; growth caps and food rates retuned (first fruiting in about 20 seconds).
+- 86: the regulating-line diagonals were drawn to the wrong point.
+
 ## 1 November 2026 · rights, privacy and key-safety pass
 
 **Why:** Craig asked to protect his Gemini keys, check compliance, remove personal references to artists and anything that may affect copyright, before the tools move to digitalplay.work.

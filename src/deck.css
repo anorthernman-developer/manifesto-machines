@@ -6,7 +6,7 @@
 .mmx-slot{border:1.5px solid currentColor;padding:6px 8px;margin:0 0 8px}.mmx-sh{display:flex;gap:6px;align-items:center}.mmx-sh b{background:var(--fg);color:var(--bg);padding:1px 6px;font-weight:800}
 .mmx-deck .mmx-lab,.mmx-lab{font-weight:800;text-transform:uppercase;letter-spacing:.05em}.mmx-nm{flex:1;opacity:.65;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .mmx-b{font:700 11px var(--bar-font);background:none;color:inherit;border:1.5px solid currentColor;padding:3px 6px;cursor:pointer;white-space:nowrap}.mmx-b:hover{background:var(--acc);color:#fff;border-color:var(--acc)}.mmx-next{display:none}
-.mmx-wave{width:100%;height:34px;display:block;margin:5px 0}
+.mmx-wave{width:100%;height:52px;display:block;margin:5px 0}
 .mmx-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px}.mmx-p{display:grid;grid-template-columns:52px 1fr 40px;align-items:center;gap:4px;font-size:10px;font-weight:700;letter-spacing:.05em}.mmx-p input[type=range]{width:100%;accent-color:var(--acc)}.mmx-v{text-align:right;opacity:.75;font-weight:400}
 .mmx-chk{grid-template-columns:18px 1fr}.mmx-row{display:flex;gap:6px;margin:6px 0}.mmx-row input,.mmx-row select,#mmx-mlearn{flex:1;font:inherit;background:transparent;color:inherit;border:1.5px solid currentColor;padding:4px}#mmx-mlearn{width:100%;margin-top:8px}
 .mmx-row select option,#mmx-mlearn option{color:#111;background:#fff}
