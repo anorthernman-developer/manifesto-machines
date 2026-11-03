@@ -1,5 +1,36 @@
 # Devlog
 
+## 3 November 2026 · 87 to 91, five deep instruments: resample chain, learning garden, song forms, harmonic series, countdown to zero
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #9), so no replies were needed. Direction still comes from the 27 October notes, and from the 1 November note on 77: keep and improve the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ). Spin-off idea for 79 noted, not repeated today.
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 87 | Resample Chain | found-sound production | Found-sound production: the resample chain. One voice memo is chopped, tuned, bounced and re-sampled | Cassette J-card |
+| 88 | Learned Garden | generative systems | Generative systems: gardening, not architecture. A Markov memory that learns from a typed seed phrase and your notes | Seed packet |
+| 89 | Song Form Blocks | music theory | Song form: the 12-bar blues, AABA, verse-chorus, the hook and call and response (common traditions, our own tables) | Wood-type playbill |
+| 90 | Standing Waves | nature/philosophy | The harmonic series, stiff strings and sand figures on a plate | Natural-history plate |
+| 91 | Zero Field | art manifesto | ZERO (Düsseldorf, 1957 to 1966): the countdown, the zone of silence and the new beginning (paraphrased, nothing quoted) | Broadcast test card |
+
+**What's new in each**
+
+- **87 Resample Chain:** five sections (intro, verse, build, drop, break). At the end of each section the tool taps its own mix into the bounce slot with copy wear, and that bounce becomes material for the next section. Vocal chops are sliced at onsets and tuned to the chords, with three grooves, a build roll and riser, sidechain pump and hook re-roll.
+- **88 Learned Garden:** a Markov model (one or two notes of memory) learns from a seed phrase of scale degrees and from notes you play; plants have their own registers and periods, weeds make mistakes, seasons change density and brightness, and an attention fader moves between ignoring and listening.
+- **89 Song Form Blocks:** five forms laid out as printed blocks, one per bar; keys, bass and drums with swing from straight to shuffle; hook generator; call and response with echo, mirror, fifth, resolve or free answers; blue-note bend; sparse verses and full choruses.
+- **90 Standing Waves:** sixteen band-pass resonators at the harmonics of a low note, painted by clicking a spectrum; stiffness pushes the upper tones sharp; the melody walks the series in just or equal tuning; a sand-plate figure drawn from simple mode formulae.
+- **91 Zero Field:** seven repeating voices and a countdown that removes them to a zone of silence with one zero tone, then a new beginning (optionally up a fifth); drift, pitch vibration and path length; a test-card view with one ring per voice.
+
+**Tests:** `node test/run.js 87,88,89,90,91` passed 5/5 (audio, LEARN, WAV and AIFF loaded and used, WAV recording, no console errors). `node test/deep.js 87,88,89,90,91` passed 5/5 (deck, slots, reverse, presets, export and import, key sheet, MIDI status, soak). `node test/handles.js 87,88,89,90,91` passed 5/5 (S and E handles drag, F enters VJ). Spectrum painting in 90 and the row mutes in 91 were checked by clicking in headless Chrome.
+
+**Bugs fixed while building**
+
+- 87 and 88: category names normalised to the ledger vocabulary ("found-sound production", "generative systems").
+- 90: first sand figure collapsed to a diagonal line (every mode antisymmetric); alternating symmetric and antisymmetric modes and a normalised threshold fixed it; caption overlap and clipping fixed.
+- 91: per-voice level controls were written with array keys that the deck cannot save; they are now plain keys so presets store them.
+- A leftover unused helper in 89 was removed.
+
+**Compliance:** no named people in titles, branding or visuals, only open-licence Google Fonts, no third-party images or audio, no analytics, no Gemini calls today, secret scan clean.
+
 ## 2 November 2026 · 82 to 86, five deep instruments, draggable trim handles and VJ mode
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #8), so no replies were needed. The direction comes from Craig's 1 November note on 77: keep and improve the START/END trim controls in every tool, and add VJ / big-screen visual modes.

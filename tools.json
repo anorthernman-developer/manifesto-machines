@@ -4087,5 +4087,270 @@
   "no": "86",
   "slug": "regulating-lines",
   "file": "tools/86-regulating-lines.html"
+ },
+ {
+  "title": "Resample Chain",
+  "deep": true,
+  "category": "found-sound production",
+  "date": "2026-11-03",
+  "kicker": "FOUND-SOUND PRODUCER METHOD · BOUNCE IT, RE-CHOP IT, LET THE SONG EAT ITSELF",
+  "bpm": 124,
+  "idea": "A phone voice memo, a street recording and a few drums become a house or garage track in five sections: intro, verse, build, drop and break. The twist is the bounce. At the end of every section the instrument records its own mix into a ninth slot, and the next section chops that bounce instead of (or as well as) the original memo, so each pass is a copy of a copy: warmer, darker and more like a tape you carried around. A snare roll, a rising riser and a deliberate one-beat gap lead into a drop built from your own vocal chops, tuned to the chords. Everything is editable and every sound is yours.",
+  "controls": "9 slots (voice memo, room or street, kick, clap, hat, chord stab, bass, riser, bounce); five sections with adjustable length, jump or hold; groove (four-to-the-floor, two-step garage, broken); tempo, swing, key and chord loop; sample root so chops are tuned to the chords; chop density, chop length and tuning mode; hook re-roll; bounce mix (how much comes from the bounce), copy wear (how much each pass darkens) and auto-bounce; sidechain pump; build roll and gap; levels for drums, chords, bass, chops and room; VJ cassette-reel visuals.",
+  "how": "Press PLAY. The tape counts through the sections of Side A. Press 1 to 5 to jump to a section, N for the next one, P to hold (loop) the current one. B bounces the last section into slot 9 right now, and H writes a new hook from slices of the active source. Load a voice memo into slot 1 (the deck, D), a street or room recording into slot 2, and trim each with the S and E handles. Set SAMPLE ROOT to the note your memo is sung on so the chops are tuned to the chords. Turn BOUNCE MIX up and each section chops the last, a copy of a copy.",
+  "fonts": "family=Special+Elite&family=Courier+Prime:wght@400;700&family=Permanent+Marker",
+  "try": [
+   "Record a 5 to 10 second voice note on your phone (humming a line, or saying something you want to remember), load it into slot 1 and trim it with the S and E handles to the best breath. Set SAMPLE ROOT to the note you hummed, choose the VI-IV-I-V chord loop and play. Listen for the drop: the same voice, now tuned to the chords.",
+   "Record a minute of a street, a kitchen or a train into slot 2 and set the ROOM level up in the intro and break. Then set BOUNCE MIX to about 70 per cent and let two or three passes run: by the second drop the chops are made from the earlier mix, with drums and chords inside them.",
+   "Turn BUILD GAP on and set CHOP LENGTH short, then record a WAV of one build and drop. Load that WAV back into slot 1, trim the most interesting two seconds and press H until the hook feels like a song you have heard before. This is the whole method: keep bouncing and keep choosing."
+  ],
+  "manifesto": {
+   "name": "Found-sound production: the resample chain",
+   "short": "The resample chain",
+   "author": "Inspired by found-audio house and garage producers of the 2020s (no quotes, no copied patterns or audio)",
+   "year": "2020s, from older sampling and tape-bounce practice",
+   "where": "Bedroom and laptop production, with ideas from tape bouncing in 1970s and 1980s studios and from hip-hop and garage sampling",
+   "ideas": [
+    "In our words: found-sound producers treat a phone recording as a first draft of a song. A voice note, a street recording or a bit of speech is the seed, and the track is grown by cutting, tuning and repeating it.",
+    "In our words: a bounce is a recording of your own mix. Bouncing and then chopping the bounce gives you new sounds that already carry the groove, the room and the chords inside them, and each generation adds a little wear.",
+    "In our words: a euphoric drop is built from contrast. The build raises pitch, speeds up the roll and removes weight, a short gap empties the music, and the drop returns every part at once.",
+    "In our words: a vocal chop becomes an instrument when it is tuned to the chords. The same slice can be a root, a third or a fifth depending on what sits under it.",
+    "In our words: house and garage grooves differ mainly in where the kick and snare fall and how the hats swing: four steady kicks, or a skipping two-step."
+   ],
+   "quotes": [],
+   "system": "Sixteen steps per bar, with swing on the odd steps. Each section runs for a set number of bars; the chord loop changes every bar. The chops come from slices found by the onset detector inside your trimmed region, and each slice is pitched to the nearest chord tone relative to SAMPLE ROOT. In the build, a snare roll doubles its rate each bar, the riser slot is stretched up two octaves, a noise sweep opens, and in the last half bar everything stops (the gap). The drop brings back kick, bass, chords and the hook. At the end of each section the tool records its own output (a tap on the master) and puts the last section in slot 9; BOUNCE MIX decides how many chops come from it, and COPY WEAR darkens its filter each pass. Slot 9 is a normal slot, so you can trim, reverse and pitch it.",
+   "dubious": "This describes a general method used by many producers, not any one person's recipe. The patterns and chord loops here are the tool's own. Nothing is copied from any recording."
+  },
+  "design": {
+   "name": "Cassette J-card and home-made mixtape inlay design",
+   "short": "Cassette J-card",
+   "who": "Home-taped compilation sleeves, 1970s to 1990s",
+   "era": "1970s to 1990s",
+   "hallmarks": [
+    "A narrow folded card with a title band, a typed tracklist with times, and hand-written marker notes. The page keeps the same tracklist, with the current track marked and a marker-pen title.",
+    "Typewriter type for the list, a thick marker for the title, flat red, blue and yellow stripes, a little wonky and always cut to fit.",
+    "A cassette window with two reels, where the tape moves from one to the other. Here the reels show how far through Side A you are and the dots show each bounce."
+   ],
+   "works": [
+    "Look up photographs of home-made mixtape J-cards from the 1980s",
+    "The Compact Cassette package designs of the 1960s and 1970s",
+    "Zine and demo-tape inlays of the 1980s and 1990s underground scenes"
+   ]
+  },
+  "no": "87",
+  "slug": "resample-chain",
+  "file": "tools/87-resample-chain.html"
+ },
+ {
+  "title": "Learned Garden",
+  "deep": true,
+  "category": "generative systems",
+  "date": "2026-11-03",
+  "kicker": "GENERATIVE SYSTEMS · A GARDEN THAT LEARNS YOUR HABITS, SEASONS AND WEEDS",
+  "bpm": 60,
+  "idea": "Plant a short phrase and a garden of independent players learns its habits: which note tends to follow which. Each plant then wanders through that map at its own pace, so the music never repeats but always sounds like its seed. You tend it rather than build it: water it with your own notes and it learns your habits, let it feed on itself and it slowly settles into favourite paths, let a few weeds in and it surprises you, prune it back and it forgets. A slow season cycle thins and thickens the garden over minutes, and an attention fader moves it between music to listen to and music to ignore.",
+  "controls": "7 slots (pluck, bell, pad, low voice, texture, seed drop, your hand); seed phrase (scale degrees you can type); key and scale; learned transition map (first or second order memory); temperature (how adventurous); weeds; habit (how much it learns from itself); plant and prune plants; speed; season length in minutes or a fixed season; attention (ignore to listen); your notes on the keyboard, the map or MIDI teach it; levels for plants, pad, your hand and texture.",
+  "how": "Press PLAY. Five plants start from the seed phrase and wander, each at its own pace. The left map shows what the garden has learned: brighter squares are habits, and each plant's current step is a dot. Press A to L (or click a column on the map) to play a note of your own and teach the garden that step; do a short phrase twice and listen for it in the garden. P plants a new plant, X prunes one, W lets weeds in, and the attention fader moves from background to foreground. Load your own sounds into the slots in the deck (D) and trim them with the S and E handles.",
+  "fonts": "family=Abril+Fatface&family=Mulish:wght@400;700;800",
+  "try": [
+   "Load one clean, sustained note (a Rhodes, a bowed note, a sung vowel) into slot 1 and one short bell or pluck into slot 2, trimming each with the S and E handles. Type your own seed phrase (for example 0 4 2 5 4 7), press PLAY, and watch which habits the map learns.",
+   "Set ATTENTION low, HABIT high and WEEDS to nothing, and let the garden run for five minutes while you do something else. It will settle into a few favourite paths. Then raise WEEDS and press X to prune, and listen to it open up again.",
+   "Play a short phrase of your own on the keys four or five times and then stop. Load a field recording into slot 5 for the texture and record a WAV. The same phrase, now in the plants' voices, is your habit played back by a garden."
+  ],
+  "manifesto": {
+   "name": "Generative systems: gardening, not architecture",
+   "short": "Generative gardening",
+   "author": "Inspired by generative-music practice since the 1990s, and by Andrey Markov's chains of probabilities (1906 to 1913)",
+   "year": "1990s to now; Markov chains from 1906 to 1913",
+   "where": "Generative and ambient music, and the mathematics of chains of linked chances",
+   "ideas": [
+    "In our words: in generative music you do not write the notes, you set up a system that writes them. The skill is in choosing the seed and the rules, then listening.",
+    "In our words: a Markov chain is a table of how likely each state is to follow another. Learn the table from a phrase and you can generate endless music that behaves like it, without ever copying it.",
+    "In our words: a garden metaphor suits this. You plant, you water, you prune, you let things go wild in places. You do not control a plant's every leaf, and you do not need to.",
+    "In our words: ambient music can be listened to closely or left in the background. A garden of slow, unequal cycles rewards both: close up you hear the habits, and far away you hear a mood.",
+    "In our words: seasons give a long arc without a score. The garden thickens, brightens, thins and rests, so the piece has a shape that no-one drew."
+   ],
+   "quotes": [],
+   "system": "Your seed phrase is read as scale degrees. Every step from one note to the next is counted in a table (and every pair-to-next in a second table when MEMORY is 2). Each plant has its own register, voice and pace (they are deliberately unequal), keeps its last note or two, and picks the next from the table weighted by how often it was seen. TEMPERATURE flattens or sharpens that choice. WEEDS adds notes that are not in the table. HABIT feeds a small amount of each generated step back into the table, so favourite paths grow. Notes you play are counted heavily. The season wheel scales how many plants are awake, how often they play, how bright the filter is and whether the garden sits an octave lower. ATTENTION lowers level and brightness for background listening and, when high, makes the garden recite its seed slowly now and then.",
+   "dubious": "The mapping of probabilities to plants and seasons is this tool's own. Markov's work was on chains of letters in a poem, not music; its use for composition came later and is a general technique, so no one person's piece is used here."
+  },
+  "design": {
+   "name": "Mid-century seed packets and nursery catalogue illustration",
+   "short": "Seed packet",
+   "who": "Garden-seed and nursery packaging designers, 1940s to 1960s",
+   "era": "1940s to 1960s",
+   "hallmarks": [
+    "A bold banner title in a fat display serif on a flat colour, with the plant's name and a short growing note beneath. The title and strapline here follow that.",
+    "A limited palette of cream, tomato red, leaf green and ochre, printed flat with slight misregistration, and a central illustration of the plant at full size.",
+    "Small instruction panels: sow, depth, season, spacing. The right-hand panel and the season wheel play that role here."
+   ],
+   "works": [
+    "Look up vintage seed packets from the 1940s to 1960s",
+    "Mid-century nursery and seed catalogues",
+    "The botanical plates that fed them, such as those of the 19th century"
+   ]
+  },
+  "no": "88",
+  "slug": "learned-garden",
+  "file": "tools/88-learned-garden.html"
+ },
+ {
+  "title": "Song Form Blocks",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-11-03",
+  "kicker": "MUSIC THEORY · SONG FORM: TWELVE BARS, AABA, VERSE AND CHORUS, THE HOOK, CALL AND RESPONSE",
+  "bpm": 104,
+  "idea": "Most songs are built from a handful of blocks. The twelve-bar blues is a three-line chord pattern that has carried countless songs. AABA is a thirty-two-bar form: a tune twice, a contrasting bridge, the tune again. Verse and chorus put a talking section against a singing one. This instrument lets you pick a form and see it as a row of printed blocks, then plays it with your own sounds: a band (keys, bass, drums), a hook that you can re-roll, and a call-and-response conversation in which one voice makes a short phrase and another answers it. Change the form, the swing or the way the answer is made and you hear how structure shapes feeling.",
+  "controls": "8 slots (keys, bass, kick, snare or brush, ride or hat, caller, responder, organ); five forms (12-bar blues, minor 12-bar, 8-bar blues, 32-bar AABA, verse-chorus-bridge); key, tempo and swing from straight to shuffle; chord richness (triads, sevenths, ninths); quick change and turnaround for the blues; comping style (stabs, sustained, charleston, shuffle); bass style (walking, root and fifth, boogie); note set (minor blues, major blues, major); hook strength and length; call length (one or two bars) and answer style (echo, mirror, fifth above, resolve, free); blue-note bend; levels; VJ chord blocks.",
+  "how": "Press PLAY. The page shows the whole form as a grid of wood-type blocks, one per bar, with the chord on each and the bar that is playing lit. Press 1 to 5 to choose a form. The caller plays a short hook and the responder answers it, and every four bars the pair swap roles. H writes a new hook, S flips between straight and shuffle feel, Q toggles the quick change in the blues. Load a short note into the keys slot and a bass note into the bass slot (D opens the deck), and trim each with the S and E handles. Change the answer style to hear the same call answered four ways.",
+  "fonts": "family=Alfa+Slab+One&family=Rye&family=Roboto+Slab:wght@400;700",
+  "try": [
+   "Load one clear, short pitched sound (a piano note, a guitar pluck, a vocal 'hey') into slot 6 (responder) and a related sound into slot 5 (caller). Choose the 12-BAR BLUES, set swing to shuffle, trim both with the S and E handles to the cleanest part, and notice how the form tells you when to call and when to answer.",
+   "Choose AABA and listen only for the bridge. Put your most unusual sound into the organ slot and turn the organ up. Notice how the bridge feels like a different place, and how glad you are to come back to the tune.",
+   "Set the answer style to MIRROR, hook strength to high and press H until you find a hook you could sing. Record a WAV. Then change only the form and record again. Same hook, different structure: which feels like a complete story?"
+  ],
+  "manifesto": {
+   "name": "Song form: the blues, AABA and verse-chorus, with the hook and call and response",
+   "short": "Song form",
+   "author": "Anonymous folk and popular traditions; the blues of the early 1900s; the popular song of the 1920s to 1950s",
+   "year": "Early 1900s to 1950s (blues); 1920s to 1950s (AABA); 1950s to now (verse and chorus)",
+   "where": "African American blues and work-song traditions; American popular song and the music publishers of the early twentieth century; rock and pop songwriting",
+   "ideas": [
+    "In our words: the twelve-bar blues is a three-line shape. The first line sets out the home chord for four bars, the second moves away to the fourth chord and returns, and the third is the turn that heads for a close. A singer states a line, repeats it, and answers with the third.",
+    "In our words: AABA is a thirty-two-bar form of four eight-bar sections. The tune is played twice, then a bridge goes somewhere else harmonically, then the tune returns, so the return feels like coming home.",
+    "In our words: verse-and-chorus form separates the story from the sing-along. Verses change their words while the chorus stays the same, and a bridge comes late to give a change of view.",
+    "In our words: a hook is a short, repeated phrase that sticks in the memory. It usually has a clear rhythm and a small range, and it comes back often enough to be recognised.",
+    "In our words: call and response is a conversation: one voice states a phrase and another answers it with an echo, a mirror, a reply or a resolution. It is common in many musical traditions and underlies the blues line."
+   ],
+   "quotes": [],
+   "system": "Each form is a list of sections, and each section is a list of bars with one chord per bar, taken from the tool's own tables. The band plays what you chose for each bar: the keys comp, the bass line and the drums on an eight-note grid whose off-beats are pushed late by the swing control (0 is straight, 1 is triplet shuffle). The hook is generated from the note set with a small range and a clear rhythm. In each phrase the caller plays the hook; the responder then answers it with the style you picked: an echo, a mirror (turned upside down), a fifth higher, a resolution (the same rhythm that ends on the key note), or a new phrase. BLUE BEND slides the flat third and flat fifth up into pitch. In the major forms notes on strong beats snap to the chord. In the verse-chorus form the verses are sparse, the choruses full and the bridge drops out the drums.",
+   "dubious": "These forms are common traditions, not any one composer's. The chord tables, hooks and rhythms here are generated by the tool itself and are not copied from any song."
+  },
+  "design": {
+   "name": "Nineteenth-century wood-type posters and playbills (American letterpress job printing)",
+   "short": "Wood-type playbill",
+   "who": "Letterpress job printers and wood-type makers of the 1800s",
+   "era": "1820s to 1900s",
+   "hallmarks": [
+    "Many fat typefaces on one sheet, each line in a different size and style, stacked in blocks and boxed with heavy rules. Each bar here is a printed block of type.",
+    "Slab-serif, fat-face and ornamented letters cut from wood or cast in metal, with uneven inking and worn edges.",
+    "A limited ink set (black, red, mustard) on cream paper, with a bold title at the top and small print below."
+   ],
+   "works": [
+    "Look up 19th-century circus and theatre playbills in wood type",
+    "The Hamilton Wood Type museum collection",
+    "Letterpress broadsides from the 1800s"
+   ]
+  },
+  "no": "89",
+  "slug": "song-form-blocks",
+  "file": "tools/89-song-form-blocks.html"
+ },
+ {
+  "title": "Standing Waves",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-11-03",
+  "kicker": "NATURE · THE HARMONIC SERIES, STIFF STRINGS AND SAND ON A VIBRATING PLATE",
+  "bpm": 72,
+  "idea": "Every pitched sound that rings is made of a stack of pure tones whose frequencies are whole-number multiples of a lowest one: the harmonic series. A string, a pipe and a voice all behave this way, and the series gives us the octave, the fifth, the major third and the strange, flat seventh. This instrument makes the series audible. A bank of sixteen ringing filters is tuned to the multiples of a low note. Your own sounds are fed through it, so they ring like a struck plate. A melody walks up and down the series in pure, just tuning. On the screen a plate of sand shows the pattern each tone would draw, and you can switch tones on and off and make the plate stiffer so the tones drift out of tune.",
+  "controls": "6 slots (melody voice, strike, bow or breath, drone, tick, bell); sixteen resonators with a clickable spectrum (click or drag the bars to set how loudly each harmonic rings); fundamental note; resonance (Q); stiffness (how far the tones are pushed sharp, as in a real stiff string or plate); spectral tilt; excitation sends from the melody, a strike pattern and a continuous bow; melody range and density; fundamental movement (stay, up a fifth, down a fourth, walk the series); just or equal tuning; levels; VJ sand-plate view.",
+  "how": "Press PLAY. Your sounds are fed into sixteen tuned resonators, so everything rings on the low note you chose. Click the spectrum bars on the right to switch harmonics on, off, or to any level, and watch the sand figure change. Raise STIFFNESS and the upper tones go sharp, as in a real metal string. Turn on the BOW to ring the filters with a steady sound (a held breath or a bowed tone), or set STRIKE to tap them with short sounds. Load any sound into the melody slot (D opens the deck) and trim its S and E handles. Press F for the full-screen sand plate.",
+  "fonts": "family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Cormorant+Garamond:wght@500;700",
+  "try": [
+   "Load a short clap, a shaker or a tap into slot 2 (STRIKE) and turn the strike density up. Trim it to the sharp start with the S and E handles. Each hit rings out a chord of harmonics tuned to your low note. Click the spectrum to keep only the odd harmonics, then only the even ones, and hear how the colour changes.",
+   "Put a long vocal note or a held pad into slot 3 (BOW, loops) and turn the bow level up. Use FUNDAMENTAL MOVEMENT: UP A FIFTH so that the resonators move between roots every few bars. Record a WAV: it is your voice turned into a tuned, glassy plate.",
+   "Raise STIFFNESS slowly with a bell or a piano note in the melody slot, then change TUNING between JUST and EQUAL. The seventh harmonic is clearly flat against a piano key. Which version do you prefer, and why does the odd one sound so good?"
+  ],
+  "manifesto": {
+   "name": "Standing waves and the harmonic series",
+   "short": "Harmonic series",
+   "author": "Physics and the acoustics of strings, pipes and plates",
+   "year": "Ancient observation; plates studied from the late 1700s",
+   "where": "The physics of vibrating strings, air columns and plates; the history of musical tuning",
+   "ideas": [
+    "In our words: a vibrating string splits itself into halves, thirds, quarters and more, all at once. The tones this makes are the harmonics, with frequencies of one, two, three, four times the lowest.",
+    "In our words: the ratios 2 to 1, 3 to 2 and 5 to 4 are the octave, the fifth and the major third, so these intervals are built into the physics of sound rather than made up by us.",
+    "In our words: the seventh harmonic and the eleventh do not match any note on a piano. They sit between the keys, which is why 'just' tuned melodies can sound pure and strange.",
+    "In our words: stiff strings and plates do not ring in perfect multiples. Their upper tones are pushed sharp, which is why bells, gongs and steel plates sound different from a plucked cord.",
+    "In our words: sand scattered on a vibrating plate runs to the places that do not move and draws lines between them. Each tone makes its own pattern of nodes, so you can see a standing wave."
+   ],
+   "quotes": [],
+   "system": "The sixteen resonators are band-pass filters at the multiples of the fundamental. Each frequency is the harmonic number times the fundamental, times the square root of 1 plus the stiffness times the number squared, a standard way of modelling a stiff string. Each harmonic has a level you can paint, multiplied by a tilt that makes higher ones quieter. Sound from the melody voice, the strike slot and the bow slot is sent into the bank, and the bank's output is mixed with the original. The melody picks harmonic numbers within the range you set and tunes them exactly (just) or rounds them to the nearest key (equal). The sand figure adds up one simple wave pattern per harmonic and draws the places where the total is close to zero.",
+   "dubious": "The sand figure is a stylised drawing from simple formulae, not a physical simulation of a real plate. The resonator bank is a handy approximation of a vibrating body."
+  },
+  "design": {
+   "name": "Natural-history plates and scientific engraving (the printed 'Fig. 1' page)",
+   "short": "Natural-history plate",
+   "who": "Printers and illustrators of illustrated science books, 1700s and 1800s",
+   "era": "1700s to 1900s",
+   "hallmarks": [
+    "A figure set on a plain, warm paper in a ruled border, with small numbered captions such as 'Fig. 1' and 'Plate I'.",
+    "Fine, dark-brown line work, stipple and hatching to show structure, and no photographs.",
+    "Old-style serif type in small capitals and italics for labels, with measurements and Latin-style names set tiny beside each part."
+   ],
+   "works": [
+    "Look up illustrated natural-history plates from the 1800s",
+    "Copperplate engravings in old scientific atlases",
+    "The plates in early physics and acoustics textbooks"
+   ]
+  },
+  "no": "90",
+  "slug": "standing-waves",
+  "file": "tools/90-standing-waves.html"
+ },
+ {
+  "title": "Zero Field",
+  "deep": true,
+  "category": "art manifesto",
+  "date": "2026-11-03",
+  "kicker": "ART MANIFESTO · ZERO: A COUNTDOWN TO A ZONE OF SILENCE, THEN A NEW BEGINNING",
+  "bpm": 96,
+  "idea": "In the late 1950s a group of artists in Düsseldorf took the name ZERO. They borrowed it from the countdown before a rocket launch, and from the idea of a zone of silence from which something new can begin. Their work favoured light, vibration, repetition and pure, quiet structure over expression and story. This instrument turns that attitude into sound. Seven repeating voices of your own sounds make a calm, even field. A countdown removes them one by one, down to zero, where only a single quiet tone and silence remain. Then the field begins again, perhaps in a new key. Small controls let the voices drift out of step, wobble in pitch like light on a surface, or lock tightly in time.",
+  "controls": "8 slots (pulse, click, hat, tone A, tone B, shimmer, voice, and a zero tone that plays in the silence); countdown length and stage length in beats; zone-of-silence length; direction (down, up, or both) and what happens at restart (same key, up a fifth, random); pulse pattern sets (locked, moire, sparse); drift between voices; pitch vibration depth and speed; path length (how many different notes each voice cycles through); note set (one note, pentatonic, major, whole-tone); brightness filter; stereo width; accent; row mutes (click the colour bars); levels for every voice; VJ test-card view.",
+  "how": "Press PLAY. Seven voices repeat at their own speeds in an even field, and the big number shows the countdown. Every few bars the number drops, a voice leaves and the field gets quieter and duller. At zero only a low tone is left; then the numbers return. Click a colour bar to mute a voice. Drift makes the voices slip out of step slowly, so the pattern shifts like a moire. Load a sound into the pulse slot (D opens the deck) and trim its S and E handles. N skips to the next stage, Z jumps to the zero zone, P holds the countdown, and F opens the full-screen test card.",
+  "fonts": "family=Oswald:wght@500;700&family=Share+Tech+Mono",
+  "try": [
+   "Put a single plain sound, such as one hand clap or one sine-like note, into slots 1 and 4 and set the note set to ONE NOTE. Trim both with the S and E handles to the cleanest part, then listen to what happens when nothing changes except the countdown.",
+   "Load a long, soft room recording into slot 8 (zero tone, loops). Set the zone of silence to 16 beats. It is now the only thing that plays at zero: a place of quiet you made from your own sound. Record a WAV and use the quiet part as the intro for another track.",
+   "Choose the MOIRE pattern set, raise DRIFT to about halfway and put your own tapped, plucked and shaken sounds in slots 2, 3 and 6. Let it run through three countdowns. Notice how the pattern never repeats exactly, even though each voice is perfectly regular."
+  ],
+  "manifesto": {
+   "name": "ZERO: the countdown, the zone of silence and the new beginning",
+   "short": "ZERO",
+   "author": "A group of artists founded in Düsseldorf in 1957",
+   "year": "1957 to 1966",
+   "where": "Düsseldorf, Germany; later an international network of artists working with light, motion and monochrome",
+   "ideas": [
+    "In our words: the name was taken from a countdown, the moment when everything is counted down to nothing and the launch can begin.",
+    "In our words: zero was also described as a zone of silence, a neutral place from which a new start can grow, not an end.",
+    "In our words: the group preferred light, vibration, repetition and calm structure to personal expression, gesture and storytelling.",
+    "In our words: it published a small magazine in the late 1950s and early 1960s and held evening shows in which works were shown for a single night.",
+    "In our words: the group stopped in the mid-1960s, though its ideas about light, motion and quiet continued in many later artists' work."
+   ],
+   "quotes": [],
+   "system": "Seven voices each repeat at a fixed period measured in sixteenth notes: three sets are offered, locked, moire and sparse. Drift stretches each voice's period by a small, different amount, so the pattern slowly slides. Vibration moves the pitch of each hit by a slow wave. The countdown is a list of stages from the chosen number down to one, then a stage of zero. In stage k, the number of voices heard is k divided by the count, rounded up, and the level and brightness fall with it. At zero only the zero tone sounds, with a long fade in and out. After the zone the countdown restarts, optionally in a new key. The test-card picture shows one ring per voice that lights when that voice plays.",
+   "dubious": "The group's own writings are in German and many are only partly translated, and the history of the founding year differs slightly between accounts (1957 or 1958). This tool paraphrases the common summary and is not a reproduction of anything the group wrote."
+  },
+  "design": {
+   "name": "The broadcast test card (television test patterns, 1950s to 1970s)",
+   "short": "Broadcast test card",
+   "who": "Engineers at television broadcasters",
+   "era": "1930s to 1990s",
+   "hallmarks": [
+    "Large concentric circles on a grey ground, crossed by horizontal and vertical lines and a fine grid, used to check alignment.",
+    "A row of flat colour bars at the bottom, each a pure, saturated block, and a few small circles at the corners.",
+    "Plain, technical lettering and big clock-like numerals, with all content arranged symmetrically about the centre."
+   ],
+   "works": [
+    "Look up classic television test cards and monoscope patterns from the 1960s",
+    "Look up the colour-bar test patterns used on broadcast monitors",
+    "Search 'test card' in national broadcast archives"
+   ]
+  },
+  "no": "91",
+  "slug": "zero-field",
+  "file": "tools/91-zero-field.html"
  }
 ]
