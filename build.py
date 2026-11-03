@@ -51,7 +51,7 @@ for m in metas:
     cat.append({'number': m['no'], 'title': m['title'], 'category': m.get('category') or BACKFILL_CAT.get(m['no'], 'art manifesto'),
                 'source': M['name'], 'source_short': M['short'], 'author': M['author'], 'year': M['year'], 'design_homage': D['short'], 'design_short': D['short'], 'design_credit': D['name'],
                 'idea': m['idea'], 'controls': m.get('controls') or first_sentences(m['how'].replace('Press PLAY. ', ''), 2),
-                'deep': bool(m.get('deep')), 'gemini': bool(m.get('gemini')), 'date': m.get('date') or date_for(m['no']), 'file': m['file'], 'thumb': f"screenshots/thumbs/{m['no']}-{m['slug']}.png", **({'live': m['live'], 'live_repo': m.get('live_repo', '')} if m.get('live') else {})})
+                'deep': bool(m.get('deep')), 'gemini': bool(m.get('gemini')), 'date': m.get('date') or date_for(m['no']), 'file': m['file'], 'thumb': f"screenshots/thumbs/{m['no']}-{m['slug']}.png", **({'live': m['live'], 'live_repo': m.get('live_repo', ''), **({'live_label': m['live_label']} if m.get('live_label') else {})} if m.get('live') else {})})
 json.dump(cat, open('catalogue.json', 'w'), indent=1, ensure_ascii=False)
 # ---------- index.html: searchable, filterable catalogue built from catalogue.json (data inlined so it also works from disk) ----------
 open('index.html', 'w').write(open('src/index.template.html').read().replace('/*CATALOGUE*/[]', json.dumps(cat, ensure_ascii=False)).replace('{{N}}', str(len(cat))))

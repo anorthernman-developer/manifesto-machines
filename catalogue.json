@@ -1711,7 +1711,10 @@
   "gemini": false,
   "date": "2026-11-03",
   "file": "tools/90-standing-waves.html",
-  "thumb": "screenshots/thumbs/90-standing-waves.png"
+  "thumb": "screenshots/thumbs/90-standing-waves.png",
+  "live": "https://standing-loops.netlify.app",
+  "live_repo": "https://github.com/anorthernman-developer/standing-loops",
+  "live_label": "▶ Play Standing Loops, the stand-alone sample looper and mixer in this style ↗"
  },
  {
   "number": "91",
