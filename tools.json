@@ -4355,5 +4355,270 @@
   "no": "91",
   "slug": "zero-field",
   "file": "tools/91-zero-field.html"
+ },
+ {
+  "title": "Hold and Release",
+  "deep": true,
+  "category": "found-sound production",
+  "date": "2026-11-04",
+  "kicker": "FOUND-SOUND PRODUCTION · HOLD THE BUILD, RELEASE THE DROP, STACK THE CROWD",
+  "bpm": 124,
+  "idea": "In much found-audio dance music the best moment is not a sound but a pause: tension is held, then released. This instrument puts that moment under your hand. Hold a key and the track builds: the kick falls away, the snare rolls faster, a filter climbs, your voice memo stutters in shorter and shorter slices and everything rises in pitch. Let go and, on the next bar line, there is a breath of silence and then the drop, where one voice of yours becomes a crowd singing along. The longer you hold, the bigger it lands.",
+  "controls": "8 slots (voice memo, kick, clap, hat, field recording that loops, chord stab, sub bass, riser); hold to build (pointer, H or Enter, or any MIDI note) or an auto cycle; build length and drop length in bars; breath of silence before the drop in beats; snare roll, filter sweep, pitch rise and sidechain pump; crowd stack size, spread (detune, timing, stereo) and chord voicing; build stutter; hook of 2 to 8 chops you can re-roll; key, mode, four chord loops, three grooves, tempo and swing; levels for every part; a split-flap departure-board view.",
+  "how": "Press PLAY: a light groove runs. Hold the big HOLD button (or the H key, or press and hold anywhere on the board) and watch the TENSION row fill while the build happens. Let go: the drop lands on the next bar after a short silence. Load a voice memo into slot 1 (D opens the deck) and trim it with the S and E handles to the phrase you want to chop. N picks new chop positions for the hook, X drops at the next bar, Z resets, F opens the full-screen board.",
+  "fonts": "family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;600",
+  "try": [
+   "Record a short phone voice memo of a phrase (a spoken line, a hum, a laugh) and load it into slot 1. Trim the S and E handles to one clean word. Use NEW HOOK a few times until the chops feel like a melody, then hold HOLD for a full build and let go.",
+   "Load a minute of street, kitchen or train noise into slot 5 (field recording). Set BUILD to 8 bars and SILENCE to 2 beats, then hold through the whole build: notice how the quiet space before the drop makes the field recording feel huge when the kick returns.",
+   "Set CROWD VOICES to 7 and CHORD VOICING to 0 (a unison gang), then to 1 (a choir on chord tones). Record a WAV of each and compare: the same single voice becomes a stadium or a church."
+  ],
+  "manifesto": {
+   "name": "Found-sound production: hold the build, release the drop, stack the crowd",
+   "short": "Found-sound producers",
+   "author": "Inspired by found-audio house and garage producers of the 2020s (no quotes, no copied patterns or audio)",
+   "year": "2020s, from older dance-music tension and release",
+   "where": "Phone voice memos, field recordings and club music",
+   "ideas": [
+    "In our words: the drop works because of what is taken away first. The kick leaves, the filter closes the low end off, and the ear starts to ask for it back.",
+    "In our words: a build speeds things up on purpose: snare rolls double in rate, stutters get shorter, pitch climbs. Every doubling makes the release feel bigger.",
+    "In our words: a short breath of silence just before the drop makes the return of the beat hit harder than any extra loudness could.",
+    "In our words: a single recorded voice can be stacked into a crowd by layering copies that are a few cents apart in tuning, a few milliseconds apart in time and spread across the stereo field.",
+    "In our words: a chopped voice memo can carry the whole hook: short slices of one phrase, tuned to the chord, repeat until they feel like a melody."
+   ],
+   "quotes": [],
+   "system": "A 16th-note clock runs three states: groove, build and drop, with a short gap between build and drop. While you hold, tension rises from 0 to 1 over the set number of bars. Tension thins out the kick, speeds the snare roll (every beat, every 8th, every 16th, then doubled), sweeps a high-pass filter up, adds a rising saw riser and your riser slot fitted to the build length, and re-triggers one chop of the voice memo in 2, 4 or 8 slices per beat. When you let go the build runs to the bar line, then the master is cut for the chosen number of beats and the drop begins at full level with a sidechain pump. The crowd stack plays several copies of the voice slot with random detune, timing and pan; chord voicing decides whether each copy sings the note, or a chord tone above it.",
+   "dubious": "This tool describes common dance-production techniques in general terms. It does not copy any producer's tracks, patterns, melodies or recordings, and no artist is imitated."
+  },
+  "design": {
+   "name": "The split-flap departure board (railway and airport signage, 1950s to 2000s)",
+   "short": "Split-flap board",
+   "who": "Transport signage makers",
+   "era": "1950s to 2000s",
+   "hallmarks": [
+    "Rows of identical dark cells, each holding one white capital letter on a card that visibly flips through the alphabet to its new character.",
+    "A strict monospaced grid, one character per cell, with a thin dark hinge line across the middle of every cell.",
+    "Limited colour: black, off-white and one signal yellow or amber for the header, and clear, blunt wording such as NOW and NEXT."
+   ],
+   "works": [
+    "Look up photographs of railway and airport split-flap departure boards",
+    "Look up the history of mechanical flip-disc and split-flap displays",
+    "Search for 'split-flap display' in transport museum collections"
+   ]
+  },
+  "no": "92",
+  "slug": "hold-release",
+  "file": "tools/92-hold-release.html"
+ },
+ {
+  "title": "Long Exposure",
+  "deep": true,
+  "category": "generative systems",
+  "date": "2026-11-04",
+  "kicker": "GENERATIVE SYSTEMS · THE STUDIO AS A COMPOSITIONAL TOOL: STRETCH A MOMENT UNTIL IT BECOMES A PLACE",
+  "bpm": 60,
+  "idea": "A long photographic exposure turns a moving scene into one soft, still picture. This instrument does the same to your sounds. Three clouds of tiny grains, each cut from a different sample of yours, hover around chosen spots in the sound. The longer the exposure, the longer, denser and softer the grains, until a half-second of a voice becomes a standing wave of light. Slowly the clouds drift, the harmony changes by itself, and each cloud breathes in and out on its own long cycle, so the piece rewards both close listening and happily ignoring it. Capture any moment as a frame on the contact sheet and let the piece wander back through them.",
+  "controls": "6 slots (three granular clouds, bell, room tone that loops, pad); exposure (grain length, density and softness), scan speed, shutter freeze, position blur, stereo width, brightness and breathing for each cloud; key, six scales, six chord stacks and harmony drift time; twelve frames on a contact sheet (capture, recall, clear), automatic advance with walk, forward or random order; drag any lane to move a cloud; levels for every part; a bokeh view for the big screen.",
+  "how": "Press PLAY and leave it. The three lanes show your samples with the part each cloud is reading, and grains appear as specks of light. Drag across a lane to move that cloud (keys 1 to 3 choose which); raise EXPOSURE to smear the sound into a texture. Click a frame on the contact sheet to recall it, or an empty one to capture the current moment. Press S for the shutter (freeze), A to let the frames advance by themselves, and F for the full-screen bokeh view. Load your own sounds with D and trim each with the S and E handles to choose the stretch of sound the cloud may read.",
+  "fonts": "family=Space+Mono:wght@400;700&family=Courier+Prime:wght@400;700",
+  "try": [
+   "Load a short phrase of your own voice into cloud 1 and trim its S and E handles to a single vowel. Set EXPOSURE high and SHUTTER OPEN: you now have a held chord made of nothing but that vowel. Record a WAV and use it as the bed under another track.",
+   "Load three very different recordings (a kitchen, a street and a piano note) into clouds 1 to 3. Capture four frames by dragging each lane to different places, then turn ADVANCE on at 20 seconds and walk away for ten minutes.",
+   "Put one long field recording in all three slots, trim each to a different third, and set BREATHING high. Listen for a while, then stop looking at the screen: notice which cloud you only notice when it fades away."
+  ],
+  "manifesto": {
+   "name": "Generative systems: the long exposure, stretching a moment into a place",
+   "short": "Long exposure",
+   "author": "Inspired by tape-splicing, tape-loop and granular studio practice, and by generative music since the 1970s",
+   "year": "1940s to now (granular sound theory 1947; tape splicing in the 1950s; digital granular synthesis from the 1980s)",
+   "where": "Studios, laptops and sound-art installations",
+   "ideas": [
+    "In our words: a grain is a very short slice of sound, from a few hundredths to a few tenths of a second. Many grains laid close together fuse into a smooth sound that no longer sounds like a series of slices.",
+    "In our words: moving the reading position slowly through a recording stretches time without changing pitch, while holding it still freezes the sound like a held breath.",
+    "In our words: a studio can be treated as a compositional tool, not just a place to record. You set a system going, then shape it by listening, rather than writing every note.",
+    "In our words: ambient music can reward listening and ignoring at once. It should be interesting when you attend to it and unobtrusive when you do not.",
+    "In our words: letting several slow cycles of different lengths run together means the combined pattern takes a very long time to repeat, so the piece feels alive without being random."
+   ],
+   "quotes": [],
+   "system": "Each cloud schedules grains at a density that rises with exposure (about 4 to 44 per second), with a length of about 40 to 700 milliseconds, a Hann-like fade in and out, a read position that scans slowly through the trimmed region of its sample and a random jitter set by position blur. Each grain's pitch is one note of the current chord stack, shifted into the cloud's register, with a tiny random detune. The chord's root walks around the chosen scale every harmony-drift period, ringing the pad. Each cloud's level follows its own slow cycle (47, 61 and 89 seconds) scaled by breathing. A frame stores the three read positions, the chord root and stack, the exposure and the scan speed; recall glides the clouds to the stored positions and rings the bell.",
+   "dubious": "Granular synthesis and tape-based techniques are general studio methods with many contributors; this tool presents a simple version in its own words and takes nothing from any recording."
+  },
+  "design": {
+   "name": "The photographic contact sheet and film-edge markings (darkroom proofs, 1930s to 1990s)",
+   "short": "Contact sheet",
+   "who": "Darkroom photographers and film manufacturers",
+   "era": "1930s to 1990s",
+   "hallmarks": [
+    "A dark sheet of film strips, each a row of small frames separated by thin gaps, with rows of sprocket holes along both edges.",
+    "Small frame numbers and arrow marks printed along the film edge in warm amber, and a red grease-pencil circle round the frames chosen for printing.",
+    "A restricted palette of near-black, cream paper tones and warm amber, and a plain typewriter or monospaced type."
+   ],
+   "works": [
+    "Look up photographers' contact sheets with grease-pencil selections",
+    "Look up the film-edge markings found on 35mm film strips",
+    "Search 'contact sheet' in museum photography archives"
+   ]
+  },
+  "no": "93",
+  "slug": "long-exposure",
+  "file": "tools/93-long-exposure.html"
+ },
+ {
+  "title": "Talea and Color",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-11-04",
+  "kicker": "MUSIC THEORY · ISORHYTHM: A RHYTHM AND A PITCH LIST THAT NEVER LINE UP",
+  "bpm": 96,
+  "idea": "In the fourteenth century composers began building music from two repeating patterns of different lengths: a rhythm, called the talea, and a list of pitches, called the color. If the rhythm is twelve steps long and the pitch list seven notes long, each note meets each rhythm position in a new combination, and the music takes a long time to come back to where it started. This instrument gives you four voices, each with its own talea and color you can edit, change in speed (a voice at double speed is a diminution, at half speed an augmentation) and hear drift against the others. A tick marks every restart of the rhythm and a bell every restart of the pitches, so you can hear them part and meet again.",
+  "controls": "4 voices, each with a talea of 2 to 16 steps (click cells to toggle) and a colour of 2 to 12 scale degrees (click cells to step up or down), speed (x1, x2, x0.5 or x1.5) and octave; 2 marker sounds (talea restart and colour restart); rotate, new random talea or colour, reverse colour, align all voices; key, six scales, tempo, note length, reverb; the printout shows each voice's full cycle length in steps and bars and the time for all voices to realign; mute any voice; levels for every part; a green-bar paper VJ view that scrolls.",
+  "how": "Press PLAY. Four voices play at once, each reading its own rhythm row (X is a note, a dot is a rest) and its own pitch row. The highlighted cell is the one just played. Click the cells to change them; click a voice's label (or press 1 to 4) to choose it, then press T to rotate its rhythm, X for a new rhythm, C for new pitches, V to reverse them and M to mute it. Change the lengths in the panel and watch the REPEATS AFTER figure grow. A restarts all voices together. Load a sound with D and trim it with the S and E handles to one clean note; the tool tunes it to every pitch.",
+  "fonts": "family=VT323&family=Courier+Prime:wght@400;700",
+  "try": [
+   "Load one plucked or struck note of your own into all four slots and trim the S and E handles to its attack and early decay. Set the talea lengths to 8, 8, 8, 8 and the colour lengths to 3, 4, 5, 7. All four voices share a rhythm length, yet the melodies take a very long time to realign.",
+   "Keep the colour length at 5 for voice I and change its talea length from 5 to 4, 6, then 7. At length 5 the pattern repeats in one go; at 7 it takes five times as long. Record a WAV of the length that feels most alive.",
+   "Load a voice, a breath or a bowed sound into voice IV, set its speed to x0.5 (augmentation) and its octave to +1 so it spans the other three. Turn the markers up and use them as your anchor to hear where each cycle begins."
+  ],
+  "manifesto": {
+   "name": "Isorhythm: talea and color",
+   "short": "Isorhythm",
+   "author": "Composers of the fourteenth-century Ars nova in France and Italy, and later composers",
+   "year": "14th century to now",
+   "where": "Western Europe; later taken up in many twentieth-century works",
+   "ideas": [
+    "In our words: the talea is a rhythm pattern that repeats; the color is a list of pitches that repeats. The two are chosen to be different lengths.",
+    "In our words: when the lengths differ, each pitch lands on each part of the rhythm in turn, so the same ingredients keep producing new combinations.",
+    "In our words: the full cycle is the talea length times the colour length, divided by the greatest common divisor of the colour length and the number of notes in the talea, so small changes in length make large changes in how long the music takes to repeat.",
+    "In our words: the same melody can be played faster (diminution) or slower (augmentation) while other voices carry on at the original speed.",
+    "In our words: composers hid this structure inside the music for the ear to feel more than to count, and it was revived in the twentieth century as an early example of building music from a system."
+   ],
+   "quotes": [],
+   "system": "Each voice has a talea (a list of 1s and 0s, up to 16 long, of which the first T are used) and a color (a list of up to 12 scale degrees, of which the first C are used). A voice steps through its talea at its own speed. At each 1 it plays the next degree of its color, then moves on. Note length runs until the next 1 in the talea. Voice I (or the voice you choose) also fires a tick when its talea restarts and a bell when its colour restarts. The printout counts the notes (k) in the talea and shows the voice's cycle as T multiplied by C divided by the greatest common divisor of C and k, in steps and in bars at its speed, and the whole piece's realignment as the least common multiple of the voices' cycles.",
+   "dubious": "The details of fourteenth-century practice vary across sources, and surviving examples are often more flexible than the strict model; this tool uses the common simplified description."
+  },
+  "design": {
+   "name": "Green-bar computer printout (line-printer paper, 1960s to 1990s)",
+   "short": "Green-bar printout",
+   "who": "Computing centres and printer makers",
+   "era": "1960s to 1990s",
+   "hallmarks": [
+    "Wide continuous paper with alternating pale green and white horizontal bands, to guide the eye along long rows of figures.",
+    "Tractor-feed margins punched with round holes, with dotted perforation lines where the edges tear off.",
+    "Monospaced, dot-matrix or typewriter-like capital lettering, with everything laid out in strict character columns."
+   ],
+   "works": [
+    "Look up photographs of green-bar line-printer paper and tractor-feed fanfold",
+    "Look up early computer art and music printouts from the 1960s",
+    "Search 'line printer output' in computing-history museum collections"
+   ]
+  },
+  "no": "94",
+  "slug": "talea-color",
+  "file": "tools/94-talea-color.html"
+ },
+ {
+  "title": "Synchrony",
+  "deep": true,
+  "category": "nature",
+  "date": "2026-11-04",
+  "kicker": "NATURE · FIREFLIES, HEARTS AND CLAPPING CROWDS: HOW SEPARATE RHYTHMS FIND EACH OTHER",
+  "bpm": 100,
+  "idea": "In some forests, thousands of fireflies on riverbanks start the evening flashing at random and end it flashing in unison, with no leader. Each insect nudges its own clock a little every time it sees a neighbour flash. This instrument is that swarm. Each firefly is a tiny clock that fires one of your sounds when its clock reaches the top, at a pitch set by where it sits on the field. Turn coupling up and the swarm slowly pulls into time; turn it below zero and they push apart. When enough of them flash together a heartbeat appears and a pad swells, so you hear order arriving.",
+  "controls": "6 slots (three glow sounds, a heartbeat, a ping for your clicks, a pad that loops); number of fireflies (4 to 40), flash rate, spread of natural rates, coupling (negative pushes apart), noise, reach; key, six scales, octave, note length, quantise to 16ths with its own tempo, heartbeat threshold; click the field to send a pulse; scatter, sync all, pulse; the order meter and a phase ring; levels for every part; a big-screen neon view.",
+  "how": "Press PLAY. Each dot flashes on its own for a while and you hear scattered notes. Raise COUPLING and watch the order meter climb as the swarm pulls into time; when it is high the heartbeat starts and the pad swells. Click anywhere on the field to send a pulse that nudges the fireflies near it. Press S to scatter them again, Y to start them all together, G to quantise the notes to a grid, and F for the full-screen neon view. Load a sound with D and trim its S and E handles to a short pluck for the best flashes.",
+  "fonts": "family=Tilt+Neon&family=Space+Grotesk:wght@400;600",
+  "try": [
+   "Load a short plucked or struck sound into Glow A, trim its S and E handles to the attack, and set COUPLING to 0.15 with NOISE at 0.5. The swarm gets close to unison and slips away again, over and over, which makes endless slowly changing rhythms. Record a WAV of one minute.",
+   "Load a kick or a soft thump into the Heartbeat slot and a long breath or drone into the Pad. Start with a negative coupling, then slowly raise it over a minute and let the music arrive: a track that builds itself out of disorder.",
+   "Put three different small sounds (a click, a vowel, a bell) in Glow A, B and C. Set QUANTISE on and the rate near 1.2 Hz, then change the key from the panel while the swarm plays, so the same rhythm reappears in a different harmony."
+  ],
+  "manifesto": {
+   "name": "Synchrony in nature",
+   "short": "Synchrony",
+   "author": "Inspired by the study of coupled oscillators and of synchronous fireflies, cicadas and hearts",
+   "year": "17th century to now (the first noted link between pendulum clocks in 1665; modern models from the 1970s)",
+   "where": "Riverbanks in South-East Asia and North America; laboratories; concert halls",
+   "ideas": [
+    "In our words: a swarm can keep time with no leader, because each member adjusts to the others a little at a time.",
+    "In our words: a model of this treats each firefly as a clock that fires when it reaches the top and then starts again, nudged forward when it sees a flash.",
+    "In our words: if the nudge brings a clock closer to firing, the group slides into unison. If the nudge holds it back, the group spreads out.",
+    "In our words: the order meter measures how aligned the clocks are, from zero for scattered to one for perfect agreement.",
+    "In our words: audiences can fall into synchronised clapping in the same way, and hearts in the body keep time together by exchanging small signals."
+   ],
+   "quotes": [],
+   "system": "Each firefly has a phase from 0 to 1 that rises at its own natural rate (the flash rate varied by the spread) plus a little random noise. At 1 it flashes, plays a sound whose pitch is set by its horizontal position, and returns to 0. Every other firefly's phase is changed by the coupling multiplied by its own phase and by a weight that falls with distance (set by reach), so with a positive coupling those close to firing are pushed to fire, and with a negative one they are held back. A firefly pushed to 1 flashes at once. The order meter is the length of the average of all the phase vectors on a circle. When enough fireflies flash within 70 milliseconds, the heartbeat plays, and the pad level follows the order meter.",
+   "dubious": "Real firefly flashing is more complex than this simple pulse-coupled model; the tool is a teaching sketch of the general idea."
+  },
+  "design": {
+   "name": "Neon sign tubes (night-time shop and cinema signage, 1930s to 1980s)",
+   "short": "Neon signage",
+   "who": "Sign makers and shopfront designers",
+   "era": "1930s to 1980s",
+   "hallmarks": [
+    "Letters and lines drawn as one glowing tube bent into shape, with a bright white-hot core and a soft coloured halo.",
+    "Saturated pinks, cyans and yellows against a near-black night sky.",
+    "An occasional flicker or buzz when a tube is failing, and a frame of tube around the whole sign."
+   ],
+   "works": [
+    "Look up photographs of mid-century neon shop and cinema signs",
+    "Look up neon sign museums and their archives",
+    "Search 'neon sign' in design-history collections"
+   ]
+  },
+  "no": "95",
+  "slug": "synchrony",
+  "file": "tools/95-synchrony.html"
+ },
+ {
+  "title": "Simultaneous Discs",
+  "deep": true,
+  "category": "art manifesto",
+  "date": "2026-11-04",
+  "kicker": "ART MANIFESTO · ORPHISM: COLOUR AS RHYTHM, AND THE WORLD AS EVERYTHING AT ONCE",
+  "bpm": 90,
+  "idea": "In the 1910s some painters in Paris dropped recognisable subjects and built pictures from discs and rings of pure colour, arguing that colour contrasts could carry the rhythm and movement that music has. They called the effect simultaneous contrast: a colour looks different depending on its neighbours, and a picture can seem to vibrate. This instrument turns that into a score. Six rings, each painted with up to twelve colours, turn at different speeds. Each time a coloured segment passes the reading line a note sounds, with the colour setting the pitch. Where neighbouring colours clash, notes ring louder.",
+  "controls": "6 slots (one per ring); 12 paintable colours, each a pitch class snapped to a chosen key and scale (seven scales); seconds per turn; per-ring segment count (3 to 12), speed ratio (from minus 3 to 3, negative turns backwards) and mute; simultaneity (one reading line to a fan, so the rings sound at different moments); contrast effect; note length; octave; reverb; random, close-hue and complementary painting; a bold VJ view where the whole screen takes the colour of the last note.",
+  "how": "Press PLAY. The six rings turn and each segment that reaches the dark reading line sounds a note. Pick a colour from the palette and click or drag over the rings to paint them; alt-click a segment to pick its colour up. Press R, M or C to repaint everything randomly, in close hues or in complementary pairs. Raise SIMULTANEITY to fan the reading line out so the rings no longer sound together. Press 1 to 6 to mute rings and F for the full-screen view. Load your own sounds with D and trim each with its S and E handles; each ring plays its own sound.",
+  "fonts": "family=Rubik:wght@400;500;700;800",
+  "try": [
+   "Load a short sound (a pluck or a vowel) into all six slots, trim each S and E handle to a slightly different part of it, and paint all rings with the same colour. Then change a single segment to a distant colour and listen to how one note changes the whole texture.",
+   "Set SIMULTANEITY to zero so all six rings sound on one line, then raise it slowly to 100 percent. A tight chord first becomes a rolling pattern. Record that move as a WAV and use it as a transition.",
+   "Paint every ring in complementary pairs (press C), set the contrast effect to full and put a kick, a clap and a hat in rings 1 to 3. Rings with clashing neighbours will accent themselves, giving a rhythm you never programmed."
+  ],
+  "manifesto": {
+   "name": "Orphism: simultaneous contrast and colour rhythm",
+   "short": "Orphism",
+   "author": "Inspired by the Paris painters of the Orphist movement and the nineteenth-century colour theory they drew on",
+   "year": "1912 to the 1920s",
+   "where": "Paris, with echoes in Germany and the United States",
+   "ideas": [
+    "In our words: a picture can be built from pure colour and shape alone, with no recognisable subject.",
+    "In our words: placed side by side, two colours change each other's appearance, so a colour never looks the same in two places. This is called simultaneous contrast.",
+    "In our words: the painters compared colour contrasts to musical rhythm and harmony, and wanted a picture to move like a piece of music.",
+    "In our words: circles and discs were favoured because they suggest turning, and so time passing, in a still image.",
+    "In our words: they wanted to show the world as it is felt, with many things happening at once, instead of a single frozen view."
+   ],
+   "quotes": [],
+   "system": "Each ring has up to twelve segments, each painted one of twelve colours; a colour's number is a pitch class counted up from the key, which is snapped to the nearest note of the chosen scale. A ring turns at the base speed (one turn in the chosen number of seconds) multiplied by its ratio, and a negative ratio turns it backwards. When a new segment reaches the reading line, a note sounds on that ring's slot. The reading line is straight when simultaneity is zero, and each inner ring reads slightly further round as it rises. The loudness is scaled by how far the colour is around the colour circle from the segments of the neighbouring rings at that moment, mixed by the contrast setting.",
+   "dubious": "The Orphist group was small and its members disagreed about its aims; this tool presents only the broad ideas of colour contrast and rhythm, in our own words, and uses no image of any painting."
+  },
+  "design": {
+   "name": "Bold flat colour discs and woven textile pattern (1910s to 1920s abstract design)",
+   "short": "Disc textile",
+   "who": "Abstract painters and textile and poster designers of the period",
+   "era": "1910s to 1920s",
+   "hallmarks": [
+    "Flat, saturated colour segments arranged in concentric rings and wedges, with no shading or outlines.",
+    "A warm cream ground with the faint grid of a woven fabric showing through everything.",
+    "Heavy geometric sans-serif lettering in capitals, set simply and left-aligned."
+   ],
+   "works": [
+    "Look up abstract disc paintings of the 1910s in museum collections",
+    "Look up woven and printed textile designs from the 1920s with concentric circles",
+    "Search 'simultaneous contrast' colour diagrams in colour-theory histories"
+   ]
+  },
+  "no": "96",
+  "slug": "simultaneous-discs",
+  "file": "tools/96-simultaneous-discs.html"
  }
 ]

@@ -1,5 +1,35 @@
 # Devlog
 
+## 4 November 2026 · 92 to 96, five deep instruments: hold and release, long exposure, talea and color, synchrony, simultaneous discs
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #10), so no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ).
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 92 | Hold and Release | found-sound production | Found-sound production: hold the build, release the drop, stack the crowd (paraphrased, nothing quoted) | Split-flap board |
+| 93 | Long Exposure | generative systems | Generative systems: the long exposure, stretching a moment into a place (granular clouds and a contact sheet of frames) | Contact sheet and film-edge markings |
+| 94 | Talea and Color | music theory | Isorhythm: a rhythm and a pitch list of different lengths | Green-bar printout |
+| 95 | Synchrony | nature | Synchrony in nature: fireflies as pulse-coupled clocks | Neon signage |
+| 96 | Simultaneous Discs | art manifesto | Orphism: simultaneous contrast and colour as rhythm (paraphrased, nothing quoted) | Bold flat disc textile |
+
+**What's new in each**
+
+- **92 Hold and Release:** eight slots (voice memo, kick, clap, hat, field loop, chord stab, sub, riser). Hold H, Enter, the pointer or a MIDI note: the groove builds (stutter, rising high-pass sweep, crowd stack of detuned and time-offset copies of the voice, hook chops, riser fitted to the build length), a silent gap you can set, then the drop lands on the bar line. Split-flap board and VJ view.
+- **93 Long Exposure:** three granular clouds on their own slots; exposure sets grain length, density and softness; scan, position blur, shutter freeze, breathing; six scales and chord stacks with a drifting root; twelve frames on a contact sheet that capture and recall the cloud positions and harmony, with optional automatic advance; drag a lane to move a cloud.
+- **94 Talea and Color:** four voices, each with a talea (2 to 16 steps, click to edit) and a color (2 to 12 scale degrees, click to step up or down), speed ratios for diminution and augmentation, markers for talea and colour restarts, and a printout of each voice's repeat length and the time for all voices to realign.
+- **95 Synchrony:** 4 to 40 pulse-coupled fireflies with coupling from negative (push apart) to positive (pull together), rate spread, noise and reach; each flash plays a pitched slot; an order meter and phase ring; a heartbeat and a pad arrive as they synchronise; click to send a pulse; optional quantise to a grid.
+- **96 Simultaneous Discs:** six rings of up to twelve segments painted from twelve colours (each a pitch class snapped to a scale), turning at different ratios (negative reverses); a reading line that fans out with the simultaneity control; notes are louder where neighbouring rings clash in colour.
+
+**Tests:** `node test/run.js 92,93,94,95,96` passed 5/5 (audio, LEARN, WAV and AIFF loaded and used, WAV recording, no console errors). `node test/deep.js` passed 5/5 and `node test/handles.js` passed 5/5 (deck, slots, reverse, presets, export and import, key sheet, soak, S and E handles drag, F enters VJ). MIDI could not be exercised in headless Chrome (permission is blocked); the handlers are present.
+
+**Bugs fixed while building**
+
+- 95: the pad gain node was referenced wrongly and threw on every tick; fixed. Default coupling lowered so the swarm takes a while to synchronise.
+- 93, 94: overlong canvas captions shortened so they fit.
+- 94: the learn-panel sentence on the cycle length was reworded to be exact.
+
+**Compliance:** no named people in titles, branding or visuals, only open-licence Google Fonts, no third-party images or audio, no analytics, no Gemini calls today, secret scan clean.
+
 ## 3 November 2026 · 87 to 91, five deep instruments: resample chain, learning garden, song forms, harmonic series, countdown to zero
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #9), so no replies were needed. Direction still comes from the 27 October notes, and from the 1 November note on 77: keep and improve the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ). Spin-off idea for 79 noted, not repeated today.
