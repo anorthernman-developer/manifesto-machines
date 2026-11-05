@@ -417,6 +417,112 @@
   "file": "tools/10-zaum.html"
  },
  {
+  "title": "Wabi-Sabi Decay",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-11-05",
+  "kicker": "NATURE AND PHILOSOPHY · WABI-SABI: BEAUTY IN THE IMPERFECT, IMPERMANENT AND INCOMPLETE",
+  "bpm": 70,
+  "idea": "Wabi-sabi is a Japanese way of seeing that finds beauty in things that are worn, weathered, modest and unfinished: a cracked bowl, a faded cloth, moss on a stone. This instrument plays a short piece that ages while you listen. Notes are forgotten one by one, the sound darkens like sun-faded cloth, the pitch wobbles like old tape, and a crackle of dust creeps in. You can mend the gaps with gold, the way a broken bowl is repaired with gold lacquer: the mend does not hide the damage but shows it, and the piece comes back changed.",
+  "controls": "6 slots (bowl, pluck, tap, breath, found voice, dust crackle); a generated 32-step, five-track piece with density and seed; life span from 8 to 200 bars with auto-age or a hand-drawn age slider; memory loss, darkening, pitch wobble, bit-crush and crackle amounts; MEND with gold (restores lost notes as brighter, changed notes); renew or hold at the end; key, scale, swing, reverb, level; a stencil-dyed cloth view and a big-screen VJ mode.",
+  "how": "Press PLAY: a small sparse piece starts clean and begins to age. Watch the stencil cloth: each motif is a note, fading as it nears forgetting and showing a dotted ghost once it is gone. Press K (or MEND) to repair lost notes with gold, which come back an octave higher and a different note. Press N for a fresh piece, and drag the AGE slider by hand if you want to push time forwards or backwards. Open the deck (D) to load your own sounds and trim each with S and E.",
+  "fonts": "family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700",
+  "try": [
+   "Load a single recorded piano chord or guitar note into slots 1 and 2 and a handful of finger taps into slot 3. Set the life span to 30 bars and play it through: you will hear a tidy phrase turn into half-remembered fragments.",
+   "Drag AGE to about 70 percent and switch auto-age off. Mend three times with K and listen to which new golden notes appear. Press REC and keep the take: it is a damaged, repaired piece with its history audible.",
+   "Put a field recording in slot 4 and a voice memo in slot 5, set memory loss to maximum and crackle high, then let it renew itself. Each cycle leaves a different handful of survivors."
+  ],
+  "manifesto": {
+   "name": "Wabi-sabi: the beauty of the imperfect and impermanent",
+   "short": "Wabi-sabi",
+   "author": "Inspired by the Japanese aesthetic traditions of wabi-sabi and kintsugi (gold repair)",
+   "year": "Medieval origins; developed through the tea-house traditions of later centuries",
+   "where": "Japan",
+   "ideas": [
+    "In our words: nothing lasts, nothing is finished and nothing is perfect, and noticing this can be a source of calm and beauty rather than sadness.",
+    "In our words: signs of age such as wear, cracks, fading and patina are part of an object's story and can make it more beautiful than when it was new.",
+    "In our words: kintsugi repairs a broken bowl with gold, so the break is celebrated as part of its history instead of hidden.",
+    "In our words: simplicity and restraint leave room for the listener or viewer to complete the picture themselves.",
+    "In our words: in sound, this suggests music that fades, wobbles and loses notes gracefully, and mends itself with something new."
+   ],
+   "quotes": [],
+   "system": "A 32-step, five-track piece is generated from your seed, density, key and scale. Every note is given a random point in the piece's life at which it will be forgotten; memory loss stretches or squeezes those points. As the age value rises from 0 to 1, notes that have passed their point go silent, notes close to it flicker, the filter closes, the pitch drifts slightly flat with random wobble, a bit-crushed copy of the sound fades in, and dust crackles become more frequent. MEND takes several forgotten notes, changes their pitch, lifts them an octave and makes them immune to forgetting for the rest of the piece, then turns the age back a little. At the end of its life the piece either holds or is renewed.",
+   "dubious": "Wabi-sabi is a broad and much-debated aesthetic, and the word is often used loosely; this tool is a small playful reading of the idea, not a statement of how it is practised."
+  },
+  "design": {
+   "name": "Katazome stencil dyeing: indigo and white resist patterns, with wave and hemp-leaf motifs",
+   "short": "Katazome stencil",
+   "who": "Japanese textile dyers and pattern-stencil makers",
+   "era": "Traditional, centuries old",
+   "hallmarks": [
+    "Deep indigo cloth with crisp white motifs where the stencil resisted the dye.",
+    "Repeating geometric motifs such as overlapping concentric wave arcs, laid out in rows like scales.",
+    "Small red seal marks and narrow borders, with the soft fading of well-used cloth."
+   ],
+   "works": [
+    "Look up katazome stencil-dyed textiles in museum collections",
+    "Look up traditional Japanese wave and hemp-leaf pattern collections",
+    "Search for kintsugi repaired bowls in museum collections"
+   ]
+  },
+  "no": "10",
+  "slug": "-wabi-sabi-decay",
+  "file": "tools/100-wabi-sabi-decay.html"
+ },
+ {
+  "title": "Pattern and Decoration",
+  "deep": true,
+  "category": "art manifesto",
+  "date": "2026-11-05",
+  "kicker": "ART MANIFESTO · PATTERN AND DECORATION: REPEAT, MIRROR, SPIN AND GLIDE A SMALL MOTIF INTO A WHOLE WALLPAPER OF MUSIC",
+  "bpm": 100,
+  "idea": "In the 1970s a group of artists argued that pattern, ornament and decoration deserved to be taken seriously as art, not dismissed as trim for the edges of important things. Pattern-makers have always used the same few moves: repeat a motif, mirror it, rotate it, or slide and flip it. Mathematicians found that these moves sort every repeating pattern into a small family of symmetry groups. Here you draw one bar-long motif, choose a symmetry group, and the wallpaper of music unrolls: each bar is the motif transformed, and three layers play it with different relationships, a little varied and a little ornamented, because exact repetition is only the start.",
+  "controls": "6 slots (layer 1 low and high, layer 2, layer 3, pulse tick, ornament voice); an 8 by 8 motif editor you paint; seven symmetry groups for the order of bars; independent relations for layers 2 and 3 (same, mirror, retrograde, spin, octave up, brick shift); stagger between layers; repeat-and-vary and ornament amounts; note length, swing, tempo, key, scale and octave; motif tools (random, clear, mutate, shapes); a banknote-engraving VJ view.",
+  "how": "Press PLAY, then paint a few cells in the small motif grid on the left; the wallpaper on the right shows what each bar of each layer will play. Press G to change symmetry group and listen for the shape of the repeat: a hop is plain repetition, a mirror turns the tune upside down on alternate bars, a spin plays it backwards and upside down. Raise VARY to let the pattern wear and drift, and ORNAMENT to add small grace-note flourishes. Open the deck (D) to load your own sounds and trim each with S and E.",
+  "fonts": "family=Cormorant+SC:wght@600;700&family=Spline+Sans+Mono:wght@400;600",
+  "try": [
+   "Load a short plucked note into slots 1 and 2, a marimba or wooden hit into slot 3 and a bell into slot 4. Draw a five-note zigzag, choose the full-symmetry group, and set layer 2 to mirror: you will hear the same tune answering itself upside down.",
+   "Choose the glide group, set stagger to 1 bar and VARY to 30 percent. Press REC for two minutes and keep the take: a patterned piece whose repeats never quite match.",
+   "Record yourself clapping a simple rhythm into slot 5 (the pulse) and tap the same rhythm as your motif. Then switch the group and hear that one rhythm become eight different grooves."
+  ],
+  "manifesto": {
+   "name": "Pattern and Decoration: ornament as art, and the symmetry of repeating patterns",
+   "short": "Pattern and Decoration",
+   "author": "Inspired by the 1970s pattern-and-decoration art movement, and by the mathematics of symmetry groups used to classify repeating patterns",
+   "year": "1970s (the movement); symmetry-group classification worked out in the 19th century",
+   "where": "Mainly the United States for the movement; pattern traditions worldwide",
+   "ideas": [
+    "In our words: pattern and ornament have been undervalued as art, even though they are among the oldest and most widespread ways people make beautiful things.",
+    "In our words: a repeating pattern can only be built from a few moves: slide it along (translation), flip it (reflection), turn it (rotation), or slide and flip together (glide reflection).",
+    "In our words: in music these correspond to repeating a phrase, inverting it (turning it upside down in pitch), playing it backwards (retrograde), and both together.",
+    "In our words: strict repetition is soothing, and small variation or ornament keeps it alive, which is how traditional crafts often work.",
+    "In our words: ornament at the edges can become the main event if you give it your full attention."
+   ],
+   "quotes": [],
+   "system": "The motif is a grid of 8 steps by 8 pitch rows, one bar long. Each bar is made by applying a transformation to the motif: retrograde reverses the steps, inversion flips the pitch rows, a glide also shifts the steps sideways by half a bar, and a spin does retrograde and inversion together. The chosen group is a repeating list of those transformations, one per bar, for example a mirror group alternates the plain motif with its inversion. Layers 2 and 3 apply a further transformation on top, and the stagger moves them to different places in the list. Repeat-and-vary changes one note in a bar by a step with a given chance, and ornament plays a quick three-note flourish at the start of a bar.",
+   "dubious": "The pattern-and-decoration movement was varied and its members had different views; the group names here are friendly labels for transformations in music, not a claim about any artist's method, and no works are reproduced."
+  },
+  "design": {
+   "name": "Banknote engraving: guilloche rosettes, fine-line moire backgrounds and microtext borders",
+   "short": "Banknote engraving",
+   "who": "Security-printing engravers and designers",
+   "era": "19th century to the present",
+   "hallmarks": [
+    "Guilloche: looping, interlaced curved lines forming rosettes, made by geometric lathes and now by software.",
+    "Very fine parallel wavy lines that create moire shimmer in the background.",
+    "Dense borders of tiny repeated text, outlined numerals in the corners and restrained two- or three-colour inks on pale paper."
+   ],
+   "works": [
+    "Look up guilloche patterns on historic banknotes in museum collections",
+    "Look up spirograph and geometric-lathe engraving patterns",
+    "Search for security-printing border and microprint designs"
+   ]
+  },
+  "no": "10",
+  "slug": "-pattern-and-decoration",
+  "file": "tools/101-pattern-and-decoration.html"
+ },
+ {
   "title": "Theory of Intervals",
   "idea": "A film strip of sample 'shots', where the loudest music happens in the cuts between them.",
   "how": "Press PLAY. Each frame on the strip is a shot: a piece of your sample with its own speed and length. Between shots is an interval, and it sounds as a sweep from one shot to the next, bigger when the shots are more different. Drag a frame up or down to change its speed, click a gap to change its kind of cut, and press MONTAGE to re-edit the order. EYE spins the poster spiral faster.",
@@ -4620,5 +4726,164 @@
   "no": "96",
   "slug": "simultaneous-discs",
   "file": "tools/96-simultaneous-discs.html"
+ },
+ {
+  "title": "Stranger Duet",
+  "deep": true,
+  "category": "found-sound production",
+  "date": "2026-11-05",
+  "kicker": "FOUND-SOUND PRODUCTION · TWO STRANGERS' RECORDINGS, ONE KEY, ONE TEMPO",
+  "bpm": 122,
+  "idea": "A lot of found-sound dance music starts with two recordings that have nothing to do with each other: a voice memo from a kitchen and a few words caught on a street. The producer's job is to introduce them. This instrument pitch-checks both recordings, nudges each into the key you choose, chops them into eight slices and lets them talk over a house or garage beat. In turn they take the floor, then reply in each other's gaps, then sing together a harmony apart. Drums, a field-recording bed and chord stabs sit underneath, and every pattern is a grid you can click.",
+  "controls": "7 slots (voice A, voice B, kick, clap, hat, field bed, chord stab); key, scale and tempo; MATCH TO KEY (pitch-detects A and B and sets each slot's pitch); two 16-step chop patterns of eight slices each (click to cycle, right-click to clear); turn length (1, 2 or 4 bars); interrupt chance; harmony interval; chop length; density; slice order (as drawn, walking, random, reversed); groove (house, garage, broken); swing; drum, bed, stab, reverb and voice levels; new letters, swap A and B; an airmail VJ view.",
+  "how": "Press PLAY: voice A speaks, B answers, they trade and finally sing together, four turns in a cycle. Click a cell in the A or B row to choose which slice (1 to 8) plays on that step; right-click clears it. Press M to match both voices to your key, N for new random letters and X to swap the two voices' patterns. Open the deck (D), load a voice memo into slot 1 and a field recording into slot 2, and trim each with its S and E handles. Press F for the full-screen airmail view.",
+  "fonts": "family=Special+Elite&family=Barlow+Condensed:wght@500;700",
+  "try": [
+   "Put a voice memo in slot 1 and a street recording of someone else talking in slot 2, press M so both land in the key, then set the turn length to 1 bar. You get a conversation between two people who never met.",
+   "Choose the garage groove, set the harmony to +7 and the chop length to 3, then trim slot 1 to a single vowel with S and E. The vowel becomes a chord that follows the stabs.",
+   "Load a long field recording into slot 6, drop the drums to zero and turn the bed up. Record twenty bars with REC and use the result as the intro of a track."
+  ],
+  "manifesto": {
+   "name": "Found-sound production: the duet of two strangers",
+   "short": "Stranger Duet",
+   "author": "Inspired by found-audio house and garage producers of the 2020s (no quotes, no copied patterns or audio)",
+   "year": "2020s, from older sampling and call-and-response traditions",
+   "where": "Bedrooms, phones and dance floors",
+   "ideas": [
+    "In our words: a phone recording of someone's voice carries emotion that no synth can fake, and most of that emotion survives being chopped small.",
+    "In our words: two found sounds only sound like a duet once they share a key and a pulse, so pitch-matching and tempo are the producer's matchmaking.",
+    "In our words: call and response is the oldest arrangement trick: one voice speaks, another answers in the gap, and then they join.",
+    "In our words: a field recording under the beat tells the listener where they are, which is why the room tone is not an afterthought.",
+    "In our words: a few chops repeated with small changes can build feeling faster than a long melody."
+   ],
+   "quotes": [],
+   "system": "Both voices are tested for their main pitch by autocorrelation (looking for the repeat length of the waveform). MATCH TO KEY finds the nearest note of your scale and writes the semitone shift into each slot's pitch. Each voice has a 16-step pattern whose cells hold a slice number from 1 to 8 (the trimmed region cut into eight). The arrangement cycles through four turns: A alone, B alone, trade (B only in A's gaps) and together (B sings A's slices a chosen interval above). Interrupt chance lets the quiet voice break in. The chord stabs follow a four-bar progression built from the scale you pick.",
+   "dubious": "No claim is made about any one producer's method; this is a general description of found-audio dance production, written in our own words."
+  },
+  "design": {
+   "name": "Airmail envelope (par avion): striped borders and typewritten labels, 1930s to 1980s",
+   "short": "Airmail envelope",
+   "who": "Postal and stationery design of the period",
+   "era": "1930s to 1980s",
+   "hallmarks": [
+    "A diagonal border of alternating red and blue stripes around cream paper.",
+    "Typewriter lettering and plain stamped labels such as BY AIR MAIL.",
+    "Small framed panels with perforated edges, like the stamps in a corner."
+   ],
+   "works": [
+    "Look up airmail envelopes and aerogrammes in postal museum collections",
+    "Look up par avion stickers and labels from the mid twentieth century",
+    "Search for airmail stationery and the history of the striped border"
+   ]
+  },
+  "no": "97",
+  "slug": "stranger-duet",
+  "file": "tools/97-stranger-duet.html"
+ },
+ {
+  "title": "Furniture Music",
+  "deep": true,
+  "category": "generative systems",
+  "date": "2026-11-05",
+  "kicker": "GENERATIVE SYSTEMS · MUSIC TO BE HEARD AND NOT LISTENED TO, UNLESS YOU WANT TO",
+  "bpm": 60,
+  "idea": "In the late 1910s a French composer imagined music that behaves like furniture: it fills a room, it is not the point of the evening, and nobody has to sit and face it. This instrument builds that idea as a generative system. Six loops of different lengths (primes, so they almost never line up) play your sounds, drifting through a scale. An ATTENTION dial slides between pure background and music that rewards close listening, when small bells, grace notes and hidden details appear. Oblique prompt cards, written in our own words, nudge the system when you are stuck.",
+  "controls": "6 slots (two pads, a bell, a voice, room tone, a hidden detail); six loop lengths from 5 to 97 seconds with a live readout of how long until they realign; attention (ignore to listen) with a slow automatic drift; wander (how often a loop changes note); note length; swell; speed (hurry the loops up to hear them combine); gifts (hidden details); key and scale; reverb and air; twelve prompt cards you can draw by hand or on a timer; per-loop mute; a wallpaper VJ view.",
+  "how": "Press PLAY: the loops enter one by one and then keep returning at their own pace. Slide ATTENTION towards LISTEN to open the filters and let small details appear, or towards IGNORE to flatten them into the room. Press C for a prompt card (try the instruction on the system), 1 to 6 to mute a loop, and the up and down arrows for attention. Raise SPEED to hurry the loops so you can hear how six lengths combine. Open the deck (D), load your own sounds and trim each with S and E.",
+  "fonts": "family=Bevan&family=Josefin+Sans:wght@400;600;700",
+  "try": [
+   "Put a single long chord from your sample library into slots 1 and 2, trim slot 2 with S and E to its quietest tail, and set the lengths to 31 and 37 seconds. Leave it running while you do something else, then slide ATTENTION to LISTEN to find out what was happening.",
+   "Load a voice memo of someone speaking into slot 4 and a field recording into slot 5. Set note length short, wander low and speed to 1. The voice returns every 29 seconds, always a little different, in a room that never quite repeats.",
+   "Set speed to 8 and lengths to 7, 11, 13, 17, 19 and 23. Press REC for a minute and draw a card every few seconds; keep the take that surprises you and use it as a bed under a song."
+  ],
+  "manifesto": {
+   "name": "Furniture music: music that does not ask to be listened to",
+   "short": "Furniture Music",
+   "author": "Inspired by the furniture-music idea of a French composer in the 1910s, and by generative and ambient studio practice since the 1970s",
+   "year": "1917 to 1920 (the idea); 1970s onwards (generative and ambient practice)",
+   "where": "Paris, then ambient studios and homes everywhere",
+   "ideas": [
+    "In our words: music can be part of a room, like a chair or wallpaper, doing a quiet job rather than demanding that people stop and listen.",
+    "In our words: ambient music is best when it rewards you if you listen closely and costs you nothing if you do not.",
+    "In our words: loops of different lengths never line up the same way twice, so a very small amount of material can feel endlessly changing.",
+    "In our words: a good generative system is more like gardening than building: you set the conditions and let things grow.",
+    "In our words: a short written prompt can break a creative deadlock because it changes the question, not the answer."
+   ],
+   "quotes": [],
+   "system": "Six loops each have a length in seconds. When a loop comes round, it plays its slot's sound at a note chosen from your scale; with the wander setting it sometimes steps to a different degree first. ATTENTION opens each loop's filter and raises its level, and it controls how often hidden details (small bells, grace notes, a quiet high glint) appear. The slow drift moves attention up and down on its own so the music alternates between background and foreground. The loops realign after the least common multiple of their lengths, shown on screen. The prompt cards, written for this tool, make small changes to the system.",
+   "dubious": "The composer who coined the idea wrote little about how it should sound; this tool is our own reading of it, not a reconstruction, and quotes nothing."
+  },
+  "design": {
+   "name": "Festival of Britain pattern design (1951): atom-and-spike motifs, primary colours on cream, slab lettering",
+   "short": "Festival pattern",
+   "who": "British designers working for the 1951 national exhibition",
+   "era": "Early 1950s",
+   "hallmarks": [
+    "Crystal-structure motifs: small balls joined by thin lines with spiky stars, repeated like wallpaper.",
+    "Bright primary and teal colours on a cream ground, with cut-out blocks of flat colour.",
+    "Chunky slab-serif capitals paired with a light geometric sans."
+   ],
+   "works": [
+    "Look up Festival of Britain pattern designs in museum and archive collections",
+    "Look up crystal-structure textile and wallpaper patterns of 1951",
+    "Search for Festival of Britain posters and signage and their lettering"
+   ]
+  },
+  "no": "98",
+  "slug": "furniture-music",
+  "file": "tools/98-furniture-music.html"
+ },
+ {
+  "title": "Stochastic Rain",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-11-05",
+  "kicker": "MUSIC THEORY · STOCHASTIC COMPOSITION: DRAW THE WEATHER, LET PROBABILITY PLAY THE DROPS",
+  "bpm": 60,
+  "idea": "In the 1950s some composers stopped writing every note and began writing the statistics of a sound mass: how dense it is, how high, how long each event lasts, how fast it changes. Chance, shaped by those figures, chooses the individual events. This instrument is a drawing board for that idea. Paint a density map of pitch against time, choose how onsets, lengths and glides are distributed, and probability scatters your sounds across it like rain on a window. Each loop is a different shower from the same weather, or the same shower if you fix the seed.",
+  "controls": "6 slots (four registers low to high, a short rain sound and a gliding voice); a 64 by 24 density map you paint and erase with adjustable brush; loop length 8 to 60 seconds; event rate; onset distribution (random, regular, clumped); event length mean and spread; glissando share and range; velocity spread; pitch quantised to a scale, chromatic or free; key, scale and range in octaves; seed with fix-and-repeat; live histograms of expected against actual events; shapes, clear, invert and blobs; a blueprint VJ view.",
+  "how": "Press PLAY: a playhead sweeps the map and events fall wherever the paint is thick. Drag on the map to paint density and right-click or hold Alt to erase. Press G for another cloud, I to invert the map, C to clear, S for a new seed and X to fix the seed so every loop repeats exactly. Raise RATE for heavier rain, or switch onsets to REGULAR to hear the same map with the randomness taken out. Open the deck (D) to load your own sounds and trim each with S and E.",
+  "fonts": "family=IBM+Plex+Mono:wght@400;600&family=Barlow+Condensed:wght@600;700",
+  "try": [
+   "Load four sounds of rising brightness into slots 1 to 4 (a low pluck, a mid tone, a bell, a glassy hit) and paint one diagonal stripe from bottom left to top right. The shower climbs through your sounds as it climbs through the pitch map.",
+   "Fix the seed (X), paint a thin vertical stripe and set onsets to CLUMPED. Press REC for one loop and import it as a sample to chop: you have made a rhythm out of nothing but statistics.",
+   "Put a voice memo in slot 6 and set the glissando share to 80 percent with a range of 12 semitones. Paint only the top rows lightly: the voice glides in and out of the rain like a rumour."
+  ],
+  "manifesto": {
+   "name": "Stochastic music: composing with probability",
+   "short": "Stochastic Rain",
+   "author": "Inspired by composers who applied probability theory to music in the 1950s and 1960s, and by the mathematics of Poisson and Gauss",
+   "year": "1950s and 1960s",
+   "where": "Paris, with later work worldwide",
+   "ideas": [
+    "In our words: a composer can describe a mass of sound by its statistics, such as density, register and speed of change, instead of writing each note.",
+    "In our words: the mathematics of chance, such as the Poisson law for random arrivals and the bell-shaped Gaussian curve, can choose individual events inside those limits.",
+    "In our words: a sliding pitch, a glissando, is a straight line on a pitch-time graph, so sound can be drawn as lines and areas as well as dots.",
+    "In our words: the law of large numbers means the more events there are, the closer the total sound matches the statistics, even though no single event can be predicted.",
+    "In our words: the composer's decisions move up a level, from choosing notes to choosing the rules that choose notes."
+   ],
+   "quotes": [],
+   "system": "The map is a grid of 64 time columns by 24 pitch rows holding a density from 0 to 1. For each column the expected number of events is the event rate times the column's length times the total density in that column. The actual number is drawn from the Poisson law (random onsets), or rounded (regular), or drawn and then pulled into clumps. Each event's row is chosen with probability proportional to the density in that column, its length from an exponential-style spread around the mean, its loudness from a spread, and a share of events glide. The pitch of each row is snapped to the scale, to the chromatic scale, or left free. With the seed fixed, every loop repeats; with it free, each loop is a new throw of the dice.",
+   "dubious": "Composers of the period worked in different ways and used computers and hand calculation; this tool shows only the general principle in our own words, and copies no score or data."
+  },
+  "design": {
+   "name": "Technical drawing sheet: drafting grid, title block and engineering lettering (1930s to 1980s)",
+   "short": "Drawing sheet",
+   "who": "Engineering and architectural drawing offices",
+   "era": "1930s to 1980s",
+   "hallmarks": [
+    "Blue-ink lines on cream drafting paper over a fine measured grid with heavier lines every fifth square.",
+    "A bordered sheet with a title block in the corner listing drawing number, scale, sheet and revision.",
+    "Narrow monospaced capitals for labels, dimensions and tick marks along the axes."
+   ],
+   "works": [
+    "Look up engineering drawing sheets with title blocks in archive collections",
+    "Look up technical drawing standards for lettering and line types",
+    "Search for old graph-paper and drafting-film grid designs"
+   ]
+  },
+  "no": "99",
+  "slug": "stochastic-rain",
+  "file": "tools/99-stochastic-rain.html"
  }
 ]

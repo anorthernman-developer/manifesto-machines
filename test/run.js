@@ -23,7 +23,7 @@ const HOOK = () => {
   const files = fs.readdirSync(ROOT + '/tools').filter((f) => f.endsWith('.html') && (!only || only.split(',').some((o) => f.startsWith(o)))).sort();
   let fails = 0; const out = [];
   for (const file of files) {
-    const cfg = C[file.slice(0, 2)] || {};
+    const cfg = C[file.split('-')[0]] || {};
     const bctx = await browser.newContext({ viewport: { width: 1280, height: 760 }, acceptDownloads: true });
     const page = await bctx.newPage(); const errs = [];
     page.on('console', (m) => { if (m.type() === 'error' && !/fonts\.(googleapis|gstatic)|ERR_INTERNET|ERR_NAME/.test(m.text())) errs.push(m.text()); });

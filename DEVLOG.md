@@ -1,5 +1,39 @@
 # Devlog
 
+## 5 November 2026 · 97 to 101, five deep instruments: stranger duet, furniture music, stochastic rain, wabi-sabi decay, pattern and decoration
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #11), so no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ).
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 97 | Stranger Duet | found-sound production | Found-sound production: two voice memos trade chopped phrases, answer and harmonise, snapped to a key | Airmail envelope |
+| 98 | Furniture Music | generative systems | Furniture music and generative loops of different lengths: music to be heard and not listened to (paraphrased, nothing quoted) | Festival of Britain pattern design |
+| 99 | Stochastic Rain | music theory | Stochastic composition: paint a density map and let probability choose the events (Poisson onsets, glissandi, histograms) | Technical drawing sheet |
+| 100 | Wabi-Sabi Decay | nature/philosophy | Wabi-sabi and kintsugi: a piece that ages, forgets notes and is mended with gold | Katazome stencil dyeing |
+| 101 | Pattern and Decoration | art manifesto | Pattern and decoration, and the symmetry groups of repeating patterns: translation, reflection, rotation, glide (paraphrased, nothing quoted) | Banknote engraving |
+
+**What's new in each**
+
+- **97 Stranger Duet:** seven slots (two voices, kick, clap, hat, field bed, chord stab); two 16-step patterns each holding a slice 1 to 8 of the trimmed voice; four turns (A speaks, B replies, trade, together with B harmonised); interrupt chance, turn length, chop length, density and slice order; garage, house or broken groove; autocorrelation pitch matching (M) to snap a voice to the key; letters flying across an airmail border in VJ.
+- **98 Furniture Music:** six loops with their own lengths (default 17, 23, 29, 31, 37, 43 seconds) and a live readout of when they next line up; attention dial from ignore to listen that opens filters and reveals hidden details, with a 90 second drift; twelve prompt cards with real actions and an automatic card timer; hush.
+- **99 Stochastic Rain:** 64 by 24 density map you paint; Poisson, regular or clumped onsets, exponential-style event lengths, glissando share and range; pitch snapped to a scale, chromatic or free; seed with fix-and-repeat; histograms of expected against actual events per column and per row; engineering-drawing title block that reports the difference.
+- **100 Wabi-Sabi Decay:** a generated 32-step, five-track piece with an age that rises over 8 to 200 bars: notes are forgotten, flicker, darken, wobble flat, gain a bit-crushed copy and a dust crackle; MEND (K) turns forgotten notes into changed golden notes an octave up and rewinds age a little; renew or hold at the end; indigo stencil cloth view.
+- **101 Pattern and Decoration:** an 8 by 8 motif editor; seven symmetry groups as repeating lists of retrograde, inversion, glide and spin; layers 2 and 3 with their own relation (mirror, retrograde, spin, octave up, brick shift) and stagger; repeat-and-vary and grace-note ornament; wallpaper view of every bar of every layer.
+
+**Tests:** `node test/run.js`, `node test/deep.js` and `node test/handles.js` for 97 to 101 all passed (audio, LEARN, WAV and AIFF loaded and used, WAV recording, deck, slots, reverse, presets, export and import, key sheet, soak, S and E handles drag, F enters VJ, no console errors). MIDI could not be exercised in headless Chrome (permission is blocked); the handlers are present.
+
+**Bugs fixed while building**
+
+- test/run.js looked up per-tool settings with the first two digits of the filename, so tool 100 picked up tool 10's AI test; it now uses the whole tool number.
+- 98: a prompt-card action drew two random loops where it meant one; fixed.
+- 99: the title block overlapped the histogram strip; layout adjusted.
+- 101: layer labels overlapped the next row and the rosette was too jagged; fixed.
+- 100: the category was spelled differently from the rest of the catalogue; now `nature/philosophy` so the hub groups it correctly.
+
+**Hub check:** anorthernman-developer/digitalplay-work already merges this repo's catalogue.json from GitHub (scripts/aggregate.py) and maps the five categories, so nothing needed committing there.
+
+**Compliance:** no named people in titles, branding or visuals, only open-licence Google Fonts, no third-party images or audio, no analytics, no Gemini calls today, secret scan clean.
+
 ## 4 November 2026 · 92 to 96, five deep instruments: hold and release, long exposure, talea and color, synchrony, simultaneous discs
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #10), so no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ).
