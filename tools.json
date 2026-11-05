@@ -417,112 +417,6 @@
   "file": "tools/10-zaum.html"
  },
  {
-  "title": "Wabi-Sabi Decay",
-  "deep": true,
-  "category": "nature/philosophy",
-  "date": "2026-11-05",
-  "kicker": "NATURE AND PHILOSOPHY · WABI-SABI: BEAUTY IN THE IMPERFECT, IMPERMANENT AND INCOMPLETE",
-  "bpm": 70,
-  "idea": "Wabi-sabi is a Japanese way of seeing that finds beauty in things that are worn, weathered, modest and unfinished: a cracked bowl, a faded cloth, moss on a stone. This instrument plays a short piece that ages while you listen. Notes are forgotten one by one, the sound darkens like sun-faded cloth, the pitch wobbles like old tape, and a crackle of dust creeps in. You can mend the gaps with gold, the way a broken bowl is repaired with gold lacquer: the mend does not hide the damage but shows it, and the piece comes back changed.",
-  "controls": "6 slots (bowl, pluck, tap, breath, found voice, dust crackle); a generated 32-step, five-track piece with density and seed; life span from 8 to 200 bars with auto-age or a hand-drawn age slider; memory loss, darkening, pitch wobble, bit-crush and crackle amounts; MEND with gold (restores lost notes as brighter, changed notes); renew or hold at the end; key, scale, swing, reverb, level; a stencil-dyed cloth view and a big-screen VJ mode.",
-  "how": "Press PLAY: a small sparse piece starts clean and begins to age. Watch the stencil cloth: each motif is a note, fading as it nears forgetting and showing a dotted ghost once it is gone. Press K (or MEND) to repair lost notes with gold, which come back an octave higher and a different note. Press N for a fresh piece, and drag the AGE slider by hand if you want to push time forwards or backwards. Open the deck (D) to load your own sounds and trim each with S and E.",
-  "fonts": "family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700",
-  "try": [
-   "Load a single recorded piano chord or guitar note into slots 1 and 2 and a handful of finger taps into slot 3. Set the life span to 30 bars and play it through: you will hear a tidy phrase turn into half-remembered fragments.",
-   "Drag AGE to about 70 percent and switch auto-age off. Mend three times with K and listen to which new golden notes appear. Press REC and keep the take: it is a damaged, repaired piece with its history audible.",
-   "Put a field recording in slot 4 and a voice memo in slot 5, set memory loss to maximum and crackle high, then let it renew itself. Each cycle leaves a different handful of survivors."
-  ],
-  "manifesto": {
-   "name": "Wabi-sabi: the beauty of the imperfect and impermanent",
-   "short": "Wabi-sabi",
-   "author": "Inspired by the Japanese aesthetic traditions of wabi-sabi and kintsugi (gold repair)",
-   "year": "Medieval origins; developed through the tea-house traditions of later centuries",
-   "where": "Japan",
-   "ideas": [
-    "In our words: nothing lasts, nothing is finished and nothing is perfect, and noticing this can be a source of calm and beauty rather than sadness.",
-    "In our words: signs of age such as wear, cracks, fading and patina are part of an object's story and can make it more beautiful than when it was new.",
-    "In our words: kintsugi repairs a broken bowl with gold, so the break is celebrated as part of its history instead of hidden.",
-    "In our words: simplicity and restraint leave room for the listener or viewer to complete the picture themselves.",
-    "In our words: in sound, this suggests music that fades, wobbles and loses notes gracefully, and mends itself with something new."
-   ],
-   "quotes": [],
-   "system": "A 32-step, five-track piece is generated from your seed, density, key and scale. Every note is given a random point in the piece's life at which it will be forgotten; memory loss stretches or squeezes those points. As the age value rises from 0 to 1, notes that have passed their point go silent, notes close to it flicker, the filter closes, the pitch drifts slightly flat with random wobble, a bit-crushed copy of the sound fades in, and dust crackles become more frequent. MEND takes several forgotten notes, changes their pitch, lifts them an octave and makes them immune to forgetting for the rest of the piece, then turns the age back a little. At the end of its life the piece either holds or is renewed.",
-   "dubious": "Wabi-sabi is a broad and much-debated aesthetic, and the word is often used loosely; this tool is a small playful reading of the idea, not a statement of how it is practised."
-  },
-  "design": {
-   "name": "Katazome stencil dyeing: indigo and white resist patterns, with wave and hemp-leaf motifs",
-   "short": "Katazome stencil",
-   "who": "Japanese textile dyers and pattern-stencil makers",
-   "era": "Traditional, centuries old",
-   "hallmarks": [
-    "Deep indigo cloth with crisp white motifs where the stencil resisted the dye.",
-    "Repeating geometric motifs such as overlapping concentric wave arcs, laid out in rows like scales.",
-    "Small red seal marks and narrow borders, with the soft fading of well-used cloth."
-   ],
-   "works": [
-    "Look up katazome stencil-dyed textiles in museum collections",
-    "Look up traditional Japanese wave and hemp-leaf pattern collections",
-    "Search for kintsugi repaired bowls in museum collections"
-   ]
-  },
-  "no": "10",
-  "slug": "-wabi-sabi-decay",
-  "file": "tools/100-wabi-sabi-decay.html"
- },
- {
-  "title": "Pattern and Decoration",
-  "deep": true,
-  "category": "art manifesto",
-  "date": "2026-11-05",
-  "kicker": "ART MANIFESTO · PATTERN AND DECORATION: REPEAT, MIRROR, SPIN AND GLIDE A SMALL MOTIF INTO A WHOLE WALLPAPER OF MUSIC",
-  "bpm": 100,
-  "idea": "In the 1970s a group of artists argued that pattern, ornament and decoration deserved to be taken seriously as art, not dismissed as trim for the edges of important things. Pattern-makers have always used the same few moves: repeat a motif, mirror it, rotate it, or slide and flip it. Mathematicians found that these moves sort every repeating pattern into a small family of symmetry groups. Here you draw one bar-long motif, choose a symmetry group, and the wallpaper of music unrolls: each bar is the motif transformed, and three layers play it with different relationships, a little varied and a little ornamented, because exact repetition is only the start.",
-  "controls": "6 slots (layer 1 low and high, layer 2, layer 3, pulse tick, ornament voice); an 8 by 8 motif editor you paint; seven symmetry groups for the order of bars; independent relations for layers 2 and 3 (same, mirror, retrograde, spin, octave up, brick shift); stagger between layers; repeat-and-vary and ornament amounts; note length, swing, tempo, key, scale and octave; motif tools (random, clear, mutate, shapes); a banknote-engraving VJ view.",
-  "how": "Press PLAY, then paint a few cells in the small motif grid on the left; the wallpaper on the right shows what each bar of each layer will play. Press G to change symmetry group and listen for the shape of the repeat: a hop is plain repetition, a mirror turns the tune upside down on alternate bars, a spin plays it backwards and upside down. Raise VARY to let the pattern wear and drift, and ORNAMENT to add small grace-note flourishes. Open the deck (D) to load your own sounds and trim each with S and E.",
-  "fonts": "family=Cormorant+SC:wght@600;700&family=Spline+Sans+Mono:wght@400;600",
-  "try": [
-   "Load a short plucked note into slots 1 and 2, a marimba or wooden hit into slot 3 and a bell into slot 4. Draw a five-note zigzag, choose the full-symmetry group, and set layer 2 to mirror: you will hear the same tune answering itself upside down.",
-   "Choose the glide group, set stagger to 1 bar and VARY to 30 percent. Press REC for two minutes and keep the take: a patterned piece whose repeats never quite match.",
-   "Record yourself clapping a simple rhythm into slot 5 (the pulse) and tap the same rhythm as your motif. Then switch the group and hear that one rhythm become eight different grooves."
-  ],
-  "manifesto": {
-   "name": "Pattern and Decoration: ornament as art, and the symmetry of repeating patterns",
-   "short": "Pattern and Decoration",
-   "author": "Inspired by the 1970s pattern-and-decoration art movement, and by the mathematics of symmetry groups used to classify repeating patterns",
-   "year": "1970s (the movement); symmetry-group classification worked out in the 19th century",
-   "where": "Mainly the United States for the movement; pattern traditions worldwide",
-   "ideas": [
-    "In our words: pattern and ornament have been undervalued as art, even though they are among the oldest and most widespread ways people make beautiful things.",
-    "In our words: a repeating pattern can only be built from a few moves: slide it along (translation), flip it (reflection), turn it (rotation), or slide and flip together (glide reflection).",
-    "In our words: in music these correspond to repeating a phrase, inverting it (turning it upside down in pitch), playing it backwards (retrograde), and both together.",
-    "In our words: strict repetition is soothing, and small variation or ornament keeps it alive, which is how traditional crafts often work.",
-    "In our words: ornament at the edges can become the main event if you give it your full attention."
-   ],
-   "quotes": [],
-   "system": "The motif is a grid of 8 steps by 8 pitch rows, one bar long. Each bar is made by applying a transformation to the motif: retrograde reverses the steps, inversion flips the pitch rows, a glide also shifts the steps sideways by half a bar, and a spin does retrograde and inversion together. The chosen group is a repeating list of those transformations, one per bar, for example a mirror group alternates the plain motif with its inversion. Layers 2 and 3 apply a further transformation on top, and the stagger moves them to different places in the list. Repeat-and-vary changes one note in a bar by a step with a given chance, and ornament plays a quick three-note flourish at the start of a bar.",
-   "dubious": "The pattern-and-decoration movement was varied and its members had different views; the group names here are friendly labels for transformations in music, not a claim about any artist's method, and no works are reproduced."
-  },
-  "design": {
-   "name": "Banknote engraving: guilloche rosettes, fine-line moire backgrounds and microtext borders",
-   "short": "Banknote engraving",
-   "who": "Security-printing engravers and designers",
-   "era": "19th century to the present",
-   "hallmarks": [
-    "Guilloche: looping, interlaced curved lines forming rosettes, made by geometric lathes and now by software.",
-    "Very fine parallel wavy lines that create moire shimmer in the background.",
-    "Dense borders of tiny repeated text, outlined numerals in the corners and restrained two- or three-colour inks on pale paper."
-   ],
-   "works": [
-    "Look up guilloche patterns on historic banknotes in museum collections",
-    "Look up spirograph and geometric-lathe engraving patterns",
-    "Search for security-printing border and microprint designs"
-   ]
-  },
-  "no": "10",
-  "slug": "-pattern-and-decoration",
-  "file": "tools/101-pattern-and-decoration.html"
- },
- {
   "title": "Theory of Intervals",
   "idea": "A film strip of sample 'shots', where the loudest music happens in the cuts between them.",
   "how": "Press PLAY. Each frame on the strip is a shot: a piece of your sample with its own speed and length. Between shots is an interval, and it sounds as a sweep from one shot to the next, bigger when the shots are more different. Drag a frame up or down to change its speed, click a gap to change its kind of cut, and press MONTAGE to re-edit the order. EYE spins the poster spiral faster.",
@@ -4885,5 +4779,111 @@
   "no": "99",
   "slug": "stochastic-rain",
   "file": "tools/99-stochastic-rain.html"
+ },
+ {
+  "title": "Wabi-Sabi Decay",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-11-05",
+  "kicker": "NATURE AND PHILOSOPHY · WABI-SABI: BEAUTY IN THE IMPERFECT, IMPERMANENT AND INCOMPLETE",
+  "bpm": 70,
+  "idea": "Wabi-sabi is a Japanese way of seeing that finds beauty in things that are worn, weathered, modest and unfinished: a cracked bowl, a faded cloth, moss on a stone. This instrument plays a short piece that ages while you listen. Notes are forgotten one by one, the sound darkens like sun-faded cloth, the pitch wobbles like old tape, and a crackle of dust creeps in. You can mend the gaps with gold, the way a broken bowl is repaired with gold lacquer: the mend does not hide the damage but shows it, and the piece comes back changed.",
+  "controls": "6 slots (bowl, pluck, tap, breath, found voice, dust crackle); a generated 32-step, five-track piece with density and seed; life span from 8 to 200 bars with auto-age or a hand-drawn age slider; memory loss, darkening, pitch wobble, bit-crush and crackle amounts; MEND with gold (restores lost notes as brighter, changed notes); renew or hold at the end; key, scale, swing, reverb, level; a stencil-dyed cloth view and a big-screen VJ mode.",
+  "how": "Press PLAY: a small sparse piece starts clean and begins to age. Watch the stencil cloth: each motif is a note, fading as it nears forgetting and showing a dotted ghost once it is gone. Press K (or MEND) to repair lost notes with gold, which come back an octave higher and a different note. Press N for a fresh piece, and drag the AGE slider by hand if you want to push time forwards or backwards. Open the deck (D) to load your own sounds and trim each with S and E.",
+  "fonts": "family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700",
+  "try": [
+   "Load a single recorded piano chord or guitar note into slots 1 and 2 and a handful of finger taps into slot 3. Set the life span to 30 bars and play it through: you will hear a tidy phrase turn into half-remembered fragments.",
+   "Drag AGE to about 70 percent and switch auto-age off. Mend three times with K and listen to which new golden notes appear. Press REC and keep the take: it is a damaged, repaired piece with its history audible.",
+   "Put a field recording in slot 4 and a voice memo in slot 5, set memory loss to maximum and crackle high, then let it renew itself. Each cycle leaves a different handful of survivors."
+  ],
+  "manifesto": {
+   "name": "Wabi-sabi: the beauty of the imperfect and impermanent",
+   "short": "Wabi-sabi",
+   "author": "Inspired by the Japanese aesthetic traditions of wabi-sabi and kintsugi (gold repair)",
+   "year": "Medieval origins; developed through the tea-house traditions of later centuries",
+   "where": "Japan",
+   "ideas": [
+    "In our words: nothing lasts, nothing is finished and nothing is perfect, and noticing this can be a source of calm and beauty rather than sadness.",
+    "In our words: signs of age such as wear, cracks, fading and patina are part of an object's story and can make it more beautiful than when it was new.",
+    "In our words: kintsugi repairs a broken bowl with gold, so the break is celebrated as part of its history instead of hidden.",
+    "In our words: simplicity and restraint leave room for the listener or viewer to complete the picture themselves.",
+    "In our words: in sound, this suggests music that fades, wobbles and loses notes gracefully, and mends itself with something new."
+   ],
+   "quotes": [],
+   "system": "A 32-step, five-track piece is generated from your seed, density, key and scale. Every note is given a random point in the piece's life at which it will be forgotten; memory loss stretches or squeezes those points. As the age value rises from 0 to 1, notes that have passed their point go silent, notes close to it flicker, the filter closes, the pitch drifts slightly flat with random wobble, a bit-crushed copy of the sound fades in, and dust crackles become more frequent. MEND takes several forgotten notes, changes their pitch, lifts them an octave and makes them immune to forgetting for the rest of the piece, then turns the age back a little. At the end of its life the piece either holds or is renewed.",
+   "dubious": "Wabi-sabi is a broad and much-debated aesthetic, and the word is often used loosely; this tool is a small playful reading of the idea, not a statement of how it is practised."
+  },
+  "design": {
+   "name": "Katazome stencil dyeing: indigo and white resist patterns, with wave and hemp-leaf motifs",
+   "short": "Katazome stencil",
+   "who": "Japanese textile dyers and pattern-stencil makers",
+   "era": "Traditional, centuries old",
+   "hallmarks": [
+    "Deep indigo cloth with crisp white motifs where the stencil resisted the dye.",
+    "Repeating geometric motifs such as overlapping concentric wave arcs, laid out in rows like scales.",
+    "Small red seal marks and narrow borders, with the soft fading of well-used cloth."
+   ],
+   "works": [
+    "Look up katazome stencil-dyed textiles in museum collections",
+    "Look up traditional Japanese wave and hemp-leaf pattern collections",
+    "Search for kintsugi repaired bowls in museum collections"
+   ]
+  },
+  "no": "100",
+  "slug": "wabi-sabi-decay",
+  "file": "tools/100-wabi-sabi-decay.html"
+ },
+ {
+  "title": "Pattern and Decoration",
+  "deep": true,
+  "category": "art manifesto",
+  "date": "2026-11-05",
+  "kicker": "ART MANIFESTO · PATTERN AND DECORATION: REPEAT, MIRROR, SPIN AND GLIDE A SMALL MOTIF INTO A WHOLE WALLPAPER OF MUSIC",
+  "bpm": 100,
+  "idea": "In the 1970s a group of artists argued that pattern, ornament and decoration deserved to be taken seriously as art, not dismissed as trim for the edges of important things. Pattern-makers have always used the same few moves: repeat a motif, mirror it, rotate it, or slide and flip it. Mathematicians found that these moves sort every repeating pattern into a small family of symmetry groups. Here you draw one bar-long motif, choose a symmetry group, and the wallpaper of music unrolls: each bar is the motif transformed, and three layers play it with different relationships, a little varied and a little ornamented, because exact repetition is only the start.",
+  "controls": "6 slots (layer 1 low and high, layer 2, layer 3, pulse tick, ornament voice); an 8 by 8 motif editor you paint; seven symmetry groups for the order of bars; independent relations for layers 2 and 3 (same, mirror, retrograde, spin, octave up, brick shift); stagger between layers; repeat-and-vary and ornament amounts; note length, swing, tempo, key, scale and octave; motif tools (random, clear, mutate, shapes); a banknote-engraving VJ view.",
+  "how": "Press PLAY, then paint a few cells in the small motif grid on the left; the wallpaper on the right shows what each bar of each layer will play. Press G to change symmetry group and listen for the shape of the repeat: a hop is plain repetition, a mirror turns the tune upside down on alternate bars, a spin plays it backwards and upside down. Raise VARY to let the pattern wear and drift, and ORNAMENT to add small grace-note flourishes. Open the deck (D) to load your own sounds and trim each with S and E.",
+  "fonts": "family=Cormorant+SC:wght@600;700&family=Spline+Sans+Mono:wght@400;600",
+  "try": [
+   "Load a short plucked note into slots 1 and 2, a marimba or wooden hit into slot 3 and a bell into slot 4. Draw a five-note zigzag, choose the full-symmetry group, and set layer 2 to mirror: you will hear the same tune answering itself upside down.",
+   "Choose the glide group, set stagger to 1 bar and VARY to 30 percent. Press REC for two minutes and keep the take: a patterned piece whose repeats never quite match.",
+   "Record yourself clapping a simple rhythm into slot 5 (the pulse) and tap the same rhythm as your motif. Then switch the group and hear that one rhythm become eight different grooves."
+  ],
+  "manifesto": {
+   "name": "Pattern and Decoration: ornament as art, and the symmetry of repeating patterns",
+   "short": "Pattern and Decoration",
+   "author": "Inspired by the 1970s pattern-and-decoration art movement, and by the mathematics of symmetry groups used to classify repeating patterns",
+   "year": "1970s (the movement); symmetry-group classification worked out in the 19th century",
+   "where": "Mainly the United States for the movement; pattern traditions worldwide",
+   "ideas": [
+    "In our words: pattern and ornament have been undervalued as art, even though they are among the oldest and most widespread ways people make beautiful things.",
+    "In our words: a repeating pattern can only be built from a few moves: slide it along (translation), flip it (reflection), turn it (rotation), or slide and flip together (glide reflection).",
+    "In our words: in music these correspond to repeating a phrase, inverting it (turning it upside down in pitch), playing it backwards (retrograde), and both together.",
+    "In our words: strict repetition is soothing, and small variation or ornament keeps it alive, which is how traditional crafts often work.",
+    "In our words: ornament at the edges can become the main event if you give it your full attention."
+   ],
+   "quotes": [],
+   "system": "The motif is a grid of 8 steps by 8 pitch rows, one bar long. Each bar is made by applying a transformation to the motif: retrograde reverses the steps, inversion flips the pitch rows, a glide also shifts the steps sideways by half a bar, and a spin does retrograde and inversion together. The chosen group is a repeating list of those transformations, one per bar, for example a mirror group alternates the plain motif with its inversion. Layers 2 and 3 apply a further transformation on top, and the stagger moves them to different places in the list. Repeat-and-vary changes one note in a bar by a step with a given chance, and ornament plays a quick three-note flourish at the start of a bar.",
+   "dubious": "The pattern-and-decoration movement was varied and its members had different views; the group names here are friendly labels for transformations in music, not a claim about any artist's method, and no works are reproduced."
+  },
+  "design": {
+   "name": "Banknote engraving: guilloche rosettes, fine-line moire backgrounds and microtext borders",
+   "short": "Banknote engraving",
+   "who": "Security-printing engravers and designers",
+   "era": "19th century to the present",
+   "hallmarks": [
+    "Guilloche: looping, interlaced curved lines forming rosettes, made by geometric lathes and now by software.",
+    "Very fine parallel wavy lines that create moire shimmer in the background.",
+    "Dense borders of tiny repeated text, outlined numerals in the corners and restrained two- or three-colour inks on pale paper."
+   ],
+   "works": [
+    "Look up guilloche patterns on historic banknotes in museum collections",
+    "Look up spirograph and geometric-lathe engraving patterns",
+    "Search for security-printing border and microprint designs"
+   ]
+  },
+  "no": "101",
+  "slug": "pattern-and-decoration",
+  "file": "tools/101-pattern-and-decoration.html"
  }
 ]

@@ -7,10 +7,10 @@ css_deck = open('src/deck.css').read(); deck = open('src/deck.js').read()
 metas = []
 def block(name, src):
     m = re.search(r'/\*' + name + r'\n(.*?)\n\*/', src, re.S); return m.group(1) if m else ''
-for f in sorted(glob.glob('src/tools/*.js')):
+for f in sorted(glob.glob('src/tools/*.js'), key=lambda p: int(os.path.basename(p).split('-')[0])):
     src = open(f).read()
     meta = json.loads(block('META', src)); slug = os.path.basename(f)[:-3]
-    meta['no'] = slug[:2]; meta['slug'] = slug[3:]; meta['file'] = f'tools/{slug}.html'; metas.append(meta)
+    meta['no'] = slug.split('-')[0]; meta['slug'] = slug.split('-', 1)[1]; meta['file'] = f'tools/{slug}.html'; metas.append(meta)
     js = re.sub(r'/\*(META|CSS|HTML)\n.*?\n\*/\n?', '', src, flags=re.S)
     fonts = meta.get('fonts')
     link = f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?{fonts}&display=swap">' if fonts else ''
