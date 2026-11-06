@@ -1,5 +1,32 @@
 # Devlog
 
+## 6 November 2026 · 102 to 106, five deep instruments: chop euphoria, process cards, moment form, rhizome web, cheap art
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #12), so no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ).
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 102 | Chop Euphoria | found-sound production | Found-sound production: emotional vocal chops over house and garage, building to a euphoric drop | Punch-card print |
+| 103 | Process Cards | generative systems | Generative systems: process cards that rewire the studio | Airline timetable |
+| 104 | Moment Form | music theory | Moment form: self-contained musical moments in a mobile order | Index-card catalogue |
+| 105 | Rhizome Web | nature/philosophy | The rhizome: a non-hierarchical network of connections | Signal-flag hoist |
+| 106 | Cheap Art | art manifesto | Cheap Art Manifesto: art that is cheap, available and for everyone (paraphrased, nothing quoted) | Matchbox label |
+
+**What's new in each**
+
+- **102 Chop Euphoria:** seven slots (vocal A/B, kick, hat/clap, field bed, stab/pad, riser); two 16-step chop patterns with emotion tags (calm / ache / lift / shout); INTRO/BUILD/DROP/OUTRO timeline with filter open, drum fill, optional silent gap before the drop; house, garage or broken groove; punch-card VJ view.
+- **103 Process Cards:** seven slots (loops 1 to 4, accent, bed, soft tick); twelve process cards that rewire lengths, reverse, sends and mutes; ATTEND dial from furniture to foreground detail; unequal/prime loop lengths; airline-timetable VJ view.
+- **104 Moment Form:** eight slots (drone, pulse, scatter, call, hush, cascade, click, found texture); eight index-card moments you drag to reorder; ORDER / RANDOM / SHUFFLE play; each moment lasts N bars with its own character behaviour; desk VJ view.
+- **105 Rhizome Web:** seven slots (nodes 1 to 6, soil bed); draw or auto-grow rope edges between signal-flag nodes; click any node as an entry point; hyphae delay, branching chance and decay; pulses travel along edges; signal-flag hoist VJ view.
+- **106 Cheap Art:** eight slots (gift voices 1 to 6, crowd murmur, stamp); a giveaway table of free musical gifts you TAKE into your set; GIVE floods overlapping phrases; KEEP saves a takeaway preset; cheap / available / everyone ethos dials; matchbox-label VJ view.
+
+**Tests:** `node test/deep.js 102,103,104,105,106` and `node test/handles.js 102,103,104,105,106` all passed (deck, slots, WAV and AIFF, reverse, presets, export and import, key sheet, soak, S and E handles drag, F enters VJ, no console errors). MIDI could not be exercised in headless Chrome (permission is blocked); the handlers are present.
+
+**Hub check:** digitalplay-work aggregates this repo's catalogue.json; no manual Music catalogue edit required today.
+
+**Compliance:** no named people in titles, branding or visuals (credits only as short Inspired by …), only open-licence Google Fonts, no third-party images or audio, no analytics, no Gemini calls today, secret scan clean.
+
+
 ## 5 November 2026 · 97 to 101, five deep instruments: stranger duet, furniture music, stochastic rain, wabi-sabi decay, pattern and decoration
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #11), so no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ).
