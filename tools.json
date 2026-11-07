@@ -5150,5 +5150,270 @@
   "no": "106",
   "slug": "cheap-art",
   "file": "tools/106-cheap-art.html"
+ },
+ {
+  "title": "Pocket Stack",
+  "deep": true,
+  "category": "found-sound production",
+  "date": "2026-11-07",
+  "kicker": "FOUND-SOUND PRODUCTION · A POCKETFUL OF SHORT PHONE CLIPS AS INTERLOCKING OSTINATOS",
+  "bpm": 126,
+  "idea": "Found-sound dance production often starts with a pocketful of short phone clips: voice memos, door slams, street noise, a hummed hook. Stack those clips as interlocking ostinato cells, punched like a player-piano roll, over a house or garage groove. Density and lane mutes build toward a lift; each lane loops its own trimmed region.",
+  "controls": "8 slots (clip lanes 1 to 5, kick, hat/clap, optional bed); a scrolling piano-roll grid where each lane is a short ostinato from that slot's trimmed region; tempo, swing, groove (house/garage/broken); density, lane mutes, pitch per lane, build/lift amount; a perforated piano-roll VJ view.",
+  "how": "Press PLAY: the roll scrolls and lanes fire their punched cells over the groove. Click a cell to toggle a hit; press M to mute/unmute the hovered lane, L for a lift build, N for a new random roll. Open the deck (D) to load your own phone clips and trim each with S and E. Press F for the full-screen perforated roll.",
+  "fonts": "family=IBM+Plex+Mono:wght@400;600;700&family=Bebas+Neue",
+  "try": [
+   "Load five short phone clips into the lanes. Punch a sparse pattern on lanes 1 to 3, raise density, then press L for the lift.",
+   "Choose the garage groove, mute lanes 4 and 5, trim each clip tightly with S and E, and record a one-minute pocket stack.",
+   "Set build high and leave density mid: the roll thickens toward the lift while the kick stays four-on-the-floor."
+  ],
+  "manifesto": {
+   "name": "Found-sound production: stacking a pocketful of short phone clips as interlocking ostinatos over house and garage drums",
+   "short": "Pocket Stack",
+   "author": "Inspired by contemporary found-audio dance producers' voice-memo and journal-sampling methods",
+   "year": "2010s to 2020s, from older sampling and club traditions",
+   "where": "Phones, pockets and dance floors",
+   "ideas": [
+    "In our words: a pocketful of short phone clips can become the whole melodic bed of a track.",
+    "In our words: interlocking ostinatos mean each lane repeats a short cell that sits beside the others without needing a long melody.",
+    "In our words: punching hits on a piano-roll grid makes the pattern visible and editable like early automated music media.",
+    "In our words: house keeps four on the floor; garage leans on a two-step kick; broken opens the grid.",
+    "In our words: density and lane mutes are arrangement tools that build toward a lift."
+   ],
+   "quotes": [],
+   "system": "Five clip lanes each hold a 16-step binary pattern. On each step a lane fires its trimmed sample region if the cell is on and the lane is unmuted, with per-lane pitch and a shared density gate. Kick, hat/clap and an optional looping bed follow a house, garage or broken groove. A build amount opens filter and thickens density toward a lift. The canvas draws a scrolling perforated piano roll.",
+   "dubious": "No claim is made about any one producer's method; this is a general studio sketch of found-audio dance production, written in our own words."
+  },
+  "design": {
+   "name": "Player piano roll: perforated paper scrolls with hole grids, tempo markings and tracker bars (early automated music media)",
+   "short": "Player piano roll",
+   "who": "Player-piano roll printers and early automated music media makers",
+   "era": "Late nineteenth century to mid twentieth century",
+   "hallmarks": [
+    "Long perforated paper scrolls with rectangular hole grids for note onsets.",
+    "Tempo markings, tracker bars and edge sprocket holes.",
+    "Cream or buff paper with ink-black holes and stamped title blocks."
+   ],
+   "works": [
+    "Look up historic player-piano rolls in music museum collections",
+    "Look up perforated paper music rolls and tracker-bar diagrams",
+    "Search for early automated music media and roll-title blocks"
+   ]
+  },
+  "no": "107",
+  "slug": "pocket-stack",
+  "file": "tools/107-pocket-stack.html"
+ },
+ {
+  "title": "Slow Drift",
+  "deep": true,
+  "category": "generative systems",
+  "date": "2026-11-07",
+  "kicker": "GENERATIVE SYSTEMS · SLOW BIAS AND DRIFT — GARDENING BY LETTING PARAMETERS WANDER",
+  "bpm": 68,
+  "idea": "Generative and ambient studio practice often gardens rather than architects: several loops of unequal length run while filter, gain, pitch and density slowly drift. You pin any dial to freeze it. An attend dial moves between furniture music and close listening. The piece rewards both listening and ignoring.",
+  "controls": "7 loop slots with independent lengths (primes and unequals); global drift rate; pin toggles per parameter (filter, gain, pitch, density); attend dial (furniture to listen); reverb; optional key/scale soft snap; a cyanotype-blueprint VJ view of drifting values.",
+  "how": "Press PLAY: unequal loops drift. Watch the cyanotype dials wander. Press P to pin the hovered parameter, U to unpin all, R to reset drift seeds. Raise ATTEND to open filters into the foreground. Open the deck (D) to load your own sounds and trim each with S and E. Press F for the full-screen blueprint.",
+  "fonts": "family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600",
+  "try": [
+   "Set drift rate high and attend near zero: leave the room. Come back, raise attend, and pin the filter you like.",
+   "Load six field recordings into the loop slots with prime lengths. Soft-snap to a key and pin pitch so only filter and density wander.",
+   "Press REC for four minutes. Unpin everything mid-take and let the garden rewrite itself."
+  ],
+  "manifesto": {
+   "name": "Generative systems: slow bias and drift — gardening by letting parameters wander until you pin them",
+   "short": "Slow Drift",
+   "author": "Inspired by generative and ambient studio practice since the 1970s (gardening rather than architecting)",
+   "year": "1970s to now",
+   "where": "Studios, quiet rooms and long listens",
+   "ideas": [
+    "In our words: gardening means tending and accepting growth; architecting means fixing the plan in advance.",
+    "In our words: unequal loop lengths postpone the moment everything lines up, which keeps ambient music alive.",
+    "In our words: parameters that slowly drift create change you notice only when you look away and back.",
+    "In our words: pinning a dial freezes one dimension so the others can keep wandering.",
+    "In our words: music that still works when ignored can also reward close attention."
+   ],
+   "quotes": [],
+   "system": "Six looping voices fire on independent period lengths (default primes). A soft bed can loop underneath. Drift rate advances hidden bias values for filter, gain, pitch offset and density; pinned parameters ignore the bias. ATTEND raises mid-voice filter cutoffs. Optional soft snap rounds pitch offsets to the chosen key and scale. The canvas draws a cyanotype schematic of the drifting values.",
+   "dubious": "Generative and ambient studio practice has many authors and traditions; this tool uses only our own paraphrase and makes no claim about any one person's method."
+  },
+  "design": {
+   "name": "Cyanotype blueprint: white line drawings on Prussian-blue paper, title blocks and revision stamps (architectural/engineering prints)",
+   "short": "Cyanotype blueprint",
+   "who": "Architectural and engineering blueprint printers",
+   "era": "Nineteenth century to mid twentieth century",
+   "hallmarks": [
+    "White line drawings on deep Prussian-blue paper.",
+    "Title blocks, revision stamps and scale bars in the margin.",
+    "Fine ruled grids and numbered callouts."
+   ],
+   "works": [
+    "Look up historic cyanotype architectural blueprints in museum collections",
+    "Look up engineering print title blocks and revision stamps",
+    "Search for Prussian-blue blueprint paper and white-line drawings"
+   ]
+  },
+  "no": "108",
+  "slug": "slow-drift",
+  "file": "tools/108-slow-drift.html"
+ },
+ {
+  "title": "Open Form",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-11-07",
+  "kicker": "MUSIC THEORY · NUMBERED MODULES CUED IN ANY ORDER DURING PERFORMANCE",
+  "bpm": 92,
+  "idea": "Open-form and mobile-score pieces give the performer a set of numbered musical modules to cue in any order. Here the modules sit in a crossword-style grid: each numbered cell maps to a behaviour with your samples (density, register, gesture). Cue by click, random next or sequence; hold a module or fire it as a one-shot. The form is assembled in performance.",
+  "controls": "8 slots (module voices 1 to 6, pulse, bed); 10 numbered crossword modules; cue modes click / random / sequence; hold vs one-shot; BPM, key, scale, density, reverb; a giant crossword VJ view that fills as modules fire.",
+  "how": "Press PLAY: modules wait to be cued. Click a numbered cell (or press its digit) to cue it. Press R for random next, S for sequence advance, H to toggle hold. Open the deck (D) to load your own sounds and trim each with S and E. Press F for the full-screen crossword.",
+  "fonts": "family=Libre+Franklin:wght@400;600;700&family=Playfair+Display:wght@600;700",
+  "try": [
+   "Cue modules 1, 4 and 7 in that order with HOLD on. Load six one-shots into the voices and let the crossword assemble a form.",
+   "Set cue mode to RANDOM and density high: a mobile score that keeps surprising you.",
+   "Hold module 3 (low register drone) while one-shotting 8 and 9 (scatter and call): a slow bed with bright events."
+  ],
+  "manifesto": {
+   "name": "Open-form pattern pieces: numbered modules cued in any order during performance",
+   "short": "Open Form",
+   "author": "Inspired by mid-20th-century open-form and mobile-score composition (modules the performer cues live)",
+   "year": "1950s to 1970s",
+   "where": "Concert music and later open-form practices",
+   "ideas": [
+    "In our words: a module is a self-contained musical behaviour the performer can start at any time.",
+    "In our words: the order of modules is not fixed in advance; the form is assembled in performance.",
+    "In our words: numbering modules like crossword clues makes the score readable at a glance.",
+    "In our words: hold sustains a module; one-shot fires it once and moves on.",
+    "In our words: shared key and scale hold the piece together while the surface stays open."
+   ],
+   "quotes": [],
+   "system": "Ten modules each map to a character (drone, pulse, scatter, call, hush, cascade, cluster, hang, tick, swell). Clicking a cell (or random/sequence cue) sets the active module. In hold mode the character keeps playing each step; in one-shot it plays for a short burst then clears. Shared key, scale, density and reverb apply. The canvas draws a crossword grid that fills black squares as modules fire.",
+   "dubious": "Open form and mobile scores have a specific mid-century history; this tool is a small playful classroom reading of the idea, not a claim about any one composer's practice."
+  },
+  "design": {
+   "name": "Crossword grid: black-and-white numbered squares, across/down clues and newspaper typography",
+   "short": "Crossword grid",
+   "who": "Newspaper puzzle and crossword designers",
+   "era": "Twentieth century to the present",
+   "hallmarks": [
+    "Black-and-white numbered squares in a symmetric grid.",
+    "Across and down clue lists in compact newspaper type.",
+    "Bold puzzle title and thin ruled borders on newsprint."
+   ],
+   "works": [
+    "Look up historic newspaper crossword pages in library archives",
+    "Look up mid-century puzzle-book typography and grid design",
+    "Search for classic crossword grid symmetry and numbering schemes"
+   ]
+  },
+  "no": "109",
+  "slug": "open-form",
+  "file": "tools/109-open-form.html"
+ },
+ {
+  "title": "Hexagram Cast",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-11-07",
+  "kicker": "NATURE / PHILOSOPHY · SIX LINES CAST BECOME A HEXAGRAM THAT RESHAPES THE PIECE",
+  "bpm": 88,
+  "idea": "The I Ching (Book of Changes) casts six lines — solid or broken, some changing — to form a hexagram. Here those lines rewrite density, scale degree, loop length and mute pattern. Changing lines flip parameters over time. An oracle that composes with you: cast, listen, cast again.",
+  "controls": "7 slots (voices 1 to 6, ground bed); CAST button (and key C); hexagram display with changing lines; cast chaos vs stickiness; tempo, reverb, levels; mapping documented in LEARN; a weather-map isobar VJ view that morphs with the cast.",
+  "how": "Press PLAY then C (or CAST) to throw six coins. Read the hexagram number and changing lines; dens, degree, lengths and mutes update. Raise CHAOS for wilder remaps, STICKINESS to hold longer between casts. Open the deck (D) to load your own sounds and trim each with S and E. Press F for the full-screen isobar chart.",
+  "fonts": "family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600",
+  "try": [
+   "Cast once, leave stickiness high, and listen for a minute before casting again.",
+   "Set chaos high and cast every eight bars: the isobars and the music keep rewriting.",
+   "Mute three voices via a cast that yields many broken lines, then load field recordings into the open voices."
+  ],
+  "manifesto": {
+   "name": "The I Ching (Book of Changes): six lines cast become a hexagram that reshapes the piece",
+   "short": "Hexagram Cast",
+   "author": "Inspired by the I Ching (Book of Changes), the classical Chinese oracle of solid and broken lines",
+   "year": "Zhou dynasty origins; continuous tradition",
+   "where": "Classical Chinese thought and later creative uses of chance operations",
+   "ideas": [
+    "In our words: six lines, solid or broken, form a hexagram that can be read as a situation.",
+    "In our words: changing lines mark places where the situation is turning into another.",
+    "In our words: casting is a chance operation that the musician can accept as compositional material.",
+    "In our words: mapping lines to density, degree, length and mute makes the oracle audible.",
+    "In our words: chaos and stickiness decide how often and how far the piece rewrites itself."
+   ],
+   "quotes": [],
+   "system": "MAPPING: each line is 6/7/8/9 from three coins (tails=2, heads=3). Solid (7,9) vs broken (6,8); changing if 6 or 9. Hexagram number (1 to 64) from the six binary lines sets a scale-degree offset (n % 7) and a density base (0.3 + (n%10)*0.06). Each broken line mutes one of the six voices. Each changing line schedules a flip of that voice's mute or a length bump after 8 bars. Loop lengths become 5+(n+lineIx*3)%17. Chaos multiplies random jitter on remap; stickiness raises bars between auto-suggest casts. Ground bed always available.",
+   "dubious": "The I Ching is a vast classical text; this tool uses only the public combinatorial structure of six lines and a hexagram number, with our own musical mapping, and does not reproduce oracle text."
+  },
+  "design": {
+   "name": "Weather-map isobars: synoptic charts with pressure contours, fronts and station plots in navy and red on cream",
+   "short": "Weather-map isobars",
+   "who": "Meteorological chart designers and synoptic cartographers",
+   "era": "Twentieth century to the present",
+   "hallmarks": [
+    "Cream chart paper with navy pressure contours (isobars).",
+    "Cold and warm fronts in navy and red, station plots with wind barbs.",
+    "Latitude-longitude graticule and a bold chart title block."
+   ],
+   "works": [
+    "Look up historic synoptic weather charts in meteorological archives",
+    "Look up isobar maps and front symbols in forecasting manuals",
+    "Search for navy-and-red weather-map design on cream stock"
+   ]
+  },
+  "no": "110",
+  "slug": "hexagram-cast",
+  "file": "tools/110-hexagram-cast.html"
+ },
+ {
+  "title": "Spatial Cut",
+  "deep": true,
+  "category": "art manifesto",
+  "date": "2026-11-07",
+  "kicker": "ART MANIFESTO · PIERCE AND OPEN SPACE SO SOUND OCCUPIES THE CUT",
+  "bpm": 100,
+  "idea": "The Technical Manifesto of Spatialism argued for piercing and opening the picture plane so art occupies the cut. Here you slash spectral and textural cuts through a sounding field: each gesture opens a notch (bandpass, gate or slice) on layered slots. Sound leaks through the holes; the gesture of the cut is the composition. Paraphrased only — nothing quoted.",
+  "controls": "7 slots (field layers 1 to 4, pitched layer, grain, scrape); canvas you slash with pointer drag; cut depth, heal rate, number of cuts, density of leak; key and scale for pitched layers; a Letraset dry-transfer VJ view with letters and slash marks.",
+  "how": "Press PLAY: a sounding field hums. Drag across the canvas to slash a cut; sound leaks through. Press X to clear cuts, H to heal faster for a moment, N for a new letter sheet. Open the deck (D) to load your own sounds and trim each with S and E. Press F for the full-screen Letraset view.",
+  "fonts": "family=Oswald:wght@500;600;700&family=Roboto+Mono:wght@400;500",
+  "try": [
+   "Slash three deep cuts across the field, set heal rate low, and raise leak density: a piece made only of openings.",
+   "Load four field recordings into the layers. Slash short shallow cuts on the left and one deep cut on the right.",
+   "Raise the pitched layer, snap to a key, and slash cuts that open only the mid band: melody through holes."
+  ],
+  "manifesto": {
+   "name": "Technical Manifesto of Spatialism: pierce and open space so art (and here sound) occupies the cut",
+   "short": "Spatial Cut",
+   "author": "Inspired by the Technical Manifesto of Spatialism (1947 to 1951) and the idea of cutting into the picture plane",
+   "year": "1947 to 1951",
+   "where": "Post-war European art and spatial research",
+   "ideas": [
+    "In our words: art can pierce the surface instead of only painting on it.",
+    "In our words: a cut opens a space that the work then occupies.",
+    "In our words: the gesture of cutting can be the composition itself.",
+    "In our words: sound can leak through spectral notches the way light leaks through a cut canvas.",
+    "In our words: healing and depth decide how long an opening lasts and how wide it is."
+   ],
+   "quotes": [],
+   "system": "A continuous field mixes four layered slots through a shared bus. Each slash stores a line segment with age, depth and a centre frequency derived from vertical position. Cuts drive bandpass notches and short gates on the field and trigger grain/scrape leaks along the cut. Heal rate ages cuts toward zero; when age expires the cut is removed. Cut depth scales Q and gain of the leak. Key/scale pitch a dedicated pitched layer when leak density is high.",
+   "dubious": "The Technical Manifesto of Spatialism is a specific published text; this tool paraphrases the public idea of cutting into the plane only and does not reproduce any manifesto wording."
+  },
+  "design": {
+   "name": "Letraset dry-transfer sheet: rub-down letter sheets with grid guidelines, type specimens and transfer residue (1960s to 1980s graphic design)",
+   "short": "Letraset dry-transfer",
+   "who": "Dry-transfer lettering sheet designers",
+   "era": "1960s to 1980s",
+   "hallmarks": [
+    "Gridded sheets of rub-down letterforms in a single typeface.",
+    "Registration marks, sheet codes and transfer residue smudges.",
+    "Pale blue guidelines and bold black specimen letters on translucent stock."
+   ],
+   "works": [
+    "Look up historic Letraset sheets in graphic-design museum collections",
+    "Look up dry-transfer lettering catalogues and specimen pages",
+    "Search for rub-down type sheets and transfer residue on layout boards"
+   ]
+  },
+  "no": "111",
+  "slug": "spatial-cut",
+  "file": "tools/111-spatial-cut.html"
  }
 ]

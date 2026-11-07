@@ -1,5 +1,37 @@
 # Devlog
 
+## 7 November 2026 · 107 to 111, five deep instruments: pocket stack, slow drift, open form, hexagram cast, spatial cut
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #13), so no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ).
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 107 | Pocket Stack | found-sound production | Found-sound production: stacking a pocketful of short phone clips as interlocking ostinatos over house and garage drums | Player piano roll |
+| 108 | Slow Drift | generative systems | Generative systems: slow bias and drift — gardening by letting parameters wander until you pin them | Cyanotype blueprint |
+| 109 | Open Form | music theory | Open-form pattern pieces: numbered modules cued in any order during performance | Crossword grid |
+| 110 | Hexagram Cast | nature/philosophy | The I Ching (Book of Changes): six lines cast become a hexagram that reshapes the piece | Weather-map isobars |
+| 111 | Spatial Cut | art manifesto | Technical Manifesto of Spatialism: pierce and open space so sound occupies the cut (paraphrased, nothing quoted) | Letraset dry-transfer |
+
+**What's new in each**
+
+- **107 Pocket Stack:** eight slots (clip lanes 1 to 5, kick, hat/clap, optional bed); a scrolling piano-roll grid of interlocking ostinatos from each slot's trimmed region; house / garage / broken groove; density, lane mutes, pitch per lane, build/lift; perforated piano-roll VJ view.
+- **108 Slow Drift:** seven loop slots with independent (prime/unequal) lengths; global drift rate; pin toggles for filter, gain, pitch and density; attend dial from furniture to listen; optional soft snap to key/scale; cyanotype-blueprint VJ view of drifting dials.
+- **109 Open Form:** eight slots (module voices 1 to 6, pulse, bed); ten numbered crossword modules you cue by click, random or sequence; hold vs one-shot; shared key, scale, density and reverb; crossword VJ view that fills as modules fire.
+- **110 Hexagram Cast:** seven slots (voices 1 to 6, ground bed); CAST (C) throws six coins into a hexagram; changing lines rewrite density, scale degree, loop lengths and mutes (mapping in LEARN); chaos vs stickiness; weather-map isobar VJ view.
+- **111 Spatial Cut:** seven slots (field layers 1 to 4, pitched layer, grain, scrape); slash the canvas to open spectral/textural cuts; cut depth, heal rate, max cuts, leak density; Letraset dry-transfer VJ view with letters and slash marks.
+
+**Tests:** `node test/deep.js 107,108,109,110,111` and `node test/handles.js 107,108,109,110,111` all passed (deck, slots, WAV and AIFF, reverse, presets, export and import, key sheet, soak, S and E handles drag, F enters VJ, no console errors). MIDI could not be exercised in headless Chrome (permission is blocked); the handlers are present.
+
+**Bugs fixed while building**
+
+- 108: unequal loop periods were so long the soak went silent after the UI steps; scaled periods into a living garden window and kept overlapping sustains.
+- 109: a stray `);` in a fallback oscillator broke the page parse; fixed.
+- 111: field level was marginal without cuts; raised continuous field and seeded one opening cut on start.
+
+**Hub check:** digitalplay-work aggregates this repo's catalogue.json; no manual Music catalogue edit required today.
+
+**Compliance:** no named people in titles, branding or visuals (credits only as short Inspired by …), only open-licence Google Fonts, no third-party images or audio, no analytics, no Gemini calls today, secret scan clean.
+
 ## 6 November 2026 · 102 to 106, five deep instruments: chop euphoria, process cards, moment form, rhizome web, cheap art
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #12), so no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ).
