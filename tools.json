@@ -5415,5 +5415,270 @@
   "no": "111",
   "slug": "spatial-cut",
   "file": "tools/111-spatial-cut.html"
+ },
+ {
+  "title": "Receipt Journal",
+  "deep": true,
+  "category": "found-sound production",
+  "date": "2026-11-11",
+  "kicker": "FOUND-SOUND PRODUCTION · A DIARY OF PHONE AUDIO, CHOPPED, BUILT AND DROPPED",
+  "bpm": 132,
+  "idea": "Some found-audio dance producers treat the phone as a diary: a voice memo, a clip from a bus, a chord hummed into the mic. Receipt Journal prints each day's entries like a till receipt. Your memo is cut into eight emotional chops that follow a four-chord progression over garage or house drums, with your field recording as the bed, and every cycle walks MEMO, BUILD, GAP and DROP.",
+  "controls": "8 slots (voice memo, phone clip, field recording, chord memo, kick, clap, hat, riser); chop count, chop pattern density and emotion (pitch lift and stutter); four-chord progression in any key and scale; MEMO, BUILD and DROP lengths in bars and a silent GAP; groove (2-step, 4x4 house, broken), swing, bed level; a thermal-receipt VJ view.",
+  "how": "Press PLAY: the cycle starts with the memo over the field bed, builds and drops. Press B to jump to the build, G to toggle the gap, R to reprint (new chop pattern), 1 to 4 to audition a chop. Open the deck (D) to load your own memo into slot 1 and trim it with the S and E handles. Press F for the full-screen receipt view.",
+  "fonts": "family=VT323&family=Space+Mono:wght@400;700",
+  "try": [
+   "Load a voice note of yourself talking into slot 1 and trim S and E around the one sentence that matters. Raise emotion and let the chops sing it back over the drop.",
+   "Put a rain or bus recording in slot 3, set MEMO to 8 bars and BUILD to 4, and leave the gap on: the silence before the drop is the point.",
+   "Hum four chords into slot 4 (one take is enough), pick the key you hummed in, and let the chord memo play the progression under the chops."
+  ],
+  "manifesto": {
+   "name": "Found-sound production: the phone as a diary, chopped into emotional vocal hooks over house and garage, building to a euphoric drop",
+   "short": "Receipt Journal",
+   "author": "Inspired by contemporary found-audio dance producers' voice-memo and journal-sampling methods (no quotes, no copied patterns or audio)",
+   "year": "2010s to 2020s, from older sampling and club traditions",
+   "where": "UK and international club music made on laptops and phones",
+   "ideas": [
+    "In our words: the phone is a notebook. Anything recorded on an ordinary day can become the centre of a track.",
+    "In our words: a vocal chop is a few syllables cut from speech and replayed in rhythm, often pitched up so it sounds like longing.",
+    "In our words: the field recording stays underneath as a bed, so the listener can hear where and when the memo was made.",
+    "In our words: tension comes from withholding. A build lifts the filter and tightens the drums, a short silence holds your breath, and the drop releases everything at once.",
+    "In our words: the result works like a diary entry you can dance to: small, personal sounds made large."
+   ],
+   "quotes": [],
+   "system": "A sixteen-step scheduler runs a cycle of MEMO, BUILD and DROP sections measured in bars. Slot 1 is cut into N equal chops; a chop pattern (regenerated with R) places chops on the grid, and each chop is pitched to a tone of the current chord. Emotion raises chop pitch, adds stutters and opens the filter. During BUILD the riser plays, snares roll and a master low-pass opens; the optional GAP silences the last beat; the DROP brings full drums, sub-weight chord memo stabs and the densest chop pattern. Every event is printed as a line on the receipt.",
+   "dubious": "This is a general description of a widely used way of working. No producer's track, pattern or audio is copied."
+  },
+  "design": {
+   "name": "Thermal till receipt: narrow monospaced print, dotted rules, line items, totals, barcodes and fading thermal ink (shop receipts, 1990s to now)",
+   "short": "Thermal till receipt",
+   "who": "Anonymous point-of-sale printing",
+   "era": "1990s to now",
+   "hallmarks": [
+    "A narrow paper column with monospaced dot-matrix or thermal type.",
+    "Line items with right-aligned figures, dashed rules, totals and a barcode at the foot.",
+    "Faded grey-black ink on curling off-white paper, with tear-off zigzag edges."
+   ],
+   "works": [
+    "Look up thermal receipt printers and their sample print-outs",
+    "Search for receipt-poetry and receipt-art projects",
+    "Look up the design of supermarket till receipts in design-history collections"
+   ]
+  },
+  "no": "112",
+  "slug": "receipt-journal",
+  "file": "tools/112-receipt-journal.html"
+ },
+ {
+  "title": "Orbit Loops",
+  "deep": true,
+  "category": "generative systems",
+  "date": "2026-11-11",
+  "kicker": "GENERATIVE SYSTEMS · LOOPS OF UNEQUAL LENGTH, AND MUSIC YOU CAN LISTEN TO OR IGNORE",
+  "bpm": 60,
+  "idea": "Ambient generative music asks to be equally good heard closely or left in the background. Orbit Loops gives six of your sounds their own orbit, each a loop of a different length in seconds, drawn as a star chart. A sound plays when its star crosses the meridian. One dial moves the whole system between LISTEN (brighter, busier, a foreground voice) and IGNORE (darker, sparse, long tails), and you tend it like a garden: water, prune, and let it grow.",
+  "controls": "7 slots (six orbit voices plus a foreground bell); six loop lengths in seconds, a length spread and a global orbit speed; LISTEN to IGNORE dial; growth (how often an orbit picks a new note), key and scale; water and prune; reverb, delay and level; a planetarium-chart VJ view.",
+  "how": "Press PLAY and leave it. Turn the LISTEN/IGNORE dial to decide how much it asks of you. Press W to water (a burst of growth), P to prune the busiest orbit for a while, N to re-seed the loop lengths. Click an orbit to mute or unmute it. Open the deck (D) to load six of your own sounds and trim each with the S and E handles. Press F for the full-screen star chart.",
+  "fonts": "family=Cormorant+SC:wght@500;700&family=IBM+Plex+Mono:wght@400;500",
+  "try": [
+   "Load six long field recordings and set every orbit between 20 and 40 seconds. Set the dial near IGNORE and work with it running for an hour.",
+   "Load one sung note into all six slots, trim each to a different part with S and E, and let the unequal orbits make chords that never repeat in the same order.",
+   "Turn the dial to LISTEN, raise growth, then press P a few times: pruning is composing too."
+  ],
+  "manifesto": {
+   "name": "Generative ambient practice: loops of unequal length, the studio as a garden, and music that rewards listening or ignoring",
+   "short": "Orbit Loops",
+   "author": "Inspired by ambient and generative studio practice from the 1970s onwards (tape loops of unequal length; music designed to sit in the background or reward attention)",
+   "year": "1970s to now",
+   "where": "Studios in Britain, Europe and the United States, then software",
+   "ideas": [
+    "In our words: if loops of different lengths run together, the combinations keep changing, and you hear new music from very few parts.",
+    "In our words: ambient music should work at two levels. It can be heard closely, or it can be part of the room.",
+    "In our words: the composer sets up conditions and then tends them, more like a gardener than an architect.",
+    "In our words: the studio itself can be the instrument, with tape, delay and reverb doing part of the composing.",
+    "In our words: choosing what to remove is as important as choosing what to add."
+   ],
+   "quotes": [],
+   "system": "Each orbit has a period in seconds. The scheduler checks every quarter-second for the exact moment each star crosses the meridian and plays that orbit's slot at a scale degree that drifts by growth. The LISTEN/IGNORE dial scales event probability, the master low-pass, the reverb send and whether the foreground bell plays short phrases. Water briefly raises growth and density; prune mutes the most active orbit for two of its own periods. The chart shows the next time two or more orbits will cross the meridian together.",
+   "dubious": "Loop lengths and pitches are generated here. No published piece's loop lengths or notes are reproduced."
+  },
+  "design": {
+   "name": "Planetarium star chart: navy celestial maps with gold stars, constellation lines, graticules and small engraved capitals (celestial atlases and planetarium guides)",
+   "short": "Planetarium star chart",
+   "who": "Celestial cartographers and planetarium guide designers",
+   "era": "17th century atlases to mid 20th century planetarium charts",
+   "hallmarks": [
+    "Deep navy ground with cream or gold stars sized by magnitude.",
+    "Concentric graticule circles, a meridian line and degree ticks around the rim.",
+    "Small engraved capitals and italic labels; thin constellation lines joining stars."
+   ],
+   "works": [
+    "Look up mid-20th-century planetarium star charts and planispheres",
+    "Look up 17th-century celestial atlases in library digital collections",
+    "Search for planisphere designs with rotating star wheels"
+   ]
+  },
+  "no": "113",
+  "slug": "orbit-loops",
+  "file": "tools/113-orbit-loops.html"
+ },
+ {
+  "title": "Even Spread",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-11-11",
+  "kicker": "MUSIC THEORY · EUCLIDEAN RHYTHMS: SPREAD K HITS AS EVENLY AS POSSIBLE OVER N STEPS",
+  "bpm": 108,
+  "idea": "Spread a number of hits as evenly as you can across a number of steps and you get many of the world's timeline rhythms: 3 in 8 is the tresillo, 5 in 8 the cinquillo, 7 in 12 a West African bell pattern. Even Spread stitches six such rings on a sampler. Each ring has its own hits, steps and rotation, so rings of different lengths drift against each other as polymetre, and the tool names the traditional pattern when your ring matches one.",
+  "controls": "6 slots (low drum, mid drum, rim, shaker, bell, bass); per ring: hits, steps, rotation, accent, pitch degree and level; interlock (rotate rings to avoid each other) and complement (swap hits and rests); key and scale for pitched rings; swing; a cross-stitch sampler VJ view.",
+  "how": "Press PLAY: six rings play. Click a ring (or press 1 to 6) to select it, then set its hits, steps and rotation in the panel. Press I to interlock the rings, C to complement the selected ring, Q and A to add or remove a hit. Open the deck (D) to load your own one-shots and trim each with the S and E handles. Press F for the full-screen sampler.",
+  "fonts": "family=Cinzel:wght@500;700&family=Courier+Prime:wght@400;700",
+  "try": [
+   "Load six one-shots from your own kit. Set ring 1 to 3 in 8 and ring 2 to 5 in 8, and you have the tresillo against the cinquillo.",
+   "Give ring 5 (the bell) 7 hits in 12 steps and ring 6 (bass) 4 in 9. Leave them running: the two lengths realign every 36 steps.",
+   "Load a single vocal syllable into every slot, trim each slot to a different part with S and E, then press I to interlock: a rhythm made of one word."
+  ],
+  "manifesto": {
+   "name": "Euclidean rhythms: the most even spread of k onsets over n steps, and the timeline patterns it reproduces",
+   "short": "Euclidean rhythms",
+   "author": "Inspired by Euclid's algorithm (about 300 BC), its use for timing in physics in the early 2000s, and its later study as a theory of world timeline rhythms",
+   "year": "About 300 BC (the algorithm); 2000s (applied to rhythm)",
+   "where": "Greek mathematics; computer science and music theory",
+   "ideas": [
+    "In our words: Euclid's method finds the greatest common divisor by repeatedly taking the smaller number from the larger. The same steps can lay out hits and rests as evenly as possible.",
+    "In our words: many traditional timeline patterns are maximally even in this sense, which is one reason they feel balanced but not square.",
+    "In our words: rotating a pattern changes where it starts but not its shape, so one spread gives several different grooves.",
+    "In our words: when rings with different step counts play together, they only line up again after the lowest common multiple of their lengths. That drift is polymetre.",
+    "In our words: the complement of a pattern (its rests turned into hits) is often a useful answering part."
+   ],
+   "quotes": [],
+   "system": "Each ring computes its pattern with a Bresenham-style even spread (step i is a hit when (i x k) mod n is less than k), then rotates it. A shared sixteenth-note clock advances every ring by one step; each ring wraps at its own length. Hits fire the ring's slot with its accent on the first hit, its pitch degree in the chosen scale and its level. Interlock searches rotations so the fewest hits coincide. A lookup table names well-known patterns such as the tresillo and cinquillo when a ring's hits and steps match them.",
+   "dubious": "Pattern names are given as common labels only. Several patterns have more than one name and appear in more than one tradition."
+  },
+  "design": {
+   "name": "Cross-stitch sampler: counted-thread embroidery on linen, with stitched alphabets, borders, motifs and a worked-by line (household samplers, 17th to 19th centuries)",
+   "short": "Cross-stitch sampler",
+   "who": "Anonymous needleworkers, often young students",
+   "era": "17th to 19th centuries",
+   "hallmarks": [
+    "A counted grid of small X stitches on unbleached linen.",
+    "Rows of stitched alphabets and numerals, a repeating border and a dated worked-by line.",
+    "A few strong thread colours (madder red, indigo, green, black) used in flat blocks."
+   ],
+   "works": [
+    "Look up 18th and 19th-century embroidered samplers in museum textile collections",
+    "Search for alphabet samplers with stitched borders",
+    "Look up counted cross-stitch pattern charts"
+   ]
+  },
+  "no": "114",
+  "slug": "even-spread",
+  "file": "tools/114-even-spread.html"
+ },
+ {
+  "title": "Lived Time",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-11-11",
+  "kicker": "PHILOSOPHY · DURATION: CLOCK TIME AGAINST TIME AS IT IS LIVED",
+  "bpm": 120,
+  "idea": "A philosopher writing in Paris around 1900 argued that clock time, cut into equal units, is not the time we live. Lived time, which he called duration (durée), stretches and contracts with intensity, and each moment carries the whole past inside it. Lived Time puts two hands on one watch dial: a steady clock hand that ticks your sound, and a lived hand that speeds up when you lean in and slows when you let go, playing a melody that grows by remembering every note before it.",
+  "controls": "6 slots (clock tick, lived voice, memory pad, pulse, chime, breath); clock tempo and tick level; lived base rate, stretch (how much attention bends it) and attention, which you can also hold with the mouse; memory length and how strongly the past is held; key and scale; melody seed; reverb and level; an enamel watch-dial VJ view.",
+  "how": "Press PLAY: the clock hand ticks and the lived hand plays. Hold the mouse down on the dial (or press and hold A) to pay attention: lived time speeds up and the melody brightens. Let go and it slows. Press M to forget (clear the memory), T to switch the clock on or off, S to change the melody seed. Open the deck (D) to load your own sounds and trim each with the S and E handles. Press F for the full-screen dial.",
+  "fonts": "family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500",
+  "try": [
+   "Put a clock or metronome recording in slot 1 and a single sung note in slot 2. Hold the dial for ten seconds, then let go and listen to how the same melody feels at a different speed.",
+   "Raise memory to the top and stretch to the middle. Leave it for two minutes: the pad slowly fills with everything the lived voice has played.",
+   "Switch the clock off with T and perform only with attention, holding and releasing, as if breathing with the piece."
+  ],
+  "manifesto": {
+   "name": "Duration (durée): lived time as continuous, qualitative and cumulative, against measured clock time",
+   "short": "Duration (durée)",
+   "author": "Inspired by Henri Bergson's account of duration in his essay on time and free will (1889) and later works (public domain)",
+   "year": "1889 to 1907",
+   "where": "Paris",
+   "ideas": [
+    "In our words: clock time treats moments as identical units laid side by side, like points on a line. That is time turned into space.",
+    "In our words: lived time is not made of separate units. It flows, and the same ten seconds can feel short or long depending on what fills them.",
+    "In our words: each new moment carries the past with it, the way a melody's notes only make sense because you still hear the earlier ones.",
+    "In our words: memory is not a filing cabinet. The past keeps growing and pressing into the present.",
+    "In our words: to grasp duration you have to live it, not measure it. Listening is one way to do that."
+   ],
+   "quotes": [],
+   "system": "A fixed eighth-note grid drives two phase accumulators. The clock hand advances at the clock tempo and ticks slot 1 on each beat. The lived hand advances at the base rate times a factor set by attention and stretch; attention rises while you hold the dial and falls back slowly when you release. Each time the lived hand crosses a note boundary it plays the next note of its melody on slot 2. The melody grows by one note per cycle up to the memory length, generated from the seed in the chosen scale. Every note also feeds the memory pad (slot 3), where past notes keep sounding softly, weighted by how strongly the past is held. Pulse, chime and breath mark the lived hand's quarters and the slow intake of attention.",
+   "dubious": "Bergson died in 1941 and his texts are in the public domain in the UK, but they are paraphrased here, not quoted. The musical system is our own interpretation, not his."
+  },
+  "design": {
+   "name": "Enamel watch dial: white grand-feu enamel, Breguet-style numerals, blued-steel hands, minute track and subsidiary dials (horology, 18th to 20th centuries)",
+   "short": "Enamel watch dial",
+   "who": "Watch-dial enamellers and dial painters",
+   "era": "18th to 20th centuries",
+   "hallmarks": [
+    "Glossy white enamel with fine black railway minute track and small painted numerals.",
+    "Blued-steel hands with moon tips and a small seconds sub-dial.",
+    "Restraint: a few fine lines, centred lettering, much empty white."
+   ],
+   "works": [
+    "Look up 19th-century enamel pocket-watch dials in horological museum collections",
+    "Search for Breguet-style numerals and moon-tipped hands",
+    "Look up railway pocket-watch dials with a minute track"
+   ]
+  },
+  "no": "115",
+  "slug": "lived-time",
+  "file": "tools/115-lived-time.html"
+ },
+ {
+  "title": "Collective Creatures",
+  "deep": true,
+  "category": "art manifesto",
+  "date": "2026-11-11",
+  "kicker": "ART MANIFESTO · COBRA: SPONTANEOUS, COLLECTIVE, CHILDLIKE MAKING",
+  "bpm": 96,
+  "idea": "CoBrA (1948 to 1951), named after three cities, Copenhagen, Brussels and Amsterdam, rejected polished abstraction for spontaneous, collective work drawn from children's drawings, folk art and myth. Collective Creatures gives three players a page each. Scribble a creature and its line becomes a loop: height is pitch, speed is loudness, length is time. Turn up COLLECTIVE and the creatures start copying fragments of each other, so no single hand owns the piece.",
+  "controls": "7 slots (two voices for each of three players plus a carved knock); per player: loop length in bars, octave, level and mute; collective (how much the creatures borrow from each other), spontaneity (random wobble in time and pitch), quantise; key and scale; child's hand (the machine scribbles for you); a linocut-print VJ view.",
+  "how": "Press PLAY: three creatures already play. Scribble on any of the three panels to draw a new creature: its line is its tune. Press C for a child's hand scribble on a random panel, X to wipe the selected panel, 1 to 3 to select a panel. Raise COLLECTIVE to let them borrow from each other. Open the deck (D) to load your own sounds and trim each with the S and E handles. Press F for the full-screen print.",
+  "fonts": "family=Rubik+Mono+One&family=Rubik:wght@400;600",
+  "try": [
+   "Hand the mouse to someone else for panel 2 and a third person for panel 3. Each draws without looking at the others. Then raise COLLECTIVE.",
+   "Load a child's voice, a pan lid and a whistle (recorded by you) into the A voices and draw quick zigzags: fast lines play loud.",
+   "Set quantise to zero and spontaneity high, draw one slow spiral on each panel, and let the loops of different bar lengths drift."
+  ],
+  "manifesto": {
+   "name": "CoBrA: the manifesto of spontaneous, collective, experimental art against polished abstraction (1948)",
+   "short": "CoBrA",
+   "author": "Inspired by the CoBrA group of artists from Copenhagen, Brussels and Amsterdam, 1948 to 1951",
+   "year": "1948 to 1951",
+   "where": "Copenhagen, Brussels and Amsterdam",
+   "ideas": [
+    "In our words: art should be spontaneous, not planned out in advance or made to look finished.",
+    "In our words: children's drawings, folk art and the art of people outside the academies show a freer way of making.",
+    "In our words: work made together by several people is as valid as work made alone; collective painting was part of the practice.",
+    "In our words: bright colour, rough line and invented creatures are a way back to direct feeling after the war.",
+    "In our words: experiment matters more than style."
+   ],
+   "quotes": [],
+   "system": "Each panel stores a scribble as points with time, height and speed. The scribble is resampled into up to 32 events spread over that player's loop length in bars. On each sixteenth step, events whose position falls on the step play the player's A voice (or B voice for fast strokes) at a scale degree from the height, with gain from the speed. Spontaneity adds small random shifts to time and pitch on every pass; quantise pulls events to the beat. COLLECTIVE, on each loop pass, copies a short run of events from another player into this one, transposed to its own octave. A carved knock marks each player's loop start.",
+   "dubious": "CoBrA's founding texts are by members some of whom died recently enough to be in copyright, so nothing is quoted. The ideas are summarised in our own words."
+  },
+  "design": {
+   "name": "Linocut print: hand-carved relief blocks with thick black line, gouge marks, rough edges and one flat colour, printed on off-white paper",
+   "short": "Linocut print",
+   "who": "Relief printmakers and poster-workshop printers",
+   "era": "1900s to now",
+   "hallmarks": [
+    "Thick, uneven black lines with the marks of the carving gouge left in.",
+    "A single flat second colour printed slightly out of register.",
+    "Rough, hand-cut lettering and generous off-white paper margins."
+   ],
+   "works": [
+    "Look up early 20th-century linocut prints in museum print collections",
+    "Search for workshop linocut posters and relief-print lettering",
+    "Look up reduction linocut technique (one block, several colours)"
+   ]
+  },
+  "no": "116",
+  "slug": "collective-creatures",
+  "file": "tools/116-collective-creatures.html"
  }
 ]

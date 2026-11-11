@@ -1,5 +1,36 @@
 # Devlog
 
+## 11 November 2026 · 112 to 116, five deep instruments: receipt journal, orbit loops, even spread, lived time, collective creatures
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #14) and no new notes in chat since the last published batch, so no replies were needed. The 9 November run did not publish anything; numbering carries on from 111. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on every slot waveform; press F for VJ).
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 112 | Receipt Journal | found-sound production | The phone as a diary: emotional vocal chops over house and garage, building to a drop | Thermal till receipt |
+| 113 | Orbit Loops | generative systems | Loops of unequal length, the studio as a garden, music to listen to or ignore | Planetarium star chart |
+| 114 | Even Spread | music theory | Euclidean rhythms and the timeline patterns they reproduce | Cross-stitch sampler |
+| 115 | Lived Time | nature/philosophy | Duration (durée): lived time against clock time | Enamel watch dial |
+| 116 | Collective Creatures | art manifesto | CoBrA (1948 to 1951): spontaneous, collective, childlike making | Linocut print |
+
+**What's new in each**
+
+- **112 Receipt Journal:** eight slots (voice memo, phone clip, field bed, chord memo, kick, clap, hat, riser); your memo is cut into 4 to 16 chops pitched to the tones of a four-chord progression; MEMO, BUILD, silent GAP and DROP sections with bar lengths you set; 2-step, house or broken groove; every event printed as a line on a thermal receipt.
+- **113 Orbit Loops:** six orbit voices with loop lengths in seconds plus a foreground bell; one LISTEN/IGNORE dial changes brightness, density, tails and the bell; water, prune and re-seed; the star chart shows the next conjunction of two orbits.
+- **114 Even Spread:** six Euclidean rings (hits, steps, rotation, degree, level, complement) on a shared clock, so rings of different lengths drift as polymetre; interlock searches rotations to avoid collisions; the panel names known timelines (tresillo, cinquillo, the 7-in-12 bell pattern and others); shows when all six realign.
+- **115 Lived Time:** a steady clock hand and a lived hand whose speed bends with attention (hold the dial or A); the lived melody grows by one remembered note per cycle and a memory pad keeps the past sounding.
+- **116 Collective Creatures:** three panels (Copenhagen, Brussels, Amsterdam) where a scribbled line becomes a loop (height is pitch, speed is loudness); collective makes the creatures borrow phrases from each other; spontaneity, quantise, child's-hand scribbles and per-player loop lengths.
+
+**Tests:** `node test/run.js`, `node test/deep.js` and `node test/handles.js` on 112 to 116 all passed (sound starts, LEARN opens, WAV and AIFF load and are heard, REC downloads a WAV, deck and slots, reverse, preset save, load, export and import, key sheet, 10 s soak with no clipping, S and E handles drag, F enters VJ, no console errors). MIDI could not be exercised in headless Chrome (permission is blocked); the handlers are present and a simulated MIDI note ran without errors.
+
+**Fixes found by review**
+
+- 113: the first version used orbits of 17 to 37 seconds and was silent for about half of the soak test; defaults are now 7 to 19 seconds with staggered start phases (the long orbits are kept as a preset), stars are larger and labels no longer overlap at the meridian.
+- 112: the B key only jumped to the build for one bar; it now moves the whole cycle.
+- 116: the child's-hand scribble wrapped across the panel and drew long jumps; it now walks left to right. Red is kept for the creature lines only (one red), and borrowed notes are shown as open dots instead.
+- Two em dashes in canvas text were replaced (house style).
+
+**Hub:** the digitalplay.work repo keeps a short curated `data/music-summaries.json`, not one entry per tool, so it was left unchanged.
+
 ## 7 November 2026 · 107 to 111, five deep instruments: pocket stack, slow drift, open form, hexagram cast, spatial cut
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #13), so no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on a bigger waveform; press F for VJ).
