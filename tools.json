@@ -5680,5 +5680,271 @@
   "no": "116",
   "slug": "collective-creatures",
   "file": "tools/116-collective-creatures.html"
+ },
+ {
+  "title": "Room Print",
+  "deep": true,
+  "category": "found-sound production",
+  "date": "2026-11-13",
+  "kicker": "FOUND-SOUND PRODUCTION · RECORD THE ROOM, NOT JUST THE SOUND: A CLAP IN A STAIRWELL BECOMES YOUR REVERB",
+  "bpm": 128,
+  "idea": "Clap once in a stairwell, a kitchen or an underpass and record it on your phone: that short recording holds the whole sound of the place. Room Print uses any trimmed sample as the room your track sits in (convolution reverb). Your voice memo, drums and field recording play through two places you recorded yourself, and one PLACE fader walks the track from one room to the other.",
+  "controls": "8 slots (voice memo, field recording, room A, room B, kick, clap, hat, chord stab); room A and room B can be any slot (even the memo itself); room length (how much of the tail is used), pre-delay and brightness; PLACE fader and WALK (the track moves between the rooms over a set number of bars); a wet send for each part; CLAP TEST to hear a room on its own; chops, density, key, scale, progression, garage, house or broken groove; a large-letter postcard VJ view.",
+  "how": "Press PLAY: a memo, drums and a field bed play inside a built-in stairwell. Move PLACE to walk into the second room, or tick WALK. Press T for a clap test, X to swap the rooms, P to start or stop the walk, 1 to 4 to audition chops. Open the deck (D) and load a clap or a door slam you recorded into slot 3 or 4, then trim it with the S and E handles: the trimmed region is the room. Press F for the full-screen postcard.",
+  "fonts": "family=Bungee&family=Yellowtail&family=Special+Elite",
+  "try": [
+   "Stand in a stairwell or a bathroom, clap once and record ten seconds on your phone. Load it into slot 3, drag S to just before the clap and E to where the tail dies away. Your drums are now in that stairwell.",
+   "Set room B to slot 1 (the memo itself). Your voice becomes the room the drums play in: every hit is smeared into the shape of your phrase.",
+   "Record the same clap in two rooms (a kitchen and a car park), load them into slots 3 and 4 and tick WALK with 8 bars: the track walks from one place to the other and back."
+  ],
+  "manifesto": {
+   "name": "Found-sound production: recording the room itself (a clap, a door, a stairwell) and using it as the space your sounds sit in",
+   "short": "Room print",
+   "author": "Inspired by studio echo chambers, convolution reverb, and producers who record clap tests in real rooms on their phones",
+   "year": "1940s (echo chambers); late 1990s (convolution reverb); now on any phone",
+   "where": "Recording studios, then home studios and phones",
+   "ideas": [
+    "In our words: every room answers a sound in its own way. A short, sharp sound such as a clap or a balloon pop excites the whole room at once, so its recording (the impulse response) is a fingerprint of the place.",
+    "In our words: convolution is a way of saying: play every tiny moment of my sound through that fingerprint and add the results. The dry sound comes out as if it had been made in that room.",
+    "In our words: before digital reverb, studios built tiled echo chambers and fed sound into them through a speaker and a microphone. Recording a real room is the same instinct with a phone.",
+    "In our words: found-sound producers use places, not just sounds: the room is part of the memory. A voice note recorded in a kitchen keeps the kitchen.",
+    "In our words: any sound can be a room. Use a voice or a field recording as the impulse and you get strange, smeared spaces that no building has."
+   ],
+   "quotes": [],
+   "system": "Rooms A and B are two convolution reverbs. Each one's impulse response is copied from the trimmed region (S to E, reversed if the slot is reversed) of whichever slot you choose, shortened by ROOM LENGTH and pushed back by PRE-DELAY. Each part (memo chops, drums, field bed, chord stab) has a dry path and a wet send; the wet signal is split between the two rooms by the PLACE fader, then darkened by BRIGHTNESS. WALK moves PLACE as a slow triangle over the bars you set. The memo is cut into chops pitched to the tones of a four-chord progression, over a garage, house or broken groove. CLAP TEST sends one clap into the rooms only, with no dry sound, so you hear the place on its own.",
+   "dubious": "The dates for echo chambers and convolution reverb are approximate and given as decades. Phone microphones colour the sound, so a phone impulse is a sketch of a room, not a measurement."
+  },
+  "design": {
+   "name": "Large-letter linen postcard: 'Greetings from' cards with huge extruded block letters, a script banner, a linen-texture finish, a stamp box and a postmark (souvenir postcards, 1930s to 1950s)",
+   "short": "Large-letter linen postcard",
+   "who": "Commercial postcard printers and their unnamed artists",
+   "era": "1930s to 1950s",
+   "hallmarks": [
+    "A place name in huge block letters with a deep extrusion; here the extrusion depth follows how long the room rings.",
+    "A cursive 'Greetings from' banner across the top, and a fine linen-weave texture over saturated, slightly unreal colour.",
+    "A stamp box and a round postmark on the back; here the postmark is the one red mark, and it carries the date, tempo and key."
+   ],
+   "works": [
+    "Look up large-letter 'Greetings from' linen postcards in museum and library postcard collections",
+    "Search for linen-finish postcard printing (textured paper stock, 1930s to 1950s)",
+    "Look up seaside souvenir postcards from British resorts in the same period"
+   ]
+  },
+  "no": "117",
+  "slug": "room-print",
+  "file": "tools/117-room-print.html"
+ },
+ {
+  "title": "Transition Table",
+  "deep": true,
+  "category": "generative systems",
+  "date": "2026-11-13",
+  "kicker": "GENERATIVE SYSTEMS · A TABLE OF HABITS: THE MUSIC LEARNS WHICH NOTE FOLLOWS WHICH, THEN WALKS ITS OWN ROADS",
+  "bpm": 76,
+  "idea": "Instead of writing a melody, teach a system your habits. Every time one note follows another, Transition Table adds a mile to that road in a road-atlas table, then grows an endless ambient line by choosing each next note from the roads already worn. The more a road is used the deeper it gets, unused roads fade, and one dial moves the piece from music to listen to (bright, busy, answering) to music to ignore (sparse, low, long).",
+  "controls": "6 slots (lead, pad, low drone, echo answer, texture bed, new-road tick); play notes on keys 1 to 8, MIDI or by clicking the place names, and the table learns them; click a cell to build a road from row to column (shift-click to dig it up); memory order 1 or 2 (one note or two notes of context); temperature (well-worn roads or adventure); wear (how much the system's own walking deepens a road); forget (how fast unused roads fade); LISTEN/IGNORE dial; key and scale; pad, drone, echo and texture levels; a mileage-chart VJ view.",
+  "how": "Press PLAY: a slow line walks the built-in habits. Play 1 to 8 on the keyboard (or MIDI) to teach it your own: each note you play adds a road from the note before. Click any cell in the table to build a road from the row's note to the column's note; shift-click to dig it up. Press W to wipe all roads, H for the built-in habits, K to prune the weakest roads, O to switch between one and two notes of memory, and , or . to turn the LISTEN/IGNORE dial. Open the deck (D) for your own sounds and the S and E trim handles. Press F for the full-screen chart.",
+  "fonts": "family=Barlow+Condensed:wght@400;600;800&family=Barlow:wght@400;600",
+  "try": [
+   "Load a single sung note of yours into slot 1 and trim it to its steadiest part with S and E. Press W to wipe the table, then play a short tune on keys 1 to 8 three or four times: the lead now wanders your tune's roads in your own voice.",
+   "Put a long field recording into slot 5 and a soft piano note into slot 2. Turn the dial right down to IGNORE, set FORGET high and WEAR low, and leave it running as a room tone that slowly forgets your tune.",
+   "Load a vocal chop into slot 4 (the echo). Set order to 2 and temperature low: the echo answers each note with the note your habits say comes next, so you hear the system thinking out loud."
+  ],
+  "manifesto": {
+   "name": "Generative systems: a table of transition probabilities (a Markov chain) learned from what you play, walked forever, with habits that deepen and fade",
+   "short": "Transition table",
+   "author": "Inspired by early computer music that chose notes from tables of transition probabilities (from 1957), and by generative ambient practice",
+   "year": "1906 (the mathematics); 1950s (first used for music); now",
+   "where": "Probability theory, early computer music, generative and ambient studio practice",
+   "ideas": [
+    "In our words: a Markov chain is a rule for what comes next that only looks at where you are now (or, in a second-order chain, at the last two places). Nothing else about the past matters.",
+    "In our words: write down how often each note follows each other note and you have a table of habits. Choosing notes from that table gives new melodies that sound like the old ones without copying them.",
+    "In our words: from the 1950s, composers and researchers used tables like this to generate music by computer, first from rules and later from tunes they analysed.",
+    "In our words: in generative practice you set up the system and then tend it rather than writing every note: here you plant roads, let the system wear its own paths, and prune what you do not want.",
+    "In our words: ambient music can be listened to closely or left in the background. The LISTEN/IGNORE dial lets the same system serve both."
+   ],
+   "quotes": [],
+   "system": "The table has a row and a column for each degree of the scale (tonic to octave). Each cell is a weight: how worn the road from the row's note to the column's note is. Each time the lead plays, it picks its next note from the current row (or, with order 2, from a second table keyed on the last two notes), with temperature reshaping the weights: low temperature keeps to the most-worn road, high temperature makes rarely used roads likely. Note lengths come from a smaller table of their own. Every move the system makes adds WEAR to that road, and every bar all roads shrink by FORGET, so habits deepen and fade like footpaths. The pad holds a chord on the current note, the drone holds the tonic, the echo plays the most likely next note a few steps later, and a tick sounds when a little-used road is taken. LISTEN brightens the lead, raises its density and lets the echo answer; IGNORE thins it out and leaves the pad, drone and texture.",
+   "dubious": "The mathematics is from the first decade of the 20th century and the first musical uses are from the 1950s; the dates are given broadly. No particular piece or system is reproduced here."
+  },
+  "design": {
+   "name": "Road-atlas mileage chart: the triangular table of distances between towns, with place names on the diagonal, condensed figures, alternate tinted rows and thin rules (printed road atlases and motoring handbooks, 1920s to 1990s)",
+   "short": "Road-atlas mileage chart",
+   "who": "Cartographic and motoring publishers' drawing offices",
+   "era": "1920s to 1990s",
+   "hallmarks": [
+    "Place names stepping down the diagonal of a grid of figures; here the places are the degrees of the scale.",
+    "Small condensed figures in every cell, with alternate rows tinted to help the eye; here the figure is how worn the road is and the tint is its probability.",
+    "Thin black rules, one or two map colours and a short 'how to read this table' note; the one red mark is the road being travelled now."
+   ],
+   "works": [
+    "Look up mileage charts and distance tables in mid-century British road atlases",
+    "Search for motoring handbook distance charts from the 1930s to the 1960s",
+    "Look up triangular distance tables in printed railway and road guides"
+   ]
+  },
+  "no": "118",
+  "slug": "transition-table",
+  "file": "tools/118-transition-table.html"
+ },
+ {
+  "title": "Tonnetz Walk",
+  "deep": true,
+  "category": "music theory",
+  "date": "2026-11-13",
+  "kicker": "MUSIC THEORY · THE TONNETZ: A LATTICE OF TONES WHERE NEIGHBOURING TRIANGLES ARE CHORDS THAT SHARE TWO NOTES",
+  "bpm": 92,
+  "idea": "Lay the twelve notes out on a lattice so that one direction is a fifth, another a major third and the third a minor third, and every small triangle is a major or minor chord. Neighbouring triangles share two notes, so stepping across an edge moves only one note by a semitone or a tone. Tonnetz Walk marches a chord counter across that lattice, drawn as a board-game hex map, with three moves (P, L and R) you can sequence, steer with a melody or click.",
+  "controls": "6 slots (pad, bass, arpeggio, moving-note bell, soft kick, shaker); the move sequence (any string of P, L and R, for example PLR or LR); chord length in beats; walk or hold; chance of a random move; Z, X and C play P, L and R by hand; click any triangle to jump there; MIDI notes steer the walk to a neighbouring chord that contains that note; arpeggio pattern, rate and density; bell and drum levels; key colouring of the map; a board-wargame hex-map VJ view.",
+  "how": "Press PLAY: the counter walks the sequence PLR from C major. Press Z for P (parallel), X for L (leading-tone) and C for R (relative), or type your own sequence in the panel (for example LR, or PL). Click any triangle on the map to jump to that chord. W starts or stops the walk; V picks a random sequence. Open the deck (D) to load your own pad, bass and pluck, each with S and E trim handles. Press F for the full-screen map.",
+  "fonts": "family=Roboto+Condensed:wght@400;700&family=Share+Tech+Mono",
+  "try": [
+   "Load one sustained note of your own (a sung 'ah', a bowed string, a synth pad) into slot 1 and trim it to the steady middle with S and E. With the sequence PL the counter circles six chords and your note is pitched into every one of them.",
+   "Put a short vocal syllable into slot 4 (the bell). The bell only plays the one note that moves at each chord change, so your voice sings the voice leading: a semitone here, a tone there.",
+   "Load a plucked sample into slot 3, set the sequence to LR and the chord length to 2 beats: L and R in turn walk you through the chords of a long chain of fifths. Then type RL and hear it go the other way."
+  ],
+  "manifesto": {
+   "name": "The Tonnetz: a lattice of tones in which neighbouring triangles are chords sharing two notes, and the P, L and R moves between them",
+   "short": "Tonnetz",
+   "author": "Inspired by the lattice of tones first drawn in 1739, its 19th-century development by music theorists, and later neo-Riemannian theory",
+   "year": "1739; 19th century; 1980s to now",
+   "where": "Music theory, from 18th-century acoustics to modern harmonic analysis",
+   "ideas": [
+    "In our words: put the notes on a grid where moving right is a perfect fifth, moving down-right is a major third and moving up-right is a minor third. Every small triangle is then a major or a minor triad.",
+    "In our words: two triangles that share an edge are chords that share two notes. Moving from one to the other changes just one note, usually by a semitone or a tone, which is why these changes sound smooth.",
+    "In our words: there are three such moves from any triad. P (parallel) swaps major and minor on the same root, C major to C minor. R (relative) goes to the relative minor or major, C major to A minor. L (leading-tone) moves the root down a semitone, or the fifth up, C major to E minor.",
+    "In our words: chains of these moves make cycles. Alternating P and L visits six chords and comes home; alternating P and R visits eight; alternating L and R travels through all twenty-four major and minor triads.",
+    "In our words: the lattice does not care about keys, which is why it helps explain chord changes in 19th-century music and film scores that move smoothly between distant keys."
+   ],
+   "quotes": [],
+   "system": "Each hex on the map is a pitch class: one step right adds seven semitones (a fifth), one step down-right adds four (a major third) and one step up-right adds three (a minor third). The counter sits on a triangle of three hexes, which is the current chord. On every chord change the walker takes the next letter of your sequence (or a random move, by chance) and slides the counter across one edge. The pad voices the new chord with the smallest total movement from the last one, so two voices hold and one moves; the bell plays only that moving note. The bass plays the root, the arpeggio plays the chord tones in the pattern you choose, and MIDI notes steer the walk to whichever neighbouring chord contains the note you played.",
+   "dubious": "The lattice was first drawn in 1739 and was developed by several 19th-century theorists; the letter names P, L and R come from later theory. Dates are given broadly and no individual is named in the tool."
+  },
+  "design": {
+   "name": "Board wargame hex map: printed hexagon grids with four-digit hex numbers, flat terrain colours, square unit counters with symbols, a turn record track and a terrain effects chart (hobby board wargames, 1960s to 1980s)",
+   "short": "Board wargame hex map",
+   "who": "Hobby board-game publishers and their map artists",
+   "era": "1960s to 1980s",
+   "hallmarks": [
+    "A hexagon grid printed over flat terrain colours, every hex numbered with four small digits; here each hex is a pitch class and the terrain shows whether the note belongs to the key.",
+    "Square die-cut counters with a unit symbol and a strength figure; here the one red counter is the current chord.",
+    "A turn record track and a small chart of rules in the margin; here the track is your move sequence and the chart explains P, L and R."
+   ],
+   "works": [
+    "Look up hex-grid board wargame maps from the late 1960s to the 1980s",
+    "Search for die-cut cardboard counter sheets and unit symbols",
+    "Look up terrain effects charts and turn record tracks in printed game rules"
+   ]
+  },
+  "no": "119",
+  "slug": "tonnetz-walk",
+  "file": "tools/119-tonnetz-walk.html"
+ },
+ {
+  "title": "Predator and Prey",
+  "deep": true,
+  "category": "nature/philosophy",
+  "date": "2026-11-13",
+  "kicker": "NATURE · PREDATOR AND PREY: TWO POPULATIONS THAT RISE AND FALL OUT OF STEP, FOR EVER",
+  "bpm": 100,
+  "idea": "When hares are plentiful the lynx feed well and multiply; when lynx are many the hares are hunted down; when hares are scarce the lynx go hungry and dwindle, and the hares come back. Two simple equations from the 1920s turn that story into a cycle that never settles. Predator and Prey plays it: the hares are a quick, bright voice whose numbers set the density, the lynx are a slow low voice, every catch is a hit, and the cycle's quarters choose the chords. It is drawn as a page from an illuminated bestiary.",
+  "controls": "6 slots (hare voice, hare rustle, lynx voice, the catch, ground drone, season bell); prey birth rate, hunting rate, predator feeding and predator death rate; grass (carrying capacity, which damps the cycle); years per bar; weather (random disturbance); click the roundel to set both populations; H releases hares, Y releases lynx, T sets traps, B jumps to the balance point; key and scale; levels for each voice; an illuminated-bestiary VJ view.",
+  "how": "Press PLAY: the hares multiply, the lynx follow, and the piece rises and falls in long cycles. Change the four rates in the panel and the cycle gets longer, shorter, wilder or calmer. Click inside the gold roundel to set how many hares (left to right) and lynx (bottom to top) there are. Press H to release hares, Y to release lynx, T to set traps, B to jump to the balance point (where nothing changes and the music holds still). Open the deck (D) for your own sounds and the S and E trim handles. Press F for the full-screen page.",
+  "fonts": "family=UnifrakturMaguntia&family=IM+Fell+English:ital@0;1",
+  "try": [
+   "Load a short plucked or tapped sound of yours into slot 1 and trim it tight with S and E: it becomes the hares, and you hear its density swell and collapse with each cycle.",
+   "Put a long, low recording (a cello note, a hum, traffic at night) into slot 3 for the lynx. Lower the predator death rate so the lynx linger, and the low voice keeps sounding after the hares have gone.",
+   "Load a field recording into slot 5 and raise GRASS until the cycle slowly settles towards the balance point. Then press H once and listen to the whole system ring like a struck bell before it settles again."
+  ],
+  "manifesto": {
+   "name": "Predator and prey cycles: the Lotka-Volterra equations, in which hunters and hunted rise and fall out of step",
+   "short": "Predator and prey",
+   "author": "Inspired by the population equations published independently by Alfred J. Lotka (1925) and Vito Volterra (1926), and by the long fur-trade records of lynx and snowshoe hare",
+   "year": "1925 to 1926",
+   "where": "Mathematical biology",
+   "ideas": [
+    "In our words: the prey grow in proportion to how many there are, and are eaten in proportion to how often they meet a predator. The predators grow in proportion to how much they eat, and die off at a steady rate.",
+    "In our words: those two rules on their own never settle down. The two populations chase each other round a loop, with the predators peaking roughly a quarter of a cycle after the prey.",
+    "In our words: there is a balance point where births exactly match deaths for both. Start there and nothing ever changes; start anywhere else and you circle it for ever.",
+    "In our words: add a limit on how many prey the land can feed and the loops slowly spiral in towards the balance point, like a struck bell dying away.",
+    "In our words: fur-trade records of lynx and snowshoe hare pelts in Canada rise and fall in cycles of roughly ten years, which became a classic example, though the real causes involve food, weather and disease as well."
+   ],
+   "quotes": [],
+   "system": "Every sixteenth note the equations are stepped forward by YEARS PER BAR divided by sixteen (with small Runge-Kutta steps), with GRASS limiting the prey and WEATHER nudging both at random. The number of hares sets the chance that the hare voice and the rustle play on each step and how high in the scale the hare voice climbs. The number of lynx sets the density and loudness of the slow, low lynx voice. The expected number of catches (hunting rate times hares times lynx) sets how often the catch sound strikes. The angle of the current point around the balance point picks one of four chords, so each quarter of the cycle has its own harmony and a long cycle means slow harmony. When the hares peak, the season bell rings high; when the lynx peak, it rings low.",
+   "dubious": "The equations are a simplified model. Real populations, including the lynx and hare, are shaped by many more factors, and the model fits them only loosely. Lotka's and Volterra's work was independent and the dates are those of their main publications."
+  },
+  "design": {
+   "name": "Illuminated bestiary manuscript: vellum pages with blackletter headings, a gilded and painted initial, rubricated text, framed roundels and small animals in the margins (European bestiaries, 12th to 15th centuries)",
+   "short": "Illuminated bestiary",
+   "who": "Anonymous scribes and illuminators in monastic and lay workshops",
+   "era": "12th to 15th centuries",
+   "hallmarks": [
+    "A two-column page on warm vellum, with a heading in blackletter and running text in a book hand.",
+    "A large painted initial in blue with gold, and framed roundels in which the animals are shown; here the roundel holds the cycle of hare against lynx.",
+    "Small animals and creatures crowding the margins; here their number is the population. The one red line on the page is the lynx."
+   ],
+   "works": [
+    "Look up digitised medieval bestiaries in national and university library collections",
+    "Search for illuminated initials and marginalia in 13th-century manuscripts",
+    "Look up the hare and the lynx in medieval bestiary entries"
+   ]
+  },
+  "no": "120",
+  "slug": "predator-and-prey",
+  "file": "tools/120-predator-and-prey.html"
+ },
+ {
+  "title": "N Plus One",
+  "deep": true,
+  "category": "art manifesto",
+  "date": "2026-11-13",
+  "kicker": "ART MANIFESTO · DIMENSIONISM (1936): EACH ART STEPS INTO ONE MORE DIMENSION, AND THE LISTENER ENDS UP IN THE MIDDLE",
+  "bpm": 84,
+  "idea": "A short manifesto signed in Paris in 1936 claimed that every art was moving into one more dimension: writing leaves the line for the page, painting leaves the canvas for space, sculpture starts to move, and a future cosmic art would put the person at the centre of the work. N Plus One gives you four voices (word, painting, sculpture, cosmos) and lets each climb the same ladder: LINE (one melody, centred), PLANE (chords spread left to right), SPACE (placed around your head), MOTION (orbiting you) and VAPOUR (scattered into a cloud of grains with you inside it). Wear headphones.",
+  "controls": "6 slots (word, painting, sculpture, cosmos, pulse, ground); a dimension for each of the four voices (line, plane, space, motion, vapour); N+1 raises every voice one step; ASCENT raises one voice every few bars and wraps round; orbit speed, size of the space, vapour grain count and spread; density, key, scale and progression; levels for each voice and reverb; a stereograph-card VJ view whose two pictures make a real stereo pair.",
+  "how": "Press PLAY (headphones help): the word is a line, the painting a plane, the sculpture sits in space and the cosmos orbits you. Press N to give every voice one more dimension, or 1 to 4 to raise one voice at a time (Shift with 1 to 4 lowers it). A turns ASCENT on and off, Z resets to where the manifesto starts. Open the deck (D) to load your own sounds and trim each with the S and E handles. Press F for the full-screen stereograph: relax your eyes and let the two pictures merge.",
+  "fonts": "family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Cormorant+SC:wght@500;700",
+  "try": [
+   "Record yourself saying one word and load it into slot 1, trimmed tight with S and E. Raise the word from LINE through PLANE and SPACE to VAPOUR (press 1 four times): the same word goes from a melody to a chord to a voice behind you to a cloud you are standing in.",
+   "Load a long pad or a held chord of your own into slot 2 and set the painting to MOTION with a slow orbit: your chord circles your head like a mobile.",
+   "Put a metallic hit (a pan lid, a bike bell, a glass) into slot 3, turn ASCENT on with 2 bars, and leave it: every voice climbs the ladder in turn, so the piece keeps opening out and starting again."
+  ],
+  "manifesto": {
+   "name": "The Dimensionist Manifesto (1936): every art absorbs one more dimension (N + 1), ending in a cosmic art with the person at its centre",
+   "short": "Dimensionism",
+   "author": "Inspired by the Dimensionist Manifesto, written by a Hungarian poet in Paris in 1936 and signed by a large international group of artists",
+   "year": "1936",
+   "where": "Paris",
+   "ideas": [
+    "In our words: the manifesto says the arts are all moving at once, each one taking on the next dimension up. It sums this up as N + 1.",
+    "In our words: literature leaves the line and enters the plane (poems laid out across the page as pictures and diagrams).",
+    "In our words: painting leaves the flat surface and enters space (constructions, objects and works made of several materials).",
+    "In our words: sculpture leaves closed, still forms behind, first opening up to inner space and then to movement (open, mobile and kinetic sculpture).",
+    "In our words: after these comes a cosmic art, a kind of vaporised sculpture or 'matter-music', in which the person no longer looks at the work from outside but stands at its centre and takes it in with all five senses.",
+    "Nothing is quoted here: the text is in copyright, so all of the above is our own paraphrase."
+   ],
+   "quotes": [],
+   "system": "Each of the four voices has its own part (the word sings a wandering line, the painting holds chords, the sculpture strikes a pattern, the cosmos sounds long tones) and a dimension from 1 to 5. At LINE a note is one sound, centred. At PLANE it becomes a three-note chord spread across the stereo field. At SPACE it is sent through a 3D (HRTF) panner to a fixed place around your head. At MOTION that place orbits you at the ORBIT speed. At VAPOUR each note is broken into a cloud of short grains taken from all over the slot's trimmed region and scattered to points all around you. N+1 raises every voice by one; ASCENT raises one voice every few bars and sends a voice that passes VAPOUR back to LINE, so the climb keeps beginning again. The pulse and the ground stay flat, as a floor to stand on.",
+   "dubious": "The manifesto lists many signatories and endorsers, and its history has been retold in later exhibitions and books; dates and details here are kept to what is widely agreed. 3D panning over headphones varies from person to person."
+  },
+  "design": {
+   "name": "Stereograph card: twin photographs side by side on a stiff card mount, with arched or rounded windows, a series title and number, and printed captions on the margins (stereoscope view cards, 1850s to 1930s)",
+   "short": "Stereograph card",
+   "who": "Commercial stereoview publishers and their photographers",
+   "era": "1850s to 1930s",
+   "hallmarks": [
+    "Two near-identical photographs side by side, taken a short distance apart, so a viewer merges them into one picture with depth; here the two pictures really are drawn from two eye positions.",
+    "A buff or grey card mount with rounded corners and arched windows, and the series name and number printed up the sides.",
+    "Sepia tones, a soft vignette and a short descriptive caption under the pictures."
+   ],
+   "works": [
+    "Look up 19th-century stereograph cards in museum and library photographic collections",
+    "Search for stereoscope viewers and how parallel free-viewing of stereo pairs works",
+    "Look up stereoview card mounts with arched windows and printed series titles"
+   ]
+  },
+  "no": "121",
+  "slug": "n-plus-one",
+  "file": "tools/121-n-plus-one.html"
  }
 ]

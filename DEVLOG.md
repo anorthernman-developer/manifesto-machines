@@ -1,5 +1,39 @@
 # Devlog
 
+## 13 November 2026 · 117 to 121, five deep instruments: room print, transition table, tonnetz walk, predator and prey, n plus one
+
+**Feedback:** no new comments on the GitHub feedback issues (#1 to #15) and no new notes in chat since the last batch, so no feedback was received this cycle and no replies were needed. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on every slot waveform; press F for VJ).
+
+| # | Tool | Category | Source idea | Design homage |
+|---|---|---|---|---|
+| 117 | Room Print | found-sound production | Recording the room itself (a clap in a stairwell) and using it as the space your sounds sit in (convolution reverb) | Large-letter linen postcard |
+| 118 | Transition Table | generative systems | A table of transition probabilities (a Markov chain) learned from what you play, with habits that deepen and fade, and music to listen to or ignore | Road-atlas mileage chart |
+| 119 | Tonnetz Walk | music theory | The Tonnetz: a lattice of tones, triads as triangles, and the P, L and R moves | Board wargame hex map |
+| 120 | Predator and Prey | nature/philosophy | Predator and prey cycles (the Lotka-Volterra equations, 1925 to 1926) | Illuminated bestiary |
+| 121 | N Plus One | art manifesto | The Dimensionist Manifesto (1936): every art takes on one more dimension (paraphrased, nothing quoted) | Stereograph card |
+
+**What's new in each**
+
+- **117 Room Print:** eight slots (voice memo, field bed, room A, room B, kick, clap, hat, chord stab); rooms A and B are convolution reverbs whose impulse is copied from any slot's trimmed region (reverse gives a reversed room), with room length, pre-delay and brightness; PLACE crossfades between the rooms and WALK moves it over a set number of bars; per-part wet sends; CLAP TEST plays the rooms on their own; memo chops pitched to a four-chord progression over garage, house or broken drums; the room's name is printed in extruded postcard letters whose depth follows how long the room rings.
+- **118 Transition Table:** six slots (lead, pad, drone, echo answer, texture, new-road tick); an 8 by 8 table of degree-to-degree weights you build by playing (keys 1 to 8, MIDI, buttons) or by clicking cells; order 1 or 2; temperature; WEAR (the system's own walking deepens roads) against FORGET (unused roads fade); a separate table for note lengths; a LISTEN/IGNORE dial for brightness, density and the echo; wipe, built-in habits and prune; the table and its journey log save with presets.
+- **119 Tonnetz Walk:** six slots (pad, bass, arpeggio, moving-note bell, kick, shaker); a hex map of pitch classes (right is a fifth, down-right a major third) with a chord counter on a triangle; a typed sequence of P, L and R moves, chord length, random-move chance; Z, X and C play P, L and R by hand, clicks jump to any triangle and MIDI notes steer to the neighbouring chord containing that note; smallest-movement voice leading, with the bell playing only the note that moved.
+- **120 Predator and Prey:** six slots (hare voice, rustle, lynx voice, catch, ground, season bell); the Lotka-Volterra equations stepped every sixteenth (Runge-Kutta) with births, hunting, feeding, deaths, a grass limit and weather; hare numbers set density and pitch, lynx numbers set the slow low voice, expected catches set the catch hits, the quarter of the cycle picks the chord, and the bell rings when each population peaks; click the roundel to set both populations; H, Y, T and B release hares, release lynx, set traps or jump to the balance point.
+- **121 N Plus One:** six slots (word, painting, sculpture, cosmos, pulse, ground); each of the four voices has a dimension (LINE centred, PLANE a chord spread across the stereo field, SPACE a fixed place on an HRTF panner, MOTION orbiting the listener, VAPOUR a cloud of grains from across the trimmed region scattered round the listener); N+1 raises them all, 1 to 4 raise one (Shift lowers), ASCENT climbs one voice every few bars; the two pictures on the stereograph card are drawn from two eye positions, so they form a real parallel-viewing stereo pair.
+
+**Tests:** `node test/run.js`, `node test/deep.js` and `node test/handles.js` on 117 to 121 all passed (15 of 15: sound starts, LEARN opens, WAV and AIFF load and are heard, REC downloads a WAV, deck and slots, reverse, preset save, load, export and import, key sheet, 10 s soak with no clipping or silent frames, S and E handles drag, F enters VJ, no console errors). A further run pressed every tool-specific shortcut and clicked the canvas in each tool with no errors. MIDI could not be exercised in headless Chrome (permission is blocked); the handlers are present.
+
+**Fixes found by review**
+
+- 117: long room names overflowed the postcard; the letters are now measured and scaled to fit, and the offscreen letter canvas is reused instead of made every frame.
+- 118: the LISTEN/IGNORE bar was clipped at the bottom of the chart at laptop height; the table is now sized to leave room for it.
+- 119: the bass was pitched an octave too low against its built-in sound; fixed. The move chart box was widened so its last line fits.
+- 120: the drop-cap text left a gap and the chronicle heading overlapped the last line; the start point was too close to balance (a small, dull cycle), so it now starts further out with a slight grass limit so the weather cannot push it to extremes; the roundel scale now follows the actual range.
+- 121: the LINE and PLANE labels overlapped on the picture plane; positions were spread and the camera moved in.
+
+**Hub:** the digitalplay.work repo still keeps a short curated `data/music-summaries.json`, not one entry per tool, so it was left unchanged.
+
+**Compliance:** tools are named after techniques and ideas; people appear only in short "Inspired by" credits in LEARN (and in the ledger's source column); no quotes from in-copyright texts (the 1936 manifesto is paraphrased throughout); only Google Fonts (Bungee, Yellowtail, Special Elite, Barlow and Barlow Condensed, Roboto Condensed, Share Tech Mono, UnifrakturMaguntia, IM Fell English, Old Standard TT, Cormorant SC); all sounds are synthesised in the browser; no images, analytics, trackers or cookies; no Gemini calls in these five; secret scan clean.
+
 ## 11 November 2026 · 112 to 116, five deep instruments: receipt journal, orbit loops, even spread, lived time, collective creatures
 
 **Feedback:** no new comments on the GitHub feedback issues (#1 to #14) and no new notes in chat since the last published batch, so no replies were needed. The 9 November run did not publish anything; numbering carries on from 111. Direction still comes from the 27 October notes (joy, five a day, deeper, your own sounds) and the 1 November note on 77: keep the START/END trim controls and add VJ / big-screen modes. Both are in all five (draggable S and E handles on every slot waveform; press F for VJ).
